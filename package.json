@@ -1,0 +1,45 @@
+{
+  "name": "liga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htmlonelove/liga.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/htmlonelove/liga/issues"
+  },
+  "homepage": "https://github.com/htmlonelove/liga#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.5",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "postcss-import": "^12.0.1",
+    "postcss-object-fit-images": "^1.1.2",
+    "stylelint-config-htmlacademy": "^0.1.4"
+  },
+  "browserslist": [
+    "last 10 versions",
+    "IE 10",
+    "Firefox ESR"
+  ]
+}

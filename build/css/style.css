@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+  max-width: 1340px;
+}
+
+:root {
+  --color: red;
+}
+
+p {
+  color: var(--color);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+div {
+  display: block;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}

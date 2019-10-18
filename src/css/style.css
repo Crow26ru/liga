@@ -1,0 +1,9 @@
+@import './blocks/container.css';
+
+div {
+  display: block;
+}
+
+h1 {
+  display: flex;
+}
