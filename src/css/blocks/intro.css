@@ -1,5 +1,6 @@
 .intro {
   padding-top: 217px;
+  padding-bottom: 34px;
 }
 
 .intro__top-content {
@@ -11,7 +12,7 @@
 
 .intro__headline {
   display: flex;
-  padding-left: 13px;
+  padding-left: 5px;
 }
 
 .intro__drako {
@@ -58,6 +59,7 @@
   line-height: 4.25rem;
   color: var(--light-color);
   text-transform: uppercase;
+  margin-top: -8px;
   text-shadow: var(--dekor-color) 1px 0, var(--dekor-color) 1px 1px, var(--dekor-color) 0 1px, var(--dekor-color) -1px 1px, var(--dekor-color) -1px 0, var(--dekor-color) -1px -1px, var(--dekor-color) 0 -1px, var(--dekor-color) 1px -1px;
 
   opacity: 0.9;
@@ -98,7 +100,7 @@
   }
 
   .intro__headline {
-    padding: 0 30px;
+    padding: 0;
   }
 
   .intro__title {
@@ -106,8 +108,8 @@
   }
 
   .intro__list {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 50px;
   }
 }
@@ -141,6 +143,7 @@
   .intro__title .intro__title-pale {
     font-size: 3rem;
     line-height: 2.875rem;
+    margin-top: 0;
   }
 
   .intro__list {

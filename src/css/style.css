@@ -14,3 +14,5 @@
 @import "./blocks/features-list";
 @import "./blocks/tests-list";
 @import "./blocks/header-open";
+@import "./blocks/services";
+@import "./blocks/service";

@@ -97,7 +97,7 @@
         </symbol>
       </svg>
   </div>
-  <input class="visually-hidden color-theme" type="checkbox" name="color-theme" id="color-theme">
+  <input class="visually-hidden color-theme" style="display: none;" type="checkbox" name="color-theme" id="color-theme">
 
   <header class="header">
     <div class="header__wrap">
@@ -145,7 +145,7 @@
           </ul>
         </div>
       </nav>
-      <a class="header__jop-link" href="#">Работать с нами</a>
+      <a class="header__job-link" href="#">Работать с нами</a>
     </div>
   </header>
 
@@ -221,6 +221,71 @@
               </li>
             </ul>
             Используем для тестов
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title">Что мы делаем</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <article class="service">
+              <div class="service__short-info">
+                <h3 class="service__title">
+                  Просто вёрстка
+                  <svg class="service__title-svg" width="21" height="22">
+                    <use xlink:href="img/sprite/sprite.svg#icon-lock"></use>
+                  </svg>
+                </h3>
+                <p class="service__price">от 750 рэ/час</p>
+              </div>
+              <div class="service__info">
+                <p class="service__text">
+                  Сели, сверстали. От 5 до 10 часов дополнительных работ включено в стоимость.
+                </p>
+                <ul class="service__technologies">
+                  <li class="service__technologies-item">HTML</li>
+                  <li class="service__technologies-item">CSS</li>
+                  <li class="service__technologies-item">JavaScript</li>
+                </ul>
+              </div>
+              <a class="service__link" href="#">
+                <span>Подробнее</span>
+                <svg class="service__link-svg" width="33" height="26">
+                  <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </article>
+          </li>
+          <li class="services__item">
+            <article class="service service--disabled">
+              <div class="service__short-info">
+                <h3 class="service__title">
+                  Фронтенд
+                  <svg class="service__title-svg" width="21" height="22">
+                    <use xlink:href="img/sprite/sprite.svg#icon-lock"></use>
+                  </svg>
+                </h3>
+                <p class="service__price">от 1150 рэ/час</p>
+              </div>
+              <div class="service__info">
+                <p class="service__text">
+                  Вы даже не представляете что тут будет. Но пока еще нет и придется подождать
+                </p>
+                <ul class="service__technologies">
+                  <li class="service__technologies-item">React.js</li>
+                  <li class="service__technologies-item">Vue.js</li>
+                </ul>
+              </div>
+              <a class="service__link" href="#">
+                <span>узнать первым</span>
+                <svg class="service__link-svg" width="29" height="23">
+                  <use xlink:href="img/sprite/sprite.svg#icon-mail"></use>
+                </svg>
+              </a>
+            </article>
           </li>
         </ul>
       </div>
