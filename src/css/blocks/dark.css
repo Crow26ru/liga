@@ -18,3 +18,7 @@
 .dark .vision-button__svg {
   opacity: 1;
 }
+
+.dark body {
+  cursor: url("../img/mini-logo-dark.svg"), auto;
+}

@@ -166,6 +166,10 @@
   color: var(--dark-color);
 }
 
+.service--disabled .service__title a {
+  cursor: inherit;
+}
+
 .service--disabled .service__price {
   opacity: 0.3;
 }
