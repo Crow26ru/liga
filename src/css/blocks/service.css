@@ -1,0 +1,323 @@
+.service {
+  position: relative;
+
+  display: grid;
+  align-items: start;
+  width: 100%;
+  padding-top: 33px;
+  padding-right: 36px;
+  padding-bottom: 52px;
+  padding-left: 113px;
+
+  background-color: var(--light-color);
+
+  transition: background-color 0.3s;
+
+  grid-template-columns: 9fr 11fr 267px;
+}
+
+.service::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 78px;
+  height: 100%;
+
+  background-image: url("../img/lightning-pattern-active.jpg");
+  background-repeat: repeat;
+}
+
+.service__title {
+  position: relative;
+
+  display: inline-block;
+  margin: 0;
+  padding-right: 40px;
+
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: var(--service-blue-color);
+
+  transition: color 0.3s;
+}
+
+.service__title-svg {
+  position: absolute;
+  top: 14px;
+  right: 0;
+
+  display: none;
+  width: 21px;
+  height: 22px;
+
+  fill: none;
+  stroke: currentColor;
+}
+
+.service__price {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+  color: var(--dark-color);
+
+  transition: color 0.3s;
+}
+
+.service__info {
+  padding-top: 8px;
+  padding-right: 42px;
+  padding-left: 10px;
+}
+
+.service__text {
+  margin: 0;
+  margin-bottom: 1.1875rem;
+
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--dark-color);
+
+  transition: color 0.3s;
+}
+
+.service__technologies {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.service__technologies-item {
+  position: relative;
+
+  padding-right: 20px;
+
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: var(--dark-color);
+
+  transition: color 0.3s;
+}
+
+.service__technologies-item::before {
+  content: "/";
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.service__technologies-item:last-child::before {
+  content: none;
+}
+
+.service__link {
+  display: flex;
+  align-items: center;
+  min-width: 267px;
+  margin-top: 18px;
+  padding-top: 11px;
+  padding-right: 16px;
+  padding-bottom: 11px;
+  padding-left: 26px;
+
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2.75rem;
+  color: var(--blue-color);
+  text-transform: uppercase;
+
+  background-color: var(--light-color);
+  border: 2px solid var(--blue-color);
+
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.service__link span {
+  margin-right: auto;
+  padding-right: 10px;
+}
+
+.service__link:hover,
+.service__link:focus {
+  color: #ffffff;
+
+  background-color: var(--service-blue-color);
+  border-color: var(--service-blue-color);
+}
+
+.service__link svg {
+  fill: none;
+  stroke: currentColor;
+}
+
+.service--disabled .service__title-svg {
+  display: block;
+}
+
+.service--disabled .service__title {
+  color: var(--dark-color);
+}
+
+.service--disabled .service__price {
+  opacity: 0.3;
+}
+
+.service--disabled .service__text {
+  opacity: 0.3;
+}
+
+.service--disabled .service__technologies-item {
+  opacity: 0.3;
+}
+
+.service.service--disabled::before {
+  background-image: url("../img/lightning-pattern-disabled.jpg");
+}
+
+@media (max-width: 1200px) {
+  .service {
+    grid-template-columns: 9fr 11fr 220px;
+    padding-left: 62px;
+  }
+
+  .service::before {
+    width: 40px;
+  }
+
+  .service__title {
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+
+  .service__title-svg {
+    top: 9px;
+  }
+
+  .service__price {
+    font-weight: 300;
+    line-height: 1.375rem;
+  }
+
+  .service__info {
+    padding-top: 5px;
+  }
+
+  .service__text {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .service__link {
+    min-width: 220px;
+    margin-top: 11px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-size: 0.6em;
+  }
+
+  .service__link-svg {
+    width: 25px;
+  }
+
+  .service__technologies-item {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+
+
+@media (max-width: 999px) {
+  .service {
+    grid-template-columns: 3fr 4fr;
+  }
+
+  .service__link {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .service {
+    grid-template-columns: 1fr;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 15px;
+    padding-bottom: 44px;
+  }
+
+  .service::before {
+    height: 20px;
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    background-image: url("../img/lightning-pattern-active-m.jpg");
+  }
+
+  .service.service--disabled::before {
+    background-image: url("../img/lightning-pattern-disabled-m.jpg");
+  }
+
+  .service__title {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+  }
+
+  .service__info {
+    padding: 0;
+    padding-top: 52px;
+  }
+
+  .service__price {
+    margin-top: -3px;
+  }
+
+  .service__text {
+    font-size: 1.0625rem;
+    line-height: 1.3125;
+  }
+
+  .service__technologies-item {
+    font-size: 1.0625rem;
+    line-height: 1.3125;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .service__title {
+    display: block;
+  }
+}
+
+@media (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
+  .service.service--disabled::before {
+    background-image: url("../img/lightning-pattern-disabled@2x.jpg");
+  }
+
+  .service::before {
+    background-image: url("../img/lightning-pattern-active@2x.jpg");
+  }
+}
+
+@media (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
+  .service.service--disabled::before {
+    background-image: url("../img/lightning-pattern-disabled-m@2x.jpg");
+  }
+
+  .service::before {
+    background-image: url("../img/lightning-pattern-active-m@2x.jpg");
+  }
+}

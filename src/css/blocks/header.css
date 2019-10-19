@@ -23,7 +23,7 @@
   justify-self: end;
 }
 
-.header__jop-link {
+.header__job-link {
   display: flex;
   align-items: center;
   align-self: center;
@@ -43,9 +43,9 @@
   justify-self: end;
 }
 
-.header__jop-link:hover,
-.header__jop-link:focus {
-  color: var(--light-color);
+.header__job-link:hover,
+.header__job-link:focus {
+  color: #ffffff;
 
   background-color: var(--pink-color);
 }
@@ -78,8 +78,8 @@
     grid-template-columns: 250px 1fr;
   }
 
-  .header__jop-link {
+  .header__job-link {
     display: none;
   }
-  
+
 }

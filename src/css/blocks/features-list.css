@@ -2,7 +2,7 @@
   display: grid;
   margin: 0;
   padding-top: 51px;
-  padding-left: 9px;
+  padding-left: 3px;
 
   list-style: none;
 
@@ -61,26 +61,25 @@
 @media (max-width: 1260px) {
   .features-list {
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 20px;
-    padding-right: 15px;
+    padding-left: 0;
   }
 
   .features-list__item {
-    padding-left: 10px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 20px;
     max-width: none;
   }
 
   .features-list__item::before {
-    left: 10px;
+    left: 0;
   }
 
   .features-list__item:nth-child(3n) {
-    padding-left: 10px;
+    padding-left: 0;
   }
 
   .features-list__item:nth-child(3n)::before {
-    left: 10px;
+    left: 0;
   }
 }
 
