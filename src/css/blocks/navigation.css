@@ -29,7 +29,7 @@
 
 .navigation__link:not([href]) {
   opacity: 0.3;
-  cursor: default;
+  cursor: inherit;
 }
 
 .navigation__link:hover,

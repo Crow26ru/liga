@@ -40,6 +40,7 @@ body {
   font-size: 1.125rem;
   background-color: var(--light-color);
   transition: background-color 0.3s;
+  cursor: url("../img/mini-logo.svg"), auto;
 }
 
 a {
@@ -508,6 +509,10 @@ template {
   opacity: 1;
 }
 
+.dark body {
+  cursor: url("../img/mini-logo-dark.svg"), auto;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1440px;
@@ -705,7 +710,7 @@ template {
 
 .navigation__link:not([href]) {
   opacity: 0.3;
-  cursor: default;
+  cursor: inherit;
 }
 
 .navigation__link:hover,
@@ -1081,6 +1086,10 @@ template {
 
 .service--disabled .service__title {
   color: var(--dark-color);
+}
+
+.service--disabled .service__title a {
+  cursor: inherit;
 }
 
 .service--disabled .service__price {
