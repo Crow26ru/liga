@@ -1,0 +1,15 @@
+html {
+  --dark-color: #000000;
+  --light-color: #ffffff;
+  --dekor-color: #2c39f2;
+  --blue-color: #2c39f2;
+  --pink-color: #ff1553;
+  --font-size-basic: 16px;
+  --font-line-basic: 1.333;
+}
+
+html.dark {
+  --dark-color: #ffffff;
+  --light-color: #1f1f1f;
+  --dekor-color: #ffffff;
+}

@@ -1,0 +1,124 @@
+.features-list {
+  display: grid;
+  margin: 0;
+  padding-top: 51px;
+  padding-left: 9px;
+
+  list-style: none;
+
+  counter-reset: features;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.features-list__item {
+  position: relative;
+
+  max-width: 380px;
+  margin-bottom: 64px;
+  padding-top: 54px;
+
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--dark-color);
+
+  counter-increment: features;
+}
+
+.features-list__item::before {
+  content: "0" counter(features);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: var(--dark-color);
+}
+
+.features-list__item:nth-child(3n) {
+  padding-left: 24px;
+}
+
+.features-list__item:nth-child(3n)::before {
+  left: 24px;
+}
+
+.features-list__item:nth-child(n + 4)::before {
+  content: "00" counter(features);
+}
+
+.features-list__item.features-list__item--tests::before {
+  content: none;
+}
+
+.features-list__tests-list {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1260px) {
+  .features-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
+  .features-list__item {
+    padding-left: 10px;
+    padding-right: 15px;
+    max-width: none;
+  }
+
+  .features-list__item::before {
+    left: 10px;
+  }
+
+  .features-list__item:nth-child(3n) {
+    padding-left: 10px;
+  }
+
+  .features-list__item:nth-child(3n)::before {
+    left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .features-list {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 13px;
+  }
+
+  .features-list__item {
+    padding-left: 60px;
+    padding-right: 0;
+    font-size: 1.0625rem;
+    padding-top: 0;
+    line-height: 1.3125rem;
+    margin-bottom: 17px;
+  }
+
+
+  .features-list__item::before {
+    left: 0;
+    top: -6px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .features-list__item:nth-child(3n) {
+    padding-left: 60px;
+  }
+
+  .features-list__item:nth-child(3n)::before {
+    left: 0;
+  }
+
+  .features-list__item.features-list__item--tests {
+    padding-left: 0;
+    padding-top: 22px;
+  }
+}

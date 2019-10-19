@@ -1,0 +1,162 @@
+.intro {
+  padding-top: 217px;
+}
+
+.intro__top-content {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+}
+
+
+.intro__headline {
+  display: flex;
+  padding-left: 13px;
+}
+
+.intro__drako {
+  display: block;
+  min-width: 190px;
+  margin-top: 6px;
+  margin-right: 63px;
+
+  color: var(--dark-color);
+
+  transition: color 0.3s;
+}
+
+#icon-drako {
+  fill: currentColor;
+}
+
+#icon-drako .light {
+  transition: fill 0.3s;
+
+  fill: var(--light-color);
+}
+
+
+.intro__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 4.375rem;
+  line-height: 5.625rem;
+  color: var(--dark-color);
+  text-transform: uppercase;
+
+  opacity: 0.9;
+
+  transition: color 0.3s;
+}
+
+.intro__title .intro__title-pale {
+  font-weight: 600;
+  font-size: 4.375rem;
+  line-height: 4.25rem;
+  color: var(--light-color);
+  text-transform: uppercase;
+  text-shadow: var(--dekor-color) 1px 0, var(--dekor-color) 1px 1px, var(--dekor-color) 0 1px, var(--dekor-color) -1px 1px, var(--dekor-color) -1px 0, var(--dekor-color) -1px -1px, var(--dekor-color) 0 -1px, var(--dekor-color) 1px -1px;
+
+  opacity: 0.9;
+
+  transition: all 0.3s;
+}
+
+.intro__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 24px;
+  padding-top: 14px;
+
+  list-style: none;
+}
+
+.intro__item {
+  margin-bottom: 26px;
+}
+
+.intro__text {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: var(--dark-color);
+}
+
+.intro__text--important {
+  color: var(--pink-color);
+}
+
+@media (max-width: 1260px) {
+  .intro__top-content {
+    grid-template-columns: 1fr;
+  }
+
+  .intro__headline {
+    padding: 0 30px;
+  }
+
+  .intro__title {
+    max-width: 600px;
+  }
+
+  .intro__list {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    padding-top: 104px;
+    padding-bottom: 40px;
+  }
+
+  .intro__headline {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .intro__drako {
+    width: 170px;
+    height: 192px;
+    min-width: 170px;
+    align-self: center;
+    margin-left: 46px;
+    margin-bottom: 6px;
+  }
+
+  .intro__title {
+    font-size: 3rem;
+    line-height: 3.125rem;
+    max-width: none;
+  }
+
+  .intro__title .intro__title-pale {
+    font-size: 3rem;
+    line-height: 2.875rem;
+  }
+
+  .intro__list {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 44px;
+  }
+
+  .intro__item {
+    margin-bottom: 15px;
+  }
+
+  .intro__text {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+

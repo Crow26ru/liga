@@ -1,9 +1,16 @@
-@import './blocks/container.css';
-
-div {
-  display: block;
-}
-
-h1 {
-  display: flex;
-}
+@import "./general/variables";
+@import "./general/scaffolding";
+@import "./general/normalize";
+@import "./general/fonts";
+@import "./blocks/dark";
+@import "./blocks/container";
+@import "./blocks/reset-button";
+@import "./blocks/header";
+@import "./blocks/header-left-group";
+@import "./blocks/weather-widget";
+@import "./blocks/vision-button";
+@import "./blocks/navigation";
+@import "./blocks/intro";
+@import "./blocks/features-list";
+@import "./blocks/tests-list";
+@import "./blocks/header-open";

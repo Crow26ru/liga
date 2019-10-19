@@ -1,0 +1,20 @@
+.dark .vision-button::after {
+  opacity: 0;
+}
+
+.dark .vision-button::before {
+  opacity: 1;
+}
+
+.dark .vision-button__handler {
+  right: -20px;
+  transform: rotate(360deg);
+}
+
+.dark .vision-button__handler::before {
+  opacity: 0;
+}
+
+.dark .vision-button__svg {
+  opacity: 1;
+}
