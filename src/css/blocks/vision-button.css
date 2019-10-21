@@ -7,6 +7,7 @@
   border: 3px solid var(--dark-color);
   border-radius: 15px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .vision-button::before {
