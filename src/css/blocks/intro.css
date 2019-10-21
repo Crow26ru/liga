@@ -26,11 +26,11 @@
   transition: color 0.3s;
 }
 
-#icon-drako {
+.intro__drako svg {
   fill: currentColor;
 }
 
-#icon-drako .light {
+.intro__drako .light {
   transition: fill 0.3s;
 
   fill: var(--light-color);

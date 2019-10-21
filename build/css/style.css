@@ -528,6 +528,7 @@ template {
 }
 
 .header {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -596,7 +597,7 @@ template {
   width: 100%;
 }
 
-#icon-logo .light {
+.header-left-group__logo .light {
   fill: var(--light-color);
   transition: fill 0.3s;
 }
@@ -620,6 +621,7 @@ template {
   border: 3px solid var(--dark-color);
   border-radius: 15px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .vision-button::before {
@@ -788,11 +790,11 @@ template {
   transition: color 0.3s;
 }
 
-#icon-drako {
+.intro__drako svg {
   fill: currentColor;
 }
 
-#icon-drako .light {
+.intro__drako .light {
   transition: fill 0.3s;
   fill: var(--light-color);
 }
@@ -1106,6 +1108,221 @@ template {
 
 .service.service--disabled::before {
   background-image: url("../img/lightning-pattern-disabled.jpg");
+}
+
+.projects {
+  position: relative;
+  padding-top: 87px;
+}
+
+.projects::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
+  height: 3px;
+  background-color: var(--dark-color);
+  transition: border-color 0.3s;
+}
+
+.projects__title {
+  margin: 0;
+  margin-bottom: 49px;
+  font-weight: 300;
+  font-size: 3.75rem;
+  line-height: 3.875rem;
+  color: var(--dark-color);
+}
+
+.projects__wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  box-sizing: content-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translate3d(0, 0, 0);
+  transition-property: transform;
+}
+
+.projects__slider {
+  position: relative;
+  z-index: 1;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.projects__slide {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.projects__button {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  width: 8.75%;
+  margin-top: 1px;
+  color: var(--dekor-color);
+  transition: color 0.3s;
+}
+
+.projects__button:hover,
+.projects__button:focus {
+  color: var(--pink-color);
+}
+
+.projects__button--next {
+  right: 0;
+  left: auto;
+  transform: rotate(180deg);
+}
+
+.projects__button--prev {
+  right: auto;
+  left: 0;
+}
+
+.projects__button-svg {
+  width: 100%;
+  fill: none;
+  stroke: currentColor;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 63.122%;
+  left: -1.282%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.project__title {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.project__title a {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: -1px;
+  color: var(--blue-color);
+  transition: color 0.3s;
+}
+
+.project__title a:hover,
+.project__title a:focus {
+  color: var(--dark-color);
+}
+
+.project__laptop {
+  position: relative;
+  padding-top: 57.882%;
+  color: var(--light-color);
+  z-index: 1;
+}
+
+.project__laptop-image-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.project__laptop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--dark-color);
+  border-radius: 15px;
+  transition: border-color 0.3s;
+}
+
+.project__laptop::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -2.65%;
+  z-index: 8;
+  width: 105.3%;
+  padding-top: 3.13%;
+  background-color: var(--light-color);
+  border: 3px solid var(--dark-color);
+  border-radius: 0 0 15px 15px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.project__laptop-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project__laptop-bottom-svg {
+  position: absolute;
+  bottom: 0;
+  left: -2.65%;
+  z-index: 8;
+  width: 103.37%;
+  height: auto;
+  fill: currentColor;
+}
+
+.project__mobile {
+  position: absolute;
+  bottom: 0;
+  width: 27.075%;
+  padding-top: 49.338%;
+  z-index: 2;
+  right: -4.11%;
+}
+
+.project__mobile-image-inner {
+  border: 3px solid var(--dark-color);
+  box-sizing: border-box;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: border-color 0.3s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.project__mobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--dark-color);
+  border-radius: 15px;
+  transition: border-color 0.3s;
 }
 
 @media (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
@@ -1493,6 +1710,27 @@ template {
     line-height: 1.3125;
     padding-right: 15px;
   }
+
+  .projects {
+    padding-top: 45px;
+  }
+
+  .projects__title {
+    font-size: 2rem;
+    line-height: 2.375rem;
+    margin-bottom: 71px;
+  }
+
+  .project__title {
+    margin-bottom: 13px;
+  }
+
+  .project__title a {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+    letter-spacing: normal;
+    opacity: 0.9;
+  }
 }
 
 @media (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
@@ -1502,6 +1740,56 @@ template {
 
   .service::before {
     background-image: url("../img/lightning-pattern-active-m@2x.jpg");
+  }
+}
+
+@media (max-width: 600px) {
+  .projects .container {
+    padding: 0;
+  }
+
+  .projects::after {
+    content: none;
+  }
+
+  .projects__title {
+    padding: 0 16px;
+  }
+
+  .projects__wrapper {
+    padding-left: 4px;
+  }
+
+  .projects__slide {
+    width: 90%;
+  }
+
+  .projects__button {
+    display: none;
+  }
+
+  .project {
+    width: 88%;
+  }
+
+  .project__title {
+    margin-top: 13px;
+    margin-bottom: 0;
+    order: 1;
+    width: 90%;
+  }
+
+  .project__laptop {
+    padding-top: 63%;
+  }
+
+  .project__laptop::after {
+    border-radius: 0 0 8px 8px;
+    width: 104%;
+  }
+
+  .project__mobile {
+    display: none;
   }
 }
 
