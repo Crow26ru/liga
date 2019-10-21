@@ -16,4 +16,6 @@
 @import "./blocks/header-open";
 @import "./blocks/services";
 @import "./blocks/service";
+@import "./blocks/projects";
+@import "./blocks/project";
 @import "./blocks/awards";

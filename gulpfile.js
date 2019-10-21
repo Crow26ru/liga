@@ -13,12 +13,14 @@ const objectFit = require(`postcss-object-fit-images`);
 const cssnano = require('cssnano');
 const cssimport = require("postcss-import");
 const gcmq = require('gulp-group-css-media-queries');
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
 
 const config = {
   dist: `build`,
   src: `src`,
   fonts: `src/fonts/**/*.{woff,woff2}`,
-  img: `src/img/**/*.{png,jpg}`,
+  img: `src/img/**/*.{png,jpg,webp}`,
   html: `src/*.html`,
   libs: `src/libs/**/*.{js,css}`,
   css: {
@@ -38,6 +40,7 @@ const config = {
       'src/js/color-theme-change.js',
       'src/js/header.js',
       'src/js/vh-mobile.js',
+      'src/js/projects-slider.js',
     ],
     watch: `src/js/**/*.js`,
     mode: `iife`,
@@ -76,6 +79,9 @@ gulp.task(`sprite`, () => {
 gulp.task(`copyHtml`, () => {
   return gulp
     .src(config.html)
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(config.dist));
 });
