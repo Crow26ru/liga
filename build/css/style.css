@@ -22,6 +22,10 @@ html.dark {
   box-sizing: border-box;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
 html {
   min-width: 320px;
   height: 100%;
