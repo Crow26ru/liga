@@ -5,6 +5,8 @@ html {
   --blue-color: #2c39f2;
   --service-blue-color: #2c39f2;
   --pink-color: #ff1553;
+  --gray-light-color: #f2f2f2;
+  --gray-dark-color: #d3d3d3;
   --font-size-basic: 16px;
   --font-line-basic: 1.333;
 }
@@ -1108,6 +1110,116 @@ template {
   background-image: url("../img/lightning-pattern-disabled.jpg");
 }
 
+.awards {
+  color: var(--dark-color);
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.awards span {
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.awards__title {
+  font-weight: 300;
+  font-size: 3.75rem;
+  line-height: 3.875rem;
+  margin: 0 0 52px;
+}
+
+.awards__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 9px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.awards__item {
+  padding-top: 43px;
+  margin-right: 3.5%;
+  margin-bottom: 40px;
+  width: 22%;
+  min-width: 200px;
+  max-width: 294px;
+}
+
+.awards__item:last-child {
+  margin-right: 0;
+}
+
+.awards__item:hover .awards__frame {
+  border-color: var(--gray-light-color);
+}
+
+.awards__item:hover .awards__rope::before,
+.awards__item:hover .awards__rope::after {
+  background-color: var(--gray-light-color);
+}
+
+.awards__frame {
+  position: relative;
+  width: 190px;
+  height: 111px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--gray-dark-color);
+  transition: border-color 0.3s;
+}
+
+.awards__frame--incline {
+  transform: rotate(-2deg);
+}
+
+.awards__rope {
+  position: absolute;
+  top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 109px;
+  height: 42px;
+}
+
+.awards__rope::before,
+.awards__rope::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  height: 3px;
+  width: 67px;
+  background-color: var(--gray-dark-color);
+  transition: background-color 0.3s;
+}
+
+.awards__rope::before {
+  right: 44%;
+  transform: rotate(-35deg);
+}
+
+.awards__rope::after {
+  left: 44%;
+  transform: rotate(35deg);
+}
+
+.awards__item-title {
+  color: var(--blue-color);
+}
+
+.awards__extra {
+  width: 60%;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.awards__extra a {
+  color: var(--blue-color);
+}
+
 @media (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
   .service.service--disabled::before {
     background-image: url("../img/lightning-pattern-disabled@2x.jpg");
@@ -1309,6 +1421,16 @@ template {
   }
 }
 
+@media (max-width: 1023px) {
+  .awards__frame {
+    width: 100%;
+  }
+
+  .awards__extra {
+    width: 80%;
+  }
+}
+
 @media (max-width: 999px) {
   .service {
     grid-template-columns: 3fr 4fr;
@@ -1492,6 +1614,45 @@ template {
     font-size: 1.0625rem;
     line-height: 1.3125;
     padding-right: 15px;
+  }
+
+  .awards {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .awards span {
+    font-size: 1.0625rem;
+    line-height: 1.3125rem;
+  }
+
+  .awards__title {
+    font-size: 2rem;
+    line-height: 2.375rem;
+    margin-bottom: 28px;
+  }
+
+  .awards__item {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+
+  .awards__item--ambitious {
+    display: none;
+  }
+
+  .awards__frame {
+    max-width: 290px;
+    height: 150px;
+    margin-bottom: 14px;
+  }
+
+  .awards__extra {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
