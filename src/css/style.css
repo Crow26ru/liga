@@ -3,6 +3,7 @@
 @import "./general/normalize";
 @import "./general/fonts";
 @import "./blocks/dark";
+@import "./blocks/swiper";
 @import "./blocks/container";
 @import "./blocks/reset-button";
 @import "./blocks/header";
@@ -18,4 +19,6 @@
 @import "./blocks/service";
 @import "./blocks/projects";
 @import "./blocks/project";
+@import "./blocks/thanks";
+@import "./blocks/thank-item";
 @import "./blocks/awards";

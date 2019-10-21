@@ -41,6 +41,7 @@ const config = {
       'src/js/header.js',
       'src/js/vh-mobile.js',
       'src/js/projects-slider.js',
+      'src/js/thanks-slider.js',
     ],
     watch: `src/js/**/*.js`,
     mode: `iife`,
