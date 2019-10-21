@@ -13,6 +13,8 @@ const objectFit = require(`postcss-object-fit-images`);
 const cssnano = require('cssnano');
 const cssimport = require("postcss-import");
 const gcmq = require('gulp-group-css-media-queries');
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
 
 const config = {
   dist: `build`,
@@ -76,6 +78,9 @@ gulp.task(`sprite`, () => {
 gulp.task(`copyHtml`, () => {
   return gulp
     .src(config.html)
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(config.dist));
 });

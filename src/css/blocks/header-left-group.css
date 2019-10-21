@@ -23,7 +23,7 @@
   width: 100%;
 }
 
-#icon-logo .light {
+.header-left-group__logo .light {
   fill: var(--light-color);
   transition: fill 0.3s;
 }
