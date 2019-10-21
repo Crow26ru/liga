@@ -64,7 +64,7 @@
 
   opacity: 0.9;
 
-  transition: all 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
 }
 
 .intro__list {
@@ -88,6 +88,7 @@
   font-size: 2.5rem;
   line-height: 1.1;
   color: var(--dark-color);
+  transition: color 0.3s;
 }
 
 .intro__text--important {
@@ -132,6 +133,11 @@
     align-self: center;
     margin-left: 46px;
     margin-bottom: 6px;
+  }
+
+  .intro__drako svg {
+    width: 100%;
+    height: auto;
   }
 
   .intro__title {

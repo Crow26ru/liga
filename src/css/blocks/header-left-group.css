@@ -12,6 +12,8 @@
 }
 
 .header-left-group__logo {
+  width: 120px;
+  height: 27px;
   color: var(--dark-color);
   transition: color 0.3s;
   position: relative;

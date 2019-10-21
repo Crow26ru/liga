@@ -490,14 +490,6 @@ template {
   src: url(../fonts/IBMPlexSansSemiBold.woff2) format("woff2"), url(../fonts/IBMPlexSansSemiBold.woff) format("woff");
 }
 
-.dark .vision-button::after {
-  opacity: 0;
-}
-
-.dark .vision-button::before {
-  opacity: 1;
-}
-
 .dark .vision-button__handler {
   right: -20px;
   transform: rotate(360deg);
@@ -564,7 +556,7 @@ template {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 6;
   padding: 27px 57px;
   background-color: var(--light-color);
   transition: background-color 0.3s;
@@ -617,6 +609,8 @@ template {
 }
 
 .header-left-group__logo {
+  width: 120px;
+  height: 27px;
   color: var(--dark-color);
   transition: color 0.3s;
   position: relative;
@@ -653,35 +647,10 @@ template {
   border-radius: 15px;
   cursor: pointer;
   flex-shrink: 0;
-}
-
-.vision-button::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 3px;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/sun-light.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 13px 13px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.vision-button::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  right: 8px;
-  width: 10px;
-  height: 10px;
-  background-image: url("../img/moon-light.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 9px 9px;
-  transition: opacity 0.3s;
+  background-image: url("../img/sun-light.svg"), url("../img/moon-light.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 13px 13px, 9px 9px;
+  background-position: left 3px top 3px, right 8px top 5px;
 }
 
 .vision-button__handler {
@@ -852,7 +821,7 @@ template {
   margin-top: -8px;
   text-shadow: var(--dekor-color) 1px 0, var(--dekor-color) 1px 1px, var(--dekor-color) 0 1px, var(--dekor-color) -1px 1px, var(--dekor-color) -1px 0, var(--dekor-color) -1px -1px, var(--dekor-color) 0 -1px, var(--dekor-color) 1px -1px;
   opacity: 0.9;
-  transition: all 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
 }
 
 .intro__list {
@@ -874,6 +843,7 @@ template {
   font-size: 2.5rem;
   line-height: 1.1;
   color: var(--dark-color);
+  transition: color 0.3s;
 }
 
 .intro__text--important {
@@ -900,6 +870,7 @@ template {
   line-height: 2rem;
   color: var(--dark-color);
   counter-increment: features;
+  transition: color 0.3s;
 }
 
 .features-list__item::before {
@@ -911,6 +882,7 @@ template {
   font-size: 2.5rem;
   line-height: 1.1;
   color: var(--dark-color);
+  transition: color 0.3s;
 }
 
 .features-list__item:nth-child(3n) {
@@ -943,6 +915,20 @@ template {
 
 .tests-list__item {
   margin-right: 21px;
+}
+
+.tests-list__item a {
+  color: var(--blue-color);
+  transition: color 0.3s;
+}
+
+.tests-list__item a:hover,
+.tests-list__item a:focus {
+  color: var(--pink-color);
+}
+
+.tests-list__svg {
+  fill: currentColor;
 }
 
 .services {
@@ -1011,6 +997,16 @@ template {
   line-height: 1.1;
   color: var(--service-blue-color);
   transition: color 0.3s;
+}
+
+.service__title a {
+  color: var(--service-blue-color);
+  transition: color 0.3s;
+}
+
+.service__title a:hover,
+.service__title a:focus {
+  color: var(--dark-color);
 }
 
 .service__title-svg {
@@ -1113,16 +1109,16 @@ template {
   stroke: currentColor;
 }
 
-.service--disabled .service__title-svg {
-  display: block;
-}
-
 .service--disabled .service__title {
   color: var(--dark-color);
 }
 
+.service--disabled .service__title-svg {
+  display: block;
+}
+
 .service--disabled .service__title a {
-  cursor: inherit;
+  color: var(--dark-color);
 }
 
 .service--disabled .service__price {
@@ -1164,6 +1160,7 @@ template {
   font-size: 3.75rem;
   line-height: 3.875rem;
   color: var(--dark-color);
+  transition: color 0.3s;
 }
 
 .projects__button {
@@ -1400,7 +1397,7 @@ template {
 
 .thank-item__link:hover,
 .thank-item__link:focus {
-  color: var(--service-blue-color);
+  color: var(--pink-color);
 }
 
 .thank-item__author-content {
@@ -1677,7 +1674,7 @@ template {
     transition: none;
   }
 
-  .header-open #icon-logo .light {
+  .header-open .header-left-group__logo .light {
     fill: #000000;
     transition: none;
   }
@@ -1800,6 +1797,11 @@ template {
     margin-bottom: 6px;
   }
 
+  .intro__drako svg {
+    width: 100%;
+    height: auto;
+  }
+
   .intro__title {
     font-size: 3rem;
     line-height: 3.125rem;
@@ -1826,42 +1828,6 @@ template {
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .features-list {
-    grid-template-columns: 1fr;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 13px;
-  }
-
-  .features-list__item {
-    padding-left: 60px;
-    padding-right: 0;
-    font-size: 1.0625rem;
-    padding-top: 0;
-    line-height: 1.3125rem;
-    margin-bottom: 17px;
-  }
-
-  .features-list__item::before {
-    left: 0;
-    top: -6px;
-    font-size: 1.5rem;
-    line-height: 1.5;
-  }
-
-  .features-list__item:nth-child(3n) {
-    padding-left: 60px;
-  }
-
-  .features-list__item:nth-child(3n)::before {
-    left: 0;
-  }
-
-  .features-list__item.features-list__item--tests {
-    padding-left: 0;
-    padding-top: 22px;
   }
 
   .header-open .navigation__wrap {
@@ -2066,7 +2032,55 @@ template {
   }
 }
 
+@media (max-width: 680px) {
+  .features-list__item {
+    font-size: 1.0625rem;
+    line-height: 1.3125rem;
+  }
+
+  .features-list__item::before {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+
 @media (max-width: 600px) {
+  .features-list {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 13px;
+  }
+
+  .features-list__item {
+    padding-left: 60px;
+    padding-right: 0;
+    font-size: 1.0625rem;
+    padding-top: 0;
+    line-height: 1.3125rem;
+    margin-bottom: 17px;
+  }
+
+  .features-list__item::before {
+    left: 0;
+    top: -6px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .features-list__item:nth-child(3n) {
+    padding-left: 60px;
+  }
+
+  .features-list__item:nth-child(3n)::before {
+    left: 0;
+  }
+
+  .features-list__item.features-list__item--tests {
+    padding-left: 0;
+    padding-top: 22px;
+  }
+
   .projects .container {
     padding: 0;
   }

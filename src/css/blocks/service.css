@@ -44,6 +44,17 @@
   transition: color 0.3s;
 }
 
+.service__title a {
+  color: var(--service-blue-color);
+
+  transition: color 0.3s;
+}
+
+.service__title a:hover,
+.service__title a:focus {
+  color: var(--dark-color);
+}
+
 .service__title-svg {
   position: absolute;
   top: 14px;
@@ -158,17 +169,18 @@
   stroke: currentColor;
 }
 
-.service--disabled .service__title-svg {
-  display: block;
-}
-
 .service--disabled .service__title {
   color: var(--dark-color);
 }
 
-.service--disabled .service__title a {
-  cursor: inherit;
+.service--disabled .service__title-svg {
+  display: block;
 }
+
+.service--disabled .service__title a {
+  color: var(--dark-color);
+}
+
 
 .service--disabled .service__price {
   opacity: 0.3;

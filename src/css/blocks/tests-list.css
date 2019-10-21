@@ -9,3 +9,17 @@
 .tests-list__item {
   margin-right: 21px;
 }
+
+.tests-list__item a {
+  color: var(--blue-color);
+  transition: color 0.3s;
+}
+
+.tests-list__item a:hover,
+.tests-list__item a:focus {
+  color: var(--pink-color);
+}
+
+.tests-list__svg {
+  fill: currentColor;
+}
