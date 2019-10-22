@@ -67,7 +67,7 @@ gulp.task(`copy`, function () {
 
 gulp.task(`sprite`, () => {
   return gulp
-    .src([config.sprite.src])
+    .src(config.sprite.src)
     .pipe(
       svgstore({
         inlineSvg: true
