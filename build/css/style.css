@@ -1051,6 +1051,7 @@ template {
 
 .service__technologies {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1688,8 +1689,8 @@ template {
   }
 
   .service {
-    grid-template-columns: 9fr 11fr 220px;
     padding-left: 62px;
+    grid-template-columns: 9fr 11fr 220px;
   }
 
   .service::before {
@@ -1859,18 +1860,18 @@ template {
   }
 
   .service {
-    grid-template-columns: 1fr;
-    padding-left: 17px;
-    padding-right: 17px;
     padding-top: 15px;
+    padding-right: 17px;
     padding-bottom: 44px;
+    padding-left: 17px;
+    grid-template-columns: 1fr;
   }
 
   .service::before {
-    height: 20px;
-    width: 100%;
-    bottom: 0;
     top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
     background-image: url("../img/lightning-pattern-active-m.jpg");
   }
 
@@ -1899,9 +1900,9 @@ template {
   }
 
   .service__technologies-item {
+    padding-right: 15px;
     font-size: 1.0625rem;
     line-height: 1.3125;
-    padding-right: 15px;
   }
 
   .projects {
