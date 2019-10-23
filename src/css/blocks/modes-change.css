@@ -1,0 +1,54 @@
+.modes-change {
+  display: none;
+}
+
+.modes-change:checked ~ .modes__label .modes__normal-rocket-svg-inner {
+  z-index: 0;
+
+  display: none;
+}
+
+.modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner {
+  z-index: 1;
+}
+
+.modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner circle {
+  fill: #000000;
+  stroke: #000000;
+}
+
+.modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner svg,
+.modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner .body-rocket {
+  stroke-opacity: 1;
+  stroke-width: 3;
+}
+
+.modes-change:checked ~ .modes__normal-content {
+  z-index: 2;
+
+  visibility: hidden;
+}
+
+.modes-change:checked ~ .modes__reactive-content .modes__text {
+  visibility: visible;
+}
+
+.modes-change:checked ~ .modes__reactive-content .modes__subtitle {
+  opacity: 1;
+}
+
+.modes-change:checked ~ .modes__reactive-content .modes__subtitle-unvisible-fragment {
+  visibility: visible;
+}
+
+.modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner g[mask].wings {
+  display: block;
+
+  transform: rotateX(0);
+}
+
+.modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner .wings {
+  display: none;
+
+  transform: rotateX(90deg);
+}

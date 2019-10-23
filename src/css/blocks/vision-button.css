@@ -8,41 +8,10 @@
   border-radius: 15px;
   cursor: pointer;
   flex-shrink: 0;
-}
-
-.vision-button::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 3px;
-
-  width: 15px;
-  height: 15px;
-
-  background-image: url("../img/sun-light.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 13px 13px;
-  opacity: 0;
-
-  transition: opacity 0.3s;
-}
-
-.vision-button::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  right: 8px;
-
-  width: 10px;
-  height: 10px;
-
-  background-image: url("../img/moon-light.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 9px 9px;
-
-  transition: opacity 0.3s;
+  background-image: url("../img/sun-light.svg"), url("../img/moon-light.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 13px 13px, 9px 9px;
+  background-position: left 3px top 3px, right 8px top 5px;
 }
 
 .vision-button__handler {

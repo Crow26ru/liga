@@ -37,7 +37,7 @@
 
 .thank-item__link:hover,
 .thank-item__link:focus {
-  color: var(--service-blue-color);
+  color: var(--pink-color);
 }
 
 .thank-item__author-content {

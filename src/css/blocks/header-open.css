@@ -43,7 +43,7 @@
     transition: none;
   }
 
-  .header-open #icon-logo .light {
+  .header-open .header-left-group__logo .light {
     fill: #000000;
     transition: none;
   }

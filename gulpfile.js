@@ -106,9 +106,9 @@ gulp.task(`style`, function () {
     .src(config.css.src)
     .pipe(plumber())
     .pipe(postcss([
-      autoprefixer(),
-      objectFit(),
       cssimport(),
+      objectFit(),
+      autoprefixer(),
     ]))
     .pipe(gcmq())
     .pipe(gulp.dest(config.css.dist))
