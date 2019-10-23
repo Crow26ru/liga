@@ -52,3 +52,14 @@
 
   transform: rotateX(90deg);
 }
+
+@media (max-width: 810px) {
+  .modes-change:checked ~ .modes__normal-content {
+    visibility: visible;
+  }
+
+  .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner svg,
+  .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner .body-rocket {
+    stroke-width: 8;
+  }
+}

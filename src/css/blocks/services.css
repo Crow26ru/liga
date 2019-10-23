@@ -32,6 +32,7 @@
 @media (max-width: 767px) {
   .services {
     padding-top: 39px;
+    padding-bottom: 25px;
   }
 
   .services__title {
