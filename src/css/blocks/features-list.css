@@ -36,7 +36,7 @@
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 1.1;
-  color: var(--dark-color);
+  color: var(--features-count-color);
   transition: color 0.3s;
 }
 

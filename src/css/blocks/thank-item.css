@@ -1,6 +1,7 @@
 .thank-item {
   display: grid;
   width: 68.4%;
+  max-width: 986px;
   padding: 38px 15px 46px 38px;
 
   background-color: var(--blue-color);
@@ -65,6 +66,12 @@
   color: var(--light-color);
 
   transition: color 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .thank-item {
+    max-width: none;
+  }
 }
 
 @media (max-width: 767px) {

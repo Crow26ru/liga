@@ -5,6 +5,7 @@ html {
   --blue-color: #2c39f2;
   --service-blue-color: #2c39f2;
   --pink-color: #ff1553;
+  --features-count-color: #ff1553;
   --gray-light-color: #f2f2f2;
   --gray-dark-color: #d3d3d3;
   --font-size-basic: 16px;
@@ -16,6 +17,7 @@ html.dark {
   --light-color: #1f1f1f;
   --dekor-color: #ffffff;
   --service-blue-color: #ff1553;
+  --features-count-color: #ffffff;
 }
 
 * {
@@ -957,7 +959,7 @@ template {
   transition: color 0.3s;
 }
 
-.intro__text--important {
+.intro__text-important {
   color: var(--pink-color);
 }
 
@@ -994,7 +996,7 @@ template {
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 1.1;
-  color: var(--dark-color);
+  color: var(--features-count-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1559,6 +1561,14 @@ template {
   background-image: url("../img/thanks-bullet.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.thanks__pagination-bullet:hover,
+.thanks__pagination-bullet:focus {
+  opacity: 0.7;
 }
 
 .thanks__pagination-bullet--active {
@@ -1568,6 +1578,7 @@ template {
 .thank-item {
   display: grid;
   width: 68.4%;
+  max-width: 986px;
   padding: 38px 15px 46px 38px;
   background-color: var(--blue-color);
   grid-template-columns: 1fr 217px;
@@ -2443,6 +2454,10 @@ template {
     -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
+
+  .thank-item {
+    max-width: none;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -2834,6 +2849,11 @@ template {
 
   .thanks__slider-wrapper {
     padding: 0 16px;
+  }
+
+  .thanks__pagination-bullet:hover,
+  .thanks__pagination-bullet:focus {
+    opacity: 1;
   }
 
   .thank-item {
