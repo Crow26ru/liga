@@ -5,6 +5,7 @@ html {
   --blue-color: #2c39f2;
   --service-blue-color: #2c39f2;
   --pink-color: #ff1553;
+  --features-count-color: #ff1553;
   --gray-light-color: #f2f2f2;
   --gray-dark-color: #d3d3d3;
   --font-size-basic: 16px;
@@ -16,6 +17,7 @@ html.dark {
   --light-color: #1f1f1f;
   --dekor-color: #ffffff;
   --service-blue-color: #ff1553;
+  --features-count-color: #ffffff;
 }
 
 * {
@@ -957,7 +959,7 @@ template {
   transition: color 0.3s;
 }
 
-.intro__text--important {
+.intro__text-important {
   color: var(--pink-color);
 }
 
@@ -994,7 +996,7 @@ template {
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 1.1;
-  color: var(--dark-color);
+  color: var(--features-count-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1183,9 +1185,10 @@ template {
   font-size: 1.5rem;
   line-height: 2rem;
   color: var(--dark-color);
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
+  background-color: var(--light-color);
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  -o-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .service__technologies {
@@ -1208,9 +1211,10 @@ template {
   font-size: 1.5rem;
   line-height: 1.75rem;
   color: var(--dark-color);
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
+  background-color: var(--light-color);
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  -o-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .service__technologies-item::before {
@@ -1557,6 +1561,14 @@ template {
   background-image: url("../img/thanks-bullet.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.thanks__pagination-bullet:hover,
+.thanks__pagination-bullet:focus {
+  opacity: 0.7;
 }
 
 .thanks__pagination-bullet--active {
@@ -1566,6 +1578,7 @@ template {
 .thank-item {
   display: grid;
   width: 68.4%;
+  max-width: 986px;
   padding: 38px 15px 46px 38px;
   background-color: var(--blue-color);
   grid-template-columns: 1fr 217px;
@@ -1887,11 +1900,11 @@ template {
   -webkit-transform-origin: center center;
   -ms-transform-origin: center center;
   transform-origin: center center;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  -o-transition: transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
 }
 
 .modes__label:hover .modes__reactive-rocket-svg-inner .wings {
@@ -2404,6 +2417,10 @@ template {
   .service__price {
     font-weight: 300;
     line-height: 1.375rem;
+    background-color: var(--light-color);
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
   }
 
   .service__info {
@@ -2432,6 +2449,14 @@ template {
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.5;
+    background-color: var(--light-color);
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+  }
+
+  .thank-item {
+    max-width: none;
   }
 }
 
@@ -2463,24 +2488,151 @@ template {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 810px) {
+  .modes {
+    position: relative;
+  }
+
+  .modes__title {
+    margin-bottom: 19px;
+    padding-right: 20px;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+
+  .modes__normal {
+    position: static;
+  }
+
+  .modes__normal-content {
+    padding-top: 0;
+    padding-right: 65px;
+  }
+
+  .modes__subtitle {
+    margin-bottom: 1px;
+    padding-left: 0;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+    letter-spacing: normal;
+    opacity: 0.9;
+  }
+
+  .modes__text {
+    font-size: 1.0625rem;
+    line-height: 1.3125rem;
+  }
+
   .modes__label {
-    right: -1px;
+    top: 8px;
+    right: 0;
     left: auto;
+    z-index: 5;
     width: 329px;
-    height: 55px;
+    height: 95px;
     overflow: hidden;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    -webkit-transform-origin: right center;
-    -ms-transform-origin: right center;
-    transform-origin: right center;
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
   }
 
   .modes__label svg {
     width: 100%;
     height: auto;
+  }
+
+  .modes__label svg path {
+    stroke-width: 8px;
+  }
+
+  .modes__label svg .check-mark {
+    stroke-width: 3px;
+  }
+
+  .modes__reactive-rocket-svg-inner {
+    top: 5px;
+    width: 324px;
+    height: 156px;
+  }
+
+  .modes__normal-rocket-svg-inner {
+    top: 31px;
+  }
+
+  .modes__normal-rocket-svg-inner svg {
+    width: 130px;
+    height: 103px;
+  }
+
+  .modes__reactive-rocket-svg-inner .wings {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+
+  .modes__reactive-content {
+    position: static;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+    margin-bottom: 24px;
+    padding-top: 0;
+    padding-right: 65px;
+  }
+
+  .modes__reactive-content .modes__text {
+    visibility: visible;
+  }
+
+  .modes__reactive-content .modes__subtitle {
+    opacity: 1;
+  }
+
+  .modes__subtitle-unvisible-fragment {
+    padding-right: 0;
+    visibility: visible;
+  }
+
+  .modes__so-so {
+    margin-top: 8px;
+    padding-top: 57px;
+  }
+
+  .modes__so-so-svg-inner {
+    width: 280px;
+  }
+
+  .modes__so-so-svg-inner svg {
+    width: 100%;
+  }
+
+  .modes__so-so-title {
+    margin-bottom: 58px;
+    padding-left: 54px;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+    letter-spacing: normal;
+    opacity: 0.9;
+  }
+
+  .modes__so-so-text {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 1.0625rem;
+    line-height: 1.3125rem;
+  }
+
+  .modes-change:checked ~ .modes__normal-content {
+    visibility: visible;
+  }
+
+  .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner svg,
+  .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner .body-rocket {
+    stroke-width: 8;
   }
 }
 
@@ -2585,6 +2737,7 @@ template {
 
   .services {
     padding-top: 39px;
+    padding-bottom: 25px;
   }
 
   .services__title {
@@ -2698,6 +2851,11 @@ template {
     padding: 0 16px;
   }
 
+  .thanks__pagination-bullet:hover,
+  .thanks__pagination-bullet:focus {
+    opacity: 1;
+  }
+
   .thank-item {
     grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
@@ -2772,6 +2930,13 @@ template {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .modes {
+    padding-top: 21px;
+    padding-bottom: 65px;
+  }
+
+
 
   .companies {
     padding-top: 18px;

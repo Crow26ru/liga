@@ -32,6 +32,12 @@
   background-image: url("../img/thanks-bullet.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  transition: opacity 0.3s;
+}
+
+.thanks__pagination-bullet:hover,
+.thanks__pagination-bullet:focus {
+  opacity: 0.7;
 }
 
 .thanks__pagination-bullet--active {
@@ -63,5 +69,10 @@
 
   .thanks__slider-wrapper {
     padding: 0 16px;
+  }
+
+  .thanks__pagination-bullet:hover,
+  .thanks__pagination-bullet:focus {
+    opacity: 1;
   }
 }

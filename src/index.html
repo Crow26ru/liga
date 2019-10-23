@@ -38,7 +38,6 @@
 
   <meta name="keywords" content="верстка сайта, вёрстка лендинга, заказать лендинг пейдж, ит аутсорсинг, продакшн сайт, верстка страниц, заказать верстку, верстка лендинга, услуги верстки, верстка сайта цена, заказать верстку сайта, аутсорс разработка, компании аутсорс разработчики, сделать сайт">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="stylesheet" href="libs/swiper/swiper.min.css"> -->
 
 </head>
 <body>
@@ -108,13 +107,13 @@
           <ul class="intro__list">
             <li class="intro__item">
               <p class="intro__text">
-                <span class="intro__text--important">297</span>
+                <span class="intro__text-important">297</span>
                 успешных проектов
               </p>
             </li>
             <li class="intro__item">
               <p class="intro__text">
-                <span class="intro__text--important">2 дня</span>
+                <span class="intro__text-important">2 дня</span>
                 на запуск? это&nbsp;про&nbsp;нас
               </p>
             </li>
@@ -142,21 +141,21 @@
           <li class="features-list__item features-list__item--tests">
             <ul class="features-list__tests-list tests-list">
               <li class="tests-list__item">
-                <a href="https://developers.google.com/web/tools/lighthouse" class="tests-list__link" target="_blank" rel="noreferrer">
+                <a href="https://developers.google.com/web/tools/lighthouse" class="tests-list__link" target="_blank" aria-label="lighthouse" rel="noreferrer">
                   <svg class="tests-list__svg" width="39" height="40">
                     <use xlink:href="img/sprite/sprite.svg#icon-lighthouse"></use>
                   </svg>
                 </a>
               </li>
               <li class="tests-list__item">
-                <a class="tests-list__link">
+                <a class="tests-list__link" href="live.browserstack.com" target="_blank" aria-label="browserstack" rel="noreferrer">
                   <svg class="tests-list__svg" width="42" height="42">
                     <use xlink:href="img/sprite/sprite.svg#icon-union-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="tests-list__item">
-                <a class="tests-list__link">
+                <a class="tests-list__link" href="https://www.ideatheorem.com/ux-audit/" target="_blank" aria-label="ideatheorem" rel="noreferrer">
                   <svg class="tests-list__svg" width="46" height="40">
                     <use xlink:href="img/sprite/sprite.svg#icon-union-2"></use>
                   </svg>
@@ -245,12 +244,12 @@
           <div class="modes__normal">
             <input class="visually-hidden modes-change" type="checkbox" name="modes-change" id="modes-change">
             <label class="modes__label" for="modes-change" aria-label="Выбор режима">
-              <div class="modes__normal-rocket-svg-inner">
+              <span class="modes__normal-rocket-svg-inner">
                 <include src="build/img/normal-roсket.svg"></include>
-              </div>
-              <div class="modes__reactive-rocket-svg-inner">
+              </span>
+              <span class="modes__reactive-rocket-svg-inner">
                 <include src="build/img/reactive-rocket.svg"></include>
-              </div>
+              </span>
             </label>
             <div class="modes__normal-content modes__bigger-content">
               <h3 class="modes__subtitle">Ракета</h3>
@@ -469,7 +468,8 @@
       </div>
     </section>
 
-    <sectiion class="companies">
+    <section class="companies">
+      <h2 class="visually-hidden">Компании партнеров</h2>
       <div class="companies__slider-wrapper">
         <div class="swiper-container">
           <ul class="swiper-wrapper">
@@ -564,7 +564,7 @@
         </div>
       </div>
       <a href="#" class="companies__all">Список всех компаний</a>
-    </sectiion>
+    </section>
 
     <section class="awards">
       <div class="container">
@@ -574,7 +574,7 @@
             <a href="https://tagline.ru/outsource-rating/2018/" title="Рейтинг аутсорс-продакшенов на сайте каталога компаний digital-рынка Tagline">
               <div class="awards__frame">
                 <span class="awards__rope"></span>
-                <img src="../img/awards-tagline.png" width="66px" height="66px" alt="Медаль рейтинга Tagline">
+                <img src="../img/awards-tagline.png" width="66" height="66" alt="Медаль рейтинга Tagline">
               </div>
               <span class="awards__item-title">Рейтинг Tagline</span>
               <span>50 место, но мы лезем выше</span>
@@ -584,7 +584,7 @@
             <a href="https://awards.specia.pro/" title="Петербургская Digital-премия SPECIA AWARDS">
               <div class="awards__frame">
                 <span class="awards__rope"></span>
-                <img src="../img/awards-specia.png" width="138px" height="27px" alt="Логотип компании Specia">
+                <img src="../img/awards-specia.png" width="138" height="27" alt="Логотип компании Specia">
               </div>
               <span class="awards__item-title">Specia Digital Awards</span>
               <span>Открытие и эксперт года</span>
@@ -594,7 +594,7 @@
             <a href="https://rating.dimaivanov.me/" title="Рейтинг Димы Иванова">
               <div class="awards__frame">
                 <span class="awards__rope"></span>
-                <img src="../img/awards-golden-magnifier.svg" width="52px" height="59.6px"  alt="Золотая Лупа">
+                <img src="../img/awards-golden-magnifier.svg" width="52" height="60"  alt="Золотая Лупа">
               </div>
               <span class="awards__item-title">Рейтинг Димы Иванова</span>
               <span>Золотая Лупа, спасибо, мы ценим</span>

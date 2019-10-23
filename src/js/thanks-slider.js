@@ -4,7 +4,7 @@
   var thankSlides = [].slice.call(document.querySelectorAll('.thank-item'));
   var thankSwiper = new Swiper('.thanks__slider', {
     slidesPerView: 1,
-    spaceBetween: 43,
+    spaceBetween: 0,
     centeredSlides: true,
     initialSlide: 1,
     init: false,
@@ -20,7 +20,8 @@
     },
     breakpoints: {
       1200: {
-        slidesPerView: 1.44,
+        slidesPerView: 'auto',
+        spaceBetween: 43,
       },
     }
   });

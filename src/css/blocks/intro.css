@@ -91,7 +91,7 @@
   transition: color 0.3s;
 }
 
-.intro__text--important {
+.intro__text-important {
   color: var(--pink-color);
 }
 
