@@ -1,5 +1,6 @@
 html {
   --dark-color: #000000;
+  --white-color: #ffffff;
   --light-color: #ffffff;
   --dekor-color: #2c39f2;
   --blue-color: #2c39f2;
@@ -1561,14 +1562,21 @@ template {
   background-image: url("../img/thanks-bullet.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
 
-.thanks__pagination-bullet:hover,
-.thanks__pagination-bullet:focus {
+.thanks__pagination-bullet:hover {
   opacity: 0.7;
+}
+
+.thanks__pagination-bullet:focus {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .thanks__pagination-bullet--active {
@@ -1807,7 +1815,7 @@ template {
   font-weight: 300;
   font-size: 3.75rem;
   line-height: 1.1;
-  color: var(--light-color);
+  color: var(--white-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1853,7 +1861,7 @@ template {
   top: -8px;
   left: 5px;
   z-index: 1;
-  color: var(--light-color);
+  color: var(--white-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1868,7 +1876,7 @@ template {
   position: absolute;
   top: -92px;
   left: 5px;
-  color: var(--light-color);
+  color: var(--white-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1891,7 +1899,7 @@ template {
 }
 
 .modes__reactive-rocket-svg-inner g[mask] {
-  display: none;
+  opacity: 0;
 }
 
 .modes__reactive-rocket-svg-inner .wings {
@@ -1919,7 +1927,7 @@ template {
   font-weight: 300;
   font-size: 3.75rem;
   line-height: 3.625rem;
-  color: var(--light-color);
+  color: var(--white-color);
   letter-spacing: -1px;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -1933,7 +1941,7 @@ template {
   font-weight: 300;
   font-size: 1.875rem;
   line-height: 2.1875rem;
-  color: var(--light-color);
+  color: var(--white-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1979,7 +1987,7 @@ template {
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--light-color);
+  color: var(--white-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1999,7 +2007,7 @@ template {
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 3.625rem;
-  color: var(--light-color);
+  color: var(--white-color);
   letter-spacing: -1px;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -2013,7 +2021,7 @@ template {
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: var(--light-color);
+  color: var(--white-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -2061,15 +2069,13 @@ template {
 }
 
 .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner g[mask].wings {
-  display: block;
+  opacity: 1;
   -webkit-transform: rotateX(0);
   transform: rotateX(0);
 }
 
 .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner .wings {
-  display: none;
-  -webkit-transform: rotateX(90deg);
-  transform: rotateX(90deg);
+  opacity: 0;
 }
 
 .companies {
@@ -2851,9 +2857,14 @@ template {
     padding: 0 16px;
   }
 
-  .thanks__pagination-bullet:hover,
-  .thanks__pagination-bullet:focus {
+  .thanks__pagination-bullet:hover {
     opacity: 1;
+  }
+
+  .thanks__pagination-bullet:focus {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 
   .thank-item {

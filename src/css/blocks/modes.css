@@ -13,7 +13,7 @@
   font-weight: 300;
   font-size: 3.75rem;
   line-height: 1.1;
-  color: var(--light-color);
+  color: var(--white-color);
 
   transition: color 0.3s;
 }
@@ -57,7 +57,7 @@
   left: 5px;
   z-index: 1;
 
-  color: var(--light-color);
+  color: var(--white-color);
 
   transition: color 0.3s;
 }
@@ -72,7 +72,7 @@
   top: -92px;
   left: 5px;
 
-  color: var(--light-color);
+  color: var(--white-color);
 
   transition: color 0.3s;
 }
@@ -94,7 +94,7 @@
 }
 
 .modes__reactive-rocket-svg-inner g[mask] {
-  display: none;
+  opacity: 0;
 }
 
 .modes__reactive-rocket-svg-inner .wings {
@@ -116,7 +116,7 @@
   font-weight: 300;
   font-size: 3.75rem;
   line-height: 3.625rem;
-  color: var(--light-color);
+  color: var(--white-color);
   letter-spacing: -1px;
 
   transition: color 0.3s;
@@ -130,7 +130,7 @@
   font-weight: 300;
   font-size: 1.875rem;
   line-height: 2.1875rem;
-  color: var(--light-color);
+  color: var(--white-color);
 
   transition: color 0.3s;
 }
@@ -180,7 +180,7 @@
   top: 0;
   left: 0;
 
-  color: var(--light-color);
+  color: var(--white-color);
 
   transition: color 0.3s;
 }
@@ -201,7 +201,7 @@
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 3.625rem;
-  color: var(--light-color);
+  color: var(--white-color);
   letter-spacing: -1px;
 
   transition: color 0.3s;
@@ -215,7 +215,7 @@
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: var(--light-color);
+  color: var(--white-color);
 
   transition: color 0.3s;
 }
