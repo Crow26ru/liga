@@ -22,3 +22,5 @@
 @import "./blocks/thanks";
 @import "./blocks/thank-item";
 @import "./blocks/awards";
+@import "./blocks/modes";
+@import "./blocks/modes-change";
