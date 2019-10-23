@@ -30,7 +30,10 @@ const config = {
     min: `style.min.css`
   },
   sprite: {
-    src: `src/img/icons/*.svg`,
+    src: [
+      'src/img/icons/*.svg',
+      'src/img/logos/*.svg'
+    ],
     dist: `build/img/sprite`,
     name: `sprite.svg`
   },
@@ -42,6 +45,7 @@ const config = {
       'src/js/vh-mobile.js',
       'src/js/projects-slider.js',
       'src/js/thanks-slider.js',
+      'src/js/companies-slider.js'
     ],
     watch: `src/js/**/*.js`,
     mode: `iife`,
@@ -67,7 +71,7 @@ gulp.task(`copy`, function () {
 
 gulp.task(`sprite`, () => {
   return gulp
-    .src([config.sprite.src])
+    .src(config.sprite.src)
     .pipe(
       svgstore({
         inlineSvg: true
