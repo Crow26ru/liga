@@ -1183,9 +1183,10 @@ template {
   font-size: 1.5rem;
   line-height: 2rem;
   color: var(--dark-color);
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
+  background-color: var(--light-color);
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  -o-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .service__technologies {
@@ -1208,9 +1209,10 @@ template {
   font-size: 1.5rem;
   line-height: 1.75rem;
   color: var(--dark-color);
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
+  background-color: var(--light-color);
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  -o-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .service__technologies-item::before {
@@ -2404,6 +2406,10 @@ template {
   .service__price {
     font-weight: 300;
     line-height: 1.375rem;
+    background-color: var(--light-color);
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
   }
 
   .service__info {
@@ -2432,6 +2438,10 @@ template {
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.5;
+    background-color: var(--light-color);
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
   }
 }
 
