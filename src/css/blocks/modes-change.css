@@ -56,8 +56,16 @@
     visibility: visible;
   }
 
+  .modes-change:checked ~ .modes__label svg .check-mark--vertical {
+    display: block;
+
+    stroke-width: 3px;
+  }
+
   .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner svg,
   .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner .body-rocket {
+    stroke: currentColor;
+    stroke-opacity: 1;
     stroke-width: 8;
   }
 }

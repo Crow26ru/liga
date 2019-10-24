@@ -47,6 +47,16 @@
   background-image: url("../img/thanks-bullet-active.svg");
 }
 
+@media (max-width: 1200px) {
+  .thanks__pagination-bullet:hover {
+    opacity: 1;
+  }
+
+  .thanks__pagination-bullet:focus {
+    transform: none;
+  }
+}
+
 @media (max-width: 767px) {
   .thanks {
     padding-top: 37px;
@@ -72,13 +82,5 @@
 
   .thanks__slider-wrapper {
     padding: 0 16px;
-  }
-
-  .thanks__pagination-bullet:hover {
-    opacity: 1;
-  }
-
-  .thanks__pagination-bullet:focus {
-    transform: none;
   }
 }

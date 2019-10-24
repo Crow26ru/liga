@@ -26,7 +26,7 @@
     <rect width="340" height="300" transform="matrix(1 0 0 -1 258 459)" fill="url(#pattern3)" />
   </g>
   <path d="M1.5 114V87L51.5 114"  stroke-width="3"/>
-  <path class="wings" d="M158 114V1L371 114" stroke-width="3"></path>
+  <path class="wings" d="M158 114V6L371 114" stroke-width="3"></path>
   <path class="wings" d="M158 240V353L367 240"  stroke-width="3" />
   <path class="wings"  d="M367 240V281L443 238"  stroke-width="3" />
   <path class="wings" d="M370 116V75L446 114" stroke-width="3"/>
@@ -36,6 +36,7 @@
      stroke-width="3" />
   <circle cx="674" cy="176" r="21" />
   <path class="check-mark" d="M664 174L673.5 183.5L684.5 168" stroke="white" stroke-width="3" />
+  <path class="check-mark check-mark--vertical" d="M676,165.5l-9.5,9.5l15.5,11" stroke="white" stroke-width="3"/>
 
   <defs>
     <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

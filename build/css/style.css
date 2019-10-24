@@ -563,6 +563,23 @@ template {
   margin: 0 auto;
 }
 
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
+  height: auto;
+}
+
+.swiper-container-autoheight .swiper-wrapper {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-transition-property: height, -webkit-transform;
+  transition-property: height, -webkit-transform;
+  -o-transition-property: transform, height;
+  transition-property: transform, height;
+  transition-property: transform, height, -webkit-transform;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1440px;
@@ -2056,6 +2073,10 @@ template {
   stroke: currentColor;
 }
 
+.modes__label svg .check-mark--vertical {
+  display: none;
+}
+
 .modes__so-so-title {
   position: relative;
   z-index: 1;
@@ -2675,6 +2696,16 @@ template {
     transition: background-color 0.3s;
   }
 
+  .thanks__pagination-bullet:hover {
+    opacity: 1;
+  }
+
+  .thanks__pagination-bullet:focus {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
   .thank-item {
     max-width: none;
   }
@@ -2730,9 +2761,9 @@ template {
   }
 
   .modes__normal-content {
+    position: static;
     padding-top: 0;
     padding-right: 65px;
-    position: static;
   }
 
   .modes__subtitle {
@@ -2775,7 +2806,7 @@ template {
   }
 
   .modes__label svg .check-mark {
-    stroke-width: 3px;
+    display: none;
   }
 
   .modes__reactive-rocket-svg-inner {
@@ -2785,12 +2816,18 @@ template {
   }
 
   .modes__normal-rocket-svg-inner {
-    top: 31px;
+    top: 30px;
   }
 
   .modes__normal-rocket-svg-inner svg {
     width: 130px;
     height: 103px;
+  }
+
+  .modes__reactive-rocket-svg-inner svg,
+  .modes__reactive-rocket-svg-inner .body-rocket {
+    stroke: #6e76f1;
+    stroke-opacity: 1;
   }
 
   .modes__reactive-rocket-svg-inner .wings {
@@ -2807,6 +2844,10 @@ template {
     margin-bottom: 24px;
     padding-top: 0;
     padding-right: 65px;
+  }
+
+  .modes__reactive-rocket-svg-inner circle {
+    stroke-width: 6px;
   }
 
   .modes__reactive-content .modes__text {
@@ -2855,8 +2896,15 @@ template {
     visibility: visible;
   }
 
+  .modes-change:checked ~ .modes__label svg .check-mark--vertical {
+    display: block;
+    stroke-width: 3px;
+  }
+
   .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner svg,
   .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner .body-rocket {
+    stroke: currentColor;
+    stroke-opacity: 1;
     stroke-width: 8;
   }
 }
@@ -3081,16 +3129,6 @@ template {
     padding: 0 16px;
   }
 
-  .thanks__pagination-bullet:hover {
-    opacity: 1;
-  }
-
-  .thanks__pagination-bullet:focus {
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
-
   .thank-item {
     grid-auto-rows: -webkit-max-content;
     grid-auto-rows: max-content;
@@ -3174,8 +3212,6 @@ template {
     padding-top: 21px;
     padding-bottom: 65px;
   }
-
-
 
   .companies {
     padding-top: 18px;
