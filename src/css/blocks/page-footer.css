@@ -45,11 +45,12 @@
 .page-footer__policy a,
 .page-footer__info-block a {
   border-bottom: 1px solid rgba(225, 225, 225, 0.5);
-  transition: border-bottom-color 0.3s;
+  transition: color 0.3s, border-bottom-color 0.3s;
 }
 
 .page-footer__policy a:hover,
 .page-footer__info-block a:hover {
+  color: var(--pink-color);
   border-bottom-color: var(--pink-color);
 }
 

@@ -33,11 +33,14 @@
 }
 
 .awards__item {
+  display: flex;
+  flex-direction: column;
   padding-top: 43px;
+
   /*margin-right: 3.5%;*/
   margin-bottom: 40px;
   min-width: 200px;
-  max-width: 294px;
+  max-width: 250px;
 }
 
 .awards__item:last-child {
@@ -167,6 +170,7 @@
     max-width: none;
     margin-right: 0;
     margin-bottom: 26px;
+    padding-right: 15px;
   }
 
   .awards__item--ambitious {
@@ -190,7 +194,7 @@
 
 @media (max-width: 600px) {
   .awards__list {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 100%;
   }
 
   .awards__frame {
@@ -199,9 +203,8 @@
 
   .awards__item {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    padding-right: 0;
   }
 }
 
