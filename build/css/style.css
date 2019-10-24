@@ -2027,6 +2027,10 @@ template {
   transition: color 0.3s;
 }
 
+.modes__label .modes__reactive-rocket-svg-inner mask path {
+  stroke-width: 0;
+}
+
 .modes-change {
   display: none;
 }
@@ -2514,6 +2518,7 @@ template {
   .modes__normal-content {
     padding-top: 0;
     padding-right: 65px;
+    position: static;
   }
 
   .modes__subtitle {
