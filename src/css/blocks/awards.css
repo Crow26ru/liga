@@ -1,6 +1,6 @@
 .awards {
   color: var(--dark-color);
-  padding-top: 130px;
+  padding-top: 133px;
   padding-bottom: 130px;
 }
 
@@ -19,8 +19,11 @@
 }
 
 .awards__list {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
   margin-top: 0;
   margin-bottom: 9px;
@@ -31,9 +34,8 @@
 
 .awards__item {
   padding-top: 43px;
-  margin-right: 3.5%;
+  /*margin-right: 3.5%;*/
   margin-bottom: 40px;
-  width: 22%;
   min-width: 200px;
   max-width: 294px;
 }
@@ -44,6 +46,11 @@
 
 .awards__item:hover .awards__frame {
   border-color: var(--gray-light-color);
+
+  animation-name: frame-bounce;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 
 .awards__item:hover .awards__rope::before,
@@ -67,7 +74,7 @@
 }
 
 .awards__frame--incline {
-  transform: rotate(-2deg);
+  transform: rotate(-2deg) translateX(2%);
 }
 
 .awards__rope {
@@ -115,6 +122,11 @@
 
 .awards__extra a {
   color: var(--blue-color);
+  transition: color 0.3s;
+}
+
+.awards__extra a:hover {
+  color: var(--pink-color);
 }
 
 @media (max-width: 1365px) {
@@ -124,8 +136,8 @@
 }
 
 @media (max-width: 1023px) {
-  .awards__frame {
-    width: 100%;
+  .awards__list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -147,8 +159,11 @@
     margin-bottom: 28px;
   }
 
+  .awards__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .awards__item {
-    width: 50%;
     max-width: none;
     margin-right: 0;
     margin-bottom: 26px;
@@ -159,7 +174,7 @@
   }
 
   .awards__frame {
-    max-width: 290px;
+    width: 250px;
     height: 150px;
 
     margin-bottom: 14px;
@@ -173,9 +188,35 @@
   }
 }
 
-@media (max-width: 649px) {
+@media (max-width: 600px) {
+  .awards__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .awards__frame {
+    width: 290px;
+  }
+
   .awards__item {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
+@keyframes frame-bounce {
+  0%, 100% {
+    transform: rotate(0) translateX(0);
+  }
+
+  /*влево*/
+  12.5%, 62.5% {
+    transform: rotate(2deg) translateX(-2%);
+  }
+
+  /*вправо*/
+
+  37.5%, 87.5% {
+    transform: rotate(-2deg) translateX(2%);
+  }
+}
