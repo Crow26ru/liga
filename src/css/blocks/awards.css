@@ -1,7 +1,7 @@
 .awards {
   color: var(--dark-color);
   padding-top: 133px;
-  padding-bottom: 130px;
+  padding-bottom: 150px;
 }
 
 .awards span {
@@ -200,7 +200,8 @@
   .awards__item {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
