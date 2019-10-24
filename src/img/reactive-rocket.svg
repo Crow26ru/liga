@@ -2,25 +2,25 @@
   xmlns:xlink="http://www.w3.org/1999/xlink">
 
   <mask id="mask0" maskUnits="userSpaceOnUse" x="158" y="0" width="209" height="113">
-    <path d="M158 0V113H367L158 0Z" fill="#C4C4C4" />
+    <path d="M158 0V113H367L158 0Z" fill="#ffffff" />
   </mask>
   <g mask="url(#mask0)" class="wings">
     <rect x="125" y="-68" width="383" height="280" fill="url(#pattern0)" />
   </g>
   <mask id="mask1" maskUnits="userSpaceOnUse" x="158" y="241" width="209" height="113">
-    <path d="M158 354V241H367L158 354Z" fill="#C4C4C4" />
+    <path d="M158 354V241H367L158 354Z" fill="#ffffff" />
   </mask>
   <g mask="url(#mask1)" class="wings">
     <rect x="508" y="425" width="383" height="280" transform="rotate(-180 508 425)" fill="url(#pattern1)" />
   </g>
   <mask id="mask2" maskUnits="userSpaceOnUse" x="367" y="72" width="76" height="41">
-    <path d="M367 72V113H443L367 72Z" fill="#C4C4C4" />
+    <path d="M367 72V113H443L367 72Z" fill="#ffffff" />
   </mask>
   <g mask="url(#mask2)" class="wings">
     <rect x="258" y="-106" width="340" height="300" fill="url(#pattern2)" />
   </g>
   <mask id="mask3" maskUnits="userSpaceOnUse" x="367" y="240" width="76" height="41">
-    <path d="M367 281V240H443L367 281Z" fill="#C4C4C4" />
+    <path d="M367 281V240H443L367 281Z" fill="#ffffff" />
   </mask>
   <g mask="url(#mask3)" class="wings">
     <rect width="340" height="300" transform="matrix(1 0 0 -1 258 459)" fill="url(#pattern3)" />

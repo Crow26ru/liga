@@ -78,7 +78,7 @@
   .thank-item {
     grid-auto-rows: max-content;
     grid-template-columns: 1fr;
-    padding: 26px 15px 9px 19px;
+    padding: 26px 15px 26px 19px;
   }
 
   .thank-item__text-content {
