@@ -190,6 +190,11 @@
   stroke: currentColor;
 }
 
+
+.modes__label svg .check-mark--vertical {
+  display: none;
+}
+
 .modes__so-so-title {
   position: relative;
   z-index: 1;
@@ -256,9 +261,10 @@
   }
 
   .modes__normal-content {
+    position: static;
+
     padding-top: 0;
     padding-right: 65px;
-    position: static;
   }
 
   .modes__subtitle {
@@ -301,7 +307,7 @@
   }
 
   .modes__label svg .check-mark {
-    stroke-width: 3px;
+    display: none;
   }
 
   .modes__reactive-rocket-svg-inner {
@@ -312,12 +318,19 @@
   }
 
   .modes__normal-rocket-svg-inner {
-    top: 31px;
+    top: 30px;
   }
+
 
   .modes__normal-rocket-svg-inner svg {
     width: 130px;
     height: 103px;
+  }
+
+  .modes__reactive-rocket-svg-inner svg,
+  .modes__reactive-rocket-svg-inner .body-rocket {
+    stroke: #6e76f1;
+    stroke-opacity: 1;
   }
 
   .modes__reactive-rocket-svg-inner .wings {
@@ -331,6 +344,10 @@
     margin-bottom: 24px;
     padding-top: 0;
     padding-right: 65px;
+  }
+
+  .modes__reactive-rocket-svg-inner circle {
+    stroke-width: 6px;
   }
 
   .modes__reactive-content .modes__text {
@@ -384,8 +401,5 @@
   .modes {
     padding-top: 21px;
     padding-bottom: 65px;
-  }
-
-  .modes__so-so-text {
   }
 }

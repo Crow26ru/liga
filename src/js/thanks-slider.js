@@ -7,6 +7,7 @@
     spaceBetween: 0,
     centeredSlides: true,
     initialSlide: 1,
+    autoHeight: true,
     init: false,
     pagination: {
       el: '.thanks__pagination',
@@ -31,9 +32,11 @@
       item.style.height = '';
     });
 
-    thankSlides.forEach(function(item) {
-      item.style.height = item.parentNode.clientHeight + 'px';
-    });
+    if (window.innerWidth >= 1200) {
+      thankSlides.forEach(function(item) {
+        item.style.height = item.parentNode.clientHeight + 'px';
+      });
+    }
   };
 
   thankSwiper.on('init', changeHeightThankSlides);
