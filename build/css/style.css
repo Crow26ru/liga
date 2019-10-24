@@ -1668,7 +1668,7 @@ template {
 
 .awards {
   color: var(--dark-color);
-  padding-top: 130px;
+  padding-top: 133px;
   padding-bottom: 130px;
 }
 
@@ -1686,13 +1686,10 @@ template {
 }
 
 .awards__list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 0;
   margin-bottom: 9px;
   padding-left: 0;
@@ -1701,9 +1698,8 @@ template {
 
 .awards__item {
   padding-top: 43px;
-  margin-right: 3.5%;
+  /*margin-right: 3.5%;*/
   margin-bottom: 40px;
-  width: 22%;
   min-width: 200px;
   max-width: 294px;
 }
@@ -1714,6 +1710,14 @@ template {
 
 .awards__item:hover .awards__frame {
   border-color: var(--gray-light-color);
+  -webkit-animation-name: frame-bounce;
+  animation-name: frame-bounce;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .awards__item:hover .awards__rope::before,
@@ -1745,9 +1749,9 @@ template {
 }
 
 .awards__frame--incline {
-  -webkit-transform: rotate(-2deg);
-  -ms-transform: rotate(-2deg);
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg) translateX(2%);
+  -ms-transform: rotate(-2deg) translateX(2%);
+  transform: rotate(-2deg) translateX(2%);
 }
 
 .awards__rope {
@@ -1800,6 +1804,51 @@ template {
 
 .awards__extra a {
   color: var(--blue-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.awards__extra a:hover {
+  color: var(--pink-color);
+}
+
+@-webkit-keyframes frame-bounce {
+  0%, 100% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+  }
+
+  /*влево*/
+  12.5%, 62.5% {
+    -webkit-transform: rotate(2deg) translateX(-2%);
+    transform: rotate(2deg) translateX(-2%);
+  }
+
+  /*вправо*/
+  37.5%, 87.5% {
+    -webkit-transform: rotate(-2deg) translateX(2%);
+    transform: rotate(-2deg) translateX(2%);
+  }
+}
+
+@keyframes frame-bounce {
+  0%, 100% {
+    -webkit-transform: rotate(0) translateX(0);
+    transform: rotate(0) translateX(0);
+  }
+
+  /*влево*/
+  12.5%, 62.5% {
+    -webkit-transform: rotate(2deg) translateX(-2%);
+    transform: rotate(2deg) translateX(-2%);
+  }
+
+  /*вправо*/
+  37.5%, 87.5% {
+    -webkit-transform: rotate(-2deg) translateX(2%);
+    transform: rotate(-2deg) translateX(2%);
+  }
 }
 
 .modes {
@@ -2097,6 +2146,7 @@ template {
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding-top: 37px;
 }
 
 .companies__slider-wrapper {
@@ -2104,7 +2154,7 @@ template {
 }
 
 .companies__item {
-  height: 120px;
+  height: 110px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2146,7 +2196,7 @@ template {
 }
 
 .companies__all {
-  margin-top: 60px;
+  margin-top: 52px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2157,8 +2207,7 @@ template {
   justify-content: center;
   width: 418px;
   max-width: 100%;
-  padding: 10px 32px;
-  padding-bottom: 11px;
+  padding: 11px 32px;
   font-weight: 600;
   font-size: 1rem;
   line-height: 2.75rem;
@@ -2473,8 +2522,8 @@ template {
 }
 
 @media (max-width: 1023px) {
-  .awards__frame {
-    width: 100%;
+  .awards__list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -2919,8 +2968,11 @@ template {
     margin-bottom: 28px;
   }
 
+  .awards__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .awards__item {
-    width: 50%;
     max-width: none;
     margin-right: 0;
     margin-bottom: 26px;
@@ -2931,7 +2983,7 @@ template {
   }
 
   .awards__frame {
-    max-width: 290px;
+    width: 250px;
     height: 150px;
     margin-bottom: 14px;
   }
@@ -2975,12 +3027,6 @@ template {
   .features-list__item::before {
     font-size: 1.5rem;
     line-height: 1.5;
-  }
-}
-
-@media (max-width: 649px) {
-  .awards__item {
-    width: 100%;
   }
 }
 
@@ -3076,6 +3122,26 @@ template {
 
   .project__mobile {
     display: none;
+  }
+
+  .awards__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .awards__frame {
+    width: 290px;
+  }
+
+  .awards__item {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .companies__item {
