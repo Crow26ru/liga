@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
   var companies = document.querySelector('.companies');
 

@@ -595,7 +595,7 @@ template {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -605,6 +605,33 @@ template {
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
+}
+
+.header--scroll {
+  position: fixed;
+}
+
+.header--scroll .header-left-group__logo-additional-svg {
+  display: block;
+}
+
+.header--scroll .header-left-group__vision-button {
+  display: none;
+}
+
+.header--scroll .header-left-group__logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.header--scroll .header__left-group {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .header__wrap {

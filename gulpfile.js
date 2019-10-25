@@ -47,6 +47,7 @@ const config = {
       'src/js/thanks-slider.js',
       'src/js/companies-slider.js',
       'src/js/bigger-content.js',
+      'src/js/scroll-header.js',
     ],
     watch: `src/js/**/*.js`,
     mode: `iife`,
