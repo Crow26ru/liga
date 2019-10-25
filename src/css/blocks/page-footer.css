@@ -5,6 +5,8 @@
   color: var(--light-color);
 }
 
+
+
 .page-footer p {
   margin-top: 0;
   margin-bottom: 0;
@@ -122,6 +124,14 @@
 
 .page-footer__footer a:hover {
   color: var(--pink-color);
+}
+
+.page-footer--contacts {
+  padding-top: 101px;
+}
+
+.page-footer--contacts .contacts-hidden {
+  display: none;
 }
 
 @media (max-width: 1023px) {

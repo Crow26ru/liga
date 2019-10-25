@@ -49,6 +49,7 @@ const config = {
       'src/js/bigger-content.js',
       'src/js/scroll-header.js',
       'src/js/frame.js',
+      'src/js/contacts-map.js',
     ],
     watch: `src/js/**/*.js`,
     mode: `iife`,

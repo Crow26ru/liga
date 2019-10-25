@@ -45,7 +45,6 @@
           {
             if (st > lastScrollTop) {
               // downscroll code
-
               swiper.slideNext();
             } else {
               // upscroll code
