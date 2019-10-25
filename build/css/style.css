@@ -1,3 +1,18 @@
+:root {
+  --dark-color: #000000;
+  --white-color: #ffffff;
+  --light-color: #ffffff;
+  --dekor-color: #2c39f2;
+  --blue-color: #2c39f2;
+  --service-blue-color: #2c39f2;
+  --pink-color: #ff1553;
+  --features-count-color: #ff1553;
+  --gray-light-color: #f2f2f2;
+  --gray-dark-color: #d3d3d3;
+  --font-size-basic: 16px;
+  --font-line-basic: 1.333;
+}
+
 html {
   --dark-color: #000000;
   --white-color: #ffffff;
@@ -93,6 +108,12 @@ input[type="radio"].visually-hidden {
 #color-theme {
   position: fixed;
   top: 0;
+}
+
+.color-theme-identifier {
+  position: absolute;
+  width: 0;
+  height: 0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -748,8 +769,8 @@ template {
   flex-shrink: 0;
   background-image: url("../img/sun-light.svg"), url("../img/moon-light.svg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 13px 13px, 9px 9px;
-  background-position: left 3px top 3px, right 8px top 5px;
+  background-size: 13px 13px, auto 11px;
+  background-position: left 3px top 3px, right 5px top 5px;
 }
 
 .vision-button__handler {
@@ -3472,5 +3493,11 @@ template {
 @media (max-width: 400px) {
   .service__title {
     display: block;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .color-theme-identifier {
+    position: fixed;
   }
 }
