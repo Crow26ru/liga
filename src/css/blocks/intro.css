@@ -36,6 +36,12 @@
   fill: var(--light-color);
 }
 
+.intro__drako .flag {
+  transition: fill 0.3s;
+
+  fill: var(--dekor-color);
+}
+
 
 .intro__title {
   display: flex;
@@ -60,7 +66,7 @@
   color: var(--light-color);
   text-transform: uppercase;
   margin-top: -8px;
-  text-shadow: var(--dekor-color) 1px 0, var(--dekor-color) 1px 1px, var(--dekor-color) 0 1px, var(--dekor-color) -1px 1px, var(--dekor-color) -1px 0, var(--dekor-color) -1px -1px, var(--dekor-color) 0 -1px, var(--dekor-color) 1px -1px;
+  text-shadow: var(--intro-text-color) 1px 0, var(--intro-text-color) 1px 1px, var(--intro-text-color) 0 1px, var(--intro-text-color) -1px 1px, var(--intro-text-color) -1px 0, var(--intro-text-color) -1px -1px, var(--intro-text-color) 0 -1px, var(--intro-text-color) 1px -1px;
 
   opacity: 0.9;
 

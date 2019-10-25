@@ -6,10 +6,10 @@
     '--white-color: #ffffff',
     '--light-color: #ffffff',
     '--dekor-color: #2c39f2',
+    '--invers-dekor-color: #ff1553',
+    '--intro-text-color: #2c39f2;',
     '--blue-color: #2c39f2',
-    '--service-blue-color: #2c39f2',
     '--pink-color: #ff1553',
-    '--features-count-color: #ff1553',
     '--gray-light-color: #f2f2f2',
     '--gray-dark-color: #d3d3d3'
   ];
@@ -17,11 +17,11 @@
     '--dark-color: #ffffff',
     '--white-color: #ffffff',
     '--light-color: #1f1f1f',
-    '--dekor-color: #ffffff',
+    '--dekor-color: #ff1553',
+    '--invers-dekor-color: #2c39f2',
+    '--intro-text-color: #ffffff;',
     '--blue-color: #2c39f2',
-    '--service-blue-color: #ff1553',
     '--pink-color: #ff1553',
-    '--features-count-color: #ffffff',
     '--gray-light-color: #f2f2f2',
     '--gray-dark-color: #d3d3d3'
   ];
@@ -30,7 +30,7 @@
   var colorThemeIdentifier = document.querySelector('.color-theme-identifier');
   var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-  var isIE = document.documentMode;
+  var isIE = !!document.documentMode;
   var isFireFox = navigator.userAgent.search("Firefox");
 
   if (isChrome || isSafari || isFireFox) {
