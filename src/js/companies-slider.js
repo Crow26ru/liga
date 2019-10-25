@@ -39,7 +39,7 @@
     var swiper = new Swiper(swiperContainer, swiperSettings);
 
     var onWindowScroll = function() {
-      if(!companies.classList.contains('open')) {
+      if(!companies.classList.contains('companies--open')) {
         if (isInViewport(sliderWrapper)) {
           var st = window.pageYOffset || document.documentElement.scrollTop;
           {
@@ -58,25 +58,25 @@
     };
 
     toggle.addEventListener('click', function (evt) {
-      if (companies.classList.contains('open')) {
-        evt.preventDefault();
-        swiper = new Swiper(swiperContainer, swiperSettings);
-        swiper.updateSlides();
-        swiper.updateProgress();
-        companies.classList.remove('open');
-        companiesList.classList.remove('container');
-        toggle.innerText = 'Список всех компаний';
-        window.addEventListener('scroll',  onWindowScroll);
+      // if (companies.classList.contains('open')) {
+      //   evt.preventDefault();
+      //   swiper = new Swiper(swiperContainer, swiperSettings);
+      //   swiper.updateSlides();
+      //   swiper.updateProgress();
+      //   companies.classList.remove('open');
+      //   companiesList.classList.remove('container');
+      //   toggle.innerText = 'Список всех компаний';
+      //   window.addEventListener('scroll',  onWindowScroll);
         // window.addEventListener('mousewheel', onWindowScroll);
-      } else {
+      // } else {
         evt.preventDefault();
         swiper.destroy();
-        companies.classList.add('open');
+        companies.classList.add('companies--open');
         companiesList.classList.add('container');
-        toggle.innerText = 'скрыть';
+        // toggle.innerText = 'скрыть';
         window.removeEventListener('scroll',  onWindowScroll);
         // window.removeEventListener('mousewheel', onWindowScroll);
-      }
+      // }
     });
 
 
