@@ -79,6 +79,10 @@
   background-image: url("../img/shield-white.svg");
 }
 
+.page-footer__social-item:last-of-type {
+  margin-right: 0;
+}
+
 .page-footer__social-item:hover {
   background-image: url("../img/shield-red.svg");
 }
