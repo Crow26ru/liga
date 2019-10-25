@@ -55,6 +55,7 @@ const config = {
       'src/js/scroll-header.js',
       'src/js/ie-styles-fallback.js',
       'src/js/frame.js',
+      'src/js/contacts-map.js',
     ],
     watch: `src/js/**/*.js`,
     mode: `iife`,

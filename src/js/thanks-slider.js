@@ -1,46 +1,52 @@
 'use strict';
 
 (function() {
-  var thankSlides = [].slice.call(document.querySelectorAll('.thank-item'));
-  var thankSwiper = new Swiper('.thanks__slider', {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    centeredSlides: true,
-    initialSlide: 1,
-    autoHeight: true,
-    init: false,
-    pagination: {
-      el: '.thanks__pagination',
-      type: 'bullets',
-      clickable: true,
-      bulletClass: 'thanks__pagination-bullet',
-      bulletActiveClass: 'thanks__pagination-bullet--active',
-      renderBullet: function (index, className) {
-        return '<button type="button" class="reset-button ' + className + '">Вперед к слайду ' + (index + 1) + '</button>';
-      },
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 'auto',
-        spaceBetween: 43,
-      },
-    }
-  });
 
-  var changeHeightThankSlides = function() {
-    thankSlides.forEach(function(item) {
-      item.style.height = '';
+  var thanksSlider = document.querySelector('.thanks__slider');
+
+  if (thanksSlider) {
+    var thankSlides = [].slice.call(document.querySelectorAll('.thank-item'));
+    var thankSwiper = new Swiper(thanksSlider, {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      centeredSlides: true,
+      initialSlide: 1,
+      autoHeight: true,
+      init: false,
+      pagination: {
+        el: '.thanks__pagination',
+        type: 'bullets',
+        clickable: true,
+        bulletClass: 'thanks__pagination-bullet',
+        bulletActiveClass: 'thanks__pagination-bullet--active',
+        renderBullet: function (index, className) {
+          return '<button type="button" class="reset-button ' + className + '">Вперед к слайду ' + (index + 1) + '</button>';
+        },
+      },
+      breakpoints: {
+        1200: {
+          slidesPerView: 'auto',
+          spaceBetween: 43,
+        },
+      }
     });
 
-    if (window.innerWidth >= 1200) {
+    var changeHeightThankSlides = function() {
       thankSlides.forEach(function(item) {
-        item.style.height = item.parentNode.clientHeight + 'px';
+        item.style.height = '';
       });
-    }
-  };
 
-  thankSwiper.on('init', changeHeightThankSlides);
-  thankSwiper.init();
+      if (window.innerWidth >= 1200) {
+        thankSlides.forEach(function(item) {
+          item.style.height = item.parentNode.clientHeight + 'px';
+        });
+      }
+    };
 
-  window.addEventListener('resize', changeHeightThankSlides);
+    thankSwiper.on('init', changeHeightThankSlides);
+    thankSwiper.init();
+
+    window.addEventListener('resize', changeHeightThankSlides);
+  }
+
 })();

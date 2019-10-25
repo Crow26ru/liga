@@ -5,7 +5,9 @@
   var normalRocketContent = document.querySelector('.modes__normal-content');
   var reactiveRocketContent = document.querySelector('.modes__reactive-content');
 
-  normalRocketContent.clientHeight > reactiveRocketContent.clientHeight
-    ? normalRocketContent.classList.add(BIGGER_CONTAINER_CLASS_NAME)
-    : reactiveRocketContent.classList.add(BIGGER_CONTAINER_CLASS_NAME);
+  if (normalRocketContent) {
+    normalRocketContent.clientHeight > reactiveRocketContent.clientHeight
+      ? normalRocketContent.classList.add(BIGGER_CONTAINER_CLASS_NAME)
+      : reactiveRocketContent.classList.add(BIGGER_CONTAINER_CLASS_NAME);
+  }
 })();
