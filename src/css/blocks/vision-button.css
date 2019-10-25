@@ -10,8 +10,8 @@
   flex-shrink: 0;
   background-image: url("../img/sun-light.svg"), url("../img/moon-light.svg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 13px 13px, 9px 9px;
-  background-position: left 3px top 3px, right 8px top 5px;
+  background-size: 13px 13px, auto 11px;
+  background-position: left 3px top 3px, right 5px top 5px;
 }
 
 .vision-button__handler {

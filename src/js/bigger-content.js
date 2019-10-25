@@ -1,3 +1,5 @@
+'use strict';
+
 (function() {
   var BIGGER_CONTAINER_CLASS_NAME = 'modes__bigger-content';
   var normalRocketContent = document.querySelector('.modes__normal-content');
