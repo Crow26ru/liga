@@ -11,13 +11,13 @@
 }
 
 .tests-list__item a {
-  color: var(--blue-color);
+  color: var(--dekor-color);
   transition: color 0.3s;
 }
 
 .tests-list__item a:hover,
 .tests-list__item a:focus {
-  color: var(--pink-color);
+  color: var(--invers-dekor-color);
 }
 
 .tests-list__svg {

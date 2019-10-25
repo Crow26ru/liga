@@ -57,7 +57,7 @@
   color: #ffffff;
   text-transform: uppercase;
 
-  background-color: var(--blue-color);
+  background-color: var(--dekor-color);
 
   transition: color 0.3s, background-color 0.3s;
 
@@ -68,7 +68,7 @@
 .header__job-link:focus {
   color: #ffffff;
 
-  background-color: var(--pink-color);
+  background-color: var(--invers-dekor-color);
 }
 
 @media (min-width: 1440px) {

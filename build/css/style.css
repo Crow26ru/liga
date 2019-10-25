@@ -1,39 +1,43 @@
 :root {
-  --dark-color: #000000;
-  --white-color: #ffffff;
-  --light-color: #ffffff;
-  --dekor-color: #2c39f2;
-  --blue-color: #2c39f2;
-  --service-blue-color: #2c39f2;
-  --pink-color: #ff1553;
-  --features-count-color: #ff1553;
-  --gray-light-color: #f2f2f2;
-  --gray-dark-color: #d3d3d3;
+  /* static variables */
   --font-size-basic: 16px;
   --font-line-basic: 1.333;
+  --white-color: #ffffff;
+  --blue-color: #2c39f2;
+  --pink-color: #ff1553;
+  --gray-light-color: #f2f2f2;
+  --gray-dark-color: #d3d3d3;
+  /* changing variables */
+  --dark-color: #000000;
+  --light-color: #ffffff;
+  --intro-text-color: #2c39f2;
+  --dekor-color: #2c39f2;
+  --invers-dekor-color: #ff1553;
 }
 
 html {
-  --dark-color: #000000;
-  --white-color: #ffffff;
-  --light-color: #ffffff;
-  --dekor-color: #2c39f2;
-  --blue-color: #2c39f2;
-  --service-blue-color: #2c39f2;
-  --pink-color: #ff1553;
-  --features-count-color: #ff1553;
-  --gray-light-color: #f2f2f2;
-  --gray-dark-color: #d3d3d3;
+  /* static variables */
   --font-size-basic: 16px;
   --font-line-basic: 1.333;
+  --white-color: #ffffff;
+  --blue-color: #2c39f2;
+  --pink-color: #ff1553;
+  --gray-light-color: #f2f2f2;
+  --gray-dark-color: #d3d3d3;
+  /* changing variables */
+  --dark-color: #000000;
+  --light-color: #ffffff;
+  --intro-text-color: #2c39f2;
+  --dekor-color: #2c39f2;
+  --invers-dekor-color: #ff1553;
 }
 
 html.dark {
   --dark-color: #ffffff;
   --light-color: #1f1f1f;
-  --dekor-color: #ffffff;
-  --service-blue-color: #ff1553;
-  --features-count-color: #ffffff;
+  --intro-text-color: #ffffff;
+  --dekor-color: #ff1553;
+  --invers-dekor-color: #2c39f2;
 }
 
 * {
@@ -543,6 +547,14 @@ template {
   cursor: url("../img/mini-logo-dark.svg"), auto;
 }
 
+.dark .thanks__pagination-bullet {
+  background-image: url("../img/thanks-bullet-dark.svg");
+}
+
+.dark .thanks__pagination-bullet--active {
+  background-image: url("../img/thanks-bullet-active.svg");
+}
+
 .swiper-container {
   position: relative;
   z-index: 1;
@@ -687,7 +699,7 @@ template {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: var(--blue-color);
+  background-color: var(--dekor-color);
   -webkit-transition: color 0.3s, background-color 0.3s;
   -o-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
@@ -697,7 +709,7 @@ template {
 .header__job-link:hover,
 .header__job-link:focus {
   color: #ffffff;
-  background-color: var(--pink-color);
+  background-color: var(--invers-dekor-color);
 }
 
 .header-left-group {
@@ -958,6 +970,13 @@ template {
   fill: var(--light-color);
 }
 
+.intro__drako .flag {
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
+  fill: var(--dekor-color);
+}
+
 .intro__title {
   display: -webkit-box;
   display: -webkit-flex;
@@ -987,7 +1006,7 @@ template {
   color: var(--light-color);
   text-transform: uppercase;
   margin-top: -8px;
-  text-shadow: var(--dekor-color) 1px 0, var(--dekor-color) 1px 1px, var(--dekor-color) 0 1px, var(--dekor-color) -1px 1px, var(--dekor-color) -1px 0, var(--dekor-color) -1px -1px, var(--dekor-color) 0 -1px, var(--dekor-color) 1px -1px;
+  text-shadow: var(--intro-text-color) 1px 0, var(--intro-text-color) 1px 1px, var(--intro-text-color) 0 1px, var(--intro-text-color) -1px 1px, var(--intro-text-color) -1px 0, var(--intro-text-color) -1px -1px, var(--intro-text-color) 0 -1px, var(--intro-text-color) 1px -1px;
   opacity: 0.9;
   -webkit-transition: text-shadow 0.3s, color 0.3s;
   -o-transition: text-shadow 0.3s, color 0.3s;
@@ -1062,7 +1081,7 @@ template {
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 1.1;
-  color: var(--features-count-color);
+  color: var(--pink-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1107,7 +1126,7 @@ template {
 }
 
 .tests-list__item a {
-  color: var(--blue-color);
+  color: var(--dekor-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1115,7 +1134,7 @@ template {
 
 .tests-list__item a:hover,
 .tests-list__item a:focus {
-  color: var(--pink-color);
+  color: var(--invers-dekor-color);
 }
 
 .tests-list__svg {
@@ -1198,14 +1217,14 @@ template {
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 1.1;
-  color: var(--service-blue-color);
+  color: var(--dekor-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
 .service__title a {
-  color: var(--service-blue-color);
+  color: var(--dekor-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1329,8 +1348,8 @@ template {
 .service__link:hover,
 .service__link:focus {
   color: #ffffff;
-  background-color: var(--service-blue-color);
-  border-color: var(--service-blue-color);
+  background-color: var(--dekor-color);
+  border-color: var(--dekor-color);
 }
 
 .service__link svg {
@@ -1458,7 +1477,7 @@ template {
   font-size: 24px;
   line-height: 44px;
   letter-spacing: -1px;
-  color: var(--blue-color);
+  color: var(--dekor-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1653,7 +1672,7 @@ template {
   width: 68.4%;
   max-width: 986px;
   padding: 38px 15px 46px 38px;
-  background-color: var(--blue-color);
+  background-color: var(--dekor-color);
   grid-template-columns: 1fr 217px;
 }
 
@@ -1676,7 +1695,7 @@ template {
   font-weight: 300;
   font-size: 1.875rem;
   line-height: 2.1875rem;
-  color: var(--light-color);
+  color: var(--white-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1686,7 +1705,7 @@ template {
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 2rem;
-  color: var(--light-color);
+  color: var(--white-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1694,7 +1713,7 @@ template {
 
 .thank-item__link:hover,
 .thank-item__link:focus {
-  color: var(--pink-color);
+  color: var(--invers-dekor-color);
 }
 
 .thank-item__author-content {
@@ -1725,7 +1744,7 @@ template {
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: var(--light-color);
+  color: var(--whithe-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
