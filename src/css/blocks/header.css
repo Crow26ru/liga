@@ -44,8 +44,13 @@
   justify-self: end;
 }
 
-.header__job-link {
+.header__job-link-inner {
   display: flex;
+  justify-content: flex-end;
+}
+
+.header__job-link {
+  display: inline-flex;
   align-items: center;
   align-self: center;
   padding: 10px 32px;
@@ -102,5 +107,4 @@
   .header__job-link {
     display: none;
   }
-
 }

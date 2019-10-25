@@ -30,7 +30,7 @@
   var colorThemeIdentifier = document.querySelector('.color-theme-identifier');
   var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
   var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-  var isIE = document.documentMode;
+  var isIE = !!document.documentMode;
   var isFireFox = navigator.userAgent.search("Firefox");
 
   if (isChrome || isSafari || isFireFox) {
