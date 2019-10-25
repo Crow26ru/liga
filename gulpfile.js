@@ -23,6 +23,11 @@ const config = {
   img: `src/img/**/*.{png,jpg,webp}`,
   html: `src/*.html`,
   libs: `src/libs/**/*.{js,css}`,
+  ieFallback: {
+    src: `src/css/blocks/ie-fallback.css`,
+    dist: `build/css`,
+    min: `ie-fallback.min.css`
+  },
   css: {
     src: `src/css/style.css`,
     watch: `src/css/**/*.css`,
@@ -48,6 +53,7 @@ const config = {
       'src/js/companies-slider.js',
       'src/js/bigger-content.js',
       'src/js/scroll-header.js',
+      'src/js/ie-styles-fallback.js',
       'src/js/frame.js',
       'src/js/contacts-map.js',
     ],
@@ -124,11 +130,31 @@ gulp.task(`style`, function () {
     .pipe(server.stream());
 });
 
+gulp.task(`ieFallback`, function () {
+  return gulp
+    .src(config.ieFallback.src)
+    .pipe(plumber())
+    .pipe(postcss([
+      cssimport(),
+      objectFit(),
+      autoprefixer(),
+    ]))
+    .pipe(gcmq())
+    .pipe(gulp.dest(config.ieFallback.dist))
+    .pipe(postcss([
+      cssnano()
+    ]))
+    .pipe(rename(config.ieFallback.min))
+    .pipe(gulp.dest(config.ieFallback.dist))
+    .pipe(server.stream());
+});
+
 gulp.task(`build`, gulp.series(
   `clean`,
   `copy`,
   `copyHtml`,
   `style`,
+  `ieFallback`,
   `sprite`,
   `scripts`,
   (done) => done())
@@ -143,7 +169,7 @@ gulp.task(`serve`, () => {
     ui: false
   });
   gulp
-    .watch(config.css.watch, gulp.series(`style`))
+    .watch(config.css.watch, gulp.series(`style`, `ieFallback`))
     .on(`change`, server.reload);
   gulp.watch(config.html, gulp.series(`copyHtml`)).on(`change`, server.reload);
   gulp

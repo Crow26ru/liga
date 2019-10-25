@@ -4,7 +4,7 @@
   max-width: 986px;
   padding: 38px 15px 46px 38px;
 
-  background-color: var(--blue-color);
+  background-color: var(--dekor-color);
 
   grid-template-columns: 1fr 217px;
 }
@@ -22,7 +22,7 @@
   font-weight: 300;
   font-size: 1.875rem;
   line-height: 2.1875rem;
-  color: var(--light-color);
+  color: var(--white-color);
 
   transition: color 0.3s;
 }
@@ -31,14 +31,14 @@
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 2rem;
-  color: var(--light-color);
+  color: var(--white-color);
 
   transition: color 0.3s;
 }
 
 .thank-item__link:hover,
 .thank-item__link:focus {
-  color: var(--pink-color);
+  color: var(--invers-dekor-color);
 }
 
 .thank-item__author-content {
@@ -63,7 +63,7 @@
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: var(--light-color);
+  color: var(--whithe-color);
 
   transition: color 0.3s;
 }

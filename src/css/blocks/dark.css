@@ -14,3 +14,11 @@
 .dark body {
   cursor: url("../img/mini-logo-dark.svg"), auto;
 }
+
+.dark .thanks__pagination-bullet {
+  background-image: url("../img/thanks-bullet-dark.svg");
+}
+
+.dark .thanks__pagination-bullet--active {
+  background-image: url("../img/thanks-bullet-active.svg");
+}
