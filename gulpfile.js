@@ -54,6 +54,7 @@ const config = {
       'src/js/bigger-content.js',
       'src/js/scroll-header.js',
       'src/js/ie-styles-fallback.js',
+      'src/js/frame.js',
     ],
     watch: `src/js/**/*.js`,
     mode: `iife`,

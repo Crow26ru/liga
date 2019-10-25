@@ -50,15 +50,34 @@
 .awards__item:hover .awards__frame {
   border-color: var(--gray-light-color);
 
+  /*animation-name: frame-bounce;*/
+  /*animation-duration: 4s;*/
+  /*animation-iteration-count: infinite;*/
+  /*animation-delay: 0s;*/
+}
+
+.awards__item--sway .awards__frame {
   animation-name: frame-bounce;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
+  /*animation-iteration-count: infinite;*/
+  animation-delay: 0s;
+}
+
+.awards__item--sway .awards__frame--incline {
+  animation-name: frame-bounce-incline;
+  animation-duration: 4s;
+  /*animation-iteration-count: infinite;*/
   animation-delay: 0s;
 }
 
 .awards__item:hover .awards__rope::before,
 .awards__item:hover .awards__rope::after {
   background-color: var(--gray-light-color);
+}
+
+.awards__item--specia svg {
+  fill: var(--dark-color);
+  /*stroke: var(--dark-color);*/
 }
 
 .awards__frame {
@@ -212,15 +231,23 @@
   0%, 100% {
     transform: rotate(0) translateX(0);
   }
-
   /*влево*/
   12.5%, 62.5% {
     transform: rotate(2deg) translateX(-2%);
   }
-
   /*вправо*/
-
   37.5%, 87.5% {
     transform: rotate(-2deg) translateX(2%);
+  }
+}
+
+@keyframes frame-bounce-incline {
+  /*вправо*/
+  0%, 50%, 100% {
+    transform: rotate(-2deg) translateX(2%);
+  }
+  /*влево*/
+  25%, 75% {
+    transform: rotate(2deg) translateX(-2%);
   }
 }
