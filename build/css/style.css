@@ -943,7 +943,7 @@ template {
 
 .intro {
   padding-top: 217px;
-  padding-bottom: 34px;
+  padding-bottom: 98px;
 }
 
 .intro__top-content {
@@ -1067,12 +1067,12 @@ template {
   list-style: none;
   counter-reset: features;
   grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 64px;
+  grid-column-gap: 44px;
 }
 
 .features-list__item {
   position: relative;
-  max-width: 380px;
-  margin-bottom: 64px;
   padding-top: 54px;
   font-weight: 300;
   font-size: 1.5rem;
@@ -1096,18 +1096,6 @@ template {
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
-}
-
-.features-list__item:nth-child(3n) {
-  padding-left: 24px;
-}
-
-.features-list__item:nth-child(3n)::before {
-  left: 24px;
-}
-
-.features-list__item:nth-child(n + 4)::before {
-  content: "00" counter(features);
 }
 
 .features-list__item.features-list__item--tests::before {
@@ -1828,6 +1816,8 @@ template {
   /*animation-iteration-count: infinite;*/
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .awards__item--sway .awards__frame--incline {
@@ -2805,14 +2795,6 @@ template {
   .features-list__item::before {
     left: 0;
   }
-
-  .features-list__item:nth-child(3n) {
-    padding-left: 0;
-  }
-
-  .features-list__item:nth-child(3n)::before {
-    left: 0;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -3009,6 +2991,11 @@ template {
 }
 
 @media (max-width: 1023px) {
+  .features-list {
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+  }
+
   .awards__list {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -3242,7 +3229,7 @@ template {
 
   .intro {
     padding-top: 104px;
-    padding-bottom: 40px;
+    padding-bottom: 59px;
   }
 
   .intro__headline {
@@ -3681,6 +3668,8 @@ template {
     padding-left: 0;
     padding-right: 0;
     padding-top: 13px;
+    grid-row-gap: 18px;
+    grid-column-gap: 0;
   }
 
   .features-list__item {
@@ -3689,7 +3678,6 @@ template {
     font-size: 1.0625rem;
     padding-top: 0;
     line-height: 1.3125rem;
-    margin-bottom: 17px;
   }
 
   .features-list__item::before {
@@ -3710,6 +3698,10 @@ template {
   .features-list__item.features-list__item--tests {
     padding-left: 0;
     padding-top: 22px;
+  }
+
+  .tests-list__item {
+    margin-right: 28px;
   }
 
   .projects .container {

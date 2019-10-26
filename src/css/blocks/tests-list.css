@@ -23,3 +23,9 @@
 .tests-list__svg {
   fill: currentColor;
 }
+
+@media (max-width: 600px) {
+  .tests-list__item {
+    margin-right: 28px;
+  }
+}
