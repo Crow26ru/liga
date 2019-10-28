@@ -19,14 +19,9 @@
 }
 
 .projects__title {
-  margin: 0;
   margin-bottom: 49px;
 
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 3.875rem;
   color: var(--dark-color);
-  transition: color 0.3s;
 }
 
 .projects__button {
@@ -72,8 +67,6 @@
   }
 
   .projects__title {
-    font-size: 2rem;
-    line-height: 2.375rem;
     margin-bottom: 71px;
   }
 }

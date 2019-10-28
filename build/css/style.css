@@ -619,6 +619,30 @@ template {
   padding: 0 57px;
 }
 
+.title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 3.75rem;
+  line-height: 4.125rem;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.title--slash {
+  position: relative;
+  display: inline-block;
+}
+
+.title--slash::before {
+  content: "/";
+  position: relative;
+  top: 0;
+  left: -14px;
+  margin-left: 8px;
+  color: inherit;
+}
+
 .reset-button {
   padding: 0;
   background: transparent;
@@ -1147,11 +1171,7 @@ template {
 }
 
 .services__title {
-  margin: 0;
   color: #ffffff;
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 3.875rem;
   margin-bottom: 46px;
 }
 
@@ -1403,15 +1423,8 @@ template {
 }
 
 .projects__title {
-  margin: 0;
   margin-bottom: 49px;
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 3.875rem;
   color: var(--dark-color);
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
 }
 
 .projects__button {
@@ -1618,14 +1631,7 @@ template {
 }
 
 .thanks__title {
-  margin: 0;
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 4.125rem;
   color: var(--dark-color);
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
   padding-right: 43px;
 }
 
@@ -1762,9 +1768,6 @@ template {
 }
 
 .awards__title {
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 3.875rem;
   margin: 0 0 52px;
 }
 
@@ -2002,15 +2005,8 @@ template {
 }
 
 .modes__title {
-  margin: 0;
   margin-bottom: 140px;
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 1.1;
   color: var(--white-color);
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
 }
 
 .modes__content {
@@ -2446,9 +2442,6 @@ template {
 
 .page-footer__title {
   max-width: 550px;
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 4rem;
   letter-spacing: -1px;
   margin: 0 0 30px;
 }
@@ -2704,6 +2697,71 @@ template {
 
 .contacts__map-container--small {
   display: none;
+}
+
+.specialists {
+  background-color: var(--blue-color);
+  padding-top: 85px;
+  padding-bottom: 43px;
+}
+
+.specialists__title {
+  color: var(--white-color);
+  margin-bottom: 47px;
+}
+
+.specialists__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 38px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.specialist {
+  height: 100%;
+  padding: 32px 36px 42px 26px;
+  background-color: var(--light-color);
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.specialist__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: var(--pink-color);
+  opacity: 0.9;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.specialist__cost {
+  margin: 0;
+  margin-bottom: 22px;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: var(--dark-color);
+  opacity: 0.9;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.specialist__info {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--dark-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 768px), (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
@@ -2978,6 +3036,21 @@ template {
   .thank-item {
     max-width: none;
   }
+
+  .specialist__title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .specialist__cost {
+    font-size: 1.7rem;
+    line-height: 1.1;
+  }
+
+  .specialist__info {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -3210,6 +3283,15 @@ template {
     padding: 0 16px;
   }
 
+  .title {
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+
+  .title--slash::before {
+    left: -9px;
+  }
+
   .header {
     padding: 16px;
   }
@@ -3305,9 +3387,6 @@ template {
   }
 
   .services__title {
-    font-weight: 300;
-    font-size: 2rem;
-    line-height: 2.875rem;
     margin-bottom: 27px;
   }
 
@@ -3366,8 +3445,6 @@ template {
   }
 
   .projects__title {
-    font-size: 2rem;
-    line-height: 2.375rem;
     margin-bottom: 71px;
   }
 
@@ -3401,8 +3478,6 @@ template {
   }
 
   .thanks__title {
-    font-size: 2rem;
-    line-height: 2.375rem;
     padding-right: 0;
   }
 
@@ -3462,8 +3537,6 @@ template {
   }
 
   .awards__title {
-    font-size: 2rem;
-    line-height: 2.375rem;
     margin-bottom: 28px;
   }
 
@@ -3525,8 +3598,6 @@ template {
   }
 
   .page-footer__title {
-    font-size: 2rem;
-    line-height: 2.375rem;
     letter-spacing: normal;
   }
 
@@ -3636,6 +3707,44 @@ template {
 
   .contacts__map .container {
     padding-left: 0;
+    padding-right: 0;
+  }
+
+  .specialists {
+    padding-top: 49px;
+    padding-bottom: 21px;
+  }
+
+  .specialists__title {
+    margin-bottom: 38px;
+  }
+
+  .specialists__list {
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  .specialist {
+    padding: 20px 25px 26px 18px;
+  }
+
+  .specialist__title {
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+  }
+
+  .specialist__cost {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 57px;
+  }
+
+  .specialist__info {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+  }
+
+  .service-page .modes__title {
     padding-right: 0;
   }
 }

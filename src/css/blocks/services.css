@@ -5,11 +5,7 @@
 }
 
 .services__title {
-  margin: 0;
   color: #ffffff;
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 3.875rem;
   margin-bottom: 46px;
 }
 
@@ -36,9 +32,6 @@
   }
 
   .services__title {
-    font-weight: 300;
-    font-size: 2rem;
-    line-height: 2.875rem;
     margin-bottom: 27px;
   }
 
