@@ -15,9 +15,19 @@
   width: 120px;
   height: 27px;
   color: var(--dark-color);
-  transition: color 0.3s;
+  cursor: inherit;
   position: relative;
   z-index: 2;
+  transition: color 0.3s;
+}
+
+.header-left-group__logo[href] {
+  cursor: pointer;
+}
+
+.header-left-group__logo[href]:hover,
+.header-left-group__logo[href]:focus {
+  color: var(--dekor-color);
 }
 
 .header-left-group__logo svg {
