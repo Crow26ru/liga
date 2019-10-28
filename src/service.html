@@ -39,14 +39,14 @@
   <meta name="keywords" content="верстка сайта, вёрстка лендинга, заказать лендинг пейдж, ит аутсорсинг, продакшн сайт, верстка страниц, заказать верстку, верстка лендинга, услуги верстки, верстка сайта цена, заказать верстку сайта, аутсорс разработка, компании аутсорс разработчики, сделать сайт">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="service-page">
   <input class="visually-hidden color-theme" style="display: none;" type="checkbox" name="color-theme" id="color-theme">
   <span class="color-theme-identifier"></span>
   <header class="header">
     <div class="header__wrap">
       <div class="header__left-group header-left-group">
         <div class="header-left-group__top-inner">
-          <a class="header-left-group__logo">
+          <a href="index.html" class="header-left-group__logo">
             <include src="build/img/icon-logo.svg"></include>
             <svg class="header-left-group__logo-additional-svg" width="120" height="27">
               <use xlink:href="img/sprite/sprite.svg#icon-logo-additional"></use>
@@ -69,7 +69,7 @@
         <div class="navigation__wrap">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Верстка</a>
+              <a class="navigation__link" href>Верстка</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" >Фронтенд</a>
@@ -160,9 +160,120 @@
       </div>
     </section>
 
+    <section class="specialists">
+      <div class="container">
+        <h2 class="specialists__title title title--slash">Кто работает с&nbsp;проектом</h2>
+        <ul class="specialists__list">
+          <li class="specialists__item">
+            <article class="specialist">
+              <h3 class="specialist__title">Джуниор</h3>
+              <p class="specialist__cost">750 рэ/час</p>
+              <p class="specialist__info">
+                Собирает страницы по готовым компонентам, верстает простые страницы, например текстовые, не пишет JavaScript.
+              </p>
+            </article>
+          </li>
+          <li class="specialists__item">
+            <article class="specialist">
+              <h3 class="specialist__title">Мидл</h3>
+              <p class="specialist__cost">950 рэ/час</p>
+              <p class="specialist__info">
+                Собирает библиотеку компонентов, верстает сложные страницы и делает интерактивные элементы. Может сделать анимацию.
+              </p>
+            </article>
+          </li>
+          <li class="specialists__item">
+            <article class="specialist">
+              <h3 class="specialist__title">Тимлид</h3>
+              <p class="specialist__cost">1150 рэ/час</p>
+              <p class="specialist__info">
+                Учит всех уму разуму. Продумывает архитектуру компонентов, пишет сложный JavaScript и мастерски владеет анимациями.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="modes">
+      <div class="container">
+        <h2 class="modes__title title title--slash">Честно про наши гибкие режимы</h2>
+        <div class="modes__content">
+          <div class="modes__normal">
+            <input class="visually-hidden modes-change" type="checkbox" name="modes-change" id="modes-change">
+            <label class="modes__label" for="modes-change" aria-label="Выбор режима">
+              <span class="modes__normal-rocket-svg-inner">
+                <include src="build/img/normal-roсket.svg"></include>
+              </span>
+              <span class="modes__reactive-rocket-svg-inner">
+                <include src="build/img/reactive-rocket.svg"></include>
+              </span>
+            </label>
+            <div class="modes__normal-content">
+              <h3 class="modes__subtitle">Ракета</h3>
+              <p class="modes__text">Стандартный режим. Команда из трёх человек, один из которых джуниор. Сроки в рабочих днях. Быстро, но без фанатизма, разработчики не выгорают. </p>
+            </div>
+            <div class="modes__reactive-content">
+              <h3 class="modes__subtitle"><span class="modes__subtitle-unvisible-fragment">Ракета</span> реактивная</h3>
+              <p class="modes__text">Дороже, но круче. Команда из четырех человек, джуниоры наблюдают. Сроки в днях. Максимально быстро, разработчики выгорают.</p>
+            </div>
+          </div>
+          <div class="modes__so-so">
+            <div class="modes__so-so-svg-inner">
+              <svg width="422" height="171">
+                <use xlink:href="img/sprite/sprite.svg#so-so-rocket"></use>
+              </svg>
+            </div>
+            <h3 class="modes__so-so-title">Так себе ракета</h3>
+            <p class="modes__so-so-text">Дешевле, но дольше. Команда из трёх человек, двое джуниоры. Сроки в рабочих днях. На 30% медленнее чем стандартный режим, зато дешевле.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-we-do">
+      <div class="container">
+        <h2 class="visually-hidden">Мы, вообще-то, делаем</h2>
+        <ul class="what-we-do__list">
+          <li class="what-we-do__item title title--slash">
+            Мы, <br>
+            вообще-то, <br>
+            делаем
+          </li>
+          <li class="what-we-do__item what-we-do__item--count">
+            <h3 class="what-we-do__subtitle">Лендинги</h3>
+            <p class="what-we-do__text">Как с нуля, так и для готового продукта. Скорость&nbsp;загрузку, SEO Френдли разметка, небольшие анимации.</p>
+          </li>
+          <li class="what-we-do__item what-we-do__item--count">
+            <h3 class="what-we-do__subtitle">E-mail рассылки</h3>
+            <p class="what-we-do__text">Особый вид боли. Классические и&nbsp;адаптивные. Верстальщики плачут, но&nbsp;терпят.</p>
+          </li>
+          <li class="what-we-do__item what-we-do__item--count">
+            <h3 class="what-we-do__subtitle">Сервисы</h3>
+            <p class="what-we-do__text">Большие объёмы, много компонентов. Обычно детальная проработка промежуточных экранов и всякие графики</p>
+          </li>
+          <li class="what-we-do__item what-we-do__item--count">
+            <h3 class="what-we-do__subtitle">Панели администраторов</h3>
+            <p class="what-we-do__text">Нестандартные раскладки, графики. Много форм и визуальной информации. Здесь можно даже Bootstrap использовать.</p>
+          </li>
+          <li class="what-we-do__item what-we-do__item--count">
+            <h3 class="what-we-do__subtitle">Библиотеки компонентов и&nbsp;дизайн-системы</h3>
+            <p class="what-we-do__text">Как с нуля, так и для готового продукта. Скорость загрузку, SEO Френдли разметка, небольшие анимации.</p>
+          </li>
+          <li class="what-we-do__item what-we-do__item--count">
+            <h3 class="what-we-do__subtitle">Интернет-магазины и корпоративные сервисы</h3>
+            <p class="what-we-do__text">Главное грамотно разбить на компоненты. Чем больше страниц тем больше собираются по щелчку</p>
+          </li>
+          <li class="what-we-do__item what-we-do__item--image">
+            <include src="build/img/what-we-do.svg"></include>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <section class="thanks">
       <div class="thanks__top-group container">
-        <h2 class="thanks__title">Спасибы</h2>
+        <h2 class="thanks__title title">Спасибы</h2>
         <div class="thanks__pagination"></div>
       </div>
       <div class="thanks__slider-wrapper">
@@ -423,7 +534,7 @@
 
     <section class="awards">
       <div class="container">
-        <h2 class="awards__title">Бились и добились</h2>
+        <h2 class="awards__title title">Бились и добились</h2>
         <ul class="awards__list">
           <li class="awards__item">
             <a href="https://tagline.ru/outsource-rating/2018/" title="Рейтинг аутсорс-продакшенов на сайте каталога компаний digital-рынка Tagline">
@@ -479,7 +590,7 @@
     <div class="container">
       <div class="page-footer__main">
         <div class="page-footer__form">
-          <h2 class="page-footer__title">Наверняка для нас есть работа</h2>
+          <h2 class="page-footer__title title">Наверняка для нас есть работа</h2>
           <p class="page-footer__policy">Отправляя форму вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
         </div>
         <div class="page-footer__info">

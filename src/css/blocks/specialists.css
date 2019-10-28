@@ -1,0 +1,35 @@
+.specialists {
+  background-color: var(--blue-color);
+  padding-top: 85px;
+  padding-bottom: 43px;
+}
+
+.specialists__title {
+  color: var(--white-color);
+  margin-bottom: 47px;
+}
+
+.specialists__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 38px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 767px) {
+  .specialists {
+    padding-top: 49px;
+    padding-bottom: 21px;
+  }
+
+  .specialists__title {
+    margin-bottom: 38px;
+  }
+
+  .specialists__list {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+}

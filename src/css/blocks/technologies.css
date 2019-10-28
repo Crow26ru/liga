@@ -92,10 +92,7 @@
   margin: 0 0 10px;
 }
 
-
-
 @media (max-width: 1364px) {
-
   .technologies__rows-item {
     width: 33.3%;
   }
@@ -173,8 +170,6 @@
   .technologies__rows-item:nth-child(2n + 2) {
     grid-column: 1/2;
   } */
-
-
 }
 
 @media (max-width: 550px) {
