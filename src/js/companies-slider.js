@@ -11,7 +11,7 @@
 
     var swiperSettings = {
       slidesPerView: 'auto',
-      spaceBetween: 50,
+      spaceBetween: 20,
       loop: true,
       speed: 500,
       centeredSlides: true,
