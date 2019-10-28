@@ -5,14 +5,12 @@
   var thanksSlider = document.querySelector('.thanks__slider');
 
   if (thanksSlider) {
-    var thankSlides = [].slice.call(document.querySelectorAll('.thank-item'));
-    var thankSwiper = new Swiper(thanksSlider, {
+    new Swiper(thanksSlider, {
       slidesPerView: 1,
       spaceBetween: 0,
       centeredSlides: true,
       initialSlide: 1,
       autoHeight: true,
-      init: false,
       pagination: {
         el: '.thanks__pagination',
         type: 'bullets',
@@ -30,23 +28,5 @@
         },
       }
     });
-
-    var changeHeightThankSlides = function() {
-      thankSlides.forEach(function(item) {
-        item.style.height = '';
-      });
-
-      if (window.innerWidth >= 1200) {
-        thankSlides.forEach(function(item) {
-          item.style.height = item.parentNode.clientHeight + 'px';
-        });
-      }
-    };
-
-    thankSwiper.on('init', changeHeightThankSlides);
-    thankSwiper.init();
-
-    window.addEventListener('resize', changeHeightThankSlides);
   }
-
 })();

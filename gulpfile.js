@@ -56,6 +56,7 @@ const config = {
       'src/js/ie-styles-fallback.js',
       'src/js/frame.js',
       'src/js/contacts-map.js',
+      'src/js/project-logistics-slider.js',
     ],
     watch: `src/js/**/*.js`,
     mode: `iife`,

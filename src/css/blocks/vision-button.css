@@ -24,10 +24,10 @@
   width: 15px;
   height: 15px;
 
-  background-color: var(--blue-color);
+  background-color: var(--dekor-color);
   border-radius: 50%;
 
-  transition: transform 0.3s, right 0.3s;
+  transition: transform 0.3s, right 0.3s, background-color 0.5s;
 }
 
 .vision-button__handler::before {

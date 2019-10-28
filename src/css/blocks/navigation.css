@@ -34,7 +34,7 @@
 
 .navigation__link:hover,
 .navigation__link:focus {
-  color: var(--blue-color);
+  color: var(--dekor-color);
 }
 
 .navigation__link:not([href]):hover,
