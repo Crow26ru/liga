@@ -28,8 +28,12 @@
 @import "./blocks/companies";
 @import "./blocks/page-footer";
 @import "./blocks/contacts";
+@import "./blocks/service-intro";
+@import "./blocks/technologies";
 @import "./blocks/specialists";
 @import "./blocks/specialist";
 @import "./blocks/service-page";
 @import "./blocks/what-we-do";
+@import "./blocks/we-do-service";
 @import "./blocks/what-yet-we-do";
+@import "./blocks/more-services";

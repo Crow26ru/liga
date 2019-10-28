@@ -39,7 +39,9 @@
 }
 
 .companies__item--bg a {
-  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .companies__item--bg svg {
@@ -47,13 +49,21 @@
 }
 
 .companies__item--mail a {
-  padding: 8.35px 16.7px;
+  width: 120px;
+  height: 46px;
   border-radius: 5px;
+
+  background-color: var(--dark-color);
 }
 
 .companies__item--vk a {
-  padding: 19px 9px 17px 10px;
-  border-radius: 16px;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../img/logo-vk-back-black.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .companies__all {
@@ -142,7 +152,7 @@
 
 @media (max-width: 767px) {
   .companies {
-    padding-top: 18px;
+    padding-top: 0;
   }
 
   .companies--open .companies__item {
@@ -150,9 +160,28 @@
     /*width: 30%;*/
   }
 
+  .companies__item svg {
+    transform: scale(0.72);
+  }
+
+  .companies__item--vk a {
+    width: 43px;
+    height: 43px;
+  }
+
+  .companies__item--mail a {
+    width: 90px;
+    height: 35px;
+  }
+
+  .companies__item--mail a {
+
+  }
+
   .companies__all {
     max-width: 288px;
-    margin-top: 30px;
+    margin-top: 13px;
+
     padding-top: 6px;
     padding-bottom: 6px;
   }
