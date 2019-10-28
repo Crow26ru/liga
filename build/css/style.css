@@ -2850,6 +2850,67 @@ template {
   fill: currentColor;
 }
 
+.what-yet-we-do {
+  padding-top: 52px;
+  padding-bottom: 81px;
+  padding-left: 33px;
+  padding-right: 24px;
+  background-color: var(--blue-color);
+}
+
+.what-yet-we-do__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 34px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.what-yet-we-do__item--title {
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.what-yet-we-do__item--title::before {
+  top: -1px;
+  left: -8px;
+}
+
+.what-yet-we-do__item--count {
+  position: relative;
+  padding-top: 15px;
+  counter-increment: we-do-items;
+}
+
+.what-yet-we-do__item--count::before {
+  content: "0" counter(we-do-items);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: var(--white-color);
+}
+
+.what-yet-we-do__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: var(--white-color);
+}
+
+.what-yet-we-do__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 768px), (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
   .service.service--disabled::before {
     background-image: url("../img/lightning-pattern-disabled@2x.jpg");
