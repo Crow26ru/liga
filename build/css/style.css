@@ -2715,7 +2715,7 @@ template {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-gap: 38px;
+  gap: 38px;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -2762,6 +2762,92 @@ template {
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
+}
+
+.what-we-do {
+  padding-top: 80px;
+  padding-bottom: 97px;
+  background-color: var(--light-color);
+  counter-reset: we-do-items;
+}
+
+.what-we-do__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-column-gap: 38px;
+  -moz-column-gap: 38px;
+  column-gap: 38px;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 43px;
+}
+
+.what-we-do__item {
+  color: var(--dark-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.what-we-do__item--count {
+  position: relative;
+  padding-top: 64px;
+  padding-right: 32px;
+  counter-increment: we-do-items;
+}
+
+.what-we-do__item--count::before {
+  content: "0" counter(we-do-items);
+  position: absolute;
+  top: 18px;
+  left: 0;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+  color: var(--pink-color);
+}
+
+.what-we-do__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+}
+
+.what-we-do__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+}
+
+.what-we-do__item--image {
+  position: relative;
+  color: var(--dekor-color);
+  grid-column: 2 / 3;
+  grid-row: 1 / span 2;
+}
+
+.what-we-do__item--image svg {
+  position: relative;
+  top: 10%;
+  left: -13%;
+  width: 100%;
+  height: auto;
+  -webkit-transition: stroke 0.3s;
+  -o-transition: stroke 0.3s;
+  transition: stroke 0.3s;
+  fill: none;
+  stroke: currentColor;
+}
+
+.what-we-do__item--image svg .fill-svg {
+  -webkit-transition: fill 0.3s, stroke 0.3s;
+  -o-transition: fill 0.3s, stroke 0.3s;
+  transition: fill 0.3s, stroke 0.3s;
+  fill: currentColor;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 768px), (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
@@ -3079,6 +3165,24 @@ template {
 
   .contacts__specific {
     padding-left: 10%;
+  }
+
+  .what-we-do__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .what-we-do__item--image {
+    align-self: center;
+    grid-row: 1 / span 3;
+  }
+
+  .what-we-do__item--image svg {
+    top: 0;
+    left: 0;
+  }
+
+  .what-we-do__item--count {
+    padding-right: 0;
   }
 }
 
@@ -3720,7 +3824,7 @@ template {
   }
 
   .specialists__list {
-    grid-gap: 15px;
+    gap: 15px;
     grid-template-columns: 1fr;
   }
 
@@ -3746,6 +3850,50 @@ template {
 
   .service-page .modes__title {
     padding-right: 0;
+  }
+
+  .what-we-do {
+    padding-top: 53px;
+    padding-bottom: 68px;
+  }
+
+  .what-we-do__list {
+    grid-template-columns: 1fr;
+    row-gap: 22px;
+  }
+
+  .what-we-do__item--image {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+  }
+
+  .what-we-do__item--image svg {
+    width: 84%;
+    position: relative;
+    right: 0;
+    left: 8%;
+  }
+
+  .what-we-do__item--count {
+    padding-top: 36px;
+  }
+
+  .what-we-do__item--count::before {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    top: 8px;
+  }
+
+  .what-we-do__subtitle {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    margin-bottom: 11px;
+  }
+
+  .what-we-do__text {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
   }
 }
 
