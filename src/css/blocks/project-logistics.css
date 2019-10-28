@@ -107,6 +107,7 @@
 }
 
 .project-logistics__text {
+  width: 100%;
   margin: 0;
 
   font-weight: 300;
@@ -154,13 +155,13 @@
   }
 
   .project-logistics__item::before {
-    left: 54px;
     top: 31px;
+    left: 54px;
   }
 
   .project-logistics__item::after {
-    left: 56px;
     top: 31px;
+    left: 56px;
   }
 
   .project-logistics__item.swiper-slide:last-child {
