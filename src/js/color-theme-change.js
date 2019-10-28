@@ -33,7 +33,7 @@
   var isIE = !!document.documentMode;
   var isFireFox = navigator.userAgent.search("Firefox");
 
-  if (isChrome || isSafari || isFireFox) {
+  if ((isChrome || isSafari || isFireFox) && !localStorage.getItem('--theme')) {
     /**
      * У нас есть элемент, которому мы через @ media (prefers-color-scheme: dark) навешиваем position: fixed
      * Следовательно, если у него фиксированное позиционирование, то у пользователя включена темная тема
@@ -42,7 +42,7 @@
      * https://developer.mozilla.org/ru/docs/Web/CSS/@media/prefers-color-scheme
      */
     if (window.getComputedStyle(colorThemeIdentifier).position === 'fixed') {
-      localStorage.setItem('--theme', 'dark');
+      document.documentElement.classList.add('dark');
     }
   }
 
