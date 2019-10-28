@@ -5,8 +5,6 @@
   color: var(--light-color);
 }
 
-
-
 .page-footer p {
   margin-top: 0;
   margin-bottom: 0;
@@ -14,14 +12,11 @@
 
 .page-footer__main {
   display: grid;
-  grid-template-columns: 50% 50% ;
+  grid-template-columns: 50% 50%;
 }
 
 .page-footer__title {
   max-width: 550px;
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 4rem;
   letter-spacing: -1px;
   margin: 0 0 30px;
 }
@@ -108,9 +103,6 @@
   transition: fill 0.3s;
 }
 
-
-
-
 .page-footer__footer {
   margin-top: 89px;
   font-size: 1.125rem;
@@ -119,7 +111,7 @@
 }
 
 .page-footer__footer a {
-   transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .page-footer__footer a:hover {
@@ -151,8 +143,6 @@
   }
 
   .page-footer__title {
-    font-size: 2rem;
-    line-height: 2.375rem;
     letter-spacing: normal;
   }
 

@@ -1,0 +1,35 @@
+.title {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 3.75rem;
+  line-height: 4.125rem;
+
+  transition: color 0.3s;
+}
+
+.title--slash {
+  position: relative;
+
+  display: inline-block;
+}
+
+.title--slash::before {
+  content: "/";
+  position: relative;
+  top: 0;
+  left: -14px;
+  margin-left: 8px;
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+
+  .title--slash::before {
+    left: -9px;
+  }
+}

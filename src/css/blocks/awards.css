@@ -12,9 +12,6 @@
 }
 
 .awards__title {
-  font-weight: 300;
-  font-size: 3.75rem;
-  line-height: 3.875rem;
   margin: 0 0 52px;
 }
 
@@ -176,9 +173,6 @@
   }
 
   .awards__title {
-    font-size: 2rem;
-    line-height: 2.375rem;
-
     margin-bottom: 28px;
   }
 
