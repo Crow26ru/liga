@@ -125,6 +125,61 @@
   flex-shrink: 0;
 }
 
+.specialists__list {
+  display: flex;
+  margin-left: -38px;
+  flex-wrap: wrap;
+}
+
+.specialists__item {
+  margin-left: 38px;
+  width: calc((100% - 39px * 3) / 3);
+}
+
+.what-yet-we-do__list {
+  display: flex;
+  margin-left: -38px;
+  flex-wrap: wrap;
+}
+
+.what-yet-we-do__item {
+  margin-left: 38px;
+  margin-bottom: 38px;
+  width: calc((100% - 39px * 4) / 4);
+}
+
+.more-services__list {
+  display: flex;
+  margin-left: -39px;
+  flex-wrap: wrap;
+}
+
+.more-services__item {
+  margin-left: 39px;
+  width: calc((100% - 40px * 2) / 2);
+  margin-bottom: 49px;
+}
+
+.what-we-do__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -38px;
+}
+
+.what-we-do__item {
+  width: calc((100% - 39px * 3) / 3);
+  margin-bottom: 43px;
+  margin-left: 38px;
+}
+
+.what-we-do__item.title {
+  order: -2;
+}
+
+.what-we-do__item--image {
+  order: -1;
+}
+
 @media (max-width: 1380px) {
   .modes__content {
     display: block;
@@ -171,12 +226,26 @@
   .service__info {
     flex-basis: calc((100% / 20 * 11) - 174px);
   }
+
+  .what-yet-we-do__list {
+    margin-left: -30px;
+  }
+
+  .what-yet-we-do__item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: calc(50% - 30px * 2);
+  }
 }
 
 @media (max-width: 1023px) {
   .awards__item {
     width: 33%;
     min-width: 33%;
+  }
+
+  .what-we-do__item {
+    width: calc((100% - 39px * 2) / 2);
   }
 }
 
@@ -215,6 +284,50 @@
   .page-footer__info {
     width: 100%;
     padding-left: 0;
+  }
+
+  .specialists__list {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .specialists__item {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .what-yet-we-do__list {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .what-yet-we-do__item {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .more-services__list {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .more-services__item {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 33px;
+  }
+
+  .what-we-do__list {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .what-we-do__item {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 22px;
   }
 }
 
