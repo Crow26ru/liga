@@ -1635,6 +1635,13 @@ template {
   padding-right: 43px;
 }
 
+.thanks__wrapper.swiper-wrapper {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
 .thanks__pagination {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1679,6 +1686,7 @@ template {
   padding: 38px 15px 46px 38px;
   background-color: var(--dekor-color);
   grid-template-columns: 1fr 217px;
+  height: auto !important;
 }
 
 .thank-item__text-content {
@@ -3151,6 +3159,125 @@ template {
   content: "0" counter(more-services);
 }
 
+.project-logistics {
+  padding-top: 36px;
+  padding-bottom: 138px;
+  background-color: var(--blue-color);
+}
+
+.project-logistics__title {
+  margin-bottom: 57px;
+}
+
+.project-logistics__slider {
+  margin-left: calc((100% - 1328px) / 2);
+}
+
+.project-logistics__list {
+  position: relative;
+  margin: 0;
+  margin-right: 50px;
+  padding: 0;
+  padding-right: 50px;
+  list-style: none;
+  counter-reset: project-logistics;
+}
+
+.project-logistics__item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  max-width: 530px;
+  padding: 12px 25px 39px 25px;
+  background-color: var(--light-color);
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.project-logistics__item.swiper-slide {
+  height: auto;
+}
+
+.project-logistics__item.swiper-slide:last-child {
+  margin-right: 39px;
+}
+
+.project-logistics__item.swiper-slide:last-child::before,
+.project-logistics__item.swiper-slide:last-child::after {
+  content: none;
+}
+
+.project-logistics__item::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 38px;
+  width: 100%;
+  height: 27px;
+  background-image: -o-linear-gradient(bottom, transparent 0, transparent 12px, var(--pink-color) 12px, var(--pink-color) 15px, transparent 15px);
+  background-image: linear-gradient(to top, transparent 0, transparent 12px, var(--pink-color) 12px, var(--pink-color) 15px, transparent 15px);
+}
+
+.project-logistics__item::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 40px;
+  width: 100%;
+  height: 27px;
+  background-image: url("../img/arrow-head.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.project-logistics__subtitle {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 12px;
+  padding-right: 25px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  -o-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  counter-increment: project-logistics;
+}
+
+.project-logistics__subtitle::before {
+  content: "0" counter(project-logistics) ". ";
+  position: relative;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.project-logistics__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--dark-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 768px), (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
   .service.service--disabled::before {
     background-image: url("../img/lightning-pattern-disabled@2x.jpg");
@@ -3261,6 +3388,10 @@ template {
 
   .features-list__item::before {
     left: 0;
+  }
+
+  .project-logistics__slider {
+    margin-left: 30px;
   }
 }
 
@@ -3430,6 +3561,13 @@ template {
     -webkit-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
+  }
+
+  .thanks__wrapper.swiper-wrapper {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .thanks__pagination-bullet:hover {
@@ -4379,6 +4517,49 @@ template {
   .more-services__list {
     grid-template-columns: 1fr;
     row-gap: 33px;
+  }
+
+  .project-logistics {
+    padding-bottom: 75px;
+  }
+
+  .project-logistics__title {
+    margin-bottom: 41px;
+    padding-right: 24px;
+  }
+
+  .project-logistics__slider {
+    margin-left: 0;
+  }
+
+  .project-logistics__item {
+    width: 100vw;
+    max-width: calc(100vw - 32px);
+    margin-left: 16px;
+    padding: 20px 10px 33px 20px;
+  }
+
+  .project-logistics__subtitle {
+    margin-bottom: 8px;
+  }
+
+  .project-logistics__text {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+  }
+
+  .project-logistics__item::before {
+    left: 54px;
+    top: 31px;
+  }
+
+  .project-logistics__item::after {
+    left: 56px;
+    top: 31px;
+  }
+
+  .project-logistics__item.swiper-slide:last-child {
+    margin-right: 16px;
   }
 }
 
