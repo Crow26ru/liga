@@ -7,7 +7,8 @@
 
 .service-intro__top-content {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 38px;
 
   margin-bottom: 102px;
 }
