@@ -102,6 +102,14 @@
   color: var(--pink-color);
 }
 
+.dark .contacts__specific-mail {
+  color: var(--pink-color);
+}
+
+.dark .contacts__specific-mail:hover {
+  color: var(--blue-color);
+}
+
 .contacts__map {
   background: linear-gradient(var(--light-color) 50%, var(--blue-color) 50%, var(--blue-color) 100%);
 }

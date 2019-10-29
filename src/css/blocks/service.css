@@ -147,11 +147,11 @@
   font-weight: 600;
   font-size: 1rem;
   line-height: 2.75rem;
-  color: var(--blue-color);
+  color: var(--dekor-color);
   text-transform: uppercase;
 
   background-color: var(--light-color);
-  border: 2px solid var(--blue-color);
+  border: 2px solid var(--dekor-color);
 
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }

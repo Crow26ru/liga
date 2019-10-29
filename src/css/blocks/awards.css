@@ -73,6 +73,7 @@
   background-color: var(--gray-light-color);
 }
 
+.awards__item--arda svg,
 .awards__item--specia svg {
   fill: var(--dark-color);
   /*stroke: var(--dark-color);*/
@@ -131,7 +132,7 @@
 }
 
 .awards__item-title {
-  color: var(--blue-color);
+  color: var(--dekor-color);
 }
 
 .awards__extra {

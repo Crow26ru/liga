@@ -1360,10 +1360,10 @@ template {
   font-weight: 600;
   font-size: 1rem;
   line-height: 2.75rem;
-  color: var(--blue-color);
+  color: var(--dekor-color);
   text-transform: uppercase;
   background-color: var(--light-color);
-  border: 2px solid var(--blue-color);
+  border: 2px solid var(--dekor-color);
   -webkit-transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   -o-transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -1859,6 +1859,7 @@ template {
   background-color: var(--gray-light-color);
 }
 
+.awards__item--arda svg,
 .awards__item--specia svg {
   fill: var(--dark-color);
   /*stroke: var(--dark-color);*/
@@ -1932,7 +1933,7 @@ template {
 }
 
 .awards__item-title {
-  color: var(--blue-color);
+  color: var(--dekor-color);
 }
 
 .awards__extra {
@@ -2391,9 +2392,17 @@ template {
 .companies__item--vk a {
   width: 60px;
   height: 60px;
-  background-image: url(../img/logo-vk-back-black.svg);
+  /*background-image: url(../img/logo-vk-back-black.svg);*/
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.companies__item--vk .bg {
+  fill: var(--dark-color);
+}
+
+.companies__item--vk .text {
+  fill: var(--light-color);
 }
 
 .companies__all {
@@ -2422,8 +2431,18 @@ template {
 }
 
 .companies__all:hover {
-  color: var(--light-color);
+  color: var(--white-color);
   background-color: var(--blue-color);
+}
+
+.dark .companies__all {
+  border-color: var(--pink-color);
+  color: var(--pink-color);
+}
+
+.dark .companies__all:hover {
+  color: var(--white-color);
+  background-color: var(--pink-color);
 }
 
 .companies--open .companies__slider-wrapper {
@@ -2464,7 +2483,7 @@ template {
   background-color: var(--blue-color);
   padding-top: 86px;
   padding-bottom: 35px;
-  color: var(--light-color);
+  color: var(--white-color);
 }
 
 .page-footer p {
@@ -2724,6 +2743,14 @@ template {
 
 .contacts__specific-mail:hover {
   color: var(--pink-color);
+}
+
+.dark .contacts__specific-mail {
+  color: var(--pink-color);
+}
+
+.dark .contacts__specific-mail:hover {
+  color: var(--blue-color);
 }
 
 .contacts__map {
@@ -3283,7 +3310,7 @@ template {
   background-color: var(--blue-color);
   padding-top: 98px;
   padding-bottom: 54px;
-  color: var(--light-color);
+  color: var(--white-color);
 }
 
 .principles__title {
@@ -4262,10 +4289,7 @@ template {
   }
 
   .page-footer__social {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    /*justify-content: center;*/
   }
 
   .page-footer__footer {

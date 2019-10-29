@@ -41,13 +41,14 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<input class="visually-hidden color-theme" type="checkbox" name="color-theme" id="color-theme">
+<input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы" type="checkbox" name="color-theme" id="color-theme">
 <span class="color-theme-identifier"></span>
 <header class="header">
   <div class="header__wrap">
     <div class="header__left-group header-left-group">
       <div class="header-left-group__top-inner">
         <a href="index.html" class="header-left-group__logo">
+          <span class="visually-hidden">Ссылка на главную страницу Лиги</span>
           <svg width="120" height="27" viewBox="0 0 120 27" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M40.8945 0.0551758L33.3 13.7613L32.1449 16.3527L32.3906 14.0111L32.3801 0.0551758H26.5732V26.9792H26.5941V26.9958H31.9045L39.5042 13.0122L40.5652 10.5984L40.377 12.7625L40.3875 26.9958H46.1944L46.1735 0.0551758H40.8945Z"></path>
   <path d="M11.5824 0.0544434L8.76001 0.0599894L0 26.9951H5.84872L11.4675 7.73988L17.0496 26.9951H23.1649L14.3944 0.0544434H11.5824Z"></path>
@@ -61,7 +62,7 @@
             <use xlink:href="img/sprite/sprite.svg#icon-logo-additional"></use>
           </svg>
         </a>
-        <label class="header-left-group__vision-button vision-button" for="color-theme" aria-label="смена цветовой схемы">
+        <label class="header-left-group__vision-button vision-button" for="color-theme" aria-label="переключатель цветовой схемы">
             <span class="vision-button__handler">
               <svg class="vision-button__svg" width="7" height="7" viewBox="0 0 7 7">
                 <use xlink:href="img/sprite/sprite.svg#icon-moon-dark"></use>
@@ -108,6 +109,7 @@
     </h1>
 
     <section class="contacts__main">
+      <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__general">
         <div class="contacts__general-item">
           <p class="contacts__general-title">
@@ -146,8 +148,9 @@
   </div>
 
   <section class="contacts__map">
+    <h2 class="visually-hidden">Карта</h2>
     <div class="container">
-      <div id="mymap" class="contacts__map-container" style="width: 100%; height: 470px;"></div>
+      <div id="map" class="contacts__map-container" style="width: 100%; height: 470px;"></div>
     </div>
   </section>
 
@@ -212,8 +215,10 @@
   </div>
 </footer>
 <script src="libs/swiper/swiper.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f93bc27f-37fd-47f4-b7b2-a05308a600a0"></script>
 <script src="js/main.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js"></script>
-<script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AtHXI-bqCCYJCC11ZtVRGYqwDW5jKFgN7&amp;id=mymap&amp;lang=ru_RU"></script>
+
+<!--<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AtHXI-bqCCYJCC11ZtVRGYqwDW5jKFgN7&amp;id=mymap&amp;lang=ru_RU&amp;scroll=false&amp;drag=false"></script>-->
 </body>
 </html>
