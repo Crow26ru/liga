@@ -46,6 +46,8 @@
      */
     if (window.getComputedStyle(colorThemeIdentifier).position === 'fixed') {
       document.documentElement.classList.add('dark');
+      colorThemeCheckbox.checked = true;
+
       if (metaColorTheme) {
         metaColorTheme.content = DARK_THEME_COLOR;
       }
