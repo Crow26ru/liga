@@ -61,9 +61,17 @@
   width: 60px;
   height: 60px;
 
-  background-image: url(../img/logo-vk-back-black.svg);
+  /*background-image: url(../img/logo-vk-back-black.svg);*/
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.companies__item--vk .bg {
+  fill: var(--dark-color);
+}
+
+.companies__item--vk .text {
+  fill: var(--light-color);
 }
 
 .companies__all {
@@ -85,8 +93,18 @@
 }
 
 .companies__all:hover {
-  color: var(--light-color);
+  color: var(--white-color);
   background-color: var(--blue-color);
+}
+
+.dark .companies__all {
+  border-color: var(--pink-color);
+  color: var(--pink-color);
+}
+
+.dark .companies__all:hover {
+  color: var(--white-color);
+  background-color: var(--pink-color);
 }
 
 .companies--open .companies__slider-wrapper {
