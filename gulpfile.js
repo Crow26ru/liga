@@ -57,6 +57,7 @@ const config = {
       'src/js/frame.js',
       'src/js/contacts-map.js',
       'src/js/project-logistics-slider.js',
+      'src/js/map.js',
     ],
     watch: `src/js/**/*.js`,
     mode: `iife`,
