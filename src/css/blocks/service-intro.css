@@ -2,6 +2,7 @@
   padding-top: 219px;
   padding-bottom: 90px;
   color: var(--dark-color);
+  transition: color 0.3s;
 }
 
 .service-intro__top-content {
@@ -48,6 +49,7 @@
 
 .service-intro__promo span {
   color: var(--pink-color);
+  transition: color 0.3s;
 }
 
 @media (max-width: 1150px) {
@@ -64,15 +66,13 @@
   .service__intro {
     padding-top: 118px;
   }
+
   .service-intro__top-content  {
     margin-bottom: 53px;
   }
 
   .service-intro__title {
     margin-bottom: 46px;
-  }
-
-  .service-intro__title {
     font-size: 2.5rem;
     line-height: 2.75rem;
 
