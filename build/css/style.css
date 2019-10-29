@@ -1859,6 +1859,7 @@ template {
   background-color: var(--gray-light-color);
 }
 
+.awards__item--arda svg,
 .awards__item--specia svg {
   fill: var(--dark-color);
   /*stroke: var(--dark-color);*/
