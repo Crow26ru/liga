@@ -1360,10 +1360,10 @@ template {
   font-weight: 600;
   font-size: 1rem;
   line-height: 2.75rem;
-  color: var(--blue-color);
+  color: var(--dekor-color);
   text-transform: uppercase;
   background-color: var(--light-color);
-  border: 2px solid var(--blue-color);
+  border: 2px solid var(--dekor-color);
   -webkit-transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   -o-transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -1933,7 +1933,7 @@ template {
 }
 
 .awards__item-title {
-  color: var(--blue-color);
+  color: var(--dekor-color);
 }
 
 .awards__extra {
@@ -3310,7 +3310,7 @@ template {
   background-color: var(--blue-color);
   padding-top: 98px;
   padding-bottom: 54px;
-  color: var(--light-color);
+  color: var(--white-color);
 }
 
 .principles__title {
