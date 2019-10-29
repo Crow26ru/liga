@@ -2738,7 +2738,7 @@ template {
 
 .service-intro {
   padding-top: 219px;
-  padding-bottom: 90px;
+  padding-bottom: 94px;
   color: var(--dark-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -3118,7 +3118,7 @@ template {
 
 .more-services {
   padding-top: 92px;
-  padding-bottom: 50px;
+  padding-bottom: 113px;
   background-color: var(--light-color);
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
@@ -3277,6 +3277,35 @@ template {
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
+}
+
+.principles {
+  background-color: var(--blue-color);
+  padding-top: 98px;
+  padding-bottom: 54px;
+  color: var(--light-color);
+}
+
+.principles__title {
+  margin-bottom: 43px;
+}
+
+.principles__row {
+  display: grid;
+  grid-template-columns: 63% 31%;
+  grid-column-gap: 6%;
+  font-size: 1.875rem;
+  line-height: 2.1875rem;
+}
+
+.principles__row-title {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.principles__row-text {
+  margin: 0;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 768px), (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
@@ -3673,6 +3702,14 @@ template {
 
   .we-do-service {
     padding-right: 0;
+  }
+
+  .principles__row {
+    grid-template-columns: 100%;
+  }
+
+  .principles__row-item:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 
@@ -4531,6 +4568,15 @@ template {
 
   .project-logistics__item.swiper-slide:last-child {
     margin-right: 16px;
+  }
+
+  .principles__row {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .principles__row-item:not(:last-child) {
+    margin-bottom: 33px;
   }
 }
 
