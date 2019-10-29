@@ -206,6 +206,14 @@
   /* padding-right: 19px; */
 }
 
+.principles__row {
+  display: flex;
+}
+
+.principles__row-item:not(:last-child) {
+  padding-right: 38px;
+}
+
 @media (max-width: 1380px) {
   .modes__content {
     display: block;
@@ -293,6 +301,14 @@
 
   .what-we-do__item {
     width: calc((100% - 39px * 2) / 2);
+  }
+
+  .principles__row {
+    flex-direction: column;
+  }
+
+  .principles__row-item {
+    padding-right: 0;
   }
 }
 

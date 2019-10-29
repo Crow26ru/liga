@@ -3273,6 +3273,36 @@ template {
   transition: color 0.3s;
 }
 
+.principles {
+  background-color: var(--blue-color);
+  padding-top: 98px;
+  /* padding-bottom: 138px; */
+  color: var(--light-color);
+}
+
+.principles__title {
+  margin-bottom: 43px;
+}
+
+.principles__row {
+  display: grid;
+  grid-template-columns: 63% 31%;
+  grid-column-gap: 6%;
+  margin-bottom: 72px;
+  font-size: 1.875rem;
+  line-height: 2.1875rem;
+}
+
+.principles__row-title {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.principles__row-text {
+  margin: 0;
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 768px), (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
   .service.service--disabled::before {
     background-image: url("../img/lightning-pattern-disabled@2x.jpg");
@@ -3667,6 +3697,14 @@ template {
 
   .we-do-service {
     padding-right: 0;
+  }
+
+  .principles__row {
+    grid-template-columns: 100%;
+  }
+
+  .principles__row-item:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 
@@ -4528,6 +4566,15 @@ template {
 
   .project-logistics__item.swiper-slide:last-child {
     margin-right: 16px;
+  }
+
+  .principles__row {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .principles__row-item:not(:last-child) {
+    margin-bottom: 33px;
   }
 }
 
