@@ -25,6 +25,9 @@
     '--gray-light-color: #f2f2f2',
     '--gray-dark-color: #d3d3d3'
   ];
+  var LIGHT_THEME_COLOR = '#ffffff';
+  var DARK_THEME_COLOR = '#1f1f1f';
+  var metaColorTheme = document.querySelector('meta[name="theme-color"]');
   var colorThemeCheckbox = document.getElementById('color-theme');
   var styleBlock = document.createElement('style');
   var colorThemeIdentifier = document.querySelector('.color-theme-identifier');
@@ -43,6 +46,9 @@
      */
     if (window.getComputedStyle(colorThemeIdentifier).position === 'fixed') {
       document.documentElement.classList.add('dark');
+      if (metaColorTheme) {
+        metaColorTheme.content = DARK_THEME_COLOR;
+      }
     }
   }
 
@@ -51,23 +57,18 @@
 
     document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
 
+    if (metaColorTheme) {
+      metaColorTheme.content = isDark ? DARK_THEME_COLOR : LIGHT_THEME_COLOR;
+    }
+
     localStorage.setItem('--theme', isDark ? 'dark' : 'light');
   };
 
   var changeColorIE = function() {
-    /**
-     * полифилл следит за тегами style с помощью mutationObserver
-     * удаляя и возвращая тег style, мы заставляем полифилл "пересчитывать" css-переменные
-     */
-    if (document.querySelector('.cssvars-style')) {
-      document.head.removeChild(document.querySelector('.cssvars-style'));
-    }
-
     var isDark = colorThemeCheckbox.checked ? true : false;
 
     var optionsColorTheme = isDark ? DARK_THEME_COLORS : LIGHT_THEME_COLORS;
 
-    styleBlock.classList.add('cssvars-style');
     styleBlock.innerHTML = ':root{' + optionsColorTheme.join(';') + '}';
     document.head.appendChild(styleBlock);
 
@@ -78,6 +79,7 @@
 
   colorThemeCheckbox.addEventListener('change', functionChangeColor);
 
+  // активируем цветовую схему, если в LocalStorage есть запись о последней, выбранной пользователем схеме
   if (localStorage.getItem('--theme')) {
     colorThemeCheckbox.checked = localStorage.getItem('--theme') === 'dark' ? true : false;
     functionChangeColor();
