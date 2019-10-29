@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="">
+<html lang="en" class="">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -39,14 +39,14 @@
   <meta name="keywords" content="верстка сайта, вёрстка лендинга, заказать лендинг пейдж, ит аутсорсинг, продакшн сайт, верстка страниц, заказать верстку, верстка лендинга, услуги верстки, верстка сайта цена, заказать верстку сайта, аутсорс разработка, компании аутсорс разработчики, сделать сайт">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="service-page">
+<body>
   <input class="visually-hidden color-theme" style="display: none;" type="checkbox" name="color-theme" id="color-theme">
   <span class="color-theme-identifier"></span>
   <header class="header">
     <div class="header__wrap">
       <div class="header__left-group header-left-group">
         <div class="header-left-group__top-inner">
-          <a href="index.html" class="header-left-group__logo">
+          <a class="header-left-group__logo">
             <svg width="120" height="27" viewBox="0 0 120 27" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M40.8945 0.0551758L33.3 13.7613L32.1449 16.3527L32.3906 14.0111L32.3801 0.0551758H26.5732V26.9792H26.5941V26.9958H31.9045L39.5042 13.0122L40.5652 10.5984L40.377 12.7625L40.3875 26.9958H46.1944L46.1735 0.0551758H40.8945Z"></path>
   <path d="M11.5824 0.0544434L8.76001 0.0599894L0 26.9951H5.84872L11.4675 7.73988L17.0496 26.9951H23.1649L14.3944 0.0544434H11.5824Z"></path>
@@ -77,7 +77,7 @@
         <div class="navigation__wrap">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="">Вёрстка</a>
+              <a class="navigation__link" href="#">Верстка</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link">Фронтенд</a>
@@ -118,34 +118,29 @@
             <h3 class="technologies__title">Основные технологии</h3>
             <ul class="technologies__list">
               <li class="technologies__list-item">
-                <picture>
-                  <source srcset="img/tech/logo-html.webp" type="image/webp">
-                  <img src="img/tech/logo-html.png" width="29" height="42" alt="Логотип HTML" class="technologies__icon technologies__icon--web">
-                </picture>
+                <svg class="technologies__icon technologies__icon--web" width="27px" height="39px" viewBox="0 0 27 39">
+                  <use xlink:href="img/sprite/sprite.svg#icon-html"></use>
+                </svg>
               </li>
               <li class="technologies__list-item">
-                <picture>
-                  <source srcset="img/tech/logo-css.webp" type="image/webp">
-                  <img src="img/tech/logo-css.png" width="28" height="39" alt="Логотип CSS" class="technologies__icon technologies__icon--web">
-                </picture>
+                <svg class="technologies__icon technologies__icon--web" width="28px" height="39px" viewBox="0 0 28 39">
+                  <use xlink:href="img/sprite/sprite.svg#icon-css"></use>
+                </svg>
               </li>
               <li class="technologies__list-item">
-                <picture>
-                  <source srcset="img/tech/logo-js.webp" type="image/webp">
-                  <img src="img/tech/logo-js.png" width="28" height="39" alt="Логотип JS" class="technologies__icon technologies__icon--web">
-                </picture>
+                <svg class="technologies__icon technologies__icon--web" width="29px" height="39px" viewBox="0 0 29 39">
+                  <use xlink:href="img/sprite/sprite.svg#icon-js"></use>
+                </svg>
               </li>
               <li class="technologies__list-item">
-                <picture>
-                  <source srcset="img/tech/logo-git.webp" type="image/webp">
-                  <img src="img/tech/logo-git.png" width="33" height="33" alt="Логотип Git" class="technologies__icon">
-                </picture>
+                <svg class="technologies__icon" width="33px" height="32px" viewBox="0 0 33 32">
+                  <use xlink:href="img/sprite/sprite.svg#icon-git"></use>
+                </svg>
               </li>
               <li class="technologies__list-item">
-                <picture>
-                  <source srcset="img/tech/logo-gulp.webp" type="image/webp">
-                  <img src="img/tech/logo-gulp.png" width="18" height="40" alt="Логотип Gulp" class="technologies__icon">
-                </picture>
+                <svg class="technologies__icon" width="19px" height="43px" viewBox="0 0 19 43">
+                  <use xlink:href="img/sprite/sprite.svg#icon-gulp"></use>
+                </svg>
               </li>
             </ul>
           </div>
@@ -168,297 +163,9 @@
       </div>
     </section>
 
-    <section class="specialists">
-      <div class="container">
-        <h2 class="specialists__title title title--slash">Кто работает с&nbsp;проектом</h2>
-        <ul class="specialists__list">
-          <li class="specialists__item">
-            <article class="specialist">
-              <h3 class="specialist__title">Джуниор</h3>
-              <p class="specialist__cost">750 рэ/час</p>
-              <p class="specialist__info">
-                Собирает страницы по готовым компонентам, верстает простые страницы, например текстовые, не пишет JavaScript.
-              </p>
-            </article>
-          </li>
-          <li class="specialists__item">
-            <article class="specialist">
-              <h3 class="specialist__title">Мидл</h3>
-              <p class="specialist__cost">950 рэ/час</p>
-              <p class="specialist__info">
-                Собирает библиотеку компонентов, верстает сложные страницы и делает интерактивные элементы. Может сделать анимацию.
-              </p>
-            </article>
-          </li>
-          <li class="specialists__item">
-            <article class="specialist">
-              <h3 class="specialist__title">Тимлид</h3>
-              <p class="specialist__cost">1150 рэ/час</p>
-              <p class="specialist__info">
-                Учит всех уму разуму. Продумывает архитектуру компонентов, пишет сложный JavaScript и мастерски владеет анимациями.
-              </p>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="modes">
-      <div class="container">
-        <h2 class="modes__title title title--slash">Честно про наши гибкие режимы</h2>
-        <div class="modes__content">
-          <div class="modes__normal">
-            <input class="visually-hidden modes-change" type="checkbox" name="modes-change" id="modes-change">
-            <label class="modes__label" for="modes-change" aria-label="Выбор режима">
-              <span class="modes__normal-rocket-svg-inner">
-                <svg width="295" height="185" viewBox="0 0 295 185" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1.5 30.5H227.568C227.576 30.5051 227.585 30.5103 227.593 30.5156C227.848 30.6776 228.229 30.9224 228.727 31.2497C229.723 31.9045 231.186 32.8893 233.042 34.2023C236.755 36.8283 242.04 40.7662 248.307 46.0001C260.782 56.4197 277.135 71.9652 292.721 92.5107C277.866 112.553 261.521 128.09 248.862 138.63C242.503 143.925 237.08 147.955 233.251 150.659C231.337 152.01 229.821 153.03 228.787 153.71C228.27 154.05 227.874 154.305 227.608 154.474C227.594 154.483 227.581 154.492 227.568 154.5H1.5V30.5Z" stroke-width="3"></path>
-  <path fill="none" d="M1.5 30V3L51.5 30" stroke-width="3"></path>
-  <path fill="none" d="M1.5 155V182L51.5 155" stroke-width="3"></path>
-</svg>
-
-              </span>
-              <span class="modes__reactive-rocket-svg-inner">
-                <svg width="758" height="356" viewBox="0 0 758 356" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-  <mask id="mask0" maskUnits="userSpaceOnUse" x="158" y="0" width="209" height="113">
-    <path d="M158 0V113H367L158 0Z" fill="#ffffff"></path>
-  </mask>
-  <g mask="url(#mask0)" class="wings">
-    <rect x="125" y="-68" width="383" height="280" fill="url(#pattern0)"></rect>
-  </g>
-  <mask id="mask1" maskUnits="userSpaceOnUse" x="158" y="241" width="209" height="113">
-    <path d="M158 354V241H367L158 354Z" fill="#ffffff"></path>
-  </mask>
-  <g mask="url(#mask1)" class="wings">
-    <rect x="508" y="425" width="383" height="280" transform="rotate(-180 508 425)" fill="url(#pattern1)"></rect>
-  </g>
-  <mask id="mask2" maskUnits="userSpaceOnUse" x="367" y="72" width="76" height="41">
-    <path d="M367 72V113H443L367 72Z" fill="#ffffff"></path>
-  </mask>
-  <g mask="url(#mask2)" class="wings">
-    <rect x="258" y="-106" width="340" height="300" fill="url(#pattern2)"></rect>
-  </g>
-  <mask id="mask3" maskUnits="userSpaceOnUse" x="367" y="240" width="76" height="41">
-    <path d="M367 281V240H443L367 281Z" fill="#ffffff"></path>
-  </mask>
-  <g mask="url(#mask3)" class="wings">
-    <rect width="340" height="300" transform="matrix(1 0 0 -1 258 459)" fill="url(#pattern3)"></rect>
-  </g>
-  <path d="M1.5 114V87L51.5 114" stroke-width="3"></path>
-  <path class="wings" d="M158 114V6L371 114" stroke-width="3"></path>
-  <path class="wings" d="M158 240V353L367 240" stroke-width="3"></path>
-  <path class="wings" d="M367 240V281L443 238" stroke-width="3"></path>
-  <path class="wings" d="M370 116V75L446 114" stroke-width="3"></path>
-  <path d="M1.5 239V266L51.5 239" stroke-width="3"></path>
-
-  <path class="body-rocket" d="M1.5 114.5H644.809C644.81 114.5 644.812 114.501 644.814 114.501C644.939 114.534 645.126 114.584 645.374 114.651C645.87 114.785 646.606 114.989 647.56 115.265C649.469 115.816 652.252 116.657 655.734 117.808C662.697 120.112 672.451 123.659 683.594 128.628C705.781 138.522 733.397 154.017 755.491 176.493C732.495 199.584 704.869 215.085 682.913 224.826C671.886 229.719 662.305 233.151 655.486 235.36C652.077 236.464 649.36 237.261 647.498 237.782C646.567 238.042 645.85 238.233 645.368 238.359C645.127 238.421 644.945 238.468 644.823 238.498C644.821 238.499 644.819 238.499 644.817 238.5H1.5V114.5Z" stroke-width="3"></path>
-  <circle cx="674" cy="176" r="21"></circle>
-  <path class="check-mark" d="M664 174L673.5 183.5L684.5 168" stroke="white" stroke-width="3"></path>
-  <path class="check-mark check-mark--vertical" d="M676,165.5l-9.5,9.5l15.5,11" stroke="white" stroke-width="3"></path>
-
-  <defs>
-    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-      <use xlink:href="#image0" transform="translate(0 -0.0281531) scale(0.0021692 0.00296715)"></use>
-    </pattern>
-    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-      <use xlink:href="#image0" transform="translate(0 -0.0281531) scale(0.0021692 0.00296715)"></use>
-    </pattern>
-    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-      <use xlink:href="#image1" transform="translate(0 -0.0185859) scale(0.0020202 0.00228956)"></use>
-    </pattern>
-    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-      <use xlink:href="#image1" transform="translate(0 -0.0185859) scale(0.0020202 0.00228956)"></use>
-    </pattern>
-    <image id="image0" width="461" height="356" xlink:href="img/big-wings-pattern.png"></image>
-    <image id="image1" width="495" height="453" xlink:href="img/small-wings-pattern.png"></image>
-  </defs>
-</svg>
-
-              </span>
-            </label>
-            <div class="modes__normal-content">
-              <h3 class="modes__subtitle">Ракета</h3>
-              <p class="modes__text">Стандартный режим. Команда из трёх человек, один из которых джуниор. Сроки в рабочих днях. Быстро, но без фанатизма, разработчики не выгорают. </p>
-            </div>
-            <div class="modes__reactive-content">
-              <h3 class="modes__subtitle"><span class="modes__subtitle-unvisible-fragment">Ракета</span> реактивная</h3>
-              <p class="modes__text">Дороже, но круче. Команда из четырех человек, джуниоры наблюдают. Сроки в днях. Максимально быстро, разработчики выгорают.</p>
-            </div>
-          </div>
-          <div class="modes__so-so">
-            <div class="modes__so-so-svg-inner">
-              <svg width="422" height="171">
-                <use xlink:href="img/sprite/sprite.svg#so-so-rocket"></use>
-              </svg>
-            </div>
-            <h3 class="modes__so-so-title">Так себе ракета</h3>
-            <p class="modes__so-so-text">Дешевле, но дольше. Команда из трёх человек, двое джуниоры. Сроки в рабочих днях. На 30% медленнее чем стандартный режим, зато дешевле.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="what-we-do">
-      <div class="container">
-        <h2 class="visually-hidden">Мы, вообще-то, делаем</h2>
-        <ul class="what-we-do__list">
-          <li class="what-we-do__item title title--slash">
-            Мы, <br>
-            вообще-то, <br>
-            делаем
-          </li>
-          <li class="what-we-do__item we-do-service what-we-do__item--count">
-            <h3 class="we-do-service__subtitle">Лендинги</h3>
-            <p class="we-do-service__text">Как с нуля, так и для готового продукта. Скорость&nbsp;загрузку, SEO Френдли разметка, небольшие анимации.</p>
-          </li>
-          <li class="what-we-do__item we-do-service  what-we-do__item--count">
-            <h3 class="we-do-service__subtitle">E-mail рассылки</h3>
-            <p class="we-do-service__text">Особый вид боли. Классические и&nbsp;адаптивные. Верстальщики плачут, но&nbsp;терпят.</p>
-          </li>
-          <li class="what-we-do__item we-do-service  what-we-do__item--count">
-            <h3 class="we-do-service__subtitle">Сервисы</h3>
-            <p class="we-do-service__text">Большие объёмы, много компонентов. Обычно детальная проработка промежуточных экранов и всякие графики</p>
-          </li>
-          <li class="what-we-do__item we-do-service  what-we-do__item--count">
-            <h3 class="we-do-service__subtitle">Панели администраторов</h3>
-            <p class="we-do-service__text">Нестандартные раскладки, графики. Много форм и визуальной информации. Здесь можно даже Bootstrap использовать.</p>
-          </li>
-          <li class="what-we-do__item we-do-service  what-we-do__item--count">
-            <h3 class="we-do-service__subtitle">Библиотеки компонентов и&nbsp;дизайн-системы</h3>
-            <p class="we-do-service__text">Как с нуля, так и для готового продукта. Скорость загрузку, SEO Френдли разметка, небольшие анимации.</p>
-          </li>
-          <li class="what-we-do__item we-do-service  what-we-do__item--count">
-            <h3 class="we-do-service__subtitle">Интернет-магазины и корпоративные сервисы</h3>
-            <p class="we-do-service__text">Главное грамотно разбить на компоненты. Чем больше страниц тем больше собираются по щелчку</p>
-          </li>
-          <li class="what-we-do__item what-we-do__item--image">
-            <svg width="407" height="401" viewBox="0 0 407 401" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M176.5 29.5H98.5V67.5H176.5V29.5Z" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M97.5 81.5H140.5" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M97.5 151.5H140.5" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M162.5 151.5H180.5" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M97.5 90.5H148.5" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M126.5 116.5H169.5" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M126.5 125.5H177.5" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M97.5 100.5H138.5" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M176.5 81.5H159.5V98.5H176.5V81.5Z" stroke-width="3" stroke-miterlimit="10"></path>
-<path class="fill-svg" d="M115 117H98V134H115V117Z"></path>
-<path d="M82.5 15.5H194.5" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M194.5 2.5H82.5V164.5H194.5V2.5Z" stroke-width="3" stroke-miterlimit="10"></path>
-<rect x="1.5" y="200.5" width="155" height="153" stroke-width="3"></rect>
-<rect x="190.5" y="223.5" width="75" height="75" stroke-width="3"></rect>
-<rect x="223.5" y="340.5" width="182" height="59" stroke-width="3"></rect>
-<line x1="127.5" y1="199" x2="127.5" y2="355" stroke-width="3"></line>
-<line x1="2" y1="250.5" x2="126" y2="250.5" stroke-width="3"></line>
-<line x1="2" y1="276.5" x2="126" y2="276.5" stroke-width="3" stroke-dasharray="5 8"></line>
-<line x1="2" y1="302.5" x2="126" y2="302.5" stroke-width="3"></line>
-<line x1="2" y1="327.5" x2="126" y2="327.5" stroke-width="3" stroke-dasharray="5 8"></line>
-<path d="M242.444 247C245.886 250.61 248 255.508 248 260.901C248 272.002 239.046 281 228 281C216.954 281 208 272.002 208 260.901C208 255.508 210.114 250.61 213.556 247" stroke-width="3"></path>
-<circle class="fill-svg" cx="228" cy="261" r="10"></circle>
-<rect class="fill-svg" x="16" y="219" width="85" height="12"></rect>
-<rect x="300.5" y="223.5" width="75" height="75" stroke-width="3"></rect>
-<line x1="302" y1="260.5" x2="374" y2="260.5" stroke-width="3" stroke-dasharray="5 8"></line>
-<line x1="337.5" y1="224" x2="337.5" y2="297" stroke-width="3" stroke-dasharray="5 8"></line>
-<line x1="284.5" y1="340" x2="284.5" y2="399" stroke-width="3"></line>
-<line x1="284" y1="370.5" x2="406" y2="370.5" stroke-width="3" stroke-dasharray="5 8"></line>
-<path d="M238.625 371.815L254.291 381.437L268.353 358.541" stroke-width="7"></path>
-<path d="M348.376 106.585H231.624V188.415H348.376V106.585Z" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M330.798 121.969L348.376 106.585" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M231.624 106.585L290.656 157.001L313.088 137.481" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M231.624 188.027L281.473 149.245" stroke-width="3" stroke-miterlimit="10"></path>
-<path d="M348.376 188.027L299.839 149.245" stroke-width="3" stroke-miterlimit="10"></path>
-<path class="fill-svg" d="M331.989 119H311V139.684H331.989V119Z"></path>
-</svg>
-
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="what-yet-we-do">
-      <div class="what-yet-we-do__content">
-        <h2 class="visually-hidden">Что ещё умеем мы?</h2>
-        <ul class="what-yet-we-do__list">
-          <li class="what-yet-we-do__item what-yet-we-do__item--title title title--slash">Что ещё <br> умеем мы?</li>
-          <li class="what-yet-we-do__item what-yet-we-do__item--count">
-            <h3 class="what-yet-we-do__subtitle">Анимации</h3>
-            <p class="what-yet-we-do__text">
-              От базовых транзишенов на интерактивных элементов, до отдельных анимаций на CSS.
-            </p>
-          </li>
-          <li class="what-yet-we-do__item what-yet-we-do__item--count">
-            <h3 class="what-yet-we-do__subtitle">Оживление интерактивных элементов</h3>
-            <p class="what-yet-we-do__text">
-              Слайды, табы, модальные окна, аккордеоны
-            </p>
-          </li>
-          <li class="what-yet-we-do__item what-yet-we-do__item--count">
-            <h3 class="what-yet-we-do__subtitle">Перфоманс</h3>
-            <p class="what-yet-we-do__text">
-              Оптимизация скорости загрузки и работы, доступность и SEO френдли
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="more-services">
-      <div class="container">
-        <h2 class="more-services__title">Думали всё? Ещё 4 пункта в которые мы можем</h2>
-        <ul class="more-services__list">
-          <li class="more-services__item we-do-service">
-            <h3 class="we-do-service__subtitle">Техническая поддержка на&nbsp;своих проектах</h3>
-            <p class="we-do-service__text">Добавился блок? Сломалось что-то при интеграции? Починим по гарантии или допилим сверху</p>
-          </li>
-          <li class="more-services__item we-do-service">
-            <h3 class="we-do-service__subtitle">Тестирование проектов</h3>
-            <p class="we-do-service__text">У нас отдел тестирования, в котором каждый проект проходит минимум три итерации развлечений.</p>
-          </li>
-          <li class="more-services__item we-do-service">
-            <h3 class="we-do-service__subtitle">Оценка качества по нашим критериям</h3>
-            <p class="we-do-service__text">Даже если вы нас этого не просили, мы всё равно это сделаем. Про наши критерии мы рассказывали тут</p>
-          </li>
-          <li class="more-services__item we-do-service">
-            <h3 class="we-do-service__subtitle">Консалтинг</h3>
-            <p class="we-do-service__text">Можем рассказать вашим дизайнер как делать лучше, дать консультации по производительности или помочь во время пресейла</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="project-logistics">
-      <div class="container">
-        <h2 class="project-logistics__title title title--slash">Как это выглядит&nbsp;для&nbsp;вас</h2>
-      </div>
-
-      <div class="project-logistics__slider swiper-container">
-        <ul class="project-logistics__list swiper-wrapper">
-          <li class="project-logistics__item swiper-slide">
-            <h3 class="project-logistics__subtitle">Оценка проекта</h3>
-            <p class="project-logistics__text">
-              Мы забираем у вас свежеприготовленный дизайн, и внимательно оцениваем каждый блок, чтобы дать точную оценку. Если всё устроило, собрать договор, вопрос времени
-            </p>
-          </li>
-          <li class="project-logistics__item swiper-slide">
-            <h3 class="project-logistics__subtitle">Сбор команды</h3>
-            <p class="project-logistics__text">
-              Как только мы чувствуем согласование, начинаем собирать команду идеально подходящая на данный проект. Мы стартуем за 2 дня
-            </p>
-          </li>
-          <li class="project-logistics__item swiper-slide">
-            <h3 class="project-logistics__subtitle">Реализация проекта</h3>
-            <p class="project-logistics__text">
-              Навёрстываем по роудмапу, делаем промежутчоное тестирование и мучаем вас вопросами, чтобы добиться результата
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <section class="thanks">
       <div class="thanks__top-group container">
-        <h2 class="thanks__title title">Спасибы</h2>
+        <h2 class="thanks__title">Спасибы</h2>
         <div class="thanks__pagination"></div>
       </div>
       <div class="thanks__slider-wrapper">
@@ -719,7 +426,7 @@
 
     <section class="awards">
       <div class="container">
-        <h2 class="awards__title title">Бились и добились</h2>
+        <h2 class="awards__title">Бились и добились</h2>
         <ul class="awards__list">
           <li class="awards__item">
             <a href="https://tagline.ru/outsource-rating/2018/" title="Рейтинг аутсорс-продакшенов на сайте каталога компаний digital-рынка Tagline">
@@ -775,7 +482,7 @@
     <div class="container">
       <div class="page-footer__main">
         <div class="page-footer__form">
-          <h2 class="page-footer__title title">Наверняка для нас есть работа</h2>
+          <h2 class="page-footer__title">Наверняка для нас есть работа</h2>
           <p class="page-footer__policy">Отправляя форму вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
         </div>
         <div class="page-footer__info">
