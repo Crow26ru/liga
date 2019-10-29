@@ -2391,9 +2391,17 @@ template {
 .companies__item--vk a {
   width: 60px;
   height: 60px;
-  background-image: url(../img/logo-vk-back-black.svg);
+  /*background-image: url(../img/logo-vk-back-black.svg);*/
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.companies__item--vk .bg {
+  fill: var(--dark-color);
+}
+
+.companies__item--vk .text {
+  fill: var(--light-color);
 }
 
 .companies__all {
@@ -2422,8 +2430,18 @@ template {
 }
 
 .companies__all:hover {
-  color: var(--light-color);
+  color: var(--white-color);
   background-color: var(--blue-color);
+}
+
+.dark .companies__all {
+  border-color: var(--pink-color);
+  color: var(--pink-color);
+}
+
+.dark .companies__all:hover {
+  color: var(--white-color);
+  background-color: var(--pink-color);
 }
 
 .companies--open .companies__slider-wrapper {
@@ -2464,7 +2482,7 @@ template {
   background-color: var(--blue-color);
   padding-top: 86px;
   padding-bottom: 35px;
-  color: var(--light-color);
+  color: var(--white-color);
 }
 
 .page-footer p {
@@ -2724,6 +2742,14 @@ template {
 
 .contacts__specific-mail:hover {
   color: var(--pink-color);
+}
+
+.dark .contacts__specific-mail {
+  color: var(--pink-color);
+}
+
+.dark .contacts__specific-mail:hover {
+  color: var(--blue-color);
 }
 
 .contacts__map {
@@ -4262,10 +4288,7 @@ template {
   }
 
   .page-footer__social {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    /*justify-content: center;*/
   }
 
   .page-footer__footer {
