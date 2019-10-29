@@ -1,7 +1,7 @@
 .principles {
   background-color: var(--blue-color);
   padding-top: 98px;
-  /* padding-bottom: 138px; */
+  padding-bottom: 54px;
 
   color: var(--light-color);
 }
@@ -15,8 +15,6 @@
   grid-template-columns: 63% 31%;
   grid-column-gap: 6%;
 
-  margin-bottom: 72px;
-
   font-size: 1.875rem;
   line-height: 2.1875rem;
 }
@@ -24,7 +22,7 @@
 .principles__row-title {
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .principles__row-text {

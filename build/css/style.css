@@ -2738,8 +2738,11 @@ template {
 
 .service-intro {
   padding-top: 219px;
-  padding-bottom: 90px;
+  padding-bottom: 94px;
   color: var(--dark-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .service-intro__top-content {
@@ -2784,6 +2787,9 @@ template {
 
 .service-intro__promo span {
   color: var(--pink-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .technologies {
@@ -3112,7 +3118,7 @@ template {
 
 .more-services {
   padding-top: 92px;
-  padding-bottom: 50px;
+  padding-bottom: 113px;
   background-color: var(--light-color);
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
@@ -3276,7 +3282,7 @@ template {
 .principles {
   background-color: var(--blue-color);
   padding-top: 98px;
-  /* padding-bottom: 138px; */
+  padding-bottom: 54px;
   color: var(--light-color);
 }
 
@@ -3288,7 +3294,6 @@ template {
   display: grid;
   grid-template-columns: 63% 31%;
   grid-column-gap: 6%;
-  margin-bottom: 72px;
   font-size: 1.875rem;
   line-height: 2.1875rem;
 }
@@ -3296,7 +3301,7 @@ template {
 .principles__row-title {
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .principles__row-text {
@@ -4354,9 +4359,6 @@ template {
 
   .service-intro__title {
     margin-bottom: 46px;
-  }
-
-  .service-intro__title {
     font-size: 2.5rem;
     line-height: 2.75rem;
     word-wrap: break-word;
