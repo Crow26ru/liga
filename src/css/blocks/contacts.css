@@ -106,7 +106,25 @@
 }
 
 .contacts__map {
-  background: linear-gradient(var(--light-color) 50%, var(--blue-color) 50%, var(--blue-color) 100%);
+  position: relative;
+}
+
+.contacts__map::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: var(--blue-color);
+
+  transition: background-color 0.3s;
+}
+
+.dark .contacts__map::after {
+  background-color: #2c2929;
 }
 
 .contacts__map-container--small {

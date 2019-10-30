@@ -1791,12 +1791,6 @@ template {
   color: var(--dark-color);
 }
 
-.awards span {
-  display: block;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-}
-
 .awards__title {
   margin: 0 0 52px;
 }
@@ -1829,12 +1823,21 @@ template {
   padding-top: 43px;
 }
 
+.awards__item p,
+.awards__item-title {
+  display: block;
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 300;
+}
+
 .awards__item:last-child {
   margin-right: 0;
 }
 
 .awards__item:hover .awards__frame {
-  border-color: var(--gray-light-color);
+  /*border-color: var(--gray-light-color);*/
   /*animation-name: frame-bounce;*/
   /*animation-duration: 4s;*/
   /*animation-iteration-count: infinite;*/
@@ -1865,13 +1868,17 @@ template {
 
 .awards__item:hover .awards__rope::before,
 .awards__item:hover .awards__rope::after {
-  background-color: var(--gray-light-color);
+  /*background-color: var(--gray-light-color);*/
 }
 
 .awards__item--arda svg,
 .awards__item--specia svg {
   fill: var(--dark-color);
   /*stroke: var(--dark-color);*/
+}
+
+.awards__item--magnifier svg {
+  stroke: var(--dark-color);
 }
 
 .awards__frame {
@@ -1959,14 +1966,14 @@ template {
 }
 
 .awards__extra a {
-  color: var(--blue-color);
+  color: var(--dekor-color);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
 .awards__extra a:hover {
-  color: var(--pink-color);
+  color: var(--invers-dekor-color);
 }
 
 @-webkit-keyframes frame-bounce {
@@ -2370,65 +2377,90 @@ template {
   transition: opacity 0.3s;
 }
 
-.companies__item:hover {
-  opacity: 0.7;
-}
-
 .companies__item svg {
   max-width: 100%;
   max-height: 100%;
   fill: var(--dark-color);
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
 }
 
-.companies__item a {
+.companies__link {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   max-height: 100%;
+  pointer-events: none;
 }
 
-.companies__item--bg a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+/*.companies__item--bg a {*/
 
-.companies__item--bg svg {
-  fill: var(--light-color);
-}
+/*  display: flex;*/
 
-.companies__item--mail a {
-  width: 120px;
-  height: 46px;
-  border-radius: 5px;
-  background-color: var(--dark-color);
-}
+/*  justify-content: center;*/
 
-.companies__item--vk a {
-  width: 60px;
-  height: 60px;
-  /*background-image: url(../img/logo-vk-back-black.svg);*/
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+/*  align-items: center;*/
 
-.companies__item--vk .bg {
+/*}*/
+
+/*.companies__item--bg svg {*/
+
+/*  fill: var(--light-color);*/
+
+/*}*/
+
+/*.companies__item--mail a {*/
+
+/*  width: 120px;*/
+
+/*  height: 46px;*/
+
+/*  border-radius: 5px;*/
+
+/*  background-color: var(--dark-color);*/
+
+/*}*/
+
+/*.companies__item--vk a {*/
+
+/*  width: 60px;*/
+
+/*  height: 60px;*/
+
+/*  !*background-image: url(../img/logo-vk-back-black.svg);*!*/
+
+/*  background-repeat: no-repeat;*/
+
+/*  background-size: contain;*/
+
+/*}*/
+
+.companies__item--bg .bg {
   fill: var(--dark-color);
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
 }
 
-.companies__item--vk .text {
+.companies__item--bg .text {
   fill: var(--light-color);
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
 }
+
+.companies__link:hover svg,
+.companies__link:hover .bg {
+  fill: var(--dekor-color);
+}
+
+/*.companies__item--bg:hover .bg {*/
+
+/*  fill: var(--dekor-color);*/
+
+/*}*/
 
 .companies__all {
   margin-top: 52px;
@@ -2483,20 +2515,26 @@ template {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 38px;
 }
 
 .companies--open .companies__item {
   /*min-width: 180px;*/
   /*width: 15%;*/
+  width: 100%;
   height: auto;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 0;
   margin-left: 0;
   margin-bottom: 40px;
-  margin-right: 20px;
+  /*margin-right: 20px;*/
+}
+
+.companies--open .companies__link {
+  pointer-events: auto;
 }
 
 .companies--open .companies__all {
@@ -2509,6 +2547,9 @@ template {
   padding-bottom: 35px;
   color: var(--white-color);
   background-color: var(--blue-color);
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .page-footer p {
@@ -2654,6 +2695,14 @@ template {
   display: none;
 }
 
+.dark .page-footer {
+  background-color: #2c2929;
+}
+
+.dark .page-footer__social-icon {
+  fill: #2c2929;
+}
+
 .contacts {
   padding-top: 220px;
 }
@@ -2771,9 +2820,25 @@ template {
 }
 
 .contacts__map {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--light-color)), color-stop(50%, var(--blue-color)), to(var(--blue-color)));
-  background: -o-linear-gradient(var(--light-color) 50%, var(--blue-color) 50%, var(--blue-color) 100%);
-  background: linear-gradient(var(--light-color) 50%, var(--blue-color) 50%, var(--blue-color) 100%);
+  position: relative;
+}
+
+.contacts__map::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--blue-color);
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.dark .contacts__map::after {
+  background-color: #2c2929;
 }
 
 .contacts__map-container--small {
@@ -2902,10 +2967,21 @@ template {
   width: 47px;
   height: 58px;
   margin-right: 41px;
-  padding-bottom: 7px;
+  /*padding-bottom: 7px;*/
   background-image: url("../img/shield-blue.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.technologies__icon {
+  fill: var(--white-color);
+}
+
+.technologies__icon .svg-bg,
+.technologies__icon .svg-glyph,
+.technologies__icon .svg-shadow {
+  fill: var(--dekor-color);
+  /*background-image: url("../img/shield-stack-red.svg");*/
 }
 
 .technologies__rows {
@@ -4467,8 +4543,8 @@ template {
 
   .technologies__rows {
     grid-column-gap: 16px;
-    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 19px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .specialists {

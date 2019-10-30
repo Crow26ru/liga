@@ -21,58 +21,65 @@
   transition: opacity 0.3s;
 }
 
-.companies__item:hover {
-  opacity: 0.7;
-}
-
-
-
 .companies__item svg {
   max-width: 100%;
   max-height: 100%;
   fill: var(--dark-color);
+
+  transition: fill 0.3s;
 }
 
-.companies__item a {
+.companies__link {
   display: flex;
   max-height: 100%;
+  pointer-events: none;
 }
 
-.companies__item--bg a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/*.companies__item--bg a {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
 
-.companies__item--bg svg {
-  fill: var(--light-color);
-}
+/*.companies__item--bg svg {*/
+/*  fill: var(--light-color);*/
+/*}*/
 
-.companies__item--mail a {
-  width: 120px;
-  height: 46px;
-  border-radius: 5px;
+/*.companies__item--mail a {*/
+/*  width: 120px;*/
+/*  height: 46px;*/
+/*  border-radius: 5px;*/
 
-  background-color: var(--dark-color);
-}
+/*  background-color: var(--dark-color);*/
+/*}*/
 
-.companies__item--vk a {
+/*.companies__item--vk a {*/
+/*  width: 60px;*/
+/*  height: 60px;*/
 
-  width: 60px;
-  height: 60px;
+/*  !*background-image: url(../img/logo-vk-back-black.svg);*!*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: contain;*/
+/*}*/
 
-  /*background-image: url(../img/logo-vk-back-black.svg);*/
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.companies__item--vk .bg {
+.companies__item--bg .bg {
   fill: var(--dark-color);
+  transition: fill 0.3s;
 }
 
-.companies__item--vk .text {
+.companies__item--bg .text {
   fill: var(--light-color);
+  transition: fill 0.3s;
 }
+
+.companies__link:hover svg,
+.companies__link:hover .bg {
+  fill: var(--dekor-color);
+}
+
+/*.companies__item--bg:hover .bg {*/
+/*  fill: var(--dekor-color);*/
+/*}*/
 
 .companies__all {
   margin-top: 52px;
@@ -119,18 +126,24 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 38px;
 }
 
 .companies--open .companies__item {
   /*min-width: 180px;*/
   /*width: 15%;*/
+  width: 100%;
   height: auto;
 
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 0;
   margin-left: 0;
   margin-bottom: 40px;
-  margin-right: 20px;
+  /*margin-right: 20px;*/
+}
+
+.companies--open .companies__link {
+  pointer-events: auto;
 }
 
 .companies--open .companies__all {

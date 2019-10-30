@@ -37,18 +37,29 @@
   width: 47px;
   height: 58px;
   margin-right: 41px;
-  padding-bottom: 7px;
+  /*padding-bottom: 7px;*/
 
   background-image: url("../img/shield-blue.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.technologies__icon {
+  fill: var(--white-color);
+}
+
+.technologies__icon .svg-bg,
+.technologies__icon .svg-glyph,
+.technologies__icon .svg-shadow {
+  fill: var(--dekor-color);
+  /*background-image: url("../img/shield-stack-red.svg");*/
+}
+
 .technologies__rows {
   display: grid;
   align-self: flex-end;
   width: 74%;
-/* grid-auto-flow: column; */
+  /* grid-auto-flow: column; */
 
   grid-column-gap: 38px;
   grid-row-gap: 40px;
@@ -118,8 +129,8 @@
 
   .technologies__rows {
     grid-column-gap: 16px;
-    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 19px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
