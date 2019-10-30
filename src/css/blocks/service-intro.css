@@ -66,6 +66,7 @@
 @media (max-width: 767px) {
   .service__intro {
     padding-top: 118px;
+    padding-bottom: 47px;
   }
 
   .service-intro__top-content  {

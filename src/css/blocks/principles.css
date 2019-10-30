@@ -41,6 +41,15 @@
 
 @media (max-width: 767px) {
 
+  .principles {
+    padding-top: 48px;
+    padding-bottom: 17px;
+  }
+
+  .principles__title {
+    margin-bottom: 32px;
+  }
+
   .principles__row {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -48,5 +57,9 @@
 
   .principles__row-item:not(:last-child) {
     margin-bottom: 33px;
+  }
+
+  .principles__row-title {
+    margin-bottom: 6px;
   }
 }

@@ -133,6 +133,11 @@
 
 .awards__item-title {
   color: var(--dekor-color);
+  transition: color 0.3s;
+}
+
+.awards__item:hover .awards__item-title {
+  color: var(--invers-dekor-color);
 }
 
 .awards__extra {
@@ -141,14 +146,6 @@
   line-height: 3rem;
 }
 
-.awards__extra a {
-  color: var(--blue-color);
-  transition: color 0.3s;
-}
-
-.awards__extra a:hover {
-  color: var(--pink-color);
-}
 
 @media (max-width: 1365px) {
   .awards__extra {
