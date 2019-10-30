@@ -1,7 +1,6 @@
 .features-list {
   display: grid;
   margin: 0;
-  padding-top: 51px;
   padding-left: 3px;
 
   list-style: none;
@@ -90,7 +89,6 @@
 
 @media (max-width: 600px) {
   .features-list {
-    padding-top: 13px;
     padding-right: 0;
     padding-left: 0;
 
@@ -104,7 +102,7 @@
     padding-right: 0;
     padding-left: 60px;
 
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
     line-height: 1.3125rem;
   }
 
@@ -113,7 +111,7 @@
     top: -6px;
     left: 0;
 
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     line-height: 1.5;
   }
 

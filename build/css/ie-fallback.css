@@ -472,6 +472,17 @@
   }
 }
 
+@media (max-width: 900px) {
+  .specialists__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .header__job-link-inner {
     display: none;
@@ -497,15 +508,6 @@
   .page-footer__info {
     width: 100%;
     padding-left: 0;
-  }
-
-  .specialists__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 0;
   }
 
   .specialists__item {

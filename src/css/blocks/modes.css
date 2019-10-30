@@ -9,7 +9,8 @@
 }
 
 .modes__title {
-  margin-bottom: 140px;
+  margin-bottom: 65px;
+  z-index: 2;
 
   color: var(--white-color);
 }
@@ -271,7 +272,7 @@
     margin-bottom: 1px;
     padding-left: 0;
 
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     line-height: 2.75rem;
     letter-spacing: normal;
 
@@ -279,7 +280,7 @@
   }
 
   .modes__text {
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
     line-height: 1.3125rem;
   }
 
@@ -357,7 +358,7 @@
     order: -1;
     margin-bottom: 24px;
     padding-top: 0;
-    padding-right: 65px;
+    padding-right: 55px;
   }
 
   .modes__reactive-content .modes__text {
