@@ -687,10 +687,6 @@ template {
   padding-bottom: 10px;
 }
 
-.header--scroll .header__wrap {
-  grid-template-columns: 295px 1fr 200px;
-}
-
 .header--scroll .header-left-group__logo-additional-svg {
   display: block;
 }
@@ -1008,17 +1004,12 @@ template {
   padding-bottom: 98px;
 }
 
-.intro__top-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
 .intro__headline {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 5px;
+  grid-column: 1 / span 2;
 }
 
 .intro__drako {
@@ -1097,8 +1088,8 @@ template {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
+  padding: 0;
   padding-top: 14px;
-  padding-left: 24px;
   list-style: none;
 }
 
@@ -1120,7 +1111,6 @@ template {
 .features-list {
   display: grid;
   margin: 0;
-  padding-top: 51px;
   padding-left: 3px;
   list-style: none;
   counter-reset: features;
@@ -1239,7 +1229,7 @@ template {
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  grid-template-columns: 9fr 11fr 267px;
+  grid-template-columns: 2fr 3fr 267px;
 }
 
 .service::before {
@@ -1257,7 +1247,6 @@ template {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding-right: 35px;
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 1.1;
@@ -1373,7 +1362,7 @@ template {
   padding-bottom: 11px;
   padding-left: 26px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 2.75rem;
   color: var(--dekor-color);
   text-transform: uppercase;
@@ -1403,6 +1392,7 @@ template {
 
 .service--disabled .service__title {
   color: var(--dark-color);
+  padding-right: 35px;
 }
 
 .service--disabled .service__title svg {
@@ -2053,7 +2043,8 @@ template {
 }
 
 .modes__title {
-  margin-bottom: 140px;
+  margin-bottom: 65px;
+  z-index: 2;
   color: var(--white-color);
 }
 
@@ -3494,8 +3485,16 @@ template {
     padding-left: 30px;
   }
 
+  .header__wrap {
+    grid-template-columns: 250px 1fr 35px;
+  }
+
   .header__navigation {
     padding-right: 0;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
   }
 
   .navigation__burger {
@@ -3548,7 +3547,7 @@ template {
   .header-open .navigation__burger::after {
     top: 8px;
     left: 0;
-    background-color: var(--dark-color);
+    background-color: var(--white-color);
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -3557,7 +3556,7 @@ template {
   .header-open .navigation__burger::before {
     top: 8px;
     left: 0;
-    background-color: var(--dark-color);
+    background-color: var(--white-color);
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -3575,7 +3574,7 @@ template {
     padding-top: 100px;
     padding-right: 30px;
     padding-left: 30px;
-    background-color: var(--blue-color);
+    background-color: var(--blue-background-color);
   }
 
   .header-open .navigation__list {
@@ -3607,20 +3606,16 @@ template {
     padding: 0 30px;
   }
 
-  .intro__top-content {
-    grid-template-columns: 1fr;
-  }
-
-  .intro__headline {
-    padding: 0;
-  }
-
   .intro__title {
     max-width: 600px;
   }
 
+  .intro__list-inner {
+    grid-column: 1 / span 2;
+  }
+
   .intro__list {
-    padding-top: 50px;
+    padding-top: 0;
     padding-right: 0;
     padding-left: 0;
   }
@@ -3689,7 +3684,7 @@ template {
     margin-top: 11px;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 0.6em;
+    font-size: 0.9em;
   }
 
   .service__link svg {
@@ -3759,6 +3754,14 @@ template {
   .what-yet-we-do__item--title {
     padding-left: 0;
   }
+
+  .what-yet-we-do__item--count {
+    padding-top: 30px;
+  }
+
+  .what-yet-we-do__item--count::before {
+    top: 0;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -3778,6 +3781,22 @@ template {
 
   .service-intro__title {
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .what-we-do__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .what-we-do__item--image {
+    align-self: center;
+    grid-row: 1 / span 3;
+  }
+
+  .what-we-do__item--image svg {
+    top: 0;
+    left: 0;
   }
 }
 
@@ -3815,20 +3834,6 @@ template {
     margin-bottom: 25px;
   }
 
-  .what-we-do__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .what-we-do__item--image {
-    align-self: center;
-    grid-row: 1 / span 3;
-  }
-
-  .what-we-do__item--image svg {
-    top: 0;
-    left: 0;
-  }
-
   .we-do-service {
     padding-right: 0;
   }
@@ -3860,6 +3865,11 @@ template {
   .companies--open .companies__item {
     /*width: 30%;*/
   }
+
+  .specialists__list {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 810px) {
@@ -3888,14 +3898,14 @@ template {
   .modes__subtitle {
     margin-bottom: 1px;
     padding-left: 0;
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     line-height: 2.75rem;
     letter-spacing: normal;
     opacity: 0.9;
   }
 
   .modes__text {
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
     line-height: 1.3125rem;
   }
 
@@ -3975,7 +3985,7 @@ template {
     order: -1;
     margin-bottom: 24px;
     padding-top: 0;
-    padding-right: 65px;
+    padding-right: 55px;
   }
 
   .modes__reactive-content .modes__text {
@@ -4056,11 +4066,7 @@ template {
   }
 
   .header--scroll .header__wrap {
-    grid-template-columns: 250px 1fr;
-  }
-
-  .header__wrap {
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 250px 1fr 35px;
   }
 
   .header__job-link {
@@ -4083,7 +4089,6 @@ template {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0;
   }
 
   .intro__drako {
@@ -4115,7 +4120,6 @@ template {
   }
 
   .intro__list {
-    padding-top: 44px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -4130,14 +4134,13 @@ template {
   .header-open .navigation__wrap {
     padding-right: 16px;
     padding-left: 16px;
-    grid-template-columns: 250px 1fr;
   }
 
   .header-open .header__job-link {
     display: none;
   }
 
-  .header-left-group__vision-button {
+  .header-open .header-left-group__vision-button {
     display: none;
   }
 
@@ -4190,13 +4193,13 @@ template {
   }
 
   .service__text {
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
     line-height: 1.3125;
   }
 
   .service__technologies-item {
     padding-right: 15px;
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
     line-height: 1.3125;
   }
 
@@ -4556,11 +4559,6 @@ template {
     margin-bottom: 38px;
   }
 
-  .specialists__list {
-    gap: 15px;
-    grid-template-columns: 1fr;
-  }
-
   .specialist {
     padding: 20px 25px 26px 18px;
   }
@@ -4577,7 +4575,7 @@ template {
   }
 
   .specialist__info {
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
     line-height: 1.5rem;
   }
 
@@ -4764,8 +4762,19 @@ template {
 }
 
 @media (max-width: 600px) {
+  .intro__headline {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    grid-column: 1 / span 1;
+  }
+
+  .intro__list-inner {
+    grid-column: 1 / span 1;
+  }
+
   .features-list {
-    padding-top: 13px;
     padding-right: 0;
     padding-left: 0;
     grid-column-gap: 0;
@@ -4777,14 +4786,14 @@ template {
     padding-top: 0;
     padding-right: 0;
     padding-left: 60px;
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
     line-height: 1.3125rem;
   }
 
   .features-list__item::before {
     top: -6px;
     left: 0;
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     line-height: 1.5;
   }
 

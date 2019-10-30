@@ -24,6 +24,13 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+@media (max-width: 900px) {
+  .specialists__list {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 767px) {
   .specialists {
     padding-top: 49px;
@@ -32,10 +39,5 @@
 
   .specialists__title {
     margin-bottom: 38px;
-  }
-
-  .specialists__list {
-    gap: 15px;
-    grid-template-columns: 1fr;
   }
 }

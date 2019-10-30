@@ -5,6 +5,8 @@
   var header = document.querySelector('header');
 
   var definesHeaderScrollClassName = function() {
+    if (document.documentElement.classList.contains('header-open')) return;
+    
     header.classList[document.documentElement.scrollTop > INDENT ? 'add' : 'remove']('header--scroll');
   }
 

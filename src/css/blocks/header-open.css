@@ -19,7 +19,7 @@
     top: 8px;
     left: 0;
 
-    background-color: var(--dark-color);
+    background-color: var(--white-color);
     transform: rotate(45deg);
   }
 
@@ -27,7 +27,7 @@
     top: 8px;
     left: 0;
 
-    background-color: var(--dark-color);
+    background-color: var(--white-color);
     transform: rotate(-45deg);
   }
 
@@ -45,7 +45,7 @@
     padding-right: 30px;
     padding-left: 30px;
 
-    background-color: var(--blue-color);
+    background-color: var(--blue-background-color);
   }
 
   .header-open .navigation__list {
@@ -74,15 +74,13 @@
   .header-open .navigation__wrap {
     padding-right: 16px;
     padding-left: 16px;
-
-    grid-template-columns: 250px 1fr;
   }
 
   .header-open .header__job-link {
     display: none;
   }
 
-  .header-left-group__vision-button {
+  .header-open .header-left-group__vision-button {
     display: none;
   }
 }

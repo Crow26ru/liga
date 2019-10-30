@@ -13,7 +13,7 @@
 
   transition: background-color 0.3s;
 
-  grid-template-columns: 9fr 11fr 267px;
+  grid-template-columns: 2fr 3fr 267px;
 }
 
 .service::before {
@@ -34,7 +34,6 @@
 
   display: inline-block;
   margin: 0;
-  padding-right: 35px;
 
   font-weight: 300;
   font-size: 2.5rem;
@@ -145,7 +144,7 @@
   padding-left: 26px;
 
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 2.75rem;
   color: var(--dekor-color);
   text-transform: uppercase;
@@ -176,6 +175,7 @@
 
 .service--disabled .service__title {
   color: var(--dark-color);
+  padding-right: 35px;
 }
 
 .service--disabled .service__title svg {
@@ -238,7 +238,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
 
-    font-size: 0.6em;
+    font-size: 0.9em;
   }
 
   .service__link svg {
@@ -307,14 +307,14 @@
   }
 
   .service__text {
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
     line-height: 1.3125;
   }
 
   .service__technologies-item {
     padding-right: 15px;
 
-    font-size: 1.0625rem;
+    font-size: 1.1875rem;
     line-height: 1.3125;
   }
 }

@@ -93,6 +93,14 @@
   .what-yet-we-do__item--title {
     padding-left: 0;
   }
+
+  .what-yet-we-do__item--count {
+    padding-top: 30px;
+  }
+
+  .what-yet-we-do__item--count::before {
+    top: 0;
+  }
 }
 
 @media (max-width: 767px) {
