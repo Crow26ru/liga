@@ -136,6 +136,11 @@
 
 .awards__item-title {
   color: var(--dekor-color);
+  transition: color 0.3s;
+}
+
+.awards__item:hover .awards__item-title {
+  color: var(--invers-dekor-color);
 }
 
 .awards__extra {
