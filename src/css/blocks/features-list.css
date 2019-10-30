@@ -91,7 +91,7 @@
   .features-list {
     padding-right: 0;
     padding-left: 0;
-
+    
     grid-column-gap: 0;
     grid-row-gap: 18px;
     grid-template-columns: 1fr;

@@ -15,6 +15,7 @@ const cssimport = require("postcss-import");
 const gcmq = require('gulp-group-css-media-queries');
 const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
+const critical = require('critical').stream;
 
 const config = {
   dist: `build`,
@@ -151,11 +152,18 @@ gulp.task(`ieFallback`, function () {
     .pipe(server.stream());
 });
 
+gulp.task('critical', function () {
+  return gulp.src('build/*.html')
+    .pipe(critical({extract: true, inline: true}))
+    .pipe(gulp.dest(config.dist));
+});
+
 gulp.task(`build`, gulp.series(
   `clean`,
   `copy`,
   `copyHtml`,
   `style`,
+  `critical`,
   `ieFallback`,
   `scripts`,
   (done) => done())
