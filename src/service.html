@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="">
+<html lang="ru" class="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-title" content="Лига А.">
   <meta name="application-name" content="Лига А.">
   <meta name="msapplication-TileColor" content="#b91d47">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#1f1f1f">
 
   <meta property="og:site_name" content="Лига А.">
   <meta property="og:type" content="website">
@@ -38,33 +38,26 @@
 
   <meta name="keywords" content="верстка сайта, вёрстка лендинга, заказать лендинг пейдж, ит аутсорсинг, продакшн сайт, верстка страниц, заказать верстку, верстка лендинга, услуги верстки, верстка сайта цена, заказать верстку сайта, аутсорс разработка, компании аутсорс разработчики, сделать сайт">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    if (localStorage.getItem('--theme')) {
+      document.documentElement.classList[localStorage.getItem('--theme') === 'dark' ? 'add' : 'remove']('dark');
+    }
+  </script>
 </head>
 <body class="service-page">
-  <input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы"  type="checkbox" name="color-theme" id="color-theme">
+  <input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы"  type="checkbox" checked name="color-theme" id="color-theme">
   <span class="color-theme-identifier"></span>
   <header class="header">
     <div class="header__wrap">
       <div class="header__left-group header-left-group">
         <div class="header-left-group__top-inner">
           <a href="index.html" class="header-left-group__logo">
-            <svg width="120" height="27" viewBox="0 0 120 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M40.8945 0.0551758L33.3 13.7613L32.1449 16.3527L32.3906 14.0111L32.3801 0.0551758H26.5732V26.9792H26.5941V26.9958H31.9045L39.5042 13.0122L40.5652 10.5984L40.377 12.7625L40.3875 26.9958H46.1944L46.1735 0.0551758H40.8945Z"></path>
-              <path d="M11.5824 0.0544434L8.76001 0.0599894L0 26.9951H5.84872L11.4675 7.73988L17.0496 26.9951H23.1649L14.3944 0.0544434H11.5824Z"></path>
-              <path d="M69.003 0.0551758H52.5127V6.22018V26.9792H58.3562V6.22018H69.003V0.0551758Z"></path>
-              <path d="M85.263 26.996H91.3783L82.6026 0.0498047H79.7906L76.9682 0.0553549L68.2134 26.996H74.0569L75.5465 21.8964H83.7838L85.263 26.996ZM77.0257 16.8301L79.6808 7.74079L82.3151 16.8301H77.0257Z"></path>
-              <path d="M99.606 0.0217285V20.076L109.464 26.9069L119.321 20.076V0.0217285H99.606Z"></path>
-              <path class="light" d="M115.156 15.3595C115.349 15.3595 115.564 15.3373 115.778 15.2652L115.757 17.4959C115.229 17.6846 114.555 17.8289 113.907 17.8233C112.731 17.8122 111.847 17.3628 111.377 16.4749C110.243 17.3683 108.92 17.8955 107.216 17.8844C105.058 17.8622 103.197 16.5748 103.218 14.2442C103.244 11.2532 106.009 10.3487 108.314 10.3709C109.223 10.382 110.232 10.5097 111.042 10.715L111.048 10.2988C111.058 9.12241 110.154 8.3067 108.356 8.29005C106.772 8.2734 105.356 8.70623 104.274 9.13351L104.3 6.19251C105.235 5.88176 106.992 5.43229 108.769 5.44894C112.224 5.48223 114.414 6.94718 114.382 10.8204L114.351 14.5716C114.34 15.182 114.722 15.354 115.156 15.3595ZM106.187 14.05C106.176 15.0211 107.044 15.6481 108.152 15.6592C109.182 15.6703 110.159 15.3817 111.011 14.6326L111.027 12.6128C110.473 12.474 109.631 12.302 108.868 12.2965C107.525 12.2798 106.202 12.7293 106.187 14.05Z"></path>
-            </svg>
-
-            <svg class="header-left-group__logo-additional-svg" width="120" height="27">
-              <use xlink:href="img/sprite/sprite.svg#icon-logo-additional"></use>
-            </svg>
+            <include src="build/img/icon-logo.svg"></include>
+            <include src="build/img/icons/icon-logo-additional.svg"></include>
           </a>
           <label class="header-left-group__vision-button vision-button" for="color-theme" aria-label="переключатель цветовой схемы">
             <span class="vision-button__handler">
-              <svg class="vision-button__svg" width="7" height="7" viewBox="0 0 7 7">
-                <use xlink:href="img/sprite/sprite.svg#icon-moon-dark"></use>
-              </svg>
+            <include src="build/img/icons/icon-moon-dark.svg"></include>
             </span>
           </label>
         </div>
@@ -118,29 +111,19 @@
             <h3 class="technologies__title">Основные технологии</h3>
             <ul class="technologies__list">
               <li class="technologies__list-item">
-                <svg class="technologies__icon technologies__icon--web" width="27px" height="39px" viewBox="0 0 27 39">
-                  <use xlink:href="img/sprite/sprite.svg#icon-html"></use>
-                </svg>
+                <include src="build/img/icons/icon-html.svg"></include>
               </li>
               <li class="technologies__list-item">
-                <svg class="technologies__icon technologies__icon--web" width="28px" height="39px" viewBox="0 0 28 39">
-                  <use xlink:href="img/sprite/sprite.svg#icon-css"></use>
-                </svg>
+                <include src="build/img/icons/icon-css.svg"></include>
               </li>
               <li class="technologies__list-item">
-                <svg class="technologies__icon technologies__icon--web" width="29px" height="39px" viewBox="0 0 29 39">
-                  <use xlink:href="img/sprite/sprite.svg#icon-js"></use>
-                </svg>
+                <include src="build/img/icons/icon-js.svg"></include>
               </li>
               <li class="technologies__list-item">
-                <svg class="technologies__icon" width="33px" height="32px" viewBox="0 0 33 32">
-                  <use xlink:href="img/sprite/sprite.svg#icon-git"></use>
-                </svg>
+                <include src="build/img/icons/icon-git.svg"></include>
               </li>
               <li class="technologies__list-item">
-                <svg class="technologies__icon" width="19px" height="43px" viewBox="0 0 19 43">
-                  <use xlink:href="img/sprite/sprite.svg#icon-gulp"></use>
-                </svg>
+                <include src="build/img/icons/icon-gulp.svg"></include>
               </li>
             </ul>
           </div>
@@ -165,35 +148,29 @@
     <section class="specialists">
       <div class="container">
         <h2 class="specialists__title title title--slash">Кто работает с&nbsp;проектом</h2>
-        <ul class="specialists__list">
-          <li class="specialists__item">
-            <article class="specialist">
-              <h3 class="specialist__title">Джуниор</h3>
-              <p class="specialist__cost">750 рэ/час</p>
-              <p class="specialist__info">
-                Собирает страницы по готовым компонентам, верстает простые страницы, например текстовые, не пишет JavaScript.
-              </p>
-            </article>
-          </li>
-          <li class="specialists__item">
-            <article class="specialist">
-              <h3 class="specialist__title">Мидл</h3>
-              <p class="specialist__cost">950 рэ/час</p>
-              <p class="specialist__info">
-                Собирает библиотеку компонентов, верстает сложные страницы и делает интерактивные элементы. Может сделать анимацию.
-              </p>
-            </article>
-          </li>
-          <li class="specialists__item">
-            <article class="specialist">
-              <h3 class="specialist__title">Тимлид</h3>
-              <p class="specialist__cost">1150 рэ/час</p>
-              <p class="specialist__info">
-                Учит всех уму разуму. Продумывает архитектуру компонентов, пишет сложный JavaScript и мастерски владеет анимациями.
-              </p>
-            </article>
-          </li>
-        </ul>
+        <div class="specialists__list">
+          <div class="specialists__item specialist">
+            <h3 class="specialist__title">Джуниор</h3>
+            <p class="specialist__cost">750 рэ/час</p>
+            <p class="specialist__info">
+              Собирает страницы по готовым компонентам, верстает простые страницы, например текстовые, не пишет JavaScript.
+            </p>
+          </div>
+          <div class="specialists__item specialist">
+            <h3 class="specialist__title">Мидл</h3>
+            <p class="specialist__cost">950 рэ/час</p>
+            <p class="specialist__info">
+              Собирает библиотеку компонентов, верстает сложные страницы и делает интерактивные элементы. Может сделать анимацию.
+            </p>
+          </div>
+          <div class="specialists__item specialist">
+            <h3 class="specialist__title">Тимлид</h3>
+            <p class="specialist__cost">1150 рэ/час</p>
+            <p class="specialist__info">
+              Учит всех уму разуму. Продумывает архитектуру компонентов, пишет сложный JavaScript и мастерски владеет анимациями.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -205,70 +182,10 @@
             <input class="visually-hidden modes-change" type="checkbox" name="modes-change" id="modes-change">
             <label class="modes__label" for="modes-change" aria-label="Выбор режима">
               <span class="modes__normal-rocket-svg-inner">
-                <svg width="295" height="185" viewBox="0 0 295 185" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.5 30.5H227.568C227.576 30.5051 227.585 30.5103 227.593 30.5156C227.848 30.6776 228.229 30.9224 228.727 31.2497C229.723 31.9045 231.186 32.8893 233.042 34.2023C236.755 36.8283 242.04 40.7662 248.307 46.0001C260.782 56.4197 277.135 71.9652 292.721 92.5107C277.866 112.553 261.521 128.09 248.862 138.63C242.503 143.925 237.08 147.955 233.251 150.659C231.337 152.01 229.821 153.03 228.787 153.71C228.27 154.05 227.874 154.305 227.608 154.474C227.594 154.483 227.581 154.492 227.568 154.5H1.5V30.5Z" stroke-width="3"></path>
-                  <path fill="none" d="M1.5 30V3L51.5 30" stroke-width="3"></path>
-                  <path fill="none" d="M1.5 155V182L51.5 155" stroke-width="3"></path>
-                </svg>
-
+                <include src="build/img/normal-roсket.svg"></include>
               </span>
               <span class="modes__reactive-rocket-svg-inner">
-                <svg width="758" height="356" viewBox="0 0 758 356" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                  <mask id="mask0" maskUnits="userSpaceOnUse" x="158" y="0" width="209" height="113">
-                    <path d="M158 0V113H367L158 0Z" fill="#ffffff"></path>
-                  </mask>
-                  <g mask="url(#mask0)" class="wings">
-                    <rect x="125" y="-68" width="383" height="280" fill="url(#pattern0)"></rect>
-                  </g>
-                  <mask id="mask1" maskUnits="userSpaceOnUse" x="158" y="241" width="209" height="113">
-                    <path d="M158 354V241H367L158 354Z" fill="#ffffff"></path>
-                  </mask>
-                  <g mask="url(#mask1)" class="wings">
-                    <rect x="508" y="425" width="383" height="280" transform="rotate(-180 508 425)" fill="url(#pattern1)"></rect>
-                  </g>
-                  <mask id="mask2" maskUnits="userSpaceOnUse" x="367" y="72" width="76" height="41">
-                    <path d="M367 72V113H443L367 72Z" fill="#ffffff"></path>
-                  </mask>
-                  <g mask="url(#mask2)" class="wings">
-                    <rect x="258" y="-106" width="340" height="300" fill="url(#pattern2)"></rect>
-                  </g>
-                  <mask id="mask3" maskUnits="userSpaceOnUse" x="367" y="240" width="76" height="41">
-                    <path d="M367 281V240H443L367 281Z" fill="#ffffff"></path>
-                  </mask>
-                  <g mask="url(#mask3)" class="wings">
-                    <rect width="340" height="300" transform="matrix(1 0 0 -1 258 459)" fill="url(#pattern3)"></rect>
-                  </g>
-                  <path d="M1.5 114V87L51.5 114" stroke-width="3"></path>
-                  <path class="wings" d="M158 114V6L371 114" stroke-width="3"></path>
-                  <path class="wings" d="M158 240V353L367 240" stroke-width="3"></path>
-                  <path class="wings" d="M367 240V281L443 238" stroke-width="3"></path>
-                  <path class="wings" d="M370 116V75L446 114" stroke-width="3"></path>
-                  <path d="M1.5 239V266L51.5 239" stroke-width="3"></path>
-
-                  <path class="body-rocket" d="M1.5 114.5H644.809C644.81 114.5 644.812 114.501 644.814 114.501C644.939 114.534 645.126 114.584 645.374 114.651C645.87 114.785 646.606 114.989 647.56 115.265C649.469 115.816 652.252 116.657 655.734 117.808C662.697 120.112 672.451 123.659 683.594 128.628C705.781 138.522 733.397 154.017 755.491 176.493C732.495 199.584 704.869 215.085 682.913 224.826C671.886 229.719 662.305 233.151 655.486 235.36C652.077 236.464 649.36 237.261 647.498 237.782C646.567 238.042 645.85 238.233 645.368 238.359C645.127 238.421 644.945 238.468 644.823 238.498C644.821 238.499 644.819 238.499 644.817 238.5H1.5V114.5Z" stroke-width="3"></path>
-                  <circle cx="674" cy="176" r="21"></circle>
-                  <path class="check-mark" d="M664 174L673.5 183.5L684.5 168" stroke="white" stroke-width="3"></path>
-                  <path class="check-mark check-mark--vertical" d="M676,165.5l-9.5,9.5l15.5,11" stroke="white" stroke-width="3"></path>
-
-                  <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                      <use xlink:href="#image0" transform="translate(0 -0.0281531) scale(0.0021692 0.00296715)"></use>
-                    </pattern>
-                    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                      <use xlink:href="#image0" transform="translate(0 -0.0281531) scale(0.0021692 0.00296715)"></use>
-                    </pattern>
-                    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                      <use xlink:href="#image1" transform="translate(0 -0.0185859) scale(0.0020202 0.00228956)"></use>
-                    </pattern>
-                    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-                      <use xlink:href="#image1" transform="translate(0 -0.0185859) scale(0.0020202 0.00228956)"></use>
-                    </pattern>
-                    <image id="image0" width="461" height="356" xlink:href="img/big-wings-pattern.png"></image>
-                    <image id="image1" width="495" height="453" xlink:href="img/small-wings-pattern.png"></image>
-                  </defs>
-                </svg>
-
+                <include src="build/img/reactive-rocket.svg"></include>
               </span>
             </label>
             <div class="modes__normal-content">
@@ -282,9 +199,7 @@
           </div>
           <div class="modes__so-so">
             <div class="modes__so-so-svg-inner">
-              <svg width="422" height="171">
-                <use xlink:href="img/sprite/sprite.svg#so-so-rocket"></use>
-              </svg>
+              <include src="build/img/icons/so-so-rocket.svg"></include>
             </div>
             <h3 class="modes__so-so-title">Так себе ракета</h3>
             <p class="modes__so-so-text">Дешевле, но дольше. Команда из трёх человек, двое джуниоры. Сроки в рабочих днях. На 30% медленнее чем стандартный режим, зато дешевле.</p>
@@ -461,6 +376,24 @@
               Навёрстываем по роудмапу, делаем промежутчоное тестирование и мучаем вас вопросами, чтобы добиться результата
             </p>
           </li>
+          <li class="project-logistics__item swiper-slide">
+            <h3 class="project-logistics__subtitle">Реализация проекта</h3>
+            <p class="project-logistics__text">
+              Навёрстываем по роудмапу, делаем промежутчоное тестирование и мучаем вас вопросами, чтобы добиться результата
+            </p>
+          </li>
+          <li class="project-logistics__item swiper-slide">
+            <h3 class="project-logistics__subtitle">Реализация проекта</h3>
+            <p class="project-logistics__text">
+              Навёрстываем по роудмапу, делаем промежутчоное тестирование и мучаем вас вопросами, чтобы добиться результата
+            </p>
+          </li>
+          <li class="project-logistics__item swiper-slide">
+            <h3 class="project-logistics__subtitle">Реализация проекта</h3>
+            <p class="project-logistics__text">
+              Навёрстываем по роудмапу, делаем промежутчоное тестирование и мучаем вас вопросами, чтобы добиться результата
+            </p>
+          </li>
         </ul>
       </div>
     </section>
@@ -617,108 +550,77 @@
           <ul class="swiper-wrapper">
             <li class="swiper-slide companies__item">
               <a href="https://www.agima.ru/" title="AGIMA Интерактивное агенство">
-                <svg width="120px" height="25px" viewBox="0 0 120 25">
-                  <use xlink:href="img/sprite/sprite.svg#logo-agima"></use>
-                </svg>
+                <include src="build/img/logos/logo-agima.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://molinos.ru/" title="Агенство цифровых коммуникаций Molinos">
-                <svg width="115px" height="73px" viewBox="0 0 115 73">
-                  <use xlink:href="img/sprite/sprite.svg#logo-molinos"></use>
-                </svg>
+                <include src="build/img/logos/logo-molinos.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://its.agency/" title="its.agency - премиальный дизайн, маркетинг и разработка сложных решений">
-                <svg width="155px" height="32px" viewBox="0 0 155 32">
-                  <use xlink:href="img/sprite/sprite.svg#logo-its-agency"></use>
-                </svg>
+                <include src="build/img/logos/logo-its-agency.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://evilmartians.com/" title="Evil Martians. Продуктовая разработка для стартапов и крупных компаний">
-                <svg width="108px" height="97px" viewBox="0 0 108 97">
-                  <use xlink:href="img/sprite/sprite.svg#logo-evil-martians"></use>
-                </svg>
+                <include src="build/img/logos/logo-evil-martians.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://mobileup.ru/" title="MobileUp – разработка мобильных приложений">
-                <svg width="170px" height="33px" viewBox="0 0 170 33">
-                  <use xlink:href="img/sprite/sprite.svg#logo-mobile-up"></use>
-                </svg>
+                <include src="build/img/logos/logo-mobile-up.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="http://greenlabs.ru/" title="Greenlabs - трансформируем ваш digital маркетинг в конкурентное преимущество">
-                <svg width="152px" height="26px" viewBox="0 0 152 26">
-                  <use xlink:href="img/sprite/sprite.svg#logo-greenlabs"></use>
-                </svg>
+                <include src="build/img/logos/logo-greenlabs.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://karelin.cc/" title="Студия Руслана Карелина - аналитика, дизайн и разработка web-сервисов">
-                <svg width="145px" height="16px" viewBox="0 0 145 16">
-                  <use xlink:href="img/sprite/sprite.svg#logo-karelin"></use>
-                </svg>
+                <include src="build/img/logos/logo-karelin.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://htmlacademy.ru/" title="HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript">
-                <svg width="150px" height="52px" viewBox="0 0 150 52">
-                  <use xlink:href="img/sprite/sprite.svg#logo-html-academy"></use>
-                </svg>
+                <include src="build/img/logos/logo-html-academy.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://ru.shishki.co/" title="shishki.collective - команда профессионалов, работающих по всему свету, чтобы кардинально изменить ваш бизнес к лучшему">
-                <svg width="146px" height="99px" viewBox="0 0 146 99">
-                  <use xlink:href="img/sprite/sprite.svg#logo-shishki"></use>
-                </svg>
+                <include src="build/img/logos/logo-shishki.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://glyf.ru/" title="GLYF — студия интерактивного дизайна">
-                <svg width="120px" height="28px" viewBox="0 0 120 28">
-                  <use xlink:href="img/sprite/sprite.svg#logo-glyf"></use>
-                </svg>
+                <include src="build/img/logos/logo-glyf.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://pik.digital/" title="ПИК Digital – ИТ на стройке">
-                <svg width="155px" height="59px" viewBox="0 0 155 59">
-                  <use xlink:href="img/sprite/sprite.svg#logo-pik-digital"></use>
-                </svg>
+                <include src="build/img/logos/logo-pik-digital.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://netrika.ru/" title="Нетрика — центр ИТ-экспертизы по управлению проектами в госсекторе">
-                <svg width="130px" height="30px" viewBox="0 0 130 30">
-                  <use xlink:href="img/sprite/sprite.svg#logo-netrika"></use>
-                </svg>
+                <include src="build/img/logos/logo-netrika.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item companies__item--bg companies__item--mail">
               <a href="https://mail.ru/" title="Mail.Ru: почта, поиск в интернете, новости, игры">
-                <svg width="88px" height="30px" viewBox="0 0 88 30">
-                  <use xlink:href="img/sprite/sprite.svg#logo-mail"></use>
-                </svg>
+                <include src="build/img/logos/logo-mail.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://kelnik.ru/" title="Kelnik. Интерактивное агентство с фокусом на недвижимости">
-                <svg width="100px" height="30px" viewBox="0 0 100 30">
-                  <use xlink:href="img/sprite/sprite.svg#logo-kelnik"></use>
-                </svg>
+                <include src="build/img/logos/logo-kelnik.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item companies__item--bg companies__item--vk">
               <a href="https://vk.com/" title="Социальная сеть Вконтакте">
                 <include src="build/img/logo-vk.svg"></include>
-<!--                <svg width="41px" height="24px" viewBox="0 0 41 24">-->
-<!--                  <use xlink:href="img/sprite/sprite.svg#logo-vk"></use>-->
-<!--                </svg>-->
               </a>
             </li>
           </ul>
@@ -745,9 +647,7 @@
             <a href="https://awards.specia.pro/" title="Петербургская Digital-премия SPECIA AWARDS">
               <div class="awards__frame">
                 <span class="awards__rope"></span>
-                <svg width="135px" height="33px" viewBox="0 0 135 33">
-                  <use xlink:href="img/sprite/sprite.svg#logo-specia"></use>
-                </svg>
+                <include src="build/img/logos/logo-specia.svg"></include>
               </div>
               <span class="awards__item-title">Specia Digital Awards</span>
               <span>Открытие и эксперт года</span>
@@ -757,9 +657,7 @@
             <a href="https://rating.dimaivanov.me/" title="Рейтинг Димы Иванова">
               <div class="awards__frame">
                 <span class="awards__rope"></span>
-                <svg width="56px" height="60px" viewBox="0 0 56 60">
-                  <use xlink:href="img/sprite/sprite.svg#logo-golden-magnifier"></use>
-                </svg>
+                <include src="build/img/logos/logo-golden-magnifier.svg"></include>
               </div>
               <span class="awards__item-title">Рейтинг Димы Иванова</span>
               <span>Золотая Лупа, спасибо, мы ценим</span>
@@ -769,9 +667,7 @@
             <a href="https://arda.digital/" title="Arda. Ассоциация развития диджитал агенств">
               <div class="awards__frame">
                 <span class="awards__rope"></span>
-                <svg width="94px" height="33px" viewBox="0 0 94 33">
-                  <use xlink:href="img/sprite/sprite.svg#logo-arda"></use>
-                </svg>
+                <include src="build/img/logos/logo-arda.svg"></include>
               </div>
               <span class="awards__item-title">Участники ARDA</span>
             </a>
@@ -790,13 +686,12 @@
       </div>
     </section>
 
-
   </main>
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__main">
         <div class="page-footer__form">
-          <h2 class="page-footer__title title">Наверняка для нас есть работа</h2>
+          <h2 class="page-footer__title title title--slash">Наверняка для нас есть работа</h2>
           <script>var amo_forms_params = {"id":490432,"hash":"09c92b064d14d74920d658e1f3d520c3","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
           <p class="page-footer__policy">Отправляя форму вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
         </div>
@@ -820,25 +715,19 @@
             <li class="page-footer__social-item">
               <a class="page-footer__social-link" href="https://www.facebook.com/academy.liga/">
                 <span class="visually-hidden">Facebook</span>
-                <svg class="page-footer__social-icon" width="10px" height="20px" viewBox="0 0 10 20">
-                  <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
-                </svg>
+                <include src="build/img/icons/icon-facebook.svg"></include>
               </a>
             </li>
             <li class="page-footer__social-item">
               <a class="page-footer__social-link" href="#">
                 <span class="visually-hidden">Telegram</span>
-                <svg class="page-footer__social-icon" width="16px" height="14px" viewBox="0 0 16 14">
-                  <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
-                </svg>
+                <include src="build/img/icons/icon-telegram.svg"></include>
               </a>
             </li>
             <li class="page-footer__social-item">
               <a class="page-footer__social-link" href="https://vk.com/academy.liga">
                 <span class="visually-hidden">В контакте</span>
-                <svg class="page-footer__social-icon" width="19px" height="12px" viewBox="0 0 19 12">
-                  <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
-                </svg>
+                <include src="build/img/icons/icon-vk.svg"></include>
               </a>
             </li>
           </ul>

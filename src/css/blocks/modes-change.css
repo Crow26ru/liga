@@ -42,9 +42,8 @@
 }
 
 .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner g[mask].wings {
-  opacity: 1;
-
   transform: rotateX(0);
+  opacity: 1;
 }
 
 .modes-change:checked ~ .modes__label .modes__reactive-rocket-svg-inner .wings {

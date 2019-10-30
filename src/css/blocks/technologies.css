@@ -7,56 +7,53 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
   margin-bottom: 94px;
 }
 
 .technologies__title {
-  margin-right: 43px;
   margin-top: 0;
+  margin-right: 43px;
   margin-bottom: 0;
-
   padding-bottom: 13px;
 
+  font-weight: 300;
   font-size: 2.5rem;
   line-height: 2rem;
-  font-weight: 300;
 }
 
 .technologies__list {
-  list-style: none;
   display: flex;
-
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+
+  list-style: none;
 }
 
 .technologies__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 47px;
   height: 58px;
   margin-right: 41px;
   padding-bottom: 7px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   background-image: url("../img/shield-blue.svg");
   background-repeat: no-repeat;
   background-size: contain;
-
 }
 
 .technologies__rows {
-  width: 74%;
-  align-self: flex-end;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  /* grid-auto-flow: column; */
+  align-self: flex-end;
+  width: 74%;
+/* grid-auto-flow: column; */
+
   grid-column-gap: 38px;
   grid-row-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
 }
 
 .technologies__rows-item {
@@ -66,6 +63,7 @@
 
 .technologies__label {
   margin: 0;
+
   color: var(--pink-color);
 }
 
@@ -103,16 +101,14 @@
   }
 
   .technologies__list {
+    justify-content: space-between;
     width: 100%;
     max-width: 300px;
-
-    justify-content: space-between;
   }
 
   .technologies__list-item {
     width: 43.5px;
     height: 54px;
-
     margin: 0;
   }
 
@@ -121,8 +117,8 @@
   }
 
   .technologies__rows {
-    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

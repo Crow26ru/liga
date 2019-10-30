@@ -34,7 +34,7 @@
 
   display: inline-block;
   margin: 0;
-  padding-right: 40px;
+  padding-right: 35px;
 
   font-weight: 300;
   font-size: 2.5rem;
@@ -55,7 +55,7 @@
   color: var(--dark-color);
 }
 
-.service__title-svg {
+.service__title svg {
   position: absolute;
   top: 14px;
   right: 0;
@@ -178,25 +178,14 @@
   color: var(--dark-color);
 }
 
-.service--disabled .service__title-svg {
+.service--disabled .service__title svg {
   display: block;
 }
 
 .service--disabled .service__title a {
   color: var(--dark-color);
-}
 
-
-.service--disabled .service__price {
-  opacity: 0.3;
-}
-
-.service--disabled .service__text {
-  opacity: 0.3;
-}
-
-.service--disabled .service__technologies-item {
-  opacity: 0.3;
+  cursor: default;
 }
 
 .service.service--disabled::before {
@@ -220,7 +209,7 @@
     line-height: 1.5;
   }
 
-  .service__title-svg {
+  .service__title svg {
     top: 9px;
   }
 
@@ -252,7 +241,7 @@
     font-size: 0.6em;
   }
 
-  .service__link-svg {
+  .service__link svg {
     width: 25px;
   }
 

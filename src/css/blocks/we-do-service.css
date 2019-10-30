@@ -50,15 +50,17 @@
   }
 
   .we-do-service::before {
+    top: 8px;
+
     font-size: 1.5rem;
     line-height: 1.8125rem;
-    top: 8px;
   }
 
   .we-do-service__subtitle {
+    margin-bottom: 11px;
+
     font-size: 1.5rem;
     line-height: 1.8125rem;
-    margin-bottom: 11px;
   }
 
   .we-do-service__text {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="">
+<html lang="ru" class="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-title" content="Лига А.">
   <meta name="application-name" content="Лига А.">
   <meta name="msapplication-TileColor" content="#b91d47">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#1f1f1f">
 
   <meta property="og:site_name" content="Лига А.">
   <meta property="og:type" content="website">
@@ -39,9 +39,14 @@
 
   <meta name="keywords" content="верстка сайта, вёрстка лендинга, заказать лендинг пейдж, ит аутсорсинг, продакшн сайт, верстка страниц, заказать верстку, верстка лендинга, услуги верстки, верстка сайта цена, заказать верстку сайта, аутсорс разработка, компании аутсорс разработчики, сделать сайт">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    if (localStorage.getItem('--theme')) {
+      document.documentElement.classList[localStorage.getItem('--theme') === 'dark' ? 'add' : 'remove']('dark');
+    }
+  </script>
 </head>
 <body>
-<input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы" type="checkbox" name="color-theme" id="color-theme">
+<input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы" checked type="checkbox" name="color-theme" id="color-theme">
 <span class="color-theme-identifier"></span>
 <header class="header">
   <div class="header__wrap">
@@ -50,15 +55,11 @@
         <a href="index.html" class="header-left-group__logo">
           <span class="visually-hidden">Ссылка на главную страницу Лиги</span>
           <include src="build/img/icon-logo.svg"></include>
-          <svg class="header-left-group__logo-additional-svg" width="120" height="27">
-            <use xlink:href="img/sprite/sprite.svg#icon-logo-additional"></use>
-          </svg>
+          <include src="build/img/icons/icon-logo-additional.svg"></include>
         </a>
         <label class="header-left-group__vision-button vision-button" for="color-theme" aria-label="переключатель цветовой схемы">
             <span class="vision-button__handler">
-              <svg class="vision-button__svg" width="7" height="7" viewBox="0 0 7 7">
-                <use xlink:href="img/sprite/sprite.svg#icon-moon-dark"></use>
-              </svg>
+            <include src="build/img/icons/icon-moon-dark.svg"></include>
             </span>
         </label>
       </div>
@@ -152,7 +153,7 @@
   <div class="container">
     <div class="page-footer__main">
       <div class="page-footer__form">
-        <h2 class="page-footer__title">Наверняка для нас есть работа</h2>
+        <h2 class="page-footer__title title title--slash">Наверняка для нас есть работа</h2>
         <script>var amo_forms_params = {"id":490432,"hash":"09c92b064d14d74920d658e1f3d520c3","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
         <p class="page-footer__policy">Отправляя форму вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
       </div>
@@ -176,25 +177,19 @@
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="https://www.facebook.com/academy.liga/">
               <span class="visually-hidden">Facebook</span>
-              <svg class="page-footer__social-icon" width="10px" height="20px" viewBox="0 0 10 20">
-                <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
-              </svg>
+              <include src="build/img/icons/icon-facebook.svg"></include>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">Telegram</span>
-              <svg class="page-footer__social-icon" width="16px" height="14px" viewBox="0 0 16 14">
-                <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
-              </svg>
+              <include src="build/img/icons/icon-telegram.svg"></include>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a class="page-footer__social-link" href="https://vk.com/academy.liga">
               <span class="visually-hidden">В контакте</span>
-              <svg class="page-footer__social-icon" width="19px" height="12px" viewBox="0 0 19 12">
-                <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
-              </svg>
+              <include src="build/img/icons/icon-vk.svg"></include>
             </a>
           </li>
         </ul>

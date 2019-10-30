@@ -1,10 +1,12 @@
 .what-yet-we-do__content {
-  padding-top: 52px;
   max-width: 1328px;
   margin: 0 auto;
+  padding-top: 52px;
   padding-bottom: 81px;
 
-  background-color: var(--blue-color);
+  background-color: var(--blue-background-color);
+
+  transition: background-color 0.3s;
 }
 
 .what-yet-we-do__list {
@@ -23,9 +25,10 @@
 }
 
 .what-yet-we-do__item--title {
+  padding-left: 33px;
+
   font-weight: 300;
   font-size: 2.5rem;
-  padding-left: 33px;
   line-height: 1.1;
 }
 
@@ -94,10 +97,10 @@
 
 @media (max-width: 767px) {
   .what-yet-we-do__content {
-    padding-right: 6px;
-    padding-left: 16px;
     padding-top: 56px;
+    padding-right: 6px;
     padding-bottom: 63px;
+    padding-left: 16px;
   }
 
   .what-yet-we-do__list {

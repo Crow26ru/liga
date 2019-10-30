@@ -1,5 +1,6 @@
 .dark .vision-button__handler {
   right: -20px;
+
   transform: rotate(360deg);
 }
 
@@ -7,7 +8,7 @@
   opacity: 0;
 }
 
-.dark .vision-button__svg {
+.dark .vision-button__handler svg {
   opacity: 1;
 }
 
@@ -17,4 +18,12 @@
 
 .dark .thanks__pagination-bullet--active {
   background-image: url("../img/thanks-bullet-active.svg");
+}
+
+.dark .tests-list__link:hover {
+  color: var(--white-color);
+}
+
+.dark .thanks {
+  background-color: var(--blue-background-color);
 }

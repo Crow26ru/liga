@@ -34,8 +34,9 @@
 }
 
 .more-services__item {
-  counter-increment: more-services;
   padding-right: 88px;
+
+  counter-increment: more-services;
 }
 
 .more-services__item::before {
@@ -50,6 +51,7 @@
 
   .more-services__title {
     margin-bottom: 28px;
+
     line-height: 1.875rem;
   }
 

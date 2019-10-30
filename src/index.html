@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="">
+<html lang="ru" class="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-title" content="Лига А.">
   <meta name="application-name" content="Лига А.">
   <meta name="msapplication-TileColor" content="#b91d47">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#1f1f1f">
 
   <meta property="og:site_name" content="Лига А.">
   <meta property="og:type" content="website">
@@ -38,9 +38,14 @@
 
   <meta name="keywords" content="верстка сайта, вёрстка лендинга, заказать лендинг пейдж, ит аутсорсинг, продакшн сайт, верстка страниц, заказать верстку, верстка лендинга, услуги верстки, верстка сайта цена, заказать верстку сайта, аутсорс разработка, компании аутсорс разработчики, сделать сайт">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    if (localStorage.getItem('--theme')) {
+      document.documentElement.classList[localStorage.getItem('--theme') === 'dark' ? 'add' : 'remove']('dark');
+    }
+  </script>
 </head>
 <body>
-  <input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы"  type="checkbox" name="color-theme" id="color-theme">
+  <input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы"  type="checkbox" checked name="color-theme" id="color-theme">
   <span class="color-theme-identifier"></span>
   <header class="header">
     <div class="header__wrap">
@@ -48,15 +53,11 @@
         <div class="header-left-group__top-inner">
           <a class="header-left-group__logo">
             <include src="build/img/icon-logo.svg"></include>
-            <svg class="header-left-group__logo-additional-svg" width="120" height="27">
-              <use xlink:href="img/sprite/sprite.svg#icon-logo-additional"></use>
-            </svg>
+            <include src="build/img/icons/icon-logo-additional.svg"></include>
           </a>
           <label class="header-left-group__vision-button vision-button" for="color-theme" aria-label="переключатель цветовой схемы">
             <span class="vision-button__handler">
-              <svg class="vision-button__svg" width="7" height="7" viewBox="0 0 7 7">
-                <use xlink:href="img/sprite/sprite.svg#icon-moon-dark"></use>
-              </svg>
+              <include src="build/img/icons/icon-moon-dark.svg"></include>
             </span>
           </label>
         </div>
@@ -101,39 +102,35 @@
               <include src="build/img/icon-drako.svg"></include>
             </div>
             <h1 class="intro__title">
-              <span>ЛИГА А.</span>
-              <span class="intro__title-pale">ФРОНТЕНД-АУТСОРС</span>
+              <span>лига а.</span>
+              <span class="intro__title-pale">фронтенд-аутсорс</span>
             </h1>
           </div>
           <ul class="intro__list">
             <li class="intro__item">
-              <p class="intro__text">
-                <span class="intro__text-important">297</span>
-                успешных проектов
-              </p>
+              <span class="intro__text-important">297</span>
+              успешных проектов
             </li>
             <li class="intro__item">
-              <p class="intro__text">
-                <span class="intro__text-important">2 дня</span>
-                на запуск? это&nbsp;про&nbsp;нас
-              </p>
+              <span class="intro__text-important">2 дня</span>
+              на запуск? это&nbsp;про&nbsp;нас
             </li>
           </ul>
         </div>
         <ul class="intro__features features-list">
           <li class="features-list__item">
-            Даём экспертизу и топим <br>
+            Даём экспертизу и топим
             за&nbsp;качество
           </li>
           <li class="features-list__item">
             Привлекаем джуниоров для&nbsp;минимизации стоимости
           </li>
           <li class="features-list__item">
-            Гибкость и честность — <br>
+            Гибкость и честность —
             наше&nbsp;кредо
           </li>
           <li class="features-list__item">
-            Ценим ваши данные, работаем <br>
+            Ценим ваши данные, работаем
             по&nbsp;договору&nbsp;и&nbsp;NDA
           </li>
           <li class="features-list__item">
@@ -143,23 +140,17 @@
             <ul class="features-list__tests-list tests-list">
               <li class="tests-list__item">
                 <a href="https://developers.google.com/web/tools/lighthouse" class="tests-list__link" target="_blank" aria-label="lighthouse" rel="noreferrer">
-                  <svg class="tests-list__svg" width="39" height="40">
-                    <use xlink:href="img/sprite/sprite.svg#icon-lighthouse"></use>
-                  </svg>
+                 <include src="build/img/icons/icon-lighthouse.svg"></include>
                 </a>
               </li>
               <li class="tests-list__item">
                 <a class="tests-list__link" href="live.browserstack.com" target="_blank" aria-label="browserstack" rel="noreferrer">
-                  <svg class="tests-list__svg" width="42" height="42">
-                    <use xlink:href="img/sprite/sprite.svg#icon-union-1"></use>
-                  </svg>
+                 <include src="build/img/icons/icon-browserstack.svg"></include>
                 </a>
               </li>
               <li class="tests-list__item">
                 <a class="tests-list__link" href="https://www.ideatheorem.com/ux-audit/" target="_blank" aria-label="ideatheorem" rel="noreferrer">
-                  <svg class="tests-list__svg" width="46" height="40">
-                    <use xlink:href="img/sprite/sprite.svg#icon-union-2"></use>
-                  </svg>
+                 <include src="build/img/icons/icon-ideatheorem.svg"></include>
                 </a>
               </li>
             </ul>
@@ -170,77 +161,61 @@
     </section>
 
     <section class="services">
+      <h2 class="services__title title title--slash container">Что мы делаем</h2>
       <div class="container">
-        <h2 class="services__title title">Что мы делаем</h2>
-        <ul class="services__list">
-          <li class="services__item">
-            <article class="service">
-              <div class="service__short-info">
-                <h3 class="service__title">
-                  <a href="#">
-                    Просто вёрстка
-                  </a>
-                  <svg class="service__title-svg" width="21" height="22">
-                    <use xlink:href="img/sprite/sprite.svg#icon-lock"></use>
-                  </svg>
-                </h3>
-                <p class="service__price">от 750 рэ/час</p>
-              </div>
-              <div class="service__info">
-                <p class="service__text">
-                  Сели, сверстали. От 5 до 10 часов дополнительных работ включено в стоимость.
-                </p>
-                <ul class="service__technologies">
-                  <li class="service__technologies-item">HTML</li>
-                  <li class="service__technologies-item">CSS</li>
-                  <li class="service__technologies-item">JavaScript</li>
-                </ul>
-              </div>
-              <a class="service__link" href="#">
-                <span>Подробнее</span>
-                <svg class="service__link-svg" width="33" height="26">
-                  <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
-                </svg>
+        <div class="services__item service">
+          <div class="service__short-info">
+            <h3 class="service__title">
+              <a href="#">
+                Просто вёрстка
               </a>
-            </article>
-          </li>
-          <li class="services__item">
-            <article class="service service--disabled">
-              <div class="service__short-info">
-                <h3 class="service__title">
-                  <a>
-                    Фронтенд
-                  </a>
-                  <svg class="service__title-svg" width="21" height="22">
-                    <use xlink:href="img/sprite/sprite.svg#icon-lock"></use>
-                  </svg>
-                </h3>
-                <p class="service__price">от 1150 рэ/час</p>
-              </div>
-              <div class="service__info">
-                <p class="service__text">
-                  Вы даже не представляете что тут будет. Но пока еще нет и придется подождать
-                </p>
-                <ul class="service__technologies">
-                  <li class="service__technologies-item">React.js</li>
-                  <li class="service__technologies-item">Vue.js</li>
-                </ul>
-              </div>
-              <a class="service__link" href="#">
-                <span>узнать первым</span>
-                <svg class="service__link-svg" width="29" height="23">
-                  <use xlink:href="img/sprite/sprite.svg#icon-mail"></use>
-                </svg>
-              </a>
-            </article>
-          </li>
-        </ul>
+              <include src="build/img/icons/icon-lock.svg"></include>
+            </h3>
+            <p class="service__price">от 750 рэ/час</p>
+          </div>
+          <div class="service__info">
+            <p class="service__text">
+              Сели, сверстали. От 5 до 10 часов дополнительных работ включено в стоимость.
+            </p>
+            <ul class="service__technologies">
+              <li class="service__technologies-item">HTML</li>
+              <li class="service__technologies-item">CSS</li>
+              <li class="service__technologies-item">JavaScript</li>
+            </ul>
+          </div>
+          <a class="service__link" href="#">
+            <span>Подробнее</span>
+            <include src="build/img/icons/icon-arrow.svg"></include>
+          </a>
+        </div>
+        <div class="services__item service service--disabled">
+          <div class="service__short-info">
+            <h3 class="service__title">
+              Фронтенд
+              <include src="build/img/icons/icon-lock.svg"></include>
+            </h3>
+            <p class="service__price">от 1150 рэ/час</p>
+          </div>
+          <div class="service__info">
+            <p class="service__text">
+              Вы даже не представляете что тут будет. Но пока еще нет и придется подождать
+            </p>
+            <ul class="service__technologies">
+              <li class="service__technologies-item">React.js</li>
+              <li class="service__technologies-item">Vue.js</li>
+            </ul>
+          </div>
+          <a class="service__link" href="#">
+            <span>узнать первым</span>
+            <include src="build/img/icons/icon-mail.svg"></include>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="modes">
       <div class="container">
-        <h2 class="modes__title title">Честно про наши гибкие режимы</h2>
+        <h2 class="modes__title title title--slash">Честно про наши гибкие режимы</h2>
         <div class="modes__content">
           <div class="modes__normal">
             <input class="visually-hidden modes-change" type="checkbox" name="modes-change" id="modes-change">
@@ -263,9 +238,7 @@
           </div>
           <div class="modes__so-so">
             <div class="modes__so-so-svg-inner">
-              <svg width="422" height="171">
-                <use xlink:href="img/sprite/sprite.svg#so-so-rocket"></use>
-              </svg>
+              <include src="build/img/icons/so-so-rocket.svg"></include>
             </div>
             <h3 class="modes__so-so-title">Так себе ракета</h3>
             <p class="modes__so-so-text">Дешевле, но дольше. Команда из трёх человек, двое джуниоры. Сроки в рабочих днях. На 30% медленнее чем стандартный режим, зато дешевле.</p>
@@ -276,7 +249,7 @@
 
     <section class="projects">
       <div class="container">
-          <h2 class="projects__title title">Успели сделать</h2>
+          <h2 class="projects__title title title--slash">Успели сделать</h2>
           <div class="swiper-container projects__slider">
             <ul class="swiper-wrapper projects__wrapper">
               <li class="swiper-slide projects__slide">
@@ -363,14 +336,10 @@
             </ul>
             <!-- Add Arrows -->
             <button class="projects__button reset-button projects__button--next" type="button" aria-label="Следующий слайд">
-              <svg class="projects__button-svg" width="116" height="33">
-                <use xlink:href="img/sprite/sprite.svg#icon-big-arrow"></use>
-              </svg>
+              <include src="build/img/icons/icon-big-arrow.svg"></include>
             </button>
             <button class="projects__button reset-button projects__button--prev" type="button" aria-label="Предыдущий слайд">
-              <svg class="projects__button-svg" width="116" height="33">
-                <use xlink:href="img/sprite/sprite.svg#icon-big-arrow"></use>
-              </svg>
+              <include src="build/img/icons/icon-big-arrow.svg"></include>
             </button>
           </div>
       </div>
@@ -378,7 +347,7 @@
 
     <section class="thanks">
       <div class="thanks__top-group container">
-        <h2 class="thanks__title title">Спасибы</h2>
+        <h2 class="thanks__title title title--slash">Спасибы</h2>
         <div class="thanks__pagination"></div>
       </div>
       <div class="thanks__slider-wrapper">
@@ -528,108 +497,77 @@
           <ul class="swiper-wrapper">
             <li class="swiper-slide companies__item">
               <a href="https://www.agima.ru/" title="AGIMA Интерактивное агенство">
-                <svg width="120px" height="25px" viewBox="0 0 120 25">
-                  <use xlink:href="img/sprite/sprite.svg#logo-agima"></use>
-                </svg>
+                <include src="build/img/logos/logo-agima.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://molinos.ru/" title="Агенство цифровых коммуникаций Molinos">
-                <svg width="115px" height="73px" viewBox="0 0 115 73">
-                  <use xlink:href="img/sprite/sprite.svg#logo-molinos"></use>
-                </svg>
+                <include src="build/img/logos/logo-molinos.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://its.agency/" title="its.agency - премиальный дизайн, маркетинг и разработка сложных решений">
-                <svg width="155px" height="32px" viewBox="0 0 155 32">
-                  <use xlink:href="img/sprite/sprite.svg#logo-its-agency"></use>
-                </svg>
+                <include src="build/img/logos/logo-its-agency.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://evilmartians.com/" title="Evil Martians. Продуктовая разработка для стартапов и крупных компаний">
-                <svg width="108px" height="97px" viewBox="0 0 108 97">
-                  <use xlink:href="img/sprite/sprite.svg#logo-evil-martians"></use>
-                </svg>
+                <include src="build/img/logos/logo-evil-martians.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://mobileup.ru/" title="MobileUp – разработка мобильных приложений">
-                <svg width="170px" height="33px" viewBox="0 0 170 33">
-                  <use xlink:href="img/sprite/sprite.svg#logo-mobile-up"></use>
-                </svg>
+                <include src="build/img/logos/logo-mobile-up.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="http://greenlabs.ru/" title="Greenlabs - трансформируем ваш digital маркетинг в конкурентное преимущество">
-                <svg width="152px" height="26px" viewBox="0 0 152 26">
-                  <use xlink:href="img/sprite/sprite.svg#logo-greenlabs"></use>
-                </svg>
+                <include src="build/img/logos/logo-greenlabs.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://karelin.cc/" title="Студия Руслана Карелина - аналитика, дизайн и разработка web-сервисов">
-                <svg width="145px" height="16px" viewBox="0 0 145 16">
-                  <use xlink:href="img/sprite/sprite.svg#logo-karelin"></use>
-                </svg>
+                <include src="build/img/logos/logo-karelin.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://htmlacademy.ru/" title="HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript">
-                <svg width="150px" height="52px" viewBox="0 0 150 52">
-                  <use xlink:href="img/sprite/sprite.svg#logo-html-academy"></use>
-                </svg>
+                <include src="build/img/logos/logo-html-academy.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://ru.shishki.co/" title="shishki.collective - команда профессионалов, работающих по всему свету, чтобы кардинально изменить ваш бизнес к лучшему">
-                <svg width="146px" height="99px" viewBox="0 0 146 99">
-                  <use xlink:href="img/sprite/sprite.svg#logo-shishki"></use>
-                </svg>
+                <include src="build/img/logos/logo-shishki.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://glyf.ru/" title="GLYF — студия интерактивного дизайна">
-                <svg width="120px" height="28px" viewBox="0 0 120 28">
-                  <use xlink:href="img/sprite/sprite.svg#logo-glyf"></use>
-                </svg>
+                <include src="build/img/logos/logo-glyf.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://pik.digital/" title="ПИК Digital – ИТ на стройке">
-                <svg width="155px" height="59px" viewBox="0 0 155 59">
-                  <use xlink:href="img/sprite/sprite.svg#logo-pik-digital"></use>
-                </svg>
+                <include src="build/img/logos/logo-pik-digital.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://netrika.ru/" title="Нетрика — центр ИТ-экспертизы по управлению проектами в госсекторе">
-                <svg width="130px" height="30px" viewBox="0 0 130 30">
-                  <use xlink:href="img/sprite/sprite.svg#logo-netrika"></use>
-                </svg>
+                <include src="build/img/logos/logo-netrika.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item companies__item--bg companies__item--mail">
               <a href="https://mail.ru/" title="Mail.Ru: почта, поиск в интернете, новости, игры">
-                <svg width="88px" height="30px" viewBox="0 0 88 30">
-                  <use xlink:href="img/sprite/sprite.svg#logo-mail"></use>
-                </svg>
+                <include src="build/img/logos/logo-mail.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item">
               <a href="https://kelnik.ru/" title="Kelnik. Интерактивное агентство с фокусом на недвижимости">
-                <svg width="100px" height="30px" viewBox="0 0 100 30">
-                  <use xlink:href="img/sprite/sprite.svg#logo-kelnik"></use>
-                </svg>
+                <include src="build/img/logos/logo-kelnik.svg"></include>
               </a>
             </li>
             <li class="swiper-slide companies__item companies__item--bg companies__item--vk">
               <a href="https://vk.com/" title="Социальная сеть Вконтакте">
                 <include src="build/img/logo-vk.svg"></include>
-<!--                <svg width="41px" height="24px" viewBox="0 0 41 24">-->
-<!--                  <use xlink:href="img/sprite/sprite.svg#logo-vk"></use>-->
-<!--                </svg>-->
               </a>
             </li>
           </ul>
@@ -640,7 +578,7 @@
 
     <section class="awards">
       <div class="container">
-        <h2 class="awards__title title">Бились и добились</h2>
+        <h2 class="awards__title title title--slash">Бились и добились</h2>
         <ul class="awards__list">
           <li class="awards__item">
             <a href="https://tagline.ru/outsource-rating/2018/" title="Рейтинг аутсорс-продакшенов на сайте каталога компаний digital-рынка Tagline">
@@ -656,9 +594,7 @@
             <a href="https://awards.specia.pro/" title="Петербургская Digital-премия SPECIA AWARDS">
               <div class="awards__frame">
                 <span class="awards__rope"></span>
-                <svg width="135px" height="33px" viewBox="0 0 135 33">
-                  <use xlink:href="img/sprite/sprite.svg#logo-specia"></use>
-                </svg>
+                <include src="build/img/logos/logo-specia.svg"></include>
               </div>
               <span class="awards__item-title">Specia Digital Awards</span>
               <span>Открытие и эксперт года</span>
@@ -668,9 +604,7 @@
             <a href="https://rating.dimaivanov.me/" title="Рейтинг Димы Иванова">
               <div class="awards__frame">
                 <span class="awards__rope"></span>
-                <svg width="56px" height="60px" viewBox="0 0 56 60">
-                  <use xlink:href="img/sprite/sprite.svg#logo-golden-magnifier"></use>
-                </svg>
+                <include src="build/img/logos/logo-golden-magnifier.svg"></include>
               </div>
               <span class="awards__item-title">Рейтинг Димы Иванова</span>
               <span>Золотая Лупа, спасибо, мы ценим</span>
@@ -680,9 +614,7 @@
             <a href="https://arda.digital/" title="Arda. Ассоциация развития диджитал агенств">
               <div class="awards__frame">
                 <span class="awards__rope"></span>
-                <svg width="94px" height="33px" viewBox="0 0 94 33">
-                  <use xlink:href="img/sprite/sprite.svg#logo-arda"></use>
-                </svg>
+                <include src="build/img/logos/logo-arda.svg"></include>
               </div>
               <span class="awards__item-title">Участники ARDA</span>
             </a>
@@ -701,13 +633,12 @@
       </div>
     </section>
 
-
   </main>
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__main">
         <div class="page-footer__form">
-          <h2 class="page-footer__title title">Наверняка для нас есть работа</h2>
+          <h2 class="page-footer__title title title--slash">Наверняка для нас есть работа</h2>
           <script>var amo_forms_params = {"id":490432,"hash":"09c92b064d14d74920d658e1f3d520c3","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
           <p class="page-footer__policy">Отправляя форму вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
 
@@ -733,25 +664,19 @@
             <li class="page-footer__social-item">
               <a class="page-footer__social-link" href="https://www.facebook.com/academy.liga/">
                 <span class="visually-hidden">Facebook</span>
-                <svg class="page-footer__social-icon" width="10px" height="20px" viewBox="0 0 10 20">
-                  <use xlink:href="img/sprite/sprite.svg#icon-facebook"></use>
-                </svg>
+                <include src="build/img/icons/icon-facebook.svg"></include>
               </a>
             </li>
             <li class="page-footer__social-item">
               <a class="page-footer__social-link" href="#">
                 <span class="visually-hidden">Telegram</span>
-                <svg class="page-footer__social-icon" width="16px" height="14px" viewBox="0 0 16 14">
-                  <use xlink:href="img/sprite/sprite.svg#icon-telegram"></use>
-                </svg>
+                <include src="build/img/icons/icon-telegram.svg"></include>
               </a>
             </li>
             <li class="page-footer__social-item">
               <a class="page-footer__social-link" href="https://vk.com/academy.liga">
                 <span class="visually-hidden">В контакте</span>
-                <svg class="page-footer__social-icon" width="19px" height="12px" viewBox="0 0 19 12">
-                  <use xlink:href="img/sprite/sprite.svg#icon-vk"></use>
-                </svg>
+                <include src="build/img/icons/icon-vk.svg"></include>
               </a>
             </li>
           </ul>

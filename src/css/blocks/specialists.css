@@ -1,19 +1,25 @@
 .specialists {
-  background-color: var(--blue-color);
   padding-top: 85px;
   padding-bottom: 43px;
+
+  background-color: var(--blue-background-color);
+
+  transition: background-color 0.3s;
 }
 
 .specialists__title {
-  color: var(--white-color);
   margin-bottom: 47px;
+
+  color: var(--white-color);
 }
 
 .specialists__list {
+  display: grid;
   margin: 0;
   padding: 0;
+
   list-style: none;
-  display: grid;
+
   gap: 38px;
   grid-template-columns: repeat(3, 1fr);
 }

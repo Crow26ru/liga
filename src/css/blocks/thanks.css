@@ -10,8 +10,9 @@
 }
 
 .thanks__title {
-  color: var(--dark-color);
   padding-right: 43px;
+
+  color: var(--dark-color);
 }
 
 .thanks__wrapper.swiper-wrapper {
@@ -24,13 +25,16 @@
 }
 
 .thanks__pagination-bullet {
-  margin-right: 17px;
-  font-size: 0;
   width: 12px;
   height: 25px;
+  margin-right: 17px;
+
+  font-size: 0;
+
   background-image: url("../img/thanks-bullet.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
   transition: opacity 0.3s, transform 0.3s;
 }
 

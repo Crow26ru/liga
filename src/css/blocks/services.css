@@ -1,20 +1,19 @@
 .services {
-  background-color: var(--blue-color);
   padding-top: 99px;
   padding-bottom: 50px;
+
+  background-color: var(--blue-background-color);
+
+  transition: background-color 0.3s;
 }
 
 .services__title {
-  color: #ffffff;
   margin-bottom: 46px;
-}
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-.services__list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
+  color: #ffffff;
 }
 
 .services__item {

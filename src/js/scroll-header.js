@@ -1,7 +1,7 @@
 'use strict';
 
 (function() {
-  var INDENT = 300;
+  var INDENT = 400;
   var header = document.querySelector('header');
 
   var definesHeaderScrollClassName = function() {

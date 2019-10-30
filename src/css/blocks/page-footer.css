@@ -1,8 +1,10 @@
 .page-footer {
-  background-color: var(--blue-color);
   padding-top: 86px;
   padding-bottom: 35px;
+
   color: var(--white-color);
+
+  background-color: var(--blue-color);
 }
 
 .page-footer p {
@@ -12,22 +14,24 @@
 
 .page-footer__main {
   display: grid;
+
   grid-template-columns: 50% 50%;
 }
 
 .page-footer__title {
   max-width: 550px;
-  letter-spacing: -1px;
   margin: 0 0 30px;
+
+  letter-spacing: -1px;
 }
 
 .page-footer__info {
   max-width: 560px;
-  padding-left: 20%;
   padding-top: 17px;
+  padding-left: 20%;
 
-  font-size: 1.5rem;
   font-weight: 300;
+  font-size: 1.5rem;
   line-height: 1.875rem;
 }
 
@@ -42,12 +46,14 @@
 .page-footer__policy a,
 .page-footer__info-block a {
   border-bottom: 1px solid rgba(225, 225, 225, 0.5);
+
   transition: color 0.3s, border-bottom-color 0.3s;
 }
 
 .page-footer__policy a:hover,
 .page-footer__info-block a:hover {
   color: var(--pink-color);
+
   border-bottom-color: var(--pink-color);
 }
 
@@ -56,13 +62,14 @@
 }
 
 .page-footer__social {
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
+
+  list-style: none;
 }
 
 .page-footer__social-item {
@@ -70,10 +77,10 @@
   height: 43px;
   margin-right: 26px;
 
-  transition: background-image 0.3s;
-
-  background-repeat: no-repeat;
   background-image: url("../img/shield-white.svg");
+  background-repeat: no-repeat;
+
+  transition: background-image 0.3s;
 }
 
 .page-footer__social-item:last-of-type {
@@ -84,7 +91,7 @@
   background-image: url("../img/shield-red.svg");
 }
 
-.page-footer__social-item:hover .page-footer__social-icon {
+.page-footer__social-item:hover .page-footer__social-link svg {
   fill: var(--light-color);
 }
 
@@ -92,22 +99,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 5px;
   width: 100%;
   height: 100%;
+  padding-bottom: 5px;
 }
 
-.page-footer__social-icon {
-  fill: var(--blue-color);
-
+.page-footer__social-link svg {
   transition: fill 0.3s;
+
+  fill: var(--blue-color);
 }
 
 .page-footer__footer {
   margin-top: 89px;
+
+  font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-weight: 300;
 }
 
 .page-footer__footer a {
@@ -154,8 +162,9 @@
 
   .page-footer__info {
     max-width: none;
-    padding-left: 0;
     padding-top: 46px;
+    padding-left: 0;
+
     line-height: 1.8125rem;
   }
 
@@ -184,8 +193,6 @@
   .page-footer__footer p:last-child {
     margin-top: 13px;
   }
-
-
 }
 
 @media (max-width: 499px) {

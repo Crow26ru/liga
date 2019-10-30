@@ -29,7 +29,9 @@
   top: 50%;
   z-index: 10;
 
+  display: flex;
   width: 8.75%;
+  height: 60px;
   margin-top: 1px;
 
   color: var(--dekor-color);
@@ -54,7 +56,7 @@
   left: 0;
 }
 
-.projects__button-svg {
+.projects__button svg {
   width: 100%;
 
   fill: none;

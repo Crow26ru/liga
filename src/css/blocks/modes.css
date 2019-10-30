@@ -3,7 +3,9 @@
   padding-top: 51px;
   padding-bottom: 112px;
 
-  background-color: var(--blue-color);
+  background-color: var(--blue-background-color);
+
+  transition: background-color 0.3s;
 }
 
 .modes__title {
@@ -57,7 +59,9 @@
 }
 
 .modes__normal-rocket-svg-inner svg {
-  fill: var(--blue-color);
+  transition: fill 0.3s;
+
+  fill: var(--blue-background-color);
   stroke: currentColor;
 }
 
@@ -83,7 +87,9 @@
 }
 
 .modes__reactive-rocket-svg-inner .body-rocket {
-  fill: var(--blue-color);
+  transition: fill 0.3s;
+
+  fill: var(--blue-background-color);
   stroke-opacity: 0.3;
 }
 
@@ -289,6 +295,7 @@
 
     transform: rotate(-90deg);
     transform-origin: right bottom;
+
     pointer-events: none;
   }
 
@@ -307,10 +314,10 @@
 
   .modes__reactive-rocket-svg-inner {
     top: 5px;
+    z-index: 1;
 
     width: 324px;
     height: 156px;
-    z-index: 1;
   }
 
   .modes__normal-rocket-svg-inner {
@@ -325,9 +332,8 @@
   }
 
   .modes__reactive-rocket-svg-inner g[mask].wings {
-    opacity: 1;
-
     transform: rotateX(0);
+    opacity: 1;
   }
 
   .modes__label svg .check-mark--vertical {
