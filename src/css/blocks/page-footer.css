@@ -5,6 +5,8 @@
   color: var(--white-color);
 }
 
+
+
 .page-footer p {
   margin-top: 0;
   margin-bottom: 0;
@@ -124,6 +126,14 @@
 
 .page-footer--contacts .contacts-hidden {
   display: none;
+}
+
+.dark .page-footer {
+  background-color: #2c2929;
+}
+
+.dark .page-footer__social-icon {
+  fill: #2c2929;
 }
 
 @media (max-width: 1023px) {
