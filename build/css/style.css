@@ -643,6 +643,17 @@ template {
   color: inherit;
 }
 
+.link {
+  color: var(--dekor-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--invers-dekor-color);
+}
+
 .reset-button {
   padding: 0;
   background: transparent;
@@ -1934,23 +1945,19 @@ template {
 
 .awards__item-title {
   color: var(--dekor-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.awards__item:hover .awards__item-title {
+  color: var(--invers-dekor-color);
 }
 
 .awards__extra {
   width: 60%;
   font-size: 2.5rem;
   line-height: 3rem;
-}
-
-.awards__extra a {
-  color: var(--blue-color);
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.awards__extra a:hover {
-  color: var(--pink-color);
 }
 
 @-webkit-keyframes frame-bounce {
@@ -2738,19 +2745,11 @@ template {
 }
 
 .contacts__specific-mail {
-  color: var(--blue-color);
+  color: var(--dekor-color);
 }
 
 .contacts__specific-mail:hover {
-  color: var(--pink-color);
-}
-
-.dark .contacts__specific-mail {
-  color: var(--pink-color);
-}
-
-.dark .contacts__specific-mail:hover {
-  color: var(--blue-color);
+  color: var(--invers-dekor-color);
 }
 
 .contacts__map {
@@ -4375,6 +4374,7 @@ template {
 
   .service__intro {
     padding-top: 118px;
+    padding-bottom: 47px;
   }
 
   .service-intro__top-content {
@@ -4431,6 +4431,7 @@ template {
   .technologies__rows {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 16px;
+    grid-row-gap: 19px;
   }
 
   .specialists {
@@ -4594,6 +4595,15 @@ template {
     margin-right: 16px;
   }
 
+  .principles {
+    padding-top: 48px;
+    padding-bottom: 17px;
+  }
+
+  .principles__title {
+    margin-bottom: 32px;
+  }
+
   .principles__row {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -4601,6 +4611,10 @@ template {
 
   .principles__row-item:not(:last-child) {
     margin-bottom: 33px;
+  }
+
+  .principles__row-title {
+    margin-bottom: 6px;
   }
 }
 

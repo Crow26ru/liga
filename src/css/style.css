@@ -6,6 +6,7 @@
 @import "./blocks/swiper";
 @import "./blocks/container";
 @import "./blocks/title";
+@import "./blocks/link";
 @import "./blocks/reset-button";
 @import "./blocks/header";
 @import "./blocks/header-left-group";

@@ -1,0 +1,8 @@
+.link {
+  color: var(--dekor-color);
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--invers-dekor-color);
+}

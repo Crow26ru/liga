@@ -95,19 +95,11 @@
 }
 
 .contacts__specific-mail {
-  color: var(--blue-color);
+  color: var(--dekor-color);
 }
 
 .contacts__specific-mail:hover {
-  color: var(--pink-color);
-}
-
-.dark .contacts__specific-mail {
-  color: var(--pink-color);
-}
-
-.dark .contacts__specific-mail:hover {
-  color: var(--blue-color);
+  color: var(--invers-dekor-color);
 }
 
 .contacts__map {
