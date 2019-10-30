@@ -71,7 +71,6 @@ body {
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  cursor: url("../img/mini-logo.svg"), auto;
 }
 
 a {
@@ -541,10 +540,6 @@ template {
 
 .dark .vision-button__svg {
   opacity: 1;
-}
-
-.dark body {
-  cursor: url("../img/mini-logo-dark.svg"), auto;
 }
 
 .dark .thanks__pagination-bullet {
