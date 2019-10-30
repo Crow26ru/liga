@@ -1,9 +1,10 @@
 .tests-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .tests-list__item {
@@ -12,6 +13,7 @@
 
 .tests-list__item a {
   color: var(--dekor-color);
+
   transition: color 0.3s;
 }
 
@@ -20,7 +22,7 @@
   color: var(--invers-dekor-color);
 }
 
-.tests-list__svg {
+.tests-list__item svg {
   fill: currentColor;
 }
 

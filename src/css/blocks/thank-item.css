@@ -2,12 +2,12 @@
   display: grid;
   width: 68.4%;
   max-width: 986px;
+  height: auto !important;
   padding: 38px 15px 46px 38px;
 
   background-color: var(--dekor-color);
 
   grid-template-columns: 1fr 217px;
-  height: auto !important;
 }
 
 .thank-item__text-content {
@@ -29,11 +29,12 @@
 }
 
 .thank-item__link {
+  align-self: flex-start;
+
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 2rem;
   color: var(--white-color);
-  align-self: flex-start;
 
   transition: color 0.3s;
 }
@@ -78,9 +79,10 @@
 
 @media (max-width: 767px) {
   .thank-item {
+    padding: 26px 15px 26px 19px;
+
     grid-auto-rows: max-content;
     grid-template-columns: 1fr;
-    padding: 26px 15px 26px 19px;
   }
 
   .thank-item__text-content {
@@ -88,9 +90,10 @@
   }
 
   .thank-item__text {
+    margin-bottom: 6px;
+
     font-size: 1.25rem;
     line-height: 1.5625rem;
-    margin-bottom: 6px;
   }
 
   .thank-item__link {

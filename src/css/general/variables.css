@@ -14,6 +14,7 @@
   --intro-text-color: #2c39f2;
   --dekor-color: #2c39f2;
   --invers-dekor-color: #ff1553;
+  --blue-background-color: #2c39f2;
 }
 
 html {
@@ -32,6 +33,7 @@ html {
   --intro-text-color: #2c39f2;
   --dekor-color: #2c39f2;
   --invers-dekor-color: #ff1553;
+  --blue-background-color: #2c39f2;
 }
 
 html.dark {
@@ -40,4 +42,5 @@ html.dark {
   --intro-text-color: #ffffff;
   --dekor-color: #ff1553;
   --invers-dekor-color: #2c39f2;
+  --blue-background-color: #2c2929;
 }

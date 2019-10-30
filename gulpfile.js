@@ -20,7 +20,7 @@ const config = {
   dist: `build`,
   src: `src`,
   fonts: `src/fonts/**/*.{woff,woff2}`,
-  img: `src/img/**/*.{png,jpg,webp}`,
+  img: `src/img/**/*.{png,jpg,webp,svg}`,
   html: `src/*.html`,
   libs: `src/libs/**/*.{js,css}`,
   ieFallback: {
@@ -157,7 +157,6 @@ gulp.task(`build`, gulp.series(
   `copyHtml`,
   `style`,
   `ieFallback`,
-  `sprite`,
   `scripts`,
   (done) => done())
 );

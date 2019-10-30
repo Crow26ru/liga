@@ -1,9 +1,12 @@
 .principles {
-  background-color: var(--blue-color);
   padding-top: 98px;
   padding-bottom: 54px;
 
   color: var(--white-color);
+
+  background-color: var(--blue-background-color);
+
+  transition: background-color 0.3s;
 }
 
 .principles__title {
@@ -12,17 +15,19 @@
 
 .principles__row {
   display: grid;
-  grid-template-columns: 63% 31%;
-  grid-column-gap: 6%;
 
   font-size: 1.875rem;
   line-height: 2.1875rem;
+
+  grid-column-gap: 6%;
+  grid-template-columns: 63% 31%;
 }
 
 .principles__row-title {
-  font-weight: 600;
   margin-top: 0;
   margin-bottom: 10px;
+
+  font-weight: 600;
 }
 
 .principles__row-text {
@@ -40,7 +45,6 @@
 }
 
 @media (max-width: 767px) {
-
   .principles {
     padding-top: 48px;
     padding-bottom: 17px;

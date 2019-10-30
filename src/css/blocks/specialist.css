@@ -73,9 +73,10 @@
   }
 
   .specialist__cost {
+    margin-bottom: 57px;
+
     font-size: 1.5rem;
     line-height: 1;
-    margin-bottom: 57px;
   }
 
   .specialist__info {

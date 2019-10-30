@@ -59,12 +59,13 @@
 }
 
 .intro__title .intro__title-pale {
+  margin-top: -8px;
+
   font-weight: 600;
   font-size: 4.375rem;
   line-height: 4.25rem;
   color: var(--light-color);
   text-transform: uppercase;
-  margin-top: -8px;
   text-shadow: var(--intro-text-color) 1px 0, var(--intro-text-color) 1px 1px, var(--intro-text-color) 0 1px, var(--intro-text-color) -1px 1px, var(--intro-text-color) -1px 0, var(--intro-text-color) -1px -1px, var(--intro-text-color) 0 -1px, var(--intro-text-color) 1px -1px;
 
   opacity: 0.9;
@@ -76,23 +77,20 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-left: 24px;
   padding-top: 14px;
+  padding-left: 24px;
 
   list-style: none;
 }
 
 .intro__item {
   margin-bottom: 26px;
-}
-
-.intro__text {
-  margin: 0;
 
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 1.1;
   color: var(--dark-color);
+
   transition: color 0.3s;
 }
 
@@ -114,9 +112,9 @@
   }
 
   .intro__list {
-    padding-left: 0;
-    padding-right: 0;
     padding-top: 50px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -132,12 +130,12 @@
   }
 
   .intro__drako {
-    width: 170px;
-    height: 192px;
-    min-width: 170px;
     align-self: center;
-    margin-left: 46px;
+    width: 170px;
+    min-width: 170px;
+    height: 192px;
     margin-bottom: 6px;
+    margin-left: 46px;
   }
 
   .intro__drako svg {
@@ -146,28 +144,28 @@
   }
 
   .intro__title {
+    max-width: none;
+
     font-size: 3rem;
     line-height: 3.125rem;
-    max-width: none;
   }
 
   .intro__title .intro__title-pale {
+    margin-top: 0;
+
     font-size: 3rem;
     line-height: 2.875rem;
-    margin-top: 0;
   }
 
   .intro__list {
-    padding-left: 0;
-    padding-right: 0;
     padding-top: 44px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .intro__item {
     margin-bottom: 15px;
-  }
 
-  .intro__text {
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 2rem;

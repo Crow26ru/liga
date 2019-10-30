@@ -1,7 +1,8 @@
 .awards {
-  color: var(--dark-color);
   padding-top: 133px;
   padding-bottom: 150px;
+
+  color: var(--dark-color);
 }
 
 
@@ -13,26 +14,24 @@
 .awards__list {
   /*display: flex;*/
   /*flex-wrap: wrap;*/
-
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
   margin-top: 0;
   margin-bottom: 9px;
   padding-left: 0;
 
   list-style: none;
+
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .awards__item {
   display: flex;
   flex-direction: column;
-  padding-top: 43px;
-
-  /*margin-right: 3.5%;*/
-  margin-bottom: 40px;
   min-width: 200px;
   max-width: 250px;
+  /*margin-right: 3.5%;*/
+  margin-bottom: 40px;
+  padding-top: 43px;
 }
 
 .awards__item p,
@@ -62,9 +61,9 @@
 .awards__item--sway .awards__frame {
   animation-name: frame-bounce;
   animation-duration: 4s;
+  animation-timing-function: linear;
   /*animation-iteration-count: infinite;*/
   animation-delay: 0s;
-  animation-timing-function: linear;
 }
 
 .awards__item--sway .awards__frame--incline {
@@ -91,13 +90,13 @@
 
 .awards__frame {
   position: relative;
-  width: 190px;
-  height: 111px;
-  margin-bottom: 25px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 190px;
+  height: 111px;
+  margin-bottom: 25px;
 
   border: 3px solid var(--gray-dark-color);
 
@@ -112,19 +111,21 @@
   position: absolute;
   top: -44px;
   left: 50%;
-  transform: translateX(-50%);
+
   width: 109px;
   height: 42px;
+
+  transform: translateX(-50%);
 }
 
 .awards__rope::before,
 .awards__rope::after {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 50%;
 
-  height: 3px;
   width: 67px;
+  height: 3px;
 
   background-color: var(--gray-dark-color);
 
@@ -133,11 +134,13 @@
 
 .awards__rope::before {
   right: 44%;
+
   transform: rotate(-35deg);
 }
 
 .awards__rope::after {
   left: 44%;
+
   transform: rotate(35deg);
 }
 
@@ -152,10 +155,20 @@
 
 .awards__extra {
   width: 60%;
+
   font-size: 2.5rem;
   line-height: 3rem;
 }
 
+.awards__extra a {
+  color: var(--dekor-color);
+
+  transition: color 0.3s;
+}
+
+.awards__extra a:hover {
+  color: var(--invers-dekor-color);
+}
 
 @media (max-width: 1365px) {
   .awards__extra {
@@ -202,7 +215,6 @@
   .awards__frame {
     width: 250px;
     height: 150px;
-
     margin-bottom: 14px;
   }
 
@@ -224,33 +236,39 @@
   }
 
   .awards__item {
-    width: 100%;
     align-items: center;
+    width: 100%;
     padding-right: 0;
   }
 }
 
 @keyframes frame-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0) translateX(0);
   }
   /*влево*/
-  12.5%, 62.5% {
+  12.5%,
+  62.5% {
     transform: rotate(2deg) translateX(-2%);
   }
   /*вправо*/
-  37.5%, 87.5% {
+  37.5%,
+  87.5% {
     transform: rotate(-2deg) translateX(2%);
   }
 }
 
 @keyframes frame-bounce-incline {
   /*вправо*/
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     transform: rotate(-2deg) translateX(2%);
   }
   /*влево*/
-  25%, 75% {
+  25%,
+  75% {
     transform: rotate(2deg) translateX(-2%);
   }
 }

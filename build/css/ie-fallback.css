@@ -14,40 +14,40 @@
 }
 
 .header__left-group {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   -webkit-flex-basis: 250px;
   -ms-flex-preferred-size: 250px;
   flex-basis: 250px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
 }
 
 .header__job-link-inner {
-  -webkit-flex-basis: 200px;
-  -ms-flex-preferred-size: 200px;
-  flex-basis: 200px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-flex-basis: 200px;
+  -ms-flex-preferred-size: 200px;
+  flex-basis: 200px;
 }
 
 .header__navigation {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -118,16 +118,16 @@
 }
 
 .service__link {
-  -webkit-flex-basis: 221px;
-  -ms-flex-preferred-size: 221px;
-  flex-basis: 221px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-flex-basis: 221px;
+  -ms-flex-preferred-size: 221px;
+  flex-basis: 221px;
 }
 
 .service__short-info {
@@ -154,16 +154,16 @@
 }
 
 .modes__so-so {
-  -webkit-flex-basis: 478px;
-  -ms-flex-preferred-size: 478px;
-  flex-basis: 478px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-flex-basis: 478px;
+  -ms-flex-preferred-size: 478px;
+  flex-basis: 478px;
 }
 
 .modes__normal {
@@ -178,10 +178,10 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .awards__item {
@@ -201,11 +201,11 @@
 }
 
 .page-footer__info {
-  width: 50%;
-  padding-left: 10%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  width: 50%;
+  padding-left: 10%;
 }
 
 .specialists__list {
@@ -213,15 +213,15 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -38px;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: -38px;
 }
 
 .specialists__item {
-  margin-left: 38px;
   width: calc((100% - 39px * 3) / 3);
+  margin-left: 38px;
 }
 
 .what-yet-we-do__list {
@@ -229,16 +229,16 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -38px;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: -38px;
 }
 
 .what-yet-we-do__item {
-  margin-left: 38px;
-  margin-bottom: 38px;
   width: calc((100% - 39px * 4) / 4);
+  margin-bottom: 38px;
+  margin-left: 38px;
 }
 
 .more-services__list {
@@ -246,16 +246,16 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -39px;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: -39px;
 }
 
 .more-services__item {
-  margin-left: 39px;
   width: calc((100% - 40px * 2) / 2);
   margin-bottom: 49px;
+  margin-left: 39px;
 }
 
 .what-we-do__list {
@@ -347,8 +347,8 @@
   }
 
   .technologies__rows-item {
-    padding-left: 0;
     padding-right: 38px;
+    padding-left: 0;
   }
 }
 
@@ -386,16 +386,16 @@
 
 @media (max-width: 1200px) {
   .service__link {
-    -webkit-flex-basis: 174px;
-    -ms-flex-preferred-size: 174px;
-    flex-basis: 174px;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
     -ms-flex-positive: 0;
     flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: 174px;
+    -ms-flex-preferred-size: 174px;
+    flex-basis: 174px;
   }
 
   .service__short-info {
@@ -415,9 +415,9 @@
   }
 
   .what-yet-we-do__item {
-    margin-left: 30px;
-    margin-bottom: 30px;
     width: calc(50% - 30px * 2);
+    margin-bottom: 30px;
+    margin-left: 30px;
   }
 }
 
@@ -500,63 +500,63 @@
   }
 
   .specialists__list {
-    margin-left: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-left: 0;
   }
 
   .specialists__item {
-    margin-left: 0;
     width: 100%;
     margin-bottom: 15px;
+    margin-left: 0;
   }
 
   .what-yet-we-do__list {
-    margin-left: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-left: 0;
   }
 
   .what-yet-we-do__item {
-    margin-left: 0;
     width: 100%;
     margin-bottom: 30px;
+    margin-left: 0;
   }
 
   .more-services__list {
-    margin-left: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-left: 0;
   }
 
   .more-services__item {
-    margin-left: 0;
     width: 100%;
     margin-bottom: 33px;
+    margin-left: 0;
   }
 
   .what-we-do__list {
-    margin-left: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-left: 0;
   }
 
   .what-we-do__item {
-    margin-left: 0;
     width: 100%;
     margin-bottom: 22px;
+    margin-left: 0;
   }
 
   .technologies__rows {
@@ -603,7 +603,7 @@
   }
 
   .technologies__rows-item {
-    padding-right: 0;
     width: 100%;
+    padding-right: 0;
   }
 }

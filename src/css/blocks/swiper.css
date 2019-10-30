@@ -41,5 +41,6 @@
 
 .swiper-container-autoheight .swiper-wrapper {
   align-items: flex-start;
+
   transition-property: transform, height;
 }

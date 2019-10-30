@@ -11,7 +11,8 @@
     '--blue-color: #2c39f2',
     '--pink-color: #ff1553',
     '--gray-light-color: #f2f2f2',
-    '--gray-dark-color: #d3d3d3'
+    '--gray-dark-color: #d3d3d3',
+    '--blue-background-color: #2c39f2'
   ];
   var DARK_THEME_COLORS = [
     '--dark-color: #ffffff',
@@ -23,7 +24,8 @@
     '--blue-color: #2c39f2',
     '--pink-color: #ff1553',
     '--gray-light-color: #f2f2f2',
-    '--gray-dark-color: #d3d3d3'
+    '--gray-dark-color: #d3d3d3',
+    '--blue-background-color: #2c2929'
   ];
   var LIGHT_THEME_COLOR = '#ffffff';
   var DARK_THEME_COLOR = '#1f1f1f';
@@ -44,12 +46,12 @@
      * Поддержка этого медизапроса работает только в хроме, сафари и firefox
      * https://developer.mozilla.org/ru/docs/Web/CSS/@media/prefers-color-scheme
      */
-    if (window.getComputedStyle(colorThemeIdentifier).position === 'fixed') {
-      document.documentElement.classList.add('dark');
-      colorThemeCheckbox.checked = true;
+    if (window.getComputedStyle(colorThemeIdentifier).position === 'absolute') {
+      document.documentElement.classList.remove('dark');
+      colorThemeCheckbox.checked = false;
 
       if (metaColorTheme) {
-        metaColorTheme.content = DARK_THEME_COLOR;
+        metaColorTheme.content = LIGHT_THEME_COLOR;
       }
     }
   }

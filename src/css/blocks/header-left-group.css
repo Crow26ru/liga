@@ -12,12 +12,16 @@
 }
 
 .header-left-group__logo {
-  width: 120px;
-  height: 27px;
-  color: var(--dark-color);
-  cursor: inherit;
   position: relative;
   z-index: 2;
+
+  width: 120px;
+  height: 27px;
+
+  color: var(--dark-color);
+
+  cursor: inherit;
+
   transition: color 0.3s;
 }
 
@@ -31,13 +35,15 @@
 }
 
 .header-left-group__logo svg {
-  fill: currentColor;
   width: 100%;
+
+  fill: currentColor;
 }
 
 .header-left-group__logo .light {
-  fill: var(--light-color);
   transition: fill 0.3s;
+
+  fill: var(--light-color);
 }
 
 .header-left-group__logo-additional-svg {

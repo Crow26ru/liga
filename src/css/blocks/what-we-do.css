@@ -97,9 +97,10 @@
   }
 
   .what-we-do__item--image svg {
-    width: 84%;
     position: relative;
     right: 0;
     left: 8%;
+
+    width: 84%;
   }
 }
