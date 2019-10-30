@@ -3806,6 +3806,7 @@ template {
     -webkit-transform-origin: right bottom;
     -ms-transform-origin: right bottom;
     transform-origin: right bottom;
+    pointer-events: none;
   }
 
   .modes__label svg {
@@ -3825,26 +3826,38 @@ template {
     top: 5px;
     width: 324px;
     height: 156px;
+    z-index: 1;
   }
 
   .modes__normal-rocket-svg-inner {
-    top: 30px;
-  }
-
-  .modes__normal-rocket-svg-inner svg {
-    width: 130px;
-    height: 103px;
+    display: none;
   }
 
   .modes__reactive-rocket-svg-inner svg,
   .modes__reactive-rocket-svg-inner .body-rocket {
-    stroke: #6e76f1;
+    stroke: currentColor;
     stroke-opacity: 1;
+    stroke-width: 8;
+  }
+
+  .modes__reactive-rocket-svg-inner g[mask].wings {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+
+  .modes__label svg .check-mark--vertical {
+    display: block;
+    stroke-width: 3px;
+  }
+
+  .modes__reactive-rocket-svg-inner circle {
+    fill: #000000;
+    stroke: #000000;
   }
 
   .modes__reactive-rocket-svg-inner .wings {
-    -webkit-transform: rotateX(0);
-    transform: rotateX(0);
+    opacity: 0;
   }
 
   .modes__reactive-content {
@@ -3856,10 +3869,6 @@ template {
     margin-bottom: 24px;
     padding-top: 0;
     padding-right: 65px;
-  }
-
-  .modes__reactive-rocket-svg-inner circle {
-    stroke-width: 6px;
   }
 
   .modes__reactive-content .modes__text {
