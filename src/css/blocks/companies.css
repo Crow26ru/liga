@@ -125,7 +125,7 @@
   box-sizing: border-box;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   grid-column-gap: 38px;
 }
 
