@@ -4,8 +4,9 @@
 
   background-color: var(--light-color);
 
-  counter-reset: we-do-items;
   transition: background-color 0.3s;
+
+  counter-reset: we-do-items;
 }
 
 .what-we-do__list {

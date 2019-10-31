@@ -5,6 +5,7 @@
   color: var(--white-color);
 
   background-color: var(--blue-background-color);
+
   transition: background-color 0.3s;
 }
 
@@ -47,6 +48,7 @@
 .page-footer__policy a,
 .page-footer__info-block a {
   color: var(--white-color);
+
   border-bottom: 1px solid rgba(225, 225, 225, 0.5);
 
   transition: color 0.3s, border-bottom-color 0.3s;
@@ -176,12 +178,6 @@
 
   .page-footer__info-block:last-of-type {
     margin-bottom: 56px;
-  }
-
-
-
-  .page-footer__social {
-    /*justify-content: center;*/
   }
 
   .page-footer__footer {

@@ -169,7 +169,7 @@ gulp.task(`build`, gulp.series(
   (done) => done())
 );
 
-gulp.task(`serve`, () => {
+gulp.task(`serve`, async function () {
   server.init({
     server: config.dist,
     notify: false,

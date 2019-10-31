@@ -24,8 +24,8 @@
 
   width: 78px;
   height: 100%;
-  background-image: url("../img/big-wings-pattern.jpg");
 
+  background-image: url("../img/lightning-pattern-active.jpg");
   background-repeat: repeat;
 }
 
@@ -174,8 +174,9 @@
 }
 
 .service--disabled .service__title {
-  color: var(--dark-color);
   padding-right: 35px;
+
+  color: var(--dark-color);
 }
 
 .service--disabled .service__title svg {
