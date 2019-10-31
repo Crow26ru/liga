@@ -1,6 +1,6 @@
 @media (max-width: 1300px) {
   .header-open .header__wrap {
-    grid-template-columns: 250px 1fr 0;
+    /* grid-template-columns: 250px 1fr 0; */
   }
 
   .header-open .header__job-link {
@@ -80,7 +80,7 @@
     display: none;
   }
 
-  .header-open .header-left-group__vision-button {
-    display: none;
+  .header-open .vision-button {
+    visibility: hidden;
   }
 }

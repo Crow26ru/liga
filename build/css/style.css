@@ -11,6 +11,7 @@
   --dark-color: #000000;
   --light-color: #ffffff;
   --intro-text-color: #2c39f2;
+  --pink-hover-color: #ff1553;
   --dekor-color: #2c39f2;
   --invers-dekor-color: #ff1553;
   --blue-background-color: #2c39f2;
@@ -30,6 +31,7 @@ html {
   --light-color: #ffffff;
   --intro-text-color: #2c39f2;
   --dekor-color: #2c39f2;
+  --pink-hover-color: #ff1553;
   --invers-dekor-color: #ff1553;
   --blue-background-color: #2c39f2;
 }
@@ -38,6 +40,7 @@ html.dark {
   --dark-color: #ffffff;
   --light-color: #1f1f1f;
   --intro-text-color: #ffffff;
+  --pink-hover-color: #ffffff;
   --dekor-color: #ff1553;
   --invers-dekor-color: #2c39f2;
   --blue-background-color: #2c2929;
@@ -74,12 +77,17 @@ body {
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
+  cursor: url("../img/mini-logo.svg"), auto;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  cursor: pointer;
+  cursor: url("../img/mini-logo-pointer.svg"), pointer;
+}
+
+button {
+  cursor: url("../img/mini-logo-pointer.svg"), pointer;
 }
 
 img {
@@ -553,12 +561,36 @@ template {
   background-image: url("../img/thanks-bullet-active.svg");
 }
 
-.dark .tests-list__link:hover {
+.dark .tests-list__link:hover,
+.dark .tests-list__link:focus {
   color: var(--white-color);
 }
 
-.dark .thanks {
-  background-color: var(--blue-background-color);
+.dark .page-footer__policy a,
+.dark .page-footer__info-block a {
+  color: var(--pink-color);
+  border-bottom: 1px solid rgba(255, 21, 83, 0.5);
+  -webkit-transition: color 0.3s, border-bottom-color 0.3s;
+  -o-transition: color 0.3s, border-bottom-color 0.3s;
+  transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.dark .page-footer__policy a:hover,
+.dark .page-footer__info-block a:hover {
+  color: var(--white-color);
+  border-bottom-color: var(--white-color);
+}
+
+.dark .header__job-link {
+  border: 2px solid var(--pink-color);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.dark .header__job-link:hover,
+.dark .header__job-link:focus {
+  background-color: transparent;
+  color: var(--pink-color);
 }
 
 .swiper-container {
@@ -668,8 +700,7 @@ template {
   padding: 0;
   background: transparent;
   border: none;
-  outline: none;
-  cursor: pointer;
+  cursor: url("../img/mini-logo-pointer.svg"), pointer;
 }
 
 .header {
@@ -850,13 +881,17 @@ template {
   background-size: 13px 13px, auto 11px;
   border: 3px solid var(--dark-color);
   border-radius: 15px;
-  cursor: pointer;
+  cursor: url("../img/mini-logo-pointer.svg"), pointer;
   -webkit-transition: border-color 0.3s;
   -o-transition: border-color 0.3s;
   transition: border-color 0.3s;
 }
 
 .vision-button:hover {
+  border-color: var(--dekor-color);
+}
+
+#color-theme:focus ~ .header .vision-button {
   border-color: var(--dekor-color);
 }
 
@@ -954,6 +989,16 @@ template {
 .navigation__link:not([href]):hover,
 .navigation__link:not([href]):focus {
   color: var(--dark-color);
+}
+
+.navigation__link.navigation__link--active {
+  color: var(--pink-color);
+  opacity: 1;
+}
+
+.navigation__link.navigation__link--active:hover,
+.navigation__link.navigation__link--active:focus {
+  color: var(--pink-color);
 }
 
 .navigation__burger {
@@ -1243,7 +1288,7 @@ template {
   left: 0;
   width: 78px;
   height: 100%;
-  background-image: url("../img/lightning-pattern-active.jpg");
+  background-image: url("../img/big-wings-pattern.jpg");
   background-repeat: repeat;
 }
 
@@ -1698,7 +1743,7 @@ template {
   max-width: 986px;
   height: auto !important;
   padding: 38px 15px 46px 38px;
-  background-color: var(--dekor-color);
+  background-color: var(--blue-background-color);
   grid-template-columns: 1fr 217px;
 }
 
@@ -1742,7 +1787,7 @@ template {
 
 .thank-item__link:hover,
 .thank-item__link:focus {
-  color: var(--invers-dekor-color);
+  color: var(--pink-color);
 }
 
 .thank-item__author-content {
@@ -1931,7 +1976,7 @@ template {
 }
 
 .awards__item:hover .awards__item-title {
-  color: var(--invers-dekor-color);
+  color: var(--pink-hover-color);
 }
 
 .awards__extra {
@@ -1948,7 +1993,7 @@ template {
 }
 
 .awards__extra a:hover {
-  color: var(--invers-dekor-color);
+  color: var(--pink-hover-color);
 }
 
 @-webkit-keyframes frame-bounce {
@@ -2057,7 +2102,7 @@ template {
   left: 0;
   width: 759px;
   height: 185px;
-  cursor: pointer;
+  cursor: url("../img/mini-logo-pointer.svg"), pointer;
 }
 
 .modes__label::before {
@@ -2434,13 +2479,18 @@ template {
   width: 100%;
 }
 
+.companies--open .swiper-wrapper.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .companies--open ul {
   display: grid;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   grid-column-gap: 38px;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
 }
 
 .companies--open .companies__item {
@@ -2508,6 +2558,7 @@ template {
 
 .page-footer__policy a,
 .page-footer__info-block a {
+  color: var(--white-color);
   border-bottom: 1px solid rgba(225, 225, 225, 0.5);
   -webkit-transition: color 0.3s, border-bottom-color 0.3s;
   -o-transition: color 0.3s, border-bottom-color 0.3s;
@@ -2729,7 +2780,7 @@ template {
 }
 
 .contacts__specific-mail:hover {
-  color: var(--invers-dekor-color);
+  color: var(--pink-hover-color);
 }
 
 .contacts__map {
@@ -3461,7 +3512,7 @@ template {
   }
 
   .header-open .header__wrap {
-    grid-template-columns: 250px 1fr 0;
+    /* grid-template-columns: 250px 1fr 0; */
   }
 
   .header-open .header__job-link {
@@ -4075,8 +4126,8 @@ template {
     display: none;
   }
 
-  .header-open .header-left-group__vision-button {
-    display: none;
+  .header-open .vision-button {
+    visibility: hidden;
   }
 
   .services {

@@ -128,7 +128,7 @@
 }
 
 .awards__item:hover .awards__item-title {
-  color: var(--invers-dekor-color);
+  color: var(--pink-hover-color);
 }
 
 .awards__extra {
@@ -145,7 +145,7 @@
 }
 
 .awards__extra a:hover {
-  color: var(--invers-dekor-color);
+  color: var(--pink-hover-color);
 }
 
 @media (max-width: 1365px) {

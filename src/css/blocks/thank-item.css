@@ -5,7 +5,7 @@
   height: auto !important;
   padding: 38px 15px 46px 38px;
 
-  background-color: var(--dekor-color);
+  background-color: var(--blue-background-color);
 
   grid-template-columns: 1fr 217px;
 }
@@ -41,7 +41,7 @@
 
 .thank-item__link:hover,
 .thank-item__link:focus {
-  color: var(--invers-dekor-color);
+  color: var(--pink-color);
 }
 
 .thank-item__author-content {

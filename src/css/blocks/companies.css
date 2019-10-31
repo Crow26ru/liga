@@ -97,13 +97,18 @@
   width: 100%;
 }
 
+.companies--open .swiper-wrapper.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .companies--open ul {
   display: grid;
   box-sizing: border-box;
   width: 100%;
 
   grid-column-gap: 38px;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
 }
 
 .companies--open .companies__item {

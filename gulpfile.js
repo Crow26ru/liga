@@ -177,11 +177,7 @@ gulp.task(`serve`, () => {
     cors: true,
     ui: false
   });
-  gulp
-    .watch(config.css.watch, gulp.series(`style`, `ieFallback`))
-    .on(`change`, server.reload);
+  gulp.watch(config.css.watch, gulp.series(`style`, `ieFallback`)).on(`change`, server.reload);
   gulp.watch(config.html, gulp.series(`copyHtml`)).on(`change`, server.reload);
-  gulp
-    .watch(config.js.watch, gulp.series(`scripts`))
-    .on(`change`, server.reload);
+  gulp.watch(config.js.watch, gulp.series(`scripts`)).on(`change`, server.reload);
 });

@@ -3,6 +3,5 @@
 
   background: transparent;
   border: none;
-  outline: none;
-  cursor: pointer;
+  cursor: url("../img/mini-logo-pointer.svg"), pointer;
 }

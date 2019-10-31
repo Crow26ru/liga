@@ -43,6 +43,16 @@
   color: var(--dark-color);
 }
 
+.navigation__link.navigation__link--active {
+  color: var(--pink-color);
+  opacity: 1;
+}
+
+.navigation__link.navigation__link--active:hover,
+.navigation__link.navigation__link--active:focus {
+  color: var(--pink-color);
+}
+
 .navigation__burger {
   position: relative;
   z-index: 2;

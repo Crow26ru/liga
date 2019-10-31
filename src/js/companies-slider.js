@@ -71,7 +71,7 @@
         evt.preventDefault();
         swiper.destroy();
         companies.classList.add('companies--open');
-        // companiesList.classList.add('container');
+        companiesList.classList.add('container');
         // toggle.innerText = 'скрыть';
         window.removeEventListener('scroll',  onWindowScroll);
         // window.removeEventListener('mousewheel', onWindowScroll);

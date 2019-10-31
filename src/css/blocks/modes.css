@@ -36,7 +36,7 @@
   width: 759px;
   height: 185px;
 
-  cursor: pointer;
+  cursor: url("../img/mini-logo-pointer.svg"), pointer;
 }
 
 .modes__label::before {
