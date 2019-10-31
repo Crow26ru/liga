@@ -5,15 +5,11 @@
   color: var(--dark-color);
 }
 
-
-
 .awards__title {
   margin: 0 0 52px;
 }
 
 .awards__list {
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
   display: grid;
   margin-top: 0;
   margin-bottom: 9px;
@@ -29,7 +25,6 @@
   flex-direction: column;
   min-width: 200px;
   max-width: 250px;
-  /*margin-right: 3.5%;*/
   margin-bottom: 40px;
   padding-top: 43px;
 }
@@ -49,39 +44,22 @@
   margin-right: 0;
 }
 
-.awards__item:hover .awards__frame {
-  /*border-color: var(--gray-light-color);*/
-
-  /*animation-name: frame-bounce;*/
-  /*animation-duration: 4s;*/
-  /*animation-iteration-count: infinite;*/
-  /*animation-delay: 0s;*/
-}
-
 .awards__item--sway .awards__frame {
   animation-name: frame-bounce;
   animation-duration: 4s;
   animation-timing-function: linear;
-  /*animation-iteration-count: infinite;*/
   animation-delay: 0s;
 }
 
 .awards__item--sway .awards__frame--incline {
   animation-name: frame-bounce-incline;
   animation-duration: 4s;
-  /*animation-iteration-count: infinite;*/
   animation-delay: 0s;
-}
-
-.awards__item:hover .awards__rope::before,
-.awards__item:hover .awards__rope::after {
-  /*background-color: var(--gray-light-color);*/
 }
 
 .awards__item--arda svg,
 .awards__item--specia svg {
   fill: var(--dark-color);
-  /*stroke: var(--dark-color);*/
 }
 
 .awards__item--magnifier svg {
