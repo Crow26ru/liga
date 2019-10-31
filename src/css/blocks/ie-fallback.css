@@ -178,6 +178,11 @@
   order: -1;
 }
 
+.service-intro__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .service-intro__top-content {
   display: flex;
 }
@@ -185,16 +190,29 @@
 .service-info__title,
 .service-intro__promo {
   width: 50%;
+  max-width: none;
+}
+
+.service-info__title {
+  padding-right: 19px;
 }
 
 .service-intro__promo {
-  padding-left: 38px;
+  padding-left: 19px;
 }
 
 .technologies__rows {
   display: flex;
   justify-content: space-between;
   width: 80%;
+}
+
+.technologies__main {
+  margin-bottom: 94px;
+}
+
+.technologies__rows {
+  width: 74%;
 }
 
 .technologies__rows-item {
@@ -393,6 +411,10 @@
     width: 100%;
     margin-bottom: 22px;
     margin-left: 0;
+  }
+
+  .technologies__main {
+    margin-bottom: 34px;
   }
 
   .technologies__rows {
