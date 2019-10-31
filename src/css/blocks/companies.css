@@ -108,7 +108,7 @@
   width: 100%;
 
   grid-column-gap: 38px;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
 }
 
 .companies--open .companies__item {

@@ -24,8 +24,8 @@
 
   width: 78px;
   height: 100%;
+  background-image: url("../img/big-wings-pattern.jpg");
 
-  background-image: url("../img/lightning-pattern-active.jpg");
   background-repeat: repeat;
 }
 

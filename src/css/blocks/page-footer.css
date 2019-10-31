@@ -46,6 +46,7 @@
 
 .page-footer__policy a,
 .page-footer__info-block a {
+  color: var(--white-color);
   border-bottom: 1px solid rgba(225, 225, 225, 0.5);
 
   transition: color 0.3s, border-bottom-color 0.3s;

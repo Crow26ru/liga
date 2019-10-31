@@ -11,12 +11,16 @@
   background-size: 13px 13px, auto 11px;
   border: 3px solid var(--dark-color);
   border-radius: 15px;
-  cursor: pointer;
+  cursor: url("../img/mini-logo-pointer.svg"), pointer;
 
   transition: border-color 0.3s;
 }
 
 .vision-button:hover {
+  border-color: var(--dekor-color);
+}
+
+#color-theme:focus ~ .header .vision-button {
   border-color: var(--dekor-color);
 }
 

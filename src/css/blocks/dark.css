@@ -20,10 +20,34 @@
   background-image: url("../img/thanks-bullet-active.svg");
 }
 
-.dark .tests-list__link:hover {
+.dark .tests-list__link:hover,
+.dark .tests-list__link:focus {
   color: var(--white-color);
 }
 
-.dark .thanks {
-  background-color: var(--blue-background-color);
+.dark .page-footer__policy a,
+.dark .page-footer__info-block a {
+  color: var(--pink-color);
+  border-bottom: 1px solid rgba(255, 21, 83, 0.5);
+
+  transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.dark .page-footer__policy a:hover,
+.dark .page-footer__info-block a:hover {
+  color: var(--white-color);
+
+  border-bottom-color: var(--white-color);
+}
+
+.dark .header__job-link {
+  border: 2px solid var(--pink-color);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.dark .header__job-link:hover,
+.dark .header__job-link:focus {
+  background-color: transparent;
+  color: var(--pink-color);
 }

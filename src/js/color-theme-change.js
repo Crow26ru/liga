@@ -10,6 +10,7 @@
     '--intro-text-color: #2c39f2;',
     '--blue-color: #2c39f2',
     '--pink-color: #ff1553',
+    '--pink-hover-color: #ff1553;',
     '--gray-light-color: #f2f2f2',
     '--gray-dark-color: #d3d3d3',
     '--blue-background-color: #2c39f2'
@@ -23,6 +24,7 @@
     '--intro-text-color: #ffffff;',
     '--blue-color: #2c39f2',
     '--pink-color: #ff1553',
+    '--pink-hover-color: #ffffff;',
     '--gray-light-color: #f2f2f2',
     '--gray-dark-color: #d3d3d3',
     '--blue-background-color: #2c2929'

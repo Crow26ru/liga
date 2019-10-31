@@ -102,7 +102,7 @@
 }
 
 .contacts__specific-mail:hover {
-  color: var(--invers-dekor-color);
+  color: var(--pink-hover-color);
 }
 
 .contacts__map {

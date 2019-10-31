@@ -12,6 +12,7 @@
   --dark-color: #000000;
   --light-color: #ffffff;
   --intro-text-color: #2c39f2;
+  --pink-hover-color: #ff1553;
   --dekor-color: #2c39f2;
   --invers-dekor-color: #ff1553;
   --blue-background-color: #2c39f2;
@@ -32,6 +33,7 @@ html {
   --light-color: #ffffff;
   --intro-text-color: #2c39f2;
   --dekor-color: #2c39f2;
+  --pink-hover-color: #ff1553;
   --invers-dekor-color: #ff1553;
   --blue-background-color: #2c39f2;
 }
@@ -40,6 +42,7 @@ html.dark {
   --dark-color: #ffffff;
   --light-color: #1f1f1f;
   --intro-text-color: #ffffff;
+  --pink-hover-color: #ffffff;
   --dekor-color: #ff1553;
   --invers-dekor-color: #2c39f2;
   --blue-background-color: #2c2929;
