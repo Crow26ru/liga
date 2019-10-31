@@ -2966,7 +2966,6 @@ template {
   height: 58px;
   margin-right: 41px;
   /*padding-bottom: 7px;*/
-  background-image: url("../img/shield-blue.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2979,7 +2978,6 @@ template {
 .technologies__icon .svg-glyph,
 .technologies__icon .svg-shadow {
   fill: var(--dekor-color);
-  /*background-image: url("../img/shield-stack-red.svg");*/
 }
 
 .technologies__rows {
@@ -3819,6 +3817,18 @@ template {
 
   .awards__list {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .awards__item:nth-child(2n) .awards__frame {
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+
+  .awards__item:nth-child(2n - 1) .awards__frame {
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
 
   .page-footer__info {

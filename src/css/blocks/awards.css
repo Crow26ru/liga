@@ -180,6 +180,14 @@
   .awards__list {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .awards__item:nth-child(2n) .awards__frame {
+    transform: rotate(2deg);
+  }
+
+  .awards__item:nth-child(2n - 1) .awards__frame {
+    transform: rotate(-2deg);
+  }
 }
 
 @media (max-width: 767px) {
