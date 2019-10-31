@@ -2434,6 +2434,11 @@ template {
   width: 100%;
 }
 
+.companies--open .swiper-wrapper.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .companies--open ul {
   display: grid;
   -webkit-box-sizing: border-box;

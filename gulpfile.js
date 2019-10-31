@@ -178,7 +178,7 @@ gulp.task(`serve`, () => {
     ui: false
   });
   gulp
-    .watch(config.css.watch, gulp.series(`style`, `ieFallback`))
+    .watch(config.css.watch, gulp.series(`style`, `ieFallback`, `critical`))
     .on(`change`, server.reload);
   gulp.watch(config.html, gulp.series(`copyHtml`)).on(`change`, server.reload);
   gulp
