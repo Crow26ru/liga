@@ -289,6 +289,18 @@
   order: -1;
 }
 
+.service-intro__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .service-intro__top-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -299,10 +311,15 @@
 .service-info__title,
 .service-intro__promo {
   width: 50%;
+  max-width: none;
+}
+
+.service-info__title {
+  padding-right: 19px;
 }
 
 .service-intro__promo {
-  padding-left: 38px;
+  padding-left: 19px;
 }
 
 .technologies__rows {
@@ -315,6 +332,14 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 80%;
+}
+
+.technologies__main {
+  margin-bottom: 94px;
+}
+
+.technologies__rows {
+  width: 74%;
 }
 
 .technologies__rows-item {
@@ -559,6 +584,10 @@
     width: 100%;
     margin-bottom: 22px;
     margin-left: 0;
+  }
+
+  .technologies__main {
+    margin-bottom: 34px;
   }
 
   .technologies__rows {
