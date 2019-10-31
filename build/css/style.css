@@ -1861,6 +1861,10 @@ template {
   /*background-color: var(--gray-light-color);*/
 }
 
+.awards__item--arda svg {
+  width: 94px;
+}
+
 .awards__item--arda svg,
 .awards__item--specia svg {
   fill: var(--dark-color);
@@ -2472,9 +2476,9 @@ template {
   text-align: center;
   color: var(--blue-color);
   text-transform: uppercase;
-  -webkit-transition: color 0.3s, background-color 0.3s;
-  -o-transition: color 0.3s, background-color 0.3s;
-  transition: color 0.3s, background-color 0.3s;
+  -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  -o-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   border: 2px solid var(--blue-color);
 }
 
@@ -2537,7 +2541,7 @@ template {
   padding-top: 86px;
   padding-bottom: 35px;
   color: var(--white-color);
-  background-color: var(--blue-color);
+  background-color: var(--blue-background-color);
   -webkit-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -2658,7 +2662,7 @@ template {
   -webkit-transition: fill 0.3s;
   -o-transition: fill 0.3s;
   transition: fill 0.3s;
-  fill: var(--blue-color);
+  fill: var(--blue-background-color);
 }
 
 .page-footer__footer {
@@ -2684,14 +2688,6 @@ template {
 
 .page-footer--contacts .contacts-hidden {
   display: none;
-}
-
-.dark .page-footer {
-  background-color: #2c2929;
-}
-
-.dark .page-footer__social-icon {
-  fill: #2c2929;
 }
 
 .contacts {

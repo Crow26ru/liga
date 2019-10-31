@@ -95,7 +95,7 @@
   text-align: center;
   color: var(--blue-color);
   text-transform: uppercase;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   border: 2px solid var(--blue-color);
 }
 
