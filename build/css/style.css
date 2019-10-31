@@ -619,6 +619,10 @@ template {
   transition-property: transform, height, -webkit-transform;
 }
 
+.swiper-button-disabled {
+  display: none !important;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -3075,6 +3079,9 @@ template {
   padding-bottom: 97px;
   background-color: var(--light-color);
   counter-reset: we-do-items;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .what-we-do__list {

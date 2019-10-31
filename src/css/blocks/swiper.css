@@ -44,3 +44,7 @@
 
   transition-property: transform, height;
 }
+
+.swiper-button-disabled {
+  display: none !important;
+}
