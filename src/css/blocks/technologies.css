@@ -41,7 +41,6 @@
   margin-right: 41px;
   /*padding-bottom: 7px;*/
 
-  background-image: url("../img/shield-blue.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -54,7 +53,6 @@
 .technologies__icon .svg-glyph,
 .technologies__icon .svg-shadow {
   fill: var(--dekor-color);
-  /*background-image: url("../img/shield-stack-red.svg");*/
 }
 
 .technologies__rows {

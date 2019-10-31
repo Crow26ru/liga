@@ -21,14 +21,18 @@
           frame.removeEventListener('animationend', repeatAnimation);
         };
 
-        award.addEventListener('mouseover', function () {
-          award.classList.add('awards__item--sway');
-          frame.addEventListener('animationend', repeatAnimation);
-        });
+        if (window.innerWidth > 1023) {
+          award.addEventListener('mouseover', function () {
+            award.classList.add('awards__item--sway');
+            frame.addEventListener('animationend', repeatAnimation);
+          });
 
-        award.addEventListener('mouseleave', function () {
-          frame.addEventListener('animationend', stopAnimation);
-        })
+          award.addEventListener('mouseleave', function () {
+            frame.addEventListener('animationend', stopAnimation);
+          })
+        } else if (window.innerWidth < 1024) {
+          stopAnimation();
+        }
       })();
     }
   }
