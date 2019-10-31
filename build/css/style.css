@@ -3081,6 +3081,9 @@ template {
   padding-bottom: 97px;
   background-color: var(--light-color);
   counter-reset: we-do-items;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .what-we-do__list {
