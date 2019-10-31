@@ -5,6 +5,7 @@
   background-color: var(--light-color);
 
   counter-reset: we-do-items;
+  transition: background-color 0.3s;
 }
 
 .what-we-do__list {
