@@ -619,6 +619,10 @@ template {
   transition-property: transform, height, -webkit-transform;
 }
 
+.swiper-button-disabled {
+  display: none !important;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
