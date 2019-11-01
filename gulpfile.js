@@ -66,6 +66,10 @@ const config = {
   svg: {
     src: `src/img/*.svg`,
     dist: `build/img`
+  },
+  pdf: {
+    src: `src/reviews/*.pdf`,
+    dist: `build/reviews`
   }
 };
 
@@ -75,7 +79,7 @@ gulp.task(`clean`, function () {
 
 gulp.task(`copy`, function () {
   return gulp
-    .src([config.fonts, config.libs, config.svg.src, config.img], {
+    .src([config.fonts, config.libs, config.svg.src, config.img, config.pdf.src], {
       base: config.src
     })
     .pipe(gulp.dest(config.dist));
