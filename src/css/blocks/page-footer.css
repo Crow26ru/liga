@@ -9,6 +9,10 @@
   transition: background-color 0.3s;
 }
 
+.page-footer__form {
+  position: relative;
+}
+
 .page-footer p {
   margin-top: 0;
   margin-bottom: 0;

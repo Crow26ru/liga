@@ -5,6 +5,7 @@
 
 .intro__headline {
   display: flex;
+
   grid-column: 1 / span 2;
 }
 
@@ -133,6 +134,8 @@
 
   .intro__title {
     max-width: none;
+    margin-top: 54px;
+    margin-bottom: 36px;
 
     font-size: 3rem;
     line-height: 3.125rem;
@@ -162,6 +165,7 @@
 @media (max-width: 600px) {
   .intro__headline {
     display: flex;
+
     grid-column: 1 / span 1;
   }
 

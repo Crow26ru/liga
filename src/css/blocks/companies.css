@@ -192,8 +192,6 @@
 @media (max-width: 448px) {
   .companies--open ul {
     justify-content: center;
-
-    grid-template-columns: repeat(1, 1fr);
   }
 
   .companies--open .companies__item {

@@ -45,21 +45,20 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы" checked type="checkbox" name="color-theme" id="color-theme">
+<input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы" checked type="checkbox" name="color-theme" id="color-theme" tabindex="1">
 <span class="color-theme-identifier"></span>
 <header class="header">
   <div class="header__wrap">
     <div class="header__left-group header-left-group">
       <div class="header-left-group__top-inner">
-        <a href="index.html" class="header-left-group__logo">
-          <span class="visually-hidden">Ссылка на главную страницу Лиги</span>
+        <a class="header-left-group__logo">
           <include src="build/img/icon-logo.svg"></include>
           <include src="build/img/icons/icon-logo-additional.svg"></include>
         </a>
         <label class="header-left-group__vision-button vision-button" for="color-theme" aria-label="переключатель цветовой схемы">
-            <span class="vision-button__handler">
+          <span class="vision-button__handler">
             <include src="build/img/icons/icon-moon-dark.svg"></include>
-            </span>
+          </span>
         </label>
       </div>
       <div class="header-left-group__weather-widget weather-widget">+11С, небольшой дождь</div>
@@ -83,12 +82,14 @@
             <a class="navigation__link" >Команда</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--active">Контакты</a>
+            <a class="navigation__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
       </div>
     </nav>
-    <a class="header__job-link" href="#">Работать с нами</a>
+    <div class="header__job-link-inner">
+      <a class="header__job-link" href="#">Работать с нами</a>
+    </div>
   </div>
 </header>
 

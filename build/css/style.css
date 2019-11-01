@@ -2522,6 +2522,10 @@ template {
   transition: background-color 0.3s;
 }
 
+.page-footer__form {
+  position: relative;
+}
+
 .page-footer p {
   margin-top: 0;
   margin-bottom: 0;
@@ -4081,6 +4085,8 @@ template {
 
   .intro__title {
     max-width: none;
+    margin-top: 54px;
+    margin-bottom: 36px;
     font-size: 3rem;
     line-height: 3.125rem;
   }
@@ -4465,7 +4471,7 @@ template {
 
   .service-intro__title {
     margin-bottom: 46px;
-    font-size: 2.5rem;
+    font-size: 2.5625rem;
     line-height: 2.75rem;
     word-wrap: break-word;
   }
@@ -4867,7 +4873,6 @@ template {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
   }
 
   .companies--open .companies__item {
