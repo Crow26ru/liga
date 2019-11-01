@@ -835,7 +835,7 @@ template {
 }
 
 .header-left-group__logo[href] {
-  cursor: pointer;
+  cursor: url("../img/mini-logo-pointer.svg"), pointer;
 }
 
 .header-left-group__logo[href]:hover,
