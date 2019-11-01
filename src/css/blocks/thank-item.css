@@ -60,6 +60,10 @@
   opacity: 0.7;
 }
 
+.thank-item__author-link svg {
+  fill: var(--white-color);
+}
+
 .thank-item__author {
   margin: 0;
 

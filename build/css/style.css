@@ -1812,6 +1812,10 @@ template {
   opacity: 0.7;
 }
 
+.thank-item__author-link svg {
+  fill: var(--white-color);
+}
+
 .thank-item__author {
   margin: 0;
   font-weight: 300;
@@ -2943,13 +2947,13 @@ template {
   background-size: contain;
 }
 
-.technologies__icon {
+.technologies__list-item svg {
   fill: var(--white-color);
 }
 
-.technologies__icon .svg-bg,
-.technologies__icon .svg-glyph,
-.technologies__icon .svg-shadow {
+.technologies__list-item .svg-bg,
+.technologies__list-item .svg-glyph,
+.technologies__list-item .svg-shadow {
   fill: var(--dekor-color);
 }
 
@@ -4506,7 +4510,7 @@ template {
     margin: 0;
   }
 
-  .technologies__icon {
+  .technologies__list-item svg {
     -webkit-transform: scale(0.9, 0.9);
     -ms-transform: scale(0.9, 0.9);
     transform: scale(0.9, 0.9);
