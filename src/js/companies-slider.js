@@ -33,7 +33,6 @@
       );
     };
 
-    // var lastScrollTop = 0;
     var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     var swiper = new Swiper(swiperContainer, swiperSettings);
@@ -57,30 +56,15 @@
     };
 
     toggle.addEventListener('click', function (evt) {
-      // if (companies.classList.contains('open')) {
-      //   evt.preventDefault();
-      //   swiper = new Swiper(swiperContainer, swiperSettings);
-      //   swiper.updateSlides();
-      //   swiper.updateProgress();
-      //   companies.classList.remove('open');
-      //   companiesList.classList.remove('container');
-      //   toggle.innerText = 'Список всех компаний';
-      //   window.addEventListener('scroll',  onWindowScroll);
-        // window.addEventListener('mousewheel', onWindowScroll);
-      // } else {
-        evt.preventDefault();
-        swiper.destroy();
-        companies.classList.add('companies--open');
-        companiesList.classList.add('container');
-        // toggle.innerText = 'скрыть';
-        window.removeEventListener('scroll',  onWindowScroll);
-        // window.removeEventListener('mousewheel', onWindowScroll);
-      // }
+      evt.preventDefault();
+      swiper.destroy();
+      companies.classList.add('companies--open');
+      companiesList.classList.add('container');
+      window.removeEventListener('scroll',  onWindowScroll);
     });
 
 
     window.addEventListener('scroll',  onWindowScroll);
-    // window.addEventListener('mousewheel', onWindowScroll);
   }
 
 })();

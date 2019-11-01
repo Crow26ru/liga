@@ -28,6 +28,7 @@
 .dark .page-footer__policy a,
 .dark .page-footer__info-block a {
   color: var(--pink-color);
+
   border-bottom: 1px solid rgba(255, 21, 83, 0.5);
 
   transition: color 0.3s, border-bottom-color 0.3s;
@@ -41,13 +42,15 @@
 }
 
 .dark .header__job-link {
-  border: 2px solid var(--pink-color);
   padding-top: 8px;
   padding-bottom: 8px;
+
+  border: 2px solid var(--pink-color);
 }
 
 .dark .header__job-link:hover,
 .dark .header__job-link:focus {
-  background-color: transparent;
   color: var(--pink-color);
+
+  background-color: transparent;
 }

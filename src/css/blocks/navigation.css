@@ -45,6 +45,7 @@
 
 .navigation__link.navigation__link--active {
   color: var(--pink-color);
+
   opacity: 1;
 }
 

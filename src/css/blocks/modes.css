@@ -9,8 +9,9 @@
 }
 
 .modes__title {
-  margin-bottom: 65px;
   z-index: 2;
+
+  margin-bottom: 65px;
 
   color: var(--white-color);
 }
