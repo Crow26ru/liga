@@ -7,6 +7,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
   <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="apple-mobile-web-app-title" content="Лига А.">
   <meta name="application-name" content="Лига А.">
@@ -43,167 +44,179 @@
     }
   </script>
   <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P3LSLVW');</script>
+  <!-- End Google Tag Manager -->
 </head>
 <body>
-<input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы" checked type="checkbox" name="color-theme" id="color-theme" tabindex="1">
-<span class="color-theme-identifier"></span>
-<header class="header">
-  <div class="header__wrap">
-    <div class="header__left-group header-left-group">
-      <div class="header-left-group__top-inner">
-        <a class="header-left-group__logo">
-          <include src="build/img/icon-logo.svg"></include>
-          <include src="build/img/icons/icon-logo-additional.svg"></include>
-        </a>
-        <label class="header-left-group__vision-button vision-button" for="color-theme" aria-label="переключатель цветовой схемы">
-          <span class="vision-button__handler">
-            <include src="build/img/icons/icon-moon-dark.svg"></include>
-          </span>
-        </label>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3LSLVW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы" checked type="checkbox" name="color-theme" id="color-theme">
+  <span class="color-theme-identifier"></span>
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__left-group header-left-group">
+        <div class="header-left-group__top-inner">
+          <a href="index.html" class="header-left-group__logo">
+            <span class="visually-hidden">Ссылка на главную страницу Лиги</span>
+            <include src="build/img/icon-logo.svg"></include>
+            <include src="build/img/icons/icon-logo-additional.svg"></include>
+          </a>
+          <label class="header-left-group__vision-button vision-button" for="color-theme" aria-label="переключатель цветовой схемы">
+              <span class="vision-button__handler">
+              <include src="build/img/icons/icon-moon-dark.svg"></include>
+              </span>
+          </label>
+        </div>
+        <div class="header-left-group__weather-widget weather-widget">+11С, небольшой дождь</div>
       </div>
-      <div class="header-left-group__weather-widget weather-widget">+11С, небольшой дождь</div>
+      <nav class="header__navigation navigation">
+        <button class="navigation__burger reset-button" type="button">
+          <span>открыть/закрыть меню</span>
+        </button>
+        <div class="navigation__wrap">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="markup.html">Вёрстка</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" >Фронтенд</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" >Проекты</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" >Команда</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <a class="header__job-link" href="#footer">Работать с нами</a>
     </div>
-    <nav class="header__navigation navigation">
-      <button class="navigation__burger reset-button" type="button">
-        <span>открыть/закрыть меню</span>
-      </button>
-      <div class="navigation__wrap">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="service.html">Вёрстка</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" >Фронтенд</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" >Проекты</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" >Команда</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="header__job-link-inner">
-      <a class="header__job-link" href="#">Работать с нами</a>
+  </header>
+
+  <main class="contacts">
+
+    <div class="container">
+      <h1 class="contacts__title">
+        <span>ПИШИТЕ,</span>
+        <span class="contacts__title-pale">ЗВОНИТЕ</span>
+      </h1>
+
+      <section class="contacts__main">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__general">
+          <div class="contacts__general-item">
+            <p class="contacts__general-title">
+              <span>Санкт-Петербург</span>
+              <span>Большая Конюшенная 19/8</span>
+              <span>6 этаж, БЦ&nbsp;&laquo;Гнездо&raquo;</span>
+            </p>
+            <p class="contacts__general-help">Вход со стороны Большой Конюшенной улицы. Слева от арки дверь с домофоном (код 02945), дальше на лифте и мы вас встретим.</p>
+          </div>
+          <div class="contacts__general-item">
+            <p class="contacts__general-title">
+              <a href="tel:+79119475986">+7 929 958-90-36</a>
+            </p>
+            <p class="contacts__general-help">Найти в офисе нас можно с понедельника по пятницу 11:00 &ndash; 18:00</p>
+          </div>
+        </div>
+        <div class="contacts__specific">
+          <div class="contacts__specific-item">
+            <b class="contacts__specific-title">Вакансии</b>
+            <a href="tel:+79299589036">+7 929 948-90-36</a>
+            <a class="contacts__specific-mail" href="mailto:sergey@htmlacademy.ru">sergey@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__specific-item">
+            <b class="contacts__specific-title contacts__specific-title--desk">По сотрудничеству</b>
+            <b class="contacts__specific-title contacts__specific-title--mobile">Сотрудничество и партнерство</b>
+            <a href="tel:+79119475986">+7 911 947-59-86</a>
+            <a class="contacts__specific-mail" href="mailto:mail@liga-a.ru">mail@liga-a.ru</a>
+          </div>
+          <div class="contacts__specific-item">
+            <b class="contacts__specific-title">Прислать проект на оценку</b>
+            <a class="contacts__specific-mail" href="mailto:mail@liga-a.ru">mail@liga-a.ru</a>
+          </div>
+        </div>
+      </section>
+
     </div>
-  </div>
-</header>
 
-<main class="contacts">
-
-  <div class="container">
-    <h1 class="contacts__title">
-      <span>ПИШИТЕ,</span>
-      <span class="contacts__title-pale">ЗВОНИТЕ</span>
-    </h1>
-
-    <section class="contacts__main">
-      <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__general">
-        <div class="contacts__general-item">
-          <p class="contacts__general-title">
-            <span>Санкт-Петербург</span>
-            <span>Большая Конюшенная 19/8</span>
-            <span>6 этаж, БЦ&nbsp;&laquo;Гнездо&raquo;</span>
-          </p>
-          <p class="contacts__general-help">Вход со стороны Большой Конюшенной улицы. Слева от арки дверь с домофоном (код 02945), дальше на лифте и мы вас встретим.</p>
-        </div>
-        <div class="contacts__general-item">
-          <p class="contacts__general-title">
-            <a href="tel:+79119475986">+7 929 958-90-36</a>
-          </p>
-          <p class="contacts__general-help">Найти в офисе нас можно с понедельника по пятницу 11:00 &ndash; 18:00</p>
-        </div>
-      </div>
-      <div class="contacts__specific">
-        <div class="contacts__specific-item">
-          <b class="contacts__specific-title">Вакансии</b>
-          <a href="tel:+79299589036">+7 929 948-90-36</a>
-          <a class="contacts__specific-mail" href="mailto:sergey@htmlacademy.ru">sergey@htmlacademy.ru</a>
-        </div>
-        <div class="contacts__specific-item">
-          <b class="contacts__specific-title contacts__specific-title--desk">По сотрудничеству</b>
-          <b class="contacts__specific-title contacts__specific-title--mobile">Сотрудничество и партнерство</b>
-          <a href="tel:+79119475986">+7 911 947-59-86</a>
-          <a class="contacts__specific-mail" href="mailto:mail@liga-a.ru">mail@liga-a.ru</a>
-        </div>
-        <div class="contacts__specific-item">
-          <b class="contacts__specific-title">Прислать проект на оценку</b>
-          <a class="contacts__specific-mail" href="mailto:mail@liga-a.ru">mail@liga-a.ru</a>
-        </div>
+    <section class="contacts__map">
+      <h2 class="visually-hidden">Карта</h2>
+      <div class="container">
+        <div id="map" class="contacts__map-container" style="width: 100%; height: 470px;"></div>
       </div>
     </section>
 
-  </div>
+  </main>
 
-  <section class="contacts__map">
-    <h2 class="visually-hidden">Карта</h2>
+  <footer class="page-footer" id="footer">
     <div class="container">
-      <div id="map" class="contacts__map-container" style="width: 100%; height: 470px;"></div>
-    </div>
-  </section>
+      <div class="page-footer__main">
+        <div class="page-footer__form">
+          <h2 class="page-footer__title title title--slash">Наверняка для нас есть работа?</h2>
+          <script>var amo_forms_params = {"id":490432,"hash":"09c92b064d14d74920d658e1f3d520c3","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
+          <p class="page-footer__policy">Отправляя форму вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
+        </div>
+        <div class="page-footer__info">
+          <div class="page-footer__info-block page-footer__info-block--mail">
+            <p class="page-footer__text">Любите писать с личной почты?</p>
+            <p class="page-footer__link">Пишите на <a href="mailto:mail@liga-a.ru">mail@liga-a.ru</a></p>
+          </div>
+          <div class="page-footer__info-block page-footer__info-block--tel contacts-hidden">
+            <p class="page-footer__text">Любите звонить?</p>
+            <p class="page-footer__link">Звоните на <a href="tel:+79119475986">+7 911 947-59-86</a></p>
+          </div>
+          <div class="page-footer__info-block contacts-hidden">
+            <p class="page-footer__text">У нас есть и <a href="contacts.html">другие контакты</a></p>
+          </div>
+          <div class="page-footer__info-block">
+            <p class="page-footer__text">Любите читать длинные юридические тексты?</p>
+            <p class="page-footer__link"><a href="requisites.html">Реквизиты</a> и <a href="public-offer.html">пользовательское соглашение</a></p>
 
-</main>
-
-<footer class="page-footer page-footer--contacts">
-  <div class="container">
-    <div class="page-footer__main">
-      <div class="page-footer__form">
-        <h2 class="page-footer__title title title--slash">Наверняка для нас есть работа</h2>
-        <script>var amo_forms_params = {"id":490432,"hash":"09c92b064d14d74920d658e1f3d520c3","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
-        <p class="page-footer__policy">Отправляя форму вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
+          </div>
+          <ul class="page-footer__social">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link" href="https://www.facebook.com/academy.liga/" target="_blank" rel="noreferrer">
+                <span class="visually-hidden">Facebook</span>
+                <include src="build/img/icons/icon-facebook.svg"></include>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link" href="https://t.co/irinaogereleva" target="_blank" rel="noreferrer">
+                <span class="visually-hidden">Telegram</span>
+                <include src="build/img/icons/icon-telegram.svg"></include>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link" href="https://vk.com/academy.liga" target="_blank" rel="noreferrer">
+                <span class="visually-hidden">В контакте</span>
+                <include src="build/img/icons/icon-vk.svg"></include>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="page-footer__info">
-        <div class="page-footer__info-block page-footer__info-block--mail">
-          <p class="page-footer__text">Любите писать с личной почты?&ensp;</p>
-          <p class="page-footer__link">пишите на <a href="mailto:mail@liga-a.ru">mail@liga-a.ru</a></p>
-        </div>
-        <div class="page-footer__info-block page-footer__info-block--tel contacts-hidden">
-          <p class="page-footer__text">Если любите звонить</p>
-          <p class="page-footer__link"><a href="tel:+79119475986">+7 911 947-59-86</a></p>
-        </div>
-        <div class="page-footer__info-block contacts-hidden">
-          <p class="page-footer__text">У нас много <a href="contacts.html">других контактов</a></p>
-        </div>
-        <div class="page-footer__info-block">
-          <p class="page-footer__text">Любите читать длинные юридические тексты?</p>
-          <p class="page-footer__link"><a href="requisites.html">Реквизиты</a> и <a href="public-offer.html">пользовательское соглашение</a></p>
-        </div>
-        <ul class="page-footer__social">
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://www.facebook.com/academy.liga/">
-              <span class="visually-hidden">Facebook</span>
-              <include src="build/img/icons/icon-facebook.svg"></include>
-            </a>
-          </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="#">
-              <span class="visually-hidden">Telegram</span>
-              <include src="build/img/icons/icon-telegram.svg"></include>
-            </a>
-          </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://vk.com/academy.liga">
-              <span class="visually-hidden">В контакте</span>
-              <include src="build/img/icons/icon-vk.svg"></include>
-            </a>
-          </li>
-        </ul>
+      <div class="page-footer__footer">
+        <p>ООО Ракета, 2017-2019, <span>из Питера с любовью.</span></p>
+        <p class="page-footer__design">Дизайн <a href="https://ru.shishki.co/" title="shishki.collective - команда профессионалов, работающих по всему свету, чтобы кардинально изменить ваш бизнес к лучшему" target="_blank" rel="noreferrer">shishki-collective</a></p>
       </div>
     </div>
-    <div class="page-footer__footer">
-      <p>ООО Ракета, 2017-2019, <span>из Питера с любовью.</span></p>
-      <p class="page-footer__design">Дизайн <a href="https://ru.shishki.co/" title="shishki.collective - команда профессионалов, работающих по всему свету, чтобы кардинально изменить ваш бизнес к лучшему">shishki-collective</a></p>
-    </div>
-  </div>
-</footer>
-<script src="libs/swiper/swiper.min.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f93bc27f-37fd-47f4-b7b2-a05308a600a0"></script>
-<script src="js/main.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js"></script>
+  </footer>
+  <script src="libs/swiper/swiper.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f93bc27f-37fd-47f4-b7b2-a05308a600a0"></script>
+  <script src="js/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js"></script>
 </body>
 </html>

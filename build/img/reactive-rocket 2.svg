@@ -1,0 +1,58 @@
+<svg width="758" height="356" viewBox="0 0 758 356" fill="none" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <mask id="mask0" maskUnits="userSpaceOnUse" x="158" y="0" width="209" height="113">
+    <path d="M158 0V113H367L158 0Z" fill="#ffffff" />
+  </mask>
+  <g mask="url(#mask0)" class="wings">
+    <rect x="125" y="-68" width="383" height="280" fill="url(#pattern0)" />
+  </g>
+  <mask id="mask1" maskUnits="userSpaceOnUse" x="158" y="241" width="209" height="113">
+    <path d="M158 354V241H367L158 354Z" fill="#ffffff" />
+  </mask>
+  <g mask="url(#mask1)" class="wings">
+    <rect x="508" y="425" width="383" height="280" transform="rotate(-180 508 425)" fill="url(#pattern1)" />
+  </g>
+  <mask id="mask2" maskUnits="userSpaceOnUse" x="367" y="72" width="76" height="41">
+    <path d="M367 72V113H443L367 72Z" fill="#ffffff" />
+  </mask>
+  <g mask="url(#mask2)" class="wings">
+    <rect x="258" y="-106" width="340" height="300" fill="url(#pattern2)" />
+  </g>
+  <mask id="mask3" maskUnits="userSpaceOnUse" x="367" y="240" width="76" height="41">
+    <path d="M367 281V240H443L367 281Z" fill="#ffffff" />
+  </mask>
+  <g mask="url(#mask3)" class="wings">
+    <rect width="340" height="300" transform="matrix(1 0 0 -1 258 459)" fill="url(#pattern3)" />
+  </g>
+  <path d="M1.5 114V87L51.5 114"  stroke-width="3"/>
+  <path class="wings" d="M158 114V6L371 114" stroke-width="3"></path>
+  <path class="wings" d="M158 240V353L367 240"  stroke-width="3" />
+  <path class="wings"  d="M367 240V281L443 238"  stroke-width="3" />
+  <path class="wings" d="M370 116V75L446 114" stroke-width="3"/>
+  <path d="M1.5 239V266L51.5 239"  stroke-width="3" />
+
+  <path class="body-rocket" d="M1.5 114.5H644.809C644.81 114.5 644.812 114.501 644.814 114.501C644.939 114.534 645.126 114.584 645.374 114.651C645.87 114.785 646.606 114.989 647.56 115.265C649.469 115.816 652.252 116.657 655.734 117.808C662.697 120.112 672.451 123.659 683.594 128.628C705.781 138.522 733.397 154.017 755.491 176.493C732.495 199.584 704.869 215.085 682.913 224.826C671.886 229.719 662.305 233.151 655.486 235.36C652.077 236.464 649.36 237.261 647.498 237.782C646.567 238.042 645.85 238.233 645.368 238.359C645.127 238.421 644.945 238.468 644.823 238.498C644.821 238.499 644.819 238.499 644.817 238.5H1.5V114.5Z"
+     stroke-width="3" />
+  <circle cx="674" cy="176" r="21" />
+  <path class="check-mark" d="M664 174L673.5 183.5L684.5 168" stroke="white" stroke-width="3" />
+  <path class="check-mark check-mark--vertical" d="M676,165.5l-9.5,9.5l15.5,11" stroke="white" stroke-width="3"/>
+
+  <defs>
+    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0" transform="translate(0 -0.0281531) scale(0.0021692 0.00296715)" />
+    </pattern>
+    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image0" transform="translate(0 -0.0281531) scale(0.0021692 0.00296715)" />
+    </pattern>
+    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image1" transform="translate(0 -0.0185859) scale(0.0020202 0.00228956)" />
+    </pattern>
+    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlink:href="#image1" transform="translate(0 -0.0185859) scale(0.0020202 0.00228956)" />
+    </pattern>
+    <image id="image0" width="488px" height="467px"
+      xlink:href="img/big-wings-pattern.svg" />
+    <image id="image1" width="495" height="453" xlink:href="img/small-wings-pattern.png" />
+  </defs>
+</svg>

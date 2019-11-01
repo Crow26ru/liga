@@ -43,11 +43,7 @@
       document.documentElement.classList[localStorage.getItem('--theme') === 'dark' ? 'add' : 'remove']('dark');
     }
   </script>
-  <style>
-    :root{--font-size-basic:16px;--font-line-basic:1.333;--white-color:#fff;--blue-color:#2c39f2;--pink-color:#ff1553;--gray-light-color:#f2f2f2;--gray-dark-color:#d3d3d3;--dark-color:#000;--light-color:#fff;--intro-text-color:#2c39f2;--pink-hover-color:#ff1553;--dekor-color:#2c39f2;--invers-dekor-color:#ff1553;--blue-background-color:#2c39f2}html{--font-size-basic:16px;--font-line-basic:1.333;--white-color:#fff;--blue-color:#2c39f2;--pink-color:#ff1553;--gray-light-color:#f2f2f2;--gray-dark-color:#d3d3d3;--dark-color:#000;--light-color:#fff;--intro-text-color:#2c39f2;--dekor-color:#2c39f2;--pink-hover-color:#ff1553;--invers-dekor-color:#ff1553;--blue-background-color:#2c39f2}html.dark{--dark-color:#fff;--light-color:#1f1f1f;--intro-text-color:#fff;--pink-hover-color:#fff;--dekor-color:#ff1553;--invers-dekor-color:#2c39f2;--blue-background-color:#2c2929}*{-webkit-box-sizing:border-box;box-sizing:border-box}:root{color-scheme:light dark}html{font-size:16px}body,html{min-width:320px;height:100%}body{width:100%;min-height:100%;padding:0;font-weight:400;font-size:1.125rem;font-family:plex,Arial,sans-serif;color:var(--white-color);background-color:var(--light-color)}a{color:inherit;text-decoration:none}.visually-hidden:not(:focus):not(:active),input[type=checkbox].visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;white-space:nowrap;border:0;clip:rect(0 0 0 0)}#color-theme{position:fixed;top:0}.color-theme-identifier{position:absolute;width:0;height:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:rgba(0,0,0,0)}button,input{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button{text-transform:none}[type=button],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}[type=checkbox]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}@font-face{font-family:plex;font-weight:300;font-display:swap;font-style:normal;src:url(fonts/IBMPlexSansLight.woff2) format("woff2"),url(fonts/IBMPlexSansLight.woff) format("woff")}@font-face{font-family:plex;font-weight:300;font-display:swap;font-style:italic;src:url(fonts/IBMPlexSansLightItalic.woff2) format("woff2"),url(fonts/IBMPlexSansLightItalic.woff) format("woff")}@font-face{font-family:plex;font-weight:600;font-display:swap;font-style:normal;src:url(fonts/IBMPlexSansSemiBold.woff2) format("woff2"),url(fonts/IBMPlexSansSemiBold.woff) format("woff")}.dark .vision-button__handler{right:-20px;-webkit-transform:rotate(1turn);-ms-transform:rotate(1turn);transform:rotate(1turn)}.dark .vision-button__handler:before{opacity:0}.dark .vision-button__handler svg{opacity:1}.dark .header__job-link{padding-top:8px;padding-bottom:8px;border:2px solid var(--pink-color)}.container{max-width:1440px;margin:0 auto;padding:0 57px}.reset-button{padding:0;background:rgba(0,0,0,0);border:none}.header{position:absolute;top:0;left:0;z-index:6;width:100%;padding:27px 57px;background-color:var(--light-color)}.header__wrap{display:grid;grid-template-columns:250px 1fr 200px}.header__navigation{-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;padding-right:25px;justify-self:end}.header__job-link-inner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}.header__job-link{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;padding:10px 32px;font-weight:600;font-size:.875rem;line-height:2.0625rem;text-align:center;color:#fff;text-transform:uppercase;background-color:var(--dekor-color);justify-self:end}.header-left-group{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.header-left-group__top-inner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.header-left-group__logo{position:relative;z-index:2;width:120px;height:27px;color:var(--dark-color)}.header-left-group__logo svg{width:100%;fill:currentColor}.header-left-group__logo .light{fill:var(--light-color)}.header-left-group__logo-additional-svg{display:none}.header-left-group__vision-button{margin-left:28px}.weather-widget{display:none}.vision-button{position:relative;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:47px;padding:2px 3px;background-image:url(img/sun-light.svg),url(img/moon-light.svg);background-repeat:no-repeat,no-repeat;background-position:left 3px top 3px,right 5px top 5px;background-size:13px 13px,auto 11px;border:3px solid var(--dark-color);border-radius:15px}.vision-button__handler{position:relative;right:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:15px;height:15px;background-color:var(--dekor-color);border-radius:50%}.vision-button__handler:before{content:"";position:absolute;top:4px;left:4px;width:5px;height:5px;border:1px solid #fff;border-radius:50%}.vision-button__handler svg{opacity:0}.navigation__wrap{background-color:var(--light-color)}.navigation__list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0;padding:0;list-style:none}.navigation__item{margin-right:49px}.navigation__link{font-weight:600;font-size:1.125rem;line-height:2.1875rem;color:var(--dark-color)}.navigation__link:not([href]){opacity:.3}.navigation__burger{position:relative;z-index:2;display:none;width:24px;height:22px;font-size:0}.navigation__burger span{position:absolute;top:0;left:0;width:100%;height:4px;background-color:var(--dekor-color)}.navigation__burger:before{content:"";position:absolute;top:9px;left:0;width:100%;height:4px;background-color:var(--dekor-color)}.navigation__burger:after{content:"";position:absolute;top:18px;left:0;width:100%;height:4px;background-color:var(--dekor-color)}.intro{padding-top:217px;padding-bottom:98px}.intro__headline{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;grid-column:1/span 2}.intro__drako{display:block;min-width:190px;margin-top:6px;margin-right:63px;color:var(--dark-color)}.intro__drako svg{fill:currentColor}.intro__drako .light{fill:var(--light-color)}.intro__drako .flag{fill:var(--dekor-color)}.intro__title{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin:0;line-height:5.625rem;color:var(--dark-color)}.intro__title,.intro__title .intro__title-pale{font-weight:600;font-size:4.375rem;text-transform:uppercase;opacity:.9}.intro__title .intro__title-pale{margin-top:-8px;line-height:4.25rem;color:var(--light-color);text-shadow:var(--intro-text-color) 1px 0,var(--intro-text-color) 1px 1px,var(--intro-text-color) 0 1px,var(--intro-text-color) -1px 1px,var(--intro-text-color) -1px 0,var(--intro-text-color) -1px -1px,var(--intro-text-color) 0 -1px,var(--intro-text-color) 1px -1px}.intro__list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin:0;padding:14px 0 0;list-style:none}.intro__item{margin-bottom:26px;font-weight:300;font-size:2.5rem;line-height:1.1;color:var(--dark-color)}.intro__text-important{color:var(--pink-color)}.features-list{display:grid;margin:0;padding-left:3px;list-style:none;counter-reset:features;grid-column-gap:44px;grid-row-gap:64px;grid-template-columns:repeat(3,1fr)}.features-list__item{position:relative;padding-top:54px;font-weight:300;font-size:1.5rem;line-height:2rem;color:var(--dark-color);counter-increment:features}.features-list__item:before{content:"0" counter(features);position:absolute;top:0;left:0;font-weight:300;font-size:2.5rem;line-height:1.1;color:var(--pink-color)}.features-list__item.features-list__item--tests:before{content:none}.features-list__tests-list{margin-bottom:10px}.tests-list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin:0;padding:0;list-style:none}.tests-list__item{margin-right:21px}.tests-list__item a{color:var(--dekor-color)}.tests-list__item svg{fill:currentColor}.service__title svg{position:absolute;top:14px;right:0;display:none;width:21px;height:22px;fill:none;stroke:currentColor}.modes__label svg .check-mark--vertical{display:none}.modes-change{display:none}@media (max-width:1300px){.header{padding-right:30px;padding-left:30px}.header__wrap{grid-template-columns:250px 1fr 35px}.header__navigation{-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1;padding-right:0}.navigation__burger{display:block}.navigation__wrap{display:none}.navigation__list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;overflow-y:auto}.navigation__link{margin-right:0;margin-bottom:10px;font-weight:300;font-size:2rem;line-height:4.5rem}}@media (max-width:1260px){.container{padding:0 30px}.intro__title{max-width:600px}.intro__list-inner{grid-column:1/span 2}.intro__list{padding-top:0;padding-right:0;padding-left:0}.features-list{padding-left:0;grid-template-columns:repeat(2,1fr)}.features-list__item{max-width:none;padding-right:20px;padding-left:0}.features-list__item:before{left:0}}@media (max-width:1200px){.service__title svg{top:9px}}@media (max-width:1023px){.features-list{grid-column-gap:30px;grid-row-gap:50px}}@media (max-width:810px){.modes__label svg path{stroke-width:8px}.modes__label svg .check-mark{display:none}.modes__label svg .check-mark--vertical{display:block;stroke-width:3px}}@media (max-width:767px){.container{padding:0 16px}.header{padding:16px}.header__job-link{display:none}.header-left-group__logo{width:104px;height:24px}.intro{padding-top:104px;padding-bottom:59px}.intro__headline{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.intro__drako{-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;width:170px;min-width:170px;height:192px;margin-bottom:6px;margin-left:46px}.intro__drako svg{width:100%;height:auto}.intro__title{max-width:none;margin-top:54px;margin-bottom:36px;font-size:3rem;line-height:3.125rem}.intro__title .intro__title-pale{margin-top:0;font-size:3rem;line-height:2.875rem}.intro__list{padding-right:0;padding-left:0}.intro__item{margin-bottom:15px;font-weight:300;font-size:1.5rem;line-height:2rem}}@media (max-width:680px){.features-list__item{font-size:1.0625rem;line-height:1.3125rem}.features-list__item:before{font-size:1.5rem;line-height:1.5}}@media (max-width:600px){.intro__headline{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.intro__headline,.intro__list-inner{grid-column:1/span 1}.features-list{padding-right:0;padding-left:0;grid-column-gap:0;grid-row-gap:18px;grid-template-columns:1fr}.features-list__item{padding-top:0;padding-right:0;padding-left:60px;font-size:1.1875rem;line-height:1.3125rem}.features-list__item:before{top:-6px;left:0;font-size:1.625rem;line-height:1.5}.features-list__item:nth-child(3n){padding-left:60px}.features-list__item:nth-child(3n):before{left:0}.features-list__item.features-list__item--tests{padding-top:22px;padding-left:0}.tests-list__item{margin-right:28px}}@media (prefers-color-scheme:dark){.color-theme-identifier{position:fixed}}
-  </style>
-  <link rel="preload" href="css/style.min.48f05e8c.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="css/style.min.48f05e8c.css"></noscript>
+  <link rel="stylesheet" href="css/style.min.css">
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -60,9 +56,8 @@
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3LSLVW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
     <!-- End Google Tag Manager (noscript) -->
-  <input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы" type="checkbox" checked name="color-theme" id="color-theme" tabindex="1">
+  <input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы" type="checkbox" checked="" name="color-theme" id="color-theme" tabindex="1">
   <span class="color-theme-identifier"></span>
   <header class="header">
     <div class="header__wrap">
@@ -116,7 +111,7 @@
         <div class="navigation__wrap">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="service.html">Вёрстка</a>
+              <a class="navigation__link" href="markup.html">Вёрстка</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link">Фронтенд</a>
@@ -134,7 +129,7 @@
         </div>
       </nav>
       <div class="header__job-link-inner">
-        <a class="header__job-link" href="#">Работать с нами</a>
+        <a class="header__job-link" href="#footer">Работать с нами</a>
       </div>
     </div>
   </header>
@@ -193,45 +188,30 @@
 
             </div>
             <h1 class="intro__title">
-              <span>лига а.</span>
-              <span class="intro__title-pale">фронтенд-аутсорс</span>
+              <span>Лига а.</span>
+              <span class="intro__title-pale">Фронтенд-аутсорс</span>
             </h1>
           </li>
           <li class="intro__list-inner">
             <ul class="intro__list">
               <li class="intro__item">
-                <span class="intro__text-important">297</span>
-                успешных проектов
+                <span class="intro__text-important">318</span> успешных проектов
               </li>
               <li class="intro__item">
-                <span class="intro__text-important">2 дня</span>
-                на запуск? это&nbsp;про&nbsp;нас
+                Запускаем проекты за <span class="intro__text-important">2 дня</span>
               </li>
             </ul>
           </li>
-          <li class="features-list__item">
-            Даём экспертизу и топим
-            за&nbsp;качество
-          </li>
-          <li class="features-list__item">
-            Привлекаем джуниоров для&nbsp;минимизации стоимости
-          </li>
-          <li class="features-list__item">
-            Гибкость и честность —
-            наше&nbsp;кредо
-          </li>
-          <li class="features-list__item">
-            Ценим ваши данные, работаем
-            по&nbsp;договору&nbsp;и&nbsp;NDA
-          </li>
-          <li class="features-list__item">
-            Вы&nbsp;найдёте нас на&nbsp;профильных конференциях как докладчиков или организаторов
-          </li>
+          <li class="features-list__item">Даём экспертизу и топим за качество</li>
+          <li class="features-list__item">Привлекаем джуниоров для минимизации стоимости</li>
+          <li class="features-list__item">Гибкие и честные по отношению к клиентам</li>
+          <li class="features-list__item">Ценим ваши данные, работаем по договору и NDA</li>
+          <li class="features-list__item">Докладываем доклады и организуем конференции</li>
           <li class="features-list__item features-list__item--tests">
             <ul class="features-list__tests-list tests-list">
               <li class="tests-list__item">
                 <a href="https://developers.google.com/web/tools/lighthouse" class="tests-list__link" target="_blank" aria-label="lighthouse" rel="noreferrer">
-                 <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 0.48999V39.29H38.8V0.48999H0ZM15.42 13.72H23.29V15H15.42V13.72ZM23.25 34.06C21.98 33.94 20.7 33.87 19.42 33.87C18.42 33.87 17.42 33.92 16.42 33.99L23.03 30.93L23.25 34.06ZM16.3 7.99999C16.3 7.19638 16.6192 6.42569 17.1875 5.85746C17.7557 5.28922 18.5264 4.96999 19.33 4.96999C20.1336 4.96999 20.9043 5.28922 21.4725 5.85746C22.0408 6.42569 22.36 7.19638 22.36 7.99999H16.3ZM16.74 9.99999H22.15V11.73H16.74V9.99999ZM22.26 17V17.19L16.3 20L16.46 17H22.26ZM16.26 22.31L22.44 19.31L22.58 23L15.96 26.11L16.26 22.31ZM15.93 28.43L22.74 25.16L22.96 28.79L15.66 32.16L15.93 28.43ZM19.51 35.91C22.9669 35.9025 26.4086 36.3668 29.74 37.29H8.97001C12.3724 36.343 15.8883 35.8653 19.42 35.87L19.51 35.91ZM36.89 37.33H35.42C32.2011 35.8403 28.7815 34.8296 25.27 34.33L24.21 17H25.29V11.72H24.1V9.88999C24.3803 9.78981 24.6251 9.60953 24.8038 9.37151C24.9826 9.13349 25.0876 8.84822 25.1057 8.55109C25.1238 8.25396 25.0542 7.95805 24.9057 7.70009C24.7571 7.44212 24.5361 7.23346 24.27 7.09999C24.0793 5.92863 23.4781 4.86332 22.574 4.09452C21.6699 3.32573 20.5218 2.90359 19.335 2.90359C18.1482 2.90359 17.0001 3.32573 16.096 4.09452C15.1919 4.86332 14.5907 5.92863 14.4 7.09999C14.1239 7.24184 13.8979 7.4648 13.7523 7.7389C13.6067 8.013 13.5485 8.32511 13.5855 8.63326C13.6226 8.94142 13.753 9.23086 13.9594 9.46267C14.1658 9.69449 14.4382 9.85757 14.74 9.92999V11.72H13.42V17H14.42L13.52 34.3C9.97182 34.7784 6.51621 35.7898 3.27 37.3H2V2.48999H36.8L36.89 37.33Z"></path>
 </svg>
 
@@ -239,7 +219,7 @@
               </li>
               <li class="tests-list__item">
                 <a class="tests-list__link" href="live.browserstack.com" target="_blank" aria-label="browserstack" rel="noreferrer">
-                 <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7398 0.47L24.1498 0.36H23.9498C23.2881 0.248903 22.6202 0.178769 21.9498 0.15H21.5498C21.4002 0.134827 21.2494 0.134827 21.0998 0.15H20.7398C20.1198 0 19.4898 0 18.8698 0C13.9153 0.0079335 9.16606 1.9796 5.66272 5.48294C2.15939 8.98627 0.187725 13.7355 0.179792 18.69C0.177679 19.3111 0.207716 19.932 0.269788 20.55V20.68C0.267678 24.5867 1.37705 28.4134 3.46837 31.7132C5.55969 35.0131 8.54665 37.6498 12.0804 39.3156C15.6142 40.9814 19.549 41.6074 23.4252 41.1207C27.3015 40.6339 30.9593 39.0544 33.9715 36.5666C36.9837 34.0788 39.226 30.7854 40.4365 27.0709C41.647 23.3565 41.7757 19.3743 40.8077 15.5894C39.8397 11.8045 37.815 8.37313 34.9698 5.69592C32.1246 3.01871 28.5765 1.20619 24.7398 0.47ZM20.8198 39.27C15.891 39.2647 11.1657 37.3044 7.68052 33.8193C4.19537 30.3341 2.23508 25.6087 2.22979 20.68H1.22979L2.22979 20.54V20.42C1.97132 17.9459 2.26917 15.4453 3.10156 13.1011C3.93395 10.7569 5.27981 8.62844 7.04071 6.87138C8.80161 5.11431 10.933 3.77308 13.279 2.94581C15.625 2.11854 18.1262 1.82614 20.5998 2.09H21.9298C22.5098 2.09 23.0998 2.18 23.6898 2.27H23.8698L24.3698 2.36C28.9071 3.2399 32.9539 5.77842 35.7209 9.48042C38.488 13.1824 39.7767 17.7824 39.3359 22.3832C38.895 26.9839 36.7562 31.2555 33.3365 34.3647C29.9169 37.4739 25.4616 39.1977 20.8398 39.2L20.8198 39.27ZM22.4797 2.53004C19.9295 2.53651 17.4228 3.19045 15.1945 4.43054C12.9662 5.67063 11.0892 7.45627 9.73968 9.62004C8.45653 11.4101 7.69811 13.5226 7.54967 15.72C7.46589 16.3466 7.42247 16.9779 7.41968 17.61V18V18.3V18.69C7.42233 22.4261 8.90765 26.0084 11.5495 28.6502C14.1913 31.2921 17.7736 32.7774 21.5097 32.78C22.1054 32.7797 22.7003 32.7363 23.2897 32.65C27.2153 32.4476 30.9064 30.7194 33.5758 27.834C36.2452 24.9486 37.6815 21.1344 37.5785 17.2049C37.4754 13.2754 35.8411 9.54177 33.0241 6.80026C30.2071 4.05874 26.4305 2.52639 22.4997 2.53004H22.4797ZM29.3097 15.43V15.98V16.28V16.53C29.2279 19.1078 28.1463 21.5526 26.294 23.3471C24.4416 25.1415 21.9637 26.145 19.3847 26.145C16.8056 26.145 14.3278 25.1415 12.4754 23.3471C10.623 21.5526 9.54151 19.1078 9.45968 16.53V15.92C9.70233 14.0787 10.3329 12.3097 11.3097 10.73C12.2274 9.46413 13.4292 8.43106 14.8186 7.7138C16.208 6.99655 17.7462 6.61508 19.3097 6.60004H19.7397H19.8297C20.2265 6.53599 20.6277 6.50256 21.0297 6.50004C23.2063 6.50268 25.293 7.36851 26.8321 8.90761C28.3712 10.4467 29.237 12.5334 29.2397 14.71V15.27V15.42L29.3097 15.43ZM23.0897 30.66C22.5596 30.7351 22.0251 30.7752 21.4897 30.78C19.4852 30.7802 17.5122 30.2811 15.7489 29.3279C13.9856 28.3746 12.4874 26.9972 11.3897 25.32C13.093 26.8846 15.2153 27.9189 17.4971 28.2964C19.7789 28.674 22.1213 28.3784 24.2378 27.4459C26.3543 26.5134 28.1532 24.9843 29.4144 23.0457C30.6757 21.107 31.3447 18.8429 31.3397 16.53V16.21V15.98V15.33V14.72C31.3333 12.1567 30.3648 9.68912 28.6259 7.80577C26.887 5.92241 24.5044 4.76051 21.9497 4.55004H22.4797C25.9123 4.52088 29.2186 5.84336 31.6843 8.23175C34.15 10.6201 35.577 13.8827 35.6571 17.3145C35.7372 20.7464 34.464 24.072 32.1125 26.5728C29.761 29.0737 26.52 30.549 23.0897 30.68V30.66ZM16.763 10.5346C18.0556 9.67094 19.5752 9.20996 21.1298 9.20996C23.2136 9.21261 25.2112 10.0416 26.6847 11.515C28.1582 12.9885 28.9871 14.9862 28.9898 17.07C28.9898 18.6245 28.5288 20.1442 27.6651 21.4367C26.8015 22.7293 25.5739 23.7367 24.1377 24.3317C22.7014 24.9266 21.121 25.0822 19.5964 24.7789C18.0717 24.4757 16.6712 23.7271 15.5719 22.6278C14.4727 21.5286 13.7241 20.1281 13.4208 18.6034C13.1175 17.0787 13.2732 15.4983 13.8681 14.0621C14.463 12.6258 15.4704 11.3983 16.763 10.5346ZM23.4398 15.67C23.7748 15.4326 24.0378 15.1073 24.1998 14.73C24.3066 14.5455 24.3726 14.3402 24.3933 14.128C24.414 13.9158 24.3889 13.7016 24.3198 13.5C23.9777 13.7323 23.7102 14.0588 23.5498 14.44C23.4433 14.6247 23.3784 14.8305 23.3594 15.0428C23.3404 15.2552 23.3678 15.4692 23.4398 15.67ZM18.6005 22.3624C19.3907 22.738 20.2549 22.9319 21.1298 22.93C22.6779 22.9194 24.1592 22.2977 25.2511 21.2001C26.3431 20.1026 26.9572 18.6181 26.9598 17.07C26.9616 16.1449 26.7422 15.2329 26.3198 14.41C26.2646 14.8026 26.157 15.186 25.9998 15.55C25.7089 16.2156 25.2422 16.7895 24.6498 17.21C24.261 17.4786 23.8022 17.628 23.3298 17.64C23.0607 17.6386 22.795 17.5807 22.5498 17.47C22.0777 17.2336 21.7183 16.8202 21.5498 16.32C21.2573 15.4298 21.3256 14.4604 21.7398 13.62C22.0216 12.9546 22.4819 12.3801 23.0698 11.96C23.2136 11.8656 23.368 11.7884 23.5298 11.73C22.7325 11.3697 21.8647 11.1925 20.99 11.2113C20.1153 11.2302 19.256 11.4447 18.475 11.8391C17.694 12.2335 17.0113 12.7977 16.4769 13.4904C15.9424 14.1831 15.5699 14.9867 15.3866 15.8421C15.2033 16.6976 15.2138 17.5833 15.4175 18.4341C15.6212 19.285 16.0128 20.0794 16.5636 20.7592C17.1144 21.4389 17.8104 21.9867 18.6005 22.3624Z"></path>
 </svg>
 
@@ -247,7 +227,7 @@
               </li>
               <li class="tests-list__item">
                 <a class="tests-list__link" href="https://www.ideatheorem.com/ux-audit/" target="_blank" aria-label="ideatheorem" rel="noreferrer">
-                 <svg width="46" height="40" viewBox="0 0 46 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="46" height="40" viewBox="0 0 46 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9102 39.21H4.67023C3.62702 39.2074 2.62743 38.7911 1.8907 38.0525C1.15396 37.3139 0.740231 36.3132 0.740234 35.27V4.19001C0.742874 3.14852 1.15777 2.15044 1.89422 1.414C2.63067 0.67755 3.62875 0.26265 4.67023 0.26001H41.9102C42.9487 0.275431 43.9404 0.694125 44.6757 1.42755C45.411 2.16097 45.8322 3.15163 45.8502 4.19001V35.27C45.8347 36.3101 45.4147 37.3033 44.6791 38.0389C43.9435 38.7744 42.9504 39.1945 41.9102 39.21ZM2.74023 35.27V8.00001H43.8502V35.27C43.8502 35.7845 43.6458 36.278 43.282 36.6418C42.9182 37.0056 42.4248 37.21 41.9102 37.21H4.67023C4.15745 37.2074 3.66657 37.0018 3.30491 36.6383C2.94325 36.2747 2.74023 35.7828 2.74023 35.27ZM8.23029 4.50992C8.23029 5.38805 7.51843 6.09992 6.64029 6.09992C5.76216 6.09992 5.05029 5.38805 5.05029 4.50992C5.05029 3.63179 5.76216 2.91992 6.64029 2.91992C7.51843 2.91992 8.23029 3.63179 8.23029 4.50992ZM11.7401 6.09992C12.6183 6.09992 13.3301 5.38805 13.3301 4.50992C13.3301 3.63179 12.6183 2.91992 11.7401 2.91992C10.862 2.91992 10.1501 3.63179 10.1501 4.50992C10.1501 5.38805 10.862 6.09992 11.7401 6.09992ZM39.8602 31.6401H30.9302V30.3701C30.9302 28.3332 30.1211 26.3798 28.6808 24.9395C28.4536 24.7122 28.2135 24.5007 27.9624 24.3056C26.6648 27.5085 25.4241 30.5278 25.1702 31C24.8807 31.4659 24.4219 31.8015 23.8901 31.9362C23.3584 32.0709 22.7952 31.9943 22.3188 31.7224C21.8424 31.4505 21.4899 31.0046 21.3354 30.4783C21.1809 29.952 21.2363 29.3863 21.4902 28.9C21.748 28.4556 23.7105 25.8678 25.8115 23.1298C24.9965 22.8414 24.1312 22.6901 23.2502 22.6901C21.2134 22.6901 19.2599 23.4992 17.8197 24.9395C16.3794 26.3798 15.5702 28.3332 15.5702 30.3701L15.6202 31.5801L14.6202 31.6401H6.74023V30.3701C6.84655 26.0394 8.64162 21.9217 11.7422 18.8964C14.8428 15.871 19.0032 14.1775 23.3352 14.1775C26.1031 14.1775 28.8009 14.8688 31.197 16.1572L31.2802 16.05L31.2303 16.1751C32.5717 16.9003 33.8179 17.8129 34.9283 18.8964C38.0289 21.9217 39.8239 26.0394 39.9302 30.3701L39.8602 31.6401ZM29.8896 23.249C29.5328 22.917 29.1536 22.6143 28.7558 22.3425C29.4456 20.632 30.097 19.008 30.5653 17.8384C31.5515 18.4041 32.4755 19.0874 33.3155 19.8796C36.0231 22.4331 37.6525 25.9247 37.8702 29.6401H32.9502C32.7745 27.1995 31.6809 24.916 29.8896 23.249ZM30.0938 17.5793C29.3179 18.5808 28.2414 19.9722 27.1113 21.4393C25.9159 20.9265 24.6188 20.6553 23.2952 20.6553C20.8483 20.6553 18.4921 21.582 16.7008 23.249C14.9095 24.916 13.816 27.1995 13.6402 29.6401H8.74023C8.95801 25.9247 10.5874 22.4331 13.2949 19.8796C16.0025 17.3261 19.5835 15.9038 23.3052 15.9038C25.6901 15.9038 28.0173 16.4879 30.0938 17.5793Z"></path>
 </svg>
 
@@ -266,9 +246,7 @@
         <div class="services__item service">
           <div class="service__short-info">
             <h3 class="service__title">
-              <a href="#">
-                Просто вёрстка
-              </a>
+              <a href="#">Просто вёрстка</a>
               <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="1" y="11" width="19" height="10" stroke-width="2"></rect>
 <path d="M4 7.5C4 3.91015 6.91015 1 10.5 1C14.0899 1 17 3.91015 17 7.5V11H4V7.5Z" stroke-width="2"></path>
@@ -278,16 +256,14 @@
             <p class="service__price">от 750 рэ/час</p>
           </div>
           <div class="service__info">
-            <p class="service__text">
-              Сели, сверстали. От 5 до 10 часов дополнительных работ включено в стоимость.
-            </p>
+            <p class="service__text">Сели, сверстали. До 10 часов дополнительных работ включено в стоимость.</p>
             <ul class="service__technologies">
               <li class="service__technologies-item">HTML</li>
               <li class="service__technologies-item">CSS</li>
               <li class="service__technologies-item">JavaScript</li>
             </ul>
           </div>
-          <a class="service__link" href="#">
+          <a class="service__link" href="markup.html">
             <span>Подробнее</span>
             <svg width="35" height="28" viewBox="0 0 35 28" fill="none" xmlns="http://www.w3.org/2000/svg">
   <line x1="-8.74228e-08" y1="14" x2="32" y2="14" stroke-width="2"></line>
@@ -306,18 +282,17 @@
 </svg>
 
             </h3>
-            <p class="service__price">от 1150 рэ/час</p>
+            <p class="service__price">от 1300 рэ/час</p>
           </div>
           <div class="service__info">
-            <p class="service__text">
-              Вы даже не представляете что тут будет. Но пока еще нет и придется подождать
-            </p>
+            <p class="service__text">Вы даже не представляете что тут будет. Но пока еще нет и придется подождать.</p>
             <ul class="service__technologies">
+              <li class="service__technologies-item">SPA</li>
               <li class="service__technologies-item">React.js</li>
               <li class="service__technologies-item">Vue.js</li>
             </ul>
           </div>
-          <a class="service__link" href="#">
+          <a class="service__link" href="#footer">
             <span>узнать первым</span>
             <svg width="29" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect x="1" y="1" width="27" height="21" stroke-width="2"></rect>
@@ -405,11 +380,11 @@
             </label>
             <div class="modes__normal-content">
               <h3 class="modes__subtitle">Ракета</h3>
-              <p class="modes__text">Стандартный режим. Команда из трёх человек, один из которых джуниор. Сроки в рабочих днях. Быстро, но без фанатизма, разработчики не выгорают. </p>
+              <p class="modes__text">Стандартный режим. Команда из трёх человек, пара джуниоров. Быстро, но без фанатизма, разработчики не выгорают.</p>
             </div>
             <div class="modes__reactive-content">
               <h3 class="modes__subtitle"><span class="modes__subtitle-unvisible-fragment">Ракета</span> реактивная</h3>
-              <p class="modes__text">Дороже, но круче. Команда из четырех человек, джуниоры наблюдают. Сроки в днях. Максимально быстро, разработчики выгорают.</p>
+              <p class="modes__text">Дороже, но быстрее. Больше команда, но меньше джуниоров. Максимально быстро, разработчики выгорают.</p>
             </div>
           </div>
           <div class="modes__so-so">
@@ -423,7 +398,7 @@
 
             </div>
             <h3 class="modes__so-so-title">Так себе ракета</h3>
-            <p class="modes__so-so-text">Дешевле, но дольше. Команда из трёх человек, двое джуниоры. Сроки в рабочих днях. На 30% медленнее чем стандартный режим, зато дешевле.</p>
+            <p class="modes__so-so-text">Дешевле, но дольше. Обычная команда, но все джуниоры. На 30% медленнее чем стандартный режим, зато дешевле.</p>
           </div>
         </div>
       </div>
@@ -444,8 +419,7 @@
                       <div class="project__laptop-image-inner">
                         <picture>
                           <source srcset="img/projects/project-1.webp, img/projects/project-1@2x.webp 2x" type="image/webp">
-
-                          <img class="project__laptop-img" src="img/projects/project-1.png" srcset="img/projects/project-1@2x.png 2x" alt>
+                          <img class="project__laptop-img" src="img/projects/project-1.png" srcset="img/projects/project-1@2x.png 2x" alt="">
                         </picture>
                       </div>
                     </div>
@@ -453,62 +427,7 @@
                       <div class="project__mobile-image-inner">
                         <picture>
                           <source srcset="img/projects/project-1-m.webp, img/projects/project-1-m@2x.webp 2x" type="image/webp">
-
-                          <img class="project__laptop-img" src="img/projects/project-1-m.png" srcset="img/projects/project-1-m@2x.png 2x" alt>
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="swiper-slide projects__slide">
-                <div class="project">
-                  <h3 class="project__title">
-                    <a href="#">Питерский филиал Ночлежки</a>
-                  </h3>
-                  <div class="project__wrapper">
-                    <div class="project__laptop">
-                      <div class="project__laptop-image-inner">
-                        <picture>
-                          <source srcset="img/projects/project-1.webp, img/projects/project-1@2x.webp 2x" type="image/webp">
-
-                          <img class="project__laptop-img" src="img/projects/project-1.png" srcset="img/projects/project-1@2x.png 2x" alt>
-                        </picture>
-                      </div>
-                    </div>
-                    <div class="project__mobile">
-                      <div class="project__mobile-image-inner">
-                        <picture>
-                          <source srcset="img/projects/project-1-m.webp, img/projects/project-1-m@2x.webp 2x" type="image/webp">
-
-                          <img class="project__laptop-img" src="img/projects/project-1-m.png" srcset="img/projects/project-1-m@2x.png 2x" alt>
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="swiper-slide projects__slide">
-                <div class="project">
-                  <h3 class="project__title">
-                    <a href="#">Донецкий филиал Ночлежки</a>
-                  </h3>
-                  <div class="project__wrapper">
-                    <div class="project__laptop">
-                      <div class="project__laptop-image-inner">
-                        <picture>
-                          <source srcset="img/projects/project-1.webp, img/projects/project-1@2x.webp 2x" type="image/webp">
-
-                          <img class="project__laptop-img" src="img/projects/project-1.png" srcset="img/projects/project-1@2x.png 2x" alt>
-                        </picture>
-                      </div>
-                    </div>
-                    <div class="project__mobile">
-                      <div class="project__mobile-image-inner">
-                        <picture>
-                          <source srcset="img/projects/project-1-m.webp, img/projects/project-1-m@2x.webp 2x" type="image/webp">
-
-                          <img class="project__laptop-img" src="img/projects/project-1-m.png" srcset="img/projects/project-1-m@2x.png 2x" alt>
+                          <img class="project__laptop-img" src="img/projects/project-1-m.png" srcset="img/projects/project-1-m@2x.png 2x" alt="">
                         </picture>
                       </div>
                     </div>
@@ -545,9 +464,7 @@
           <ul class="swiper-wrapper thanks__wrapper">
             <li class="swiper-slide thank-item">
               <div class="thank-item__text-content">
-                <p class="thank-item__text">
-                  Нас радует качество выполняемых проектов, нет претензий с технической стороны. Ребята работают с разными технологиями, что позволяет им подстраиваться под наши процессы и легко интегрироваться в них.
-                </p>
+                <p class="thank-item__text">Нас радует качество выполняемых проектов, нет претензий с технической стороны. Ребята работают с разными технологиями, что позволяет им подстраиваться под наши процессы и легко интегрироваться в них.</p>
                 <a class="thank-item__link" href="#" target="_blank">Полный отзыв.pdf</a>
               </div>
               <div class="thank-item__author-content">
@@ -555,119 +472,6 @@
                   <picture>
                     <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.webp, img/thanks/agima-logo-m@2x.webp 2x" type="image/webp">
                     <source type="image/webp" srcset="img/thanks/agima-logo.webp, img/thanks/agima-logo@2x.webp 2x">
-
-                    <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.png, img/thanks/agima-logo-m@2x.png 2x">
-                    <img class="thank-item__author-img" src="img/thanks/agima-logo.png" srcset="img/thanks/agima-logo@2x.png 2x" alt="Логотип компании Agima">
-                  </picture>
-                </a>
-                <p class="thank-item__author">Александр Богданов, генеральный директор Agima</p>
-              </div>
-            </li>
-            <li class="swiper-slide thank-item">
-              <div class="thank-item__text-content">
-                <p class="thank-item__text">
-                  Нас радует качество выполняемых проектов, нет претензий с технической стороны. Ребята работают с разными технологиями, что позволяет им подстраиваться под наши процессы и легко интегрироваться в них.
-                </p>
-                <p class="thank-item__text">
-                  Да и вообще мы частенько радуемся всяческим вещам. Нам всё в этом мире нравится.
-                </p>
-                <p class="thank-item__text">
-                  Кроме шансона, конечно же.
-                </p>
-                <a class="thank-item__link" href="#" target="_blank">Полный отзыв.pdf</a>
-              </div>
-              <div class="thank-item__author-content">
-                <a class="thank-item__author-link" href="#" target="_blank" rel="noreferrer">
-                  <picture>
-                    <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.webp, img/thanks/agima-logo-m@2x.webp 2x" type="image/webp">
-                    <source type="image/webp" srcset="img/thanks/agima-logo.webp, img/thanks/agima-logo@2x.webp 2x">
-
-                    <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.png, img/thanks/agima-logo-m@2x.png 2x">
-                    <img class="thank-item__author-img" src="img/thanks/agima-logo.png" srcset="img/thanks/agima-logo@2x.png 2x" alt="Логотип компании Agima">
-                  </picture>
-                </a>
-                <p class="thank-item__author">Александр Богданов, генеральный директор Agima</p>
-              </div>
-            </li>
-            <li class="swiper-slide thank-item">
-              <div class="thank-item__text-content">
-                <p class="thank-item__text">
-                  Нас радует качество выполняемых проектов, нет претензий с технической стороны. Ребята работают с разными технологиями, что позволяет им подстраиваться под наши процессы и легко интегрироваться в них.
-                </p>
-                <p class="thank-item__text">
-                  А еще у них клевый сайт, в нем можно даже переключать темную и светлую темы.
-                </p>
-                <p class="thank-item__text">
-                  Только кастомный курсор так себе...
-                </p>
-                <a class="thank-item__link" href="#" target="_blank">Полный отзыв.pdf</a>
-              </div>
-              <div class="thank-item__author-content">
-                <a class="thank-item__author-link" href="#" target="_blank" rel="noreferrer">
-                  <picture>
-                    <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.webp, img/thanks/agima-logo-m@2x.webp 2x" type="image/webp">
-                    <source type="image/webp" srcset="img/thanks/agima-logo.webp, img/thanks/agima-logo@2x.webp 2x">
-
-                    <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.png, img/thanks/agima-logo-m@2x.png 2x">
-                    <img class="thank-item__author-img" src="img/thanks/agima-logo.png" srcset="img/thanks/agima-logo@2x.png 2x" alt="Логотип компании Agima">
-                  </picture>
-                </a>
-                <p class="thank-item__author">Александр Богданов, генеральный директор Agima</p>
-              </div>
-            </li>
-            <li class="swiper-slide thank-item">
-              <div class="thank-item__text-content">
-                <p class="thank-item__text">
-                  Нас радует качество выполняемых проектов, нет претензий с технической стороны. Ребята работают с разными технологиями, что позволяет им подстраиваться под наши процессы и легко интегрироваться в них.
-                </p>
-                <a class="thank-item__link" href="#" target="_blank">Полный отзыв.pdf</a>
-              </div>
-              <div class="thank-item__author-content">
-                <a class="thank-item__author-link" href="#" target="_blank" rel="noreferrer">
-                  <picture>
-                    <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.webp, img/thanks/agima-logo-m@2x.webp 2x" type="image/webp">
-                    <source type="image/webp" srcset="img/thanks/agima-logo.webp, img/thanks/agima-logo@2x.webp 2x">
-
-                    <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.png, img/thanks/agima-logo-m@2x.png 2x">
-                    <img class="thank-item__author-img" src="img/thanks/agima-logo.png" srcset="img/thanks/agima-logo@2x.png 2x" alt="Логотип компании Agima">
-                  </picture>
-                </a>
-                <p class="thank-item__author">Александр Богданов, генеральный директор Agima</p>
-              </div>
-            </li>
-            <li class="swiper-slide thank-item">
-              <div class="thank-item__text-content">
-                <p class="thank-item__text">
-                  Ребята используют современные технологии и подходы, внимательны к требованиям и срокам. Проект проходит через внутреннюю систему критериев и тестируется на контрольных точках, поэтому результат работы соответствует заявленному уровню
-                </p>
-                <a class="thank-item__link" href="#" target="_blank">Полный отзыв.pdf</a>
-              </div>
-              <div class="thank-item__author-content">
-                <a class="thank-item__author-link" href="#" target="_blank" rel="noreferrer">
-                  <picture>
-                    <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.webp, img/thanks/agima-logo-m@2x.webp 2x" type="image/webp">
-                    <source type="image/webp" srcset="img/thanks/agima-logo.webp, img/thanks/agima-logo@2x.webp 2x">
-
-                    <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.png, img/thanks/agima-logo-m@2x.png 2x">
-                    <img class="thank-item__author-img" src="img/thanks/agima-logo.png" srcset="img/thanks/agima-logo@2x.png 2x" alt="Логотип компании Agima">
-                  </picture>
-                </a>
-                <p class="thank-item__author">Александр Богданов, генеральный директор Agima</p>
-              </div>
-            </li>
-            <li class="swiper-slide thank-item">
-              <div class="thank-item__text-content">
-                <p class="thank-item__text">
-                  Ребята используют современные технологии и подходы, внимательны к требованиям и срокам. Проект проходит через внутреннюю систему критериев и тестируется на контрольных точках, поэтому результат работы соответствует заявленному уровню
-                </p>
-                <a class="thank-item__link" href="#" target="_blank">Полный отзыв.pdf</a>
-              </div>
-              <div class="thank-item__author-content">
-                <a class="thank-item__author-link" href="#" target="_blank" rel="noreferrer">
-                  <picture>
-                    <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.webp, img/thanks/agima-logo-m@2x.webp 2x" type="image/webp">
-                    <source type="image/webp" srcset="img/thanks/agima-logo.webp, img/thanks/agima-logo@2x.webp 2x">
-
                     <source media="(max-width: 375px)" srcset="img/thanks/agima-logo-m.png, img/thanks/agima-logo-m@2x.png 2x">
                     <img class="thank-item__author-img" src="img/thanks/agima-logo.png" srcset="img/thanks/agima-logo@2x.png 2x" alt="Логотип компании Agima">
                   </picture>
@@ -681,12 +485,12 @@
     </section>
 
     <section class="companies">
-      <h2 class="visually-hidden">Компании партнеров</h2>
+      <h2 class="visually-hidden">Мы в хорошей компании</h2>
       <div class="companies__slider-wrapper">
         <div class="swiper-container">
           <ul class="swiper-wrapper">
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://www.agima.ru/">
+              <a class="companies__link" href="https://www.agima.ru/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">AGIMA Интерактивное агенство</span>
                 <svg width="120" height="25" viewBox="0 0 120 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M82.2299 0.0383301L77.0136 13.2881L72.0461 0.190535H65.6998L61.5303 24.8478H67.9135L70.0165 10.6624L74.0453 20.9347L75.5706 25H78.1158L84.0562 10.668L85.8638 25H92.2465L88.5572 0.0383301H82.2299Z"></path>
@@ -699,7 +503,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://molinos.ru/">
+              <a class="companies__link" href="https://molinos.ru/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">Агенство цифровых коммуникаций Molinos</span>
                 <svg width="115" height="73" viewBox="0 0 115 73" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9712 59.9006C11.7572 62.6482 10.2875 65.3319 9.07348 67.9517H8.88179C7.98722 66.0987 7.09265 64.3096 5.23962 60.6035L1.46965 53.0636H0V72.169H1.21406V55.1722H1.34185C1.91693 56.3223 2.42811 57.6003 3.00319 58.7505L8.30671 69.2936H9.52077L14.2492 59.8367C15.016 58.3032 15.8466 56.7696 16.5495 55.1722H16.6773V72.169H17.9553V53.0636H16.4217L12.9712 59.9006ZM29.8403 52.8719C24.0256 52.8719 21.9808 56.9613 21.9808 62.8399C21.9808 68.5268 23.7061 72.4246 29.6486 72.4246C35.9105 72.4246 37.5719 67.6961 37.5719 62.8399C37.5719 57.5364 36.0383 52.8719 29.8403 52.8719ZM29.6486 71.2744C25.3035 71.2744 23.1949 68.5907 23.1949 62.776C23.1949 57.4725 24.9201 53.9581 29.8403 53.9581C34.6965 53.9581 36.3578 57.5364 36.3578 62.776C36.2939 68.5907 33.8658 71.2744 29.6486 71.2744ZM42.7476 53.0636H41.5335V72.169H53.8019V71.0827H42.7476V53.0636ZM56.9968 53.0636H58.2109V72.169H56.9968V53.0636ZM76.1661 69.9326H76.0383C74.377 67.5045 72.5879 64.9485 70.9265 62.5204L64.1534 52.9997H63.0032V72.1051H64.2173V55.2361H64.345C65.3674 56.8335 66.4537 58.431 67.5399 59.9645L76.23 72.169H77.3802V53.0636H76.1022V69.9326H76.1661ZM89.7125 52.8719C83.8978 52.8719 81.853 56.9613 81.853 62.8399C81.853 68.5268 83.5783 72.4246 89.5208 72.4246C95.7828 72.4246 97.4441 67.6961 97.4441 62.8399C97.4441 57.5364 95.9105 52.8719 89.7125 52.8719ZM89.5208 71.2744C85.1757 71.2744 83.0671 68.5907 83.0671 62.776C83.0671 57.4725 84.7923 53.9581 89.7125 53.9581C94.5687 53.9581 96.23 57.5364 96.23 62.776C96.1661 68.5907 93.738 71.2744 89.5208 71.2744ZM109.01 61.6259C105.24 61.0508 102.939 60.7313 102.939 57.9198C102.939 55.8751 104.601 54.0859 108.179 54.0859C111.885 54.0859 113.419 56.1946 113.482 58.431H114.569C114.569 58.2393 114.633 58.1115 114.633 57.9198C114.633 54.3415 111.502 52.8719 108.243 52.8719C103.387 52.8719 101.661 55.4917 101.661 58.0476C101.661 61.6259 104.728 62.2009 108.243 62.6482C112.013 63.1594 113.738 64.4374 113.738 67.1211C113.738 69.038 112.268 71.2744 107.923 71.2744C103.45 71.2744 102.3 68.7824 102.236 66.3543H101.086V66.9294C101.086 70.5715 103.77 72.4246 107.923 72.4246C113.035 72.4246 114.952 69.677 114.952 66.9933C115.016 63.5428 112.46 62.2009 109.01 61.6259ZM91.246 47.3128C91.1821 47.2489 91.1821 47.3128 91.246 47.3128V47.3128Z"></path>
@@ -709,7 +513,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://its.agency/">
+              <a class="companies__link" href="https://its.agency/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">its.agency - премиальный дизайн, маркетинг и разработка сложных решений</span>
                 <svg width="155" height="32" viewBox="0 0 155 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M76.2171 10.0274C76.2171 9.36217 76.2171 8.79197 76.2171 8.22177C76.3122 8.22177 76.5022 8.12673 76.5973 8.12673C77.8327 8.12673 79.0681 8.12673 80.3986 8.12673C80.3986 8.3168 80.3986 8.50687 80.3986 8.69694C80.3986 14.0188 80.3986 19.3407 80.3986 24.7576C80.3986 25.803 80.1135 26.7533 79.6384 27.7037C79.1632 28.559 78.498 29.2242 77.7377 29.8895C77.2625 30.2696 76.6923 30.6497 76.1221 30.9348C75.3618 31.2199 74.6016 31.41 73.8413 31.6001C73.2711 31.6951 72.7009 31.6951 72.1307 31.6951C71.5605 31.6951 70.8953 31.7901 70.325 31.6951C69.4697 31.6001 68.5194 31.41 67.7591 31.0299C67.1889 30.7448 66.7138 30.4597 66.2386 30.1746C65.9535 29.9845 65.7634 29.6994 65.4783 29.5093C64.9081 29.0342 64.433 28.4639 64.1479 27.7037C65.3833 27.0384 66.5237 26.2782 67.8542 25.6129C68.3293 26.5633 69.0896 27.1335 70.0399 27.5136C70.5151 27.7037 70.9903 27.8937 71.5605 27.8937C71.9406 27.8937 72.3208 27.8937 72.7009 27.8937C74.0314 27.7987 75.0767 27.3235 75.837 26.2782C76.1221 25.9931 76.2171 25.5179 76.3122 25.1378C76.4072 24.8527 76.4072 24.6626 76.4072 24.3775C76.4072 24.0924 76.4072 23.9023 76.4072 23.6172C76.4072 23.1421 76.4072 22.7619 76.4072 22.1917C76.3122 22.2868 76.2171 22.3818 76.1221 22.3818C75.5519 23.047 74.8867 23.5222 74.0314 23.9023C73.2711 24.1874 72.5108 24.3775 71.8456 24.3775C71.4655 24.3775 70.9903 24.3775 70.6102 24.3775C69.1846 24.3775 67.8542 23.9974 66.6187 23.1421C65.3833 22.2868 64.3379 21.2414 63.6727 19.8159C63.3876 19.2457 63.1975 18.6755 63.1025 18.1053C63.0075 17.8202 63.1025 17.44 62.9124 17.1549C62.7223 16.7748 62.9124 16.4897 62.8174 16.1096C62.8174 15.7294 62.8174 15.4443 62.8174 15.0642C62.8174 14.7791 62.9124 14.494 62.9124 14.3039C63.1025 13.6387 63.1975 12.9735 63.4826 12.4033C63.7677 11.833 64.1479 11.1678 64.528 10.6926C64.8131 10.4075 65.0032 10.1224 65.2883 9.83734C66.0485 9.17211 66.8088 8.6019 67.6641 8.22177C68.2343 8.0317 68.8045 7.84163 69.3747 7.7466C70.0399 7.55653 70.6101 7.65157 71.2754 7.65157C72.6059 7.65157 73.8413 8.12673 74.9817 8.887C75.5519 9.17211 75.837 9.64727 76.2171 10.0274ZM71.7506 20.5762C72.1307 20.6712 72.6059 20.5762 73.081 20.4811C73.2711 20.3861 73.4612 20.2911 73.6512 20.196C74.1264 20.0059 74.5065 19.8159 74.7916 19.4357C75.1718 19.0556 75.4569 18.7705 75.742 18.2003C76.0271 17.6301 76.2171 17.0599 76.2171 16.3947C76.2171 16.2046 76.2171 15.9195 76.2171 15.7294C76.2171 15.4443 76.1221 15.0642 76.1221 14.7791C76.1221 14.589 75.932 14.399 75.932 14.2089C75.6469 13.4486 75.0767 12.8784 74.5065 12.4983C73.6512 11.9281 72.7959 11.833 71.8456 11.643C71.6555 11.643 71.4655 11.738 71.2754 11.738C71.0853 11.738 70.8002 11.833 70.6102 11.833C69.6598 11.9281 68.9946 12.4983 68.4244 13.1635C68.2343 13.3536 68.1393 13.6387 67.9492 13.9238C67.6641 14.2089 67.6641 14.589 67.5691 14.8741C67.379 15.6344 67.379 16.2996 67.5691 17.1549C67.5691 17.345 67.5691 17.6301 67.6641 17.8202C67.8542 18.0102 67.9492 18.2953 68.0442 18.4854C68.4244 19.1506 68.8045 19.5308 69.4697 19.9109C69.9449 20.3861 70.7052 20.6712 71.7506 20.5762Z"></path>
@@ -728,7 +532,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://evilmartians.com/">
+              <a class="companies__link" href="https://evilmartians.com/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">Evil Martians. Продуктовая разработка для стартапов и крупных компаний</span>
                 <svg width="108" height="97" viewBox="0 0 108 97" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M76.1574 22.0201C74.1263 22.0201 72.4645 20.3582 72.4645 18.3269C72.4645 16.2956 74.1263 14.6336 76.1574 14.6336C78.1885 14.6336 79.8503 16.2956 79.8503 18.3269C79.8503 20.3582 78.1885 22.0201 76.1574 22.0201ZM76.2271 16.0273C75.0008 16.0273 73.9974 17.0307 73.9974 18.2572C73.9974 19.4836 75.0008 20.4871 76.2271 20.4871C77.4534 20.4871 78.4568 19.4836 78.4568 18.2572C78.4568 17.0307 77.4534 16.0273 76.2271 16.0273ZM85.0761 22.0201C83.045 22.0201 81.3832 20.3582 81.3832 18.3269C81.3832 16.2956 83.045 14.6336 85.0761 14.6336C87.1072 14.6336 88.769 16.2956 88.769 18.3269C88.769 20.3582 87.1072 22.0201 85.0761 22.0201ZM85.0065 16.0273C83.7801 16.0273 82.7768 17.0307 82.7768 18.2572C82.7768 19.4836 83.7801 20.4871 85.0065 20.4871C86.2328 20.4871 87.2361 19.4836 87.2361 18.2572C87.2361 17.0307 86.2328 16.0273 85.0065 16.0273ZM108 70.327L102.584 64.9056V63.0008C102.584 57.9092 98.778 53.5501 93.801 52.8542V51.2791H95.2648C100.901 51.2791 105.512 46.6636 105.512 41.0225V31.4986C105.512 30.2897 104.523 29.3007 103.316 29.3007C102.767 29.3007 102.255 29.5205 101.852 29.8502C101.449 29.4839 100.937 29.3007 100.388 29.3007C99.8393 29.3007 99.3269 29.5205 98.9244 29.8502C98.5218 29.4839 98.0095 29.3007 97.4606 29.3007C96.2529 29.3007 95.2648 30.2897 95.2648 31.4986V39.5573C95.2648 40.3632 94.6061 41.0225 93.801 41.0225V30.766H90.1415V30.3996C90.1415 29.7769 89.6658 29.3007 89.0436 29.3007C88.4215 29.3007 87.9458 29.7769 87.9458 30.3996V30.766H85.7501V30.3996C85.7501 29.7769 85.2743 29.3007 84.6522 29.3007C84.0301 29.3007 83.5544 29.7769 83.5544 30.3996V30.766H81.3586V30.3996C81.3586 29.7769 80.8829 29.3007 80.2608 29.3007C79.6387 29.3007 79.1629 29.7769 79.1629 30.3996V30.766H76.9672V30.3996C76.9672 29.7769 76.4915 29.3007 75.8693 29.3007C75.2472 29.3007 74.7715 29.7769 74.7715 30.3996V30.766C73.1613 30.766 71.8439 29.4472 71.8439 27.8355C71.8439 26.2237 73.1613 24.9051 74.7715 24.9051H76.9672V25.2714C76.9672 25.8941 77.4429 26.3703 78.0651 26.3703C78.6872 26.3703 79.1629 25.8941 79.1629 25.2714V24.9051H81.3586V25.2714C81.3586 25.8941 81.8344 26.3703 82.4565 26.3703C83.0786 26.3703 83.5544 25.8941 83.5544 25.2714V24.9051H85.7501V25.2714C85.7501 25.8941 86.2258 26.3703 86.8479 26.3703C87.47 26.3703 87.9458 25.8941 87.9458 25.2714V24.9051H90.1415V25.2714C90.1415 25.8941 90.6172 26.3703 91.2394 26.3703C91.8615 26.3703 92.3372 25.8941 92.3372 25.2714V24.9051H93.801V23.3666C95.4844 23.0369 96.7287 21.5351 96.7287 19.7768C96.7287 18.0185 95.4844 16.5167 93.801 16.187V11.7181C93.801 6.11358 90.6172 2.92672 85.0182 2.92672H76.2353C70.6362 2.92672 67.4524 6.11358 67.4524 11.7181V16.187C65.7691 16.5167 64.5248 18.0185 64.5248 19.7768C64.5248 21.5351 65.7691 23.0369 67.4524 23.3666V41.0225C66.6473 41.0225 65.9886 40.3632 65.9886 39.5573V31.4986C65.9886 30.2897 65.0005 29.3007 63.7929 29.3007C63.244 29.3007 62.7316 29.5205 62.3291 29.8502C61.9265 29.4839 61.4142 29.3007 60.8653 29.3007C60.3163 29.3007 59.804 29.5205 59.4015 29.8502C58.9989 29.4839 58.4866 29.3007 57.9377 29.3007C56.73 29.3007 55.7419 30.2897 55.7419 31.4986V41.0225C55.7419 46.6636 60.3529 51.2791 65.9886 51.2791H67.4524V57.14C67.4524 57.9458 66.7937 58.6052 65.9886 58.6052H60.1334V74.2831L65.5495 68.8617H67.4524C71.4413 68.8617 75.0276 66.5906 76.711 63.0008H90.8734C91.6785 63.0008 92.3372 63.6602 92.3372 64.4661V70.327H108ZM93.7858 42.4107C95.4063 42.4107 96.7322 41.0888 96.7322 39.4732V31.3953C96.7322 30.9914 97.0636 30.6609 97.4688 30.6609C97.8739 30.6609 98.2053 30.9914 98.2053 31.3953C98.2053 31.7992 98.5368 32.1297 98.9419 32.1297C99.3471 32.1297 99.6785 31.7992 99.6785 31.3953C99.6785 30.9914 100.01 30.6609 100.415 30.6609C100.82 30.6609 101.152 30.9914 101.152 31.3953C101.152 31.7992 101.483 32.1297 101.888 32.1297C102.293 32.1297 102.625 31.7992 102.625 31.3953C102.625 30.9914 102.956 30.6609 103.361 30.6609C103.767 30.6609 104.098 30.9914 104.098 31.3953V40.942C104.098 45.7888 100.12 49.7543 95.259 49.7543H93.7858V42.4107ZM93.7858 17.6997C94.6672 17.9931 95.3187 18.8 95.3187 19.7902C95.3187 20.7805 94.6672 21.5507 93.7858 21.8807V17.6997ZM76.2463 4.3204H85.0532C89.6401 4.3204 92.2088 6.72173 92.3923 11.1241L91.7317 10.3237L89.4933 12.5431L87.2916 10.3601L85.0899 12.5431L82.8882 10.3601L80.6865 12.5431L78.4847 10.3601L76.283 12.5431L74.0813 10.3601L71.8796 12.5431L69.7146 10.3965L68.9806 10.9786C69.1641 6.68535 71.7328 4.3204 76.2463 4.3204ZM65.9148 19.6694C65.9148 18.7074 66.5663 17.8933 67.4477 17.5603V21.7414C66.5663 21.4454 65.9148 20.6314 65.9148 19.6694ZM90.874 61.44H75.7283L75.545 61.879C74.1881 65.1717 70.9976 67.2937 67.4037 67.2937H64.91L61.5362 70.6595V59.9766H65.9368C67.5504 59.9766 68.8706 58.6596 68.8706 57.0498V49.7328H65.9368C61.0961 49.7328 57.1355 45.7816 57.1355 40.9524V31.4402C57.1355 31.0378 57.4655 30.7085 57.8689 30.7085C58.2723 30.7085 58.6024 31.0378 58.6024 31.4402C58.6024 31.8427 58.9324 32.1719 59.3358 32.1719C59.7392 32.1719 60.0693 31.8427 60.0693 31.4402C60.0693 31.0378 60.3993 30.7085 60.8027 30.7085C61.2061 30.7085 61.5362 31.0378 61.5362 31.4402C61.5362 31.8427 61.8662 32.1719 62.2696 32.1719C62.673 32.1719 63.0031 31.8427 63.0031 31.4402C63.0031 31.0378 63.3331 30.7085 63.7365 30.7085C64.1399 30.7085 64.4699 31.0378 64.4699 31.4402V39.489C64.4699 41.0987 65.7902 42.4158 67.4037 42.4158H68.8706V12.1233L69.5674 11.4282L71.8044 13.6598L74.0048 11.4647L76.2051 13.6598L78.4054 11.4647L80.6058 13.6598L82.8061 11.4647L85.0065 13.6598L87.2068 11.4647L89.4071 13.6598L91.5708 11.5013L92.3409 12.5257V23.3915H74.7382C72.3178 23.3915 70.3375 25.3671 70.3375 27.7817C70.3375 30.1963 72.3178 32.1719 74.7382 32.1719H92.3409V54.0864L93.001 54.123C97.5851 54.4888 101.142 58.3303 101.142 62.9034V65.3912L104.516 68.7571H93.8078V64.3668C93.8078 62.7571 92.4876 61.44 90.874 61.44ZM16.0955 22.0201C14.0644 22.0201 12.4026 20.3582 12.4026 18.3269C12.4026 16.2956 14.0644 14.6336 16.0955 14.6336C18.1266 14.6336 19.7884 16.2956 19.7884 18.3269C19.7884 20.3582 18.1266 22.0201 16.0955 22.0201ZM16.1652 16.0273C14.9388 16.0273 13.9355 17.0307 13.9355 18.2572C13.9355 19.4836 14.9388 20.4871 16.1652 20.4871C17.3915 20.4871 18.3948 19.4836 18.3948 18.2572C18.3948 17.0307 17.3915 16.0273 16.1652 16.0273ZM25.0142 22.0201C22.9831 22.0201 21.3213 20.3582 21.3213 18.3269C21.3213 16.2956 22.9831 14.6336 25.0142 14.6336C27.0453 14.6336 28.7071 16.2956 28.7071 18.3269C28.7071 20.3582 27.0453 22.0201 25.0142 22.0201ZM24.9445 16.0273C23.7182 16.0273 22.7148 17.0307 22.7148 18.2572C22.7148 19.4836 23.7182 20.4871 24.9445 20.4871C26.1708 20.4871 27.1742 19.4836 27.1742 18.2572C27.1742 17.0307 26.1708 16.0273 24.9445 16.0273ZM48.4477 45.8958L52.6988 42.4893H33.7521V41.0242H52.6988L48.4477 37.6177L53.6516 35.8962L48.4477 34.1746L52.6988 30.7681H33.0192L31.5533 27.8378L30.0874 30.7681H28.6215L27.1556 27.8378L25.6897 30.7681H24.2239L22.758 27.8378L21.2921 30.7681H19.8262L18.3603 27.8378L16.8944 30.7681H15.4285L13.9626 27.8378L12.8265 30.1088C12.1669 29.5594 11.7638 28.7536 11.7638 27.8378C11.7638 26.2262 13.0831 24.9075 14.6956 24.9075L16.1615 27.8378L17.6273 24.9075H19.0932L20.5591 27.8378L22.025 24.9075H23.4909L24.9568 27.8378L26.4227 24.9075H27.8886L29.3545 27.8378L30.8204 24.9075H33.7521V11.7212C33.7521 9.26706 33.1291 7.25249 31.9564 5.78734L33.8987 3.84602C34.4851 4.21231 35.1814 4.39546 35.9876 4.39546C36.3907 4.39546 36.7206 4.06578 36.7206 3.66286C36.7206 3.25995 36.3907 2.9303 35.9876 2.9303C34.595 2.9303 33.7888 2.12446 33.7888 0.732566C33.7888 0.329649 33.459 0 33.0558 0C32.6527 0 32.3229 0.329649 32.3229 0.732566C32.3229 1.5384 32.5061 2.23434 32.8726 2.82039L30.9303 4.76174C29.4644 3.58963 27.4488 2.96694 24.9934 2.96694H16.1615C13.7061 2.96694 11.6905 3.58963 10.2246 4.76174L8.28228 2.82039C8.64876 2.23434 8.832 1.5384 8.832 0.732566C8.832 0.329649 8.50217 0 8.09905 0C7.69593 0 7.3661 0.329649 7.3661 0.732566C7.3661 2.12446 6.55986 2.9303 5.16726 2.9303C4.76414 2.9303 4.43432 3.25995 4.43432 3.66286C4.43432 4.06578 4.76414 4.39546 5.16726 4.39546C5.9735 4.39546 6.66981 4.21231 7.25617 3.84602L9.19847 5.78734C8.02575 7.25249 7.40275 9.26706 7.40275 11.7212V24.468L0 28.5704L6.59651 32.2333L0 35.8962L6.59651 39.559L0 43.2219L6.59651 46.8848L0 50.5476L7.3661 54.65V57.1408C7.3661 57.9466 6.70645 58.606 5.90021 58.606H0.0366461V74.2831L5.46044 68.862H7.3661C11.3607 68.862 14.9521 66.591 16.6379 63.0014H30.8204C31.6266 63.0014 32.2862 63.6607 32.2862 64.4666V70.3272H47.9713L42.5475 64.9061V63.0014C42.5475 57.91 38.7362 53.5512 33.7521 52.8552V52.7453H52.6988L48.4477 49.3389L53.6516 47.6173L48.4477 45.8958ZM33.7239 32.194H48.5383L45.4504 34.6684L49.0529 35.8872L45.4504 37.106L48.5383 39.5805H33.7239V32.194ZM7.38581 26.0618V30.9397L3.06581 28.5007L7.38581 26.0618ZM7.38581 33.4483V38.3261L3.06581 35.8872L7.38581 33.4483ZM7.38581 40.6954V45.5733L3.06581 43.1343L7.38581 40.6954ZM3.06581 50.5208L7.38581 48.0819V52.9598L3.06581 50.5208ZM8.86058 11.6426C8.86058 6.91977 11.4619 4.3204 16.1883 4.3204H24.9815C29.7078 4.3204 32.3092 6.91977 32.3092 11.6426V23.3581H14.7227C12.3046 23.3581 10.3261 25.3351 10.3261 27.7514C10.3261 30.1677 12.3046 32.1447 14.7227 32.1447H32.3092V43.8602H48.54L45.4623 46.3132L49.0529 47.5214L45.4623 48.7295L48.54 51.1825H32.3092V54.0747L32.9686 54.1113C37.5484 54.4774 41.1024 58.3216 41.1024 62.898V65.3875L44.4731 68.7557H33.7747V64.3624C33.7747 62.7515 32.4557 61.4335 30.8436 61.4335H15.712L15.5288 61.8728C14.1731 65.1678 10.9856 67.2913 7.39504 67.2913H4.90363L1.5329 70.6595V59.9691H5.92951C7.5416 59.9691 8.86058 58.6511 8.86058 57.0402V11.6426ZM18.3948 79.0216H21.3213V96.5819H18.3948V79.0216ZM29.4039 96.5819V94.021H24.9724V79.0216H22.0181V96.5819H29.4039ZM12.4374 96.5819C15.2541 96.5819 17.5587 94.2771 17.5587 91.4601V79.0216H14.6323V91.826C14.6323 93.0332 13.6446 94.021 12.4374 94.021H11.7058V79.0216H8.77936V96.5819H12.4374ZM53.4774 79.0216C50.6607 79.0216 48.3561 81.3263 48.3561 84.1433V96.5819H51.2826V90.3626H54.209V96.5819H57.1355V79.0216H53.4774ZM51.2826 87.8017V83.7437C51.2826 82.5262 52.2703 81.5302 53.4774 81.5302H54.209V87.8017H51.2826ZM66.751 84.1433C66.751 81.3263 64.4464 79.0216 61.6297 79.0216H57.9716V96.5819H60.8981V90.3626H61.6297C62.8368 90.3626 63.8245 91.3504 63.8245 92.5577V96.5819H66.751V92.9235C66.751 91.2772 65.9462 89.9236 64.739 89.0822C65.9828 88.2407 66.751 86.8871 66.751 85.2408V84.1433ZM63.8245 85.5882C63.8245 86.8057 62.8368 87.8017 61.6297 87.8017H60.8981V81.5302H61.6297C62.8368 81.5302 63.8245 82.5262 63.8245 83.7437V85.5882ZM84.2748 79.0216C81.4581 79.0216 79.1535 81.3263 79.1535 84.1433V96.5819H82.08V90.7284H85.0065V96.5819H87.9329V79.0216H84.2748ZM82.08 88.2198V83.853C82.08 82.6521 83.0677 81.6695 84.2748 81.6695H85.0065V88.2198H82.08ZM74.8335 79.0216H67.4477V81.5824H69.6635V96.5819H72.6178V81.5824H74.8335V79.0216ZM75.5303 79.0216H78.4568V96.5819H75.5303V79.0216ZM41.8065 83.7775C41.8065 82.5702 42.7941 81.5824 44.0013 81.5824H44.7329V96.5819H47.6594V79.0216H44.0013C42.5746 79.0216 41.2577 79.7898 40.3432 80.9239C39.4287 79.7898 38.1118 79.0216 36.6852 79.0216H33.0271V96.5819H35.9535V81.5824H36.6852C37.8923 81.5824 38.88 82.5702 38.88 83.7775V96.5819H41.8065V83.7775ZM88.6297 79.0216V96.5819H91.5561V82.2044C93.0559 82.8263 94.4826 84.5823 94.4826 86.3384V96.5819H97.409V79.0216H94.4826V81.0703C93.3852 79.7898 91.8488 79.0216 90.0929 79.0216H88.6297ZM0 79.0216V91.4601C0 94.2771 2.31456 96.5819 5.14346 96.5819H8.08258V94.021H5.14346C3.93108 94.021 2.93912 93.0332 2.93912 91.826V87.4359H7.3478V84.875H2.93912V81.5824H8.08258V79.0216H0ZM107.025 84.9503V83.4897C107.025 80.2034 105.452 78.7428 102.635 78.7428C99.8181 78.7428 98.2452 80.6781 98.2452 83.4897C98.2452 88.9669 104.098 89.0033 104.098 92.2531V92.6183C104.098 93.7137 103.732 94.444 102.635 94.444C101.537 94.444 101.172 93.7137 101.172 92.6183V90.7926H98.2452V92.2531C98.2452 95.5759 99.8181 97 102.635 97C105.452 97 107.025 95.0647 107.025 92.2531C107.025 86.8125 101.172 86.776 101.172 83.4897V83.1245C101.172 82.0291 101.537 81.2988 102.635 81.2988C103.732 81.2988 104.098 82.0291 104.098 83.1245V84.9503H107.025Z"></path>
@@ -737,7 +541,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://mobileup.ru/">
+              <a class="companies__link" href="https://mobileup.ru/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">MobileUp – разработка мобильных приложений</span>
                 <svg width="170" height="33" viewBox="0 0 170 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M6.66211 16.0259C6.66118 18.4972 7.63504 20.8677 9.36946 22.6158C11.1039 24.364 13.4568 25.3466 15.9106 25.3475C21.02 25.3449 25.162 21.1754 25.1672 16.0295C25.1682 10.8833 21.0267 6.71063 15.917 6.70966C10.8073 6.70868 6.66425 10.8797 6.66328 16.0259H6.66211ZM10.083 13.6044C10.927 11.4813 12.8392 9.97907 15.0893 9.6714C17.3394 9.36374 19.5801 10.2981 20.9556 12.1178C22.3311 13.9375 22.6291 16.3614 21.7358 18.464C20.3769 21.6623 16.7164 23.1646 13.525 21.8337C10.3337 20.5028 8.79912 16.834 10.083 13.6044Z"></path>
@@ -748,7 +552,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="http://greenlabs.ru/">
+              <a class="companies__link" href="http://greenlabs.ru/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">Greenlabs - трансформируем ваш digital маркетинг в конкурентное преимущество</span>
                 <svg width="152" height="26" viewBox="0 0 152 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.943 8.00326C16.5308 6.85994 15.077 5.94952 13.2702 5.63193C9.42818 4.95441 6.70759 7.57981 5.75227 10.3111C4.46466 14.0375 5.60689 18.2085 8.59747 20.0717C11.235 21.702 13.914 21.4479 16.5516 19.987C16.78 19.8599 16.9877 19.5212 17.0085 19.2671C17.0708 18.2297 17.0292 17.2134 17.0292 16.0912C15.3263 16.0912 13.7271 16.0912 12.0657 16.0912C12.0657 14.5244 12.0657 13.0635 12.0657 11.5391C12.2734 11.4968 12.4603 11.4544 12.668 11.4544C15.4716 11.4544 18.2753 11.4756 21.079 11.4332C21.7435 11.4332 21.9927 11.6238 21.972 12.3225C21.9304 15.3502 21.972 18.399 21.9512 21.4267C21.9512 21.7443 21.8058 22.1466 21.5981 22.3371C17.0292 26.4658 9.65663 27.3762 4.67234 23.544C2.2425 21.6808 0.830286 19.1612 0.290321 16.1547C-0.561161 11.5391 0.435696 7.38926 3.77932 4.04398C6.52068 1.27037 9.90584 0.317597 13.7479 0.719877C16.1777 0.973949 18.3791 1.75734 20.2898 3.30294C20.4559 3.42998 20.6221 3.55701 20.7674 3.70522C20.8505 3.76874 20.892 3.8746 21.0166 4.02281C20.0198 5.33551 19.0022 6.64822 17.943 8.00326Z"></path>
@@ -765,7 +569,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://karelin.cc/">
+              <a class="companies__link" href="https://karelin.cc/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">Студия Руслана Карелина - аналитика, дизайн и разработка web-сервисов</span>
                 <svg width="145" height="16" viewBox="0 0 145 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M102.325 15.1852C101.391 15.1852 100.456 15.1852 99.3661 15.1852C96.7962 12.1481 94.1486 8.95533 91.423 5.76253C91.3451 5.76253 91.2672 5.8404 91.1894 5.8404C91.1894 8.87746 91.1894 11.9924 91.1894 15.1073C90.0213 15.1073 88.931 15.1073 87.8408 15.1073C87.8408 10.2013 87.8408 5.29529 87.8408 0.311401C88.8532 0.311401 89.7876 0.311401 90.8 0.311401C93.3698 3.42633 96.0175 6.54126 98.8988 9.88981C98.8988 6.54126 98.8988 3.42633 98.8988 0.311401C100.145 0.311401 101.157 0.311401 102.325 0.311401C102.325 5.37316 102.325 10.2792 102.325 15.1852Z"></path>
@@ -783,7 +587,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://htmlacademy.ru/">
+              <a class="companies__link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript</span>
                 <svg width="150" height="52" viewBox="0 0 150 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M62.3005 38.1763C62.085 38.2303 61.8155 38.3383 61.546 38.3383C61.1149 38.3383 60.6838 38.1223 60.6838 37.4744V33.3165C60.6838 29.8067 58.6358 28.2407 55.3483 28.2407C53.5159 28.2407 51.8453 28.6727 50.9291 28.9967V31.3726C51.953 30.9406 53.4082 30.4546 55.0788 30.4546C57.0729 30.4546 58.0969 31.4806 58.0969 32.9385V33.3705C57.1807 33.1545 56.1028 33.0465 55.0788 33.0465C52.6536 33.0465 49.959 33.9645 49.959 36.9344C49.959 39.3103 51.8991 40.4982 54.001 40.4982C55.7795 40.4982 57.2346 39.9043 58.3663 38.9863C58.7975 39.9043 59.6059 40.3363 60.6838 40.3363C61.2766 40.3363 61.8155 40.2283 62.3005 40.0663V38.1763ZM58.1508 37.0964C57.2346 38.0143 56.0489 38.4463 54.8094 38.4463C53.6776 38.4463 52.6536 37.8524 52.6536 36.7184C52.6536 35.2605 54.2166 34.8285 55.6717 34.8285C56.4801 34.8285 57.4502 34.9905 58.1508 35.0985V37.0964Z"></path>
@@ -803,7 +607,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://ru.shishki.co/">
+              <a class="companies__link" href="https://ru.shishki.co/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">shishki.collective - команда профессионалов, работающих по всему свету, чтобы кардинально изменить ваш бизнес к лучшему</span>
                 <svg width="146" height="99" viewBox="0 0 146 99" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M48.6768 50.0985H97.3533V48.5122H48.6768V50.0985Z"></path>
@@ -828,7 +632,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://glyf.ru/">
+              <a class="companies__link" href="https://glyf.ru/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">GLYF — студия интерактивного дизайна</span>
                 <svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M26.2128 7.94012C24.9633 6.30951 23.3035 5.03964 21.4028 4.26013C19.6177 3.51428 17.6973 3.14655 15.7628 3.18012C14.1465 3.16608 12.5387 3.41604 11.0028 3.92012C9.62419 4.38569 8.338 5.08971 7.20285 6.00012C5.99629 6.94736 5.0292 8.16486 4.37956 9.55447C3.72992 10.9441 3.41591 12.4669 3.46285 14.0001C3.44177 15.5018 3.73825 16.991 4.33285 18.3701C4.89892 19.647 5.73873 20.7838 6.79285 21.7001C7.92319 22.6866 9.23882 23.4379 10.6628 23.9101C12.3064 24.4581 14.0305 24.7252 15.7628 24.7001C18.5419 24.7814 21.2832 24.0404 23.6428 22.5701C25.7076 21.2242 27.1893 19.1497 27.7928 16.7601H14.2428V13.5801H31.5128C31.5733 15.3221 31.3019 17.0597 30.7128 18.7001C30.2521 19.9791 29.5757 21.1696 28.7128 22.2201C27.2397 24.0303 25.3535 25.4604 23.2128 26.3901C20.8539 27.3874 18.3137 27.8845 15.7528 27.8501C13.7154 27.8605 11.6895 27.5431 9.75285 26.9101C7.96933 26.3381 6.31255 25.4282 4.87285 24.2301C3.31877 23.01 2.06977 21.4452 1.22456 19.6593C0.379346 17.8735 -0.0389106 15.9155 0.00284584 13.9401C-0.0339466 11.9729 0.383632 10.0237 1.22309 8.24416C2.06256 6.46464 3.30126 4.90279 4.84285 3.68012C6.30697 2.5017 7.96972 1.59412 9.75285 1.00012C11.6838 0.337487 13.7113 -0.000427956 15.7528 0.000124715C18.2703 -0.0090765 20.7636 0.490946 23.0828 1.47012C25.3335 2.45342 27.3106 3.97055 28.8428 5.89012L26.2128 7.94012Z"></path>
@@ -840,7 +644,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://pik.digital/">
+              <a class="companies__link" href="https://pik.digital/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">ПИК Digital – ИТ на стройке</span>
                 <svg width="155" height="59" viewBox="0 0 155 59" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 14.625V20.8854L28.7708 6.27084L57.5417 20.8854V14.625L28.7708 0L0 14.625Z"></path>
@@ -863,7 +667,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://netrika.ru/">
+              <a class="companies__link" href="https://netrika.ru/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">Нетрика — центр ИТ-экспертизы по управлению проектами в госсекторе</span>
                 <svg width="130" height="30" viewBox="0 0 130 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M127.363 24.2456C125.99 24.2456 124.728 25.3491 124.728 26.6793C124.728 28.1167 125.99 29.2257 127.363 29.2257C128.738 29.2257 130 28.1167 130 26.6793C130 25.3491 128.738 24.2456 127.363 24.2456ZM5.51667 1.7659L13.8887 18.0275C14.396 19.0075 14.834 19.9463 15.2036 20.8406C15.569 21.7404 15.9679 22.6499 16.4004 23.5832H16.5533C16.4514 22.4786 16.382 21.3003 16.343 20.0504C16.3061 18.8005 16.2888 17.5376 16.2888 16.2617V1.7659H20.626V28.9547H14.8795L6.92375 13.6838C6.49447 12.9001 6.04351 12.0046 5.57412 10.9976C5.10582 9.99375 4.65269 8.96391 4.22341 7.91022H4.07056C4.17246 9.18505 4.24726 10.4371 4.29821 11.6632C4.35024 12.8881 4.37518 14.1044 4.37518 15.3066V28.9547H0V1.7659H5.51667ZM24.8451 17.3067C24.8451 14.3613 25.6342 12.1531 27.2061 10.6908C28.7769 9.22842 30.9352 8.49669 33.6756 8.49669C39.1294 8.49669 41.8558 11.4648 41.8558 17.3966V19.7956H29.488V20.9707C29.488 24.0591 30.8842 25.6039 33.6756 25.6039C34.9418 25.6039 35.8567 25.3676 36.4161 24.8917C36.9722 24.4125 37.2757 23.8293 37.3299 23.141H41.5913C41.3105 25.0543 40.5625 26.5589 39.3452 27.6473C38.1267 28.7411 36.273 29.2842 33.7895 29.2842C27.8273 29.2842 24.8451 26.3486 24.8451 20.4742V17.3067ZM37.4438 16.5186C37.4438 14.9001 37.1446 13.7716 36.5494 13.1331C35.9521 12.4957 34.9689 12.1759 33.5976 12.1759C32.1536 12.1759 31.1119 12.5326 30.4788 13.2437C29.8446 13.9559 29.527 15.0443 29.527 16.5186H37.4438ZM51.1189 3.64345V8.86851H55.3065V12.0285H51.1189V24.6857C51.1189 25.4966 51.4745 25.8998 52.1834 25.8998C52.8458 25.8998 53.4095 25.838 53.8767 25.7177C54.3461 25.5941 54.9119 25.399 55.5721 25.1269L56.8665 28.2186C56.2561 28.5384 54.3298 29.2842 52.1466 29.2842C48.3676 29.2842 46.477 27.5075 46.477 23.9518V12.0285H44.3827V8.86851H46.477V5.20663L51.1189 3.64345ZM64.4981 28.9547H59.8552V10.5249C61.1506 9.79103 64.3973 8.11944 70.6272 8.60943V12.6204C67.2017 12.4046 65.0564 12.9282 64.4981 13.0973V28.9547ZM104.61 14.0513C104.901 11.9624 105.715 8.53355 112.829 8.53355C119.204 8.53355 120.083 11.6025 120.364 12.5076C120.643 13.4171 120.782 14.4947 120.782 15.7457V27.6679C118.173 28.6175 116.923 29.2842 110.813 29.2842C108.527 29.2842 106.836 28.8007 105.731 27.8316C104.628 26.8614 104.075 25.3145 104.075 23.1778V22.3301C104.075 20.2715 104.628 18.8124 105.731 17.9549C106.836 17.0985 108.527 16.666 110.813 16.666C112.409 16.666 113.62 16.7267 114.446 16.8481C115.269 16.9739 115.861 17.0985 116.216 17.2178V15.0833C116.216 14.1033 115.943 13.3619 115.397 12.8589C114.853 12.3548 113.957 12.1055 112.715 12.1055C111.571 12.1055 110.678 12.2464 110.03 12.5271C109.385 12.8068 108.997 13.3163 108.87 14.0513H104.61ZM108.679 23.8044C108.679 25.1497 109.377 25.825 110.773 25.825C112.374 25.825 113.576 25.7795 114.389 25.6809C115.2 25.5833 115.81 25.4478 116.216 25.2754V20.42C115.708 20.2715 115.037 20.149 114.197 20.0504C113.36 19.9528 112.219 19.9051 110.773 19.9051C109.377 19.9051 108.679 20.4894 108.679 21.6721V23.8044ZM78.6502 28.9547H74.0094V8.86743H78.6502V28.9547ZM76.3282 0.571288C74.9558 0.571288 73.694 1.67592 73.694 3.00387C73.694 4.44347 74.9558 5.55244 76.3282 5.55244C77.7028 5.55244 78.9646 4.44347 78.9646 3.00387C78.9646 1.67592 77.7028 0.571288 76.3282 0.571288ZM100.483 24.7226C100.24 24.0873 99.867 23.4228 99.3597 22.7366C99.3597 22.7366 95.236 17.4639 94.9845 17.2178V17.1105C95.236 16.963 97.0788 15.5375 97.9125 14.8275C98.8512 14.0394 99.5233 13.2242 99.932 12.3775C100.337 11.5342 100.54 10.5976 100.54 9.56555V8.90429H96.049V10.0057C96.049 10.8642 95.7336 11.5656 95.0994 12.1055L90.4955 16.1131C89.7583 16.7506 89.2055 17.2362 88.838 17.5679C88.4683 17.8996 88.1854 18.1858 87.9816 18.433V0L83.3376 1.51006V28.9536H87.9816V22.8027C88.6049 22.4006 89.2304 21.9583 89.8657 21.4477C90.5367 20.9078 91.2294 20.3203 91.9405 19.684C92.0153 19.929 92.2321 20.2845 92.5855 20.7539C92.9389 21.2179 93.4083 21.8781 93.9948 22.7366L95.5157 25.0185C96.0219 25.7307 96.2777 26.4895 96.2777 27.3004V28.9536H100.844V27.0034C100.844 26.121 100.723 25.3632 100.483 24.7226Z"></path>
@@ -872,7 +676,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item companies__item--bg companies__item--mail">
-              <a class="companies__link" href="https://mail.ru/">
+              <a class="companies__link" href="https://mail.ru/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">Mail.Ru: почта, поиск в интернете, новости, игры</span>
                 <svg width="120" height="46" viewBox="0 0 120 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="bg" fill-rule="evenodd" clip-rule="evenodd" d="M120 4.17391C120 1.86991 118.13 0 115.826 0H4.17391C1.86991 0 0 1.86991 0 4.17391V41.7391C0 44.0431 1.86991 45.913 4.17391 45.913H115.826C118.13 45.913 120 44.0431 120 41.7391V4.17391Z" fill="black"></path>
@@ -885,7 +689,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item">
-              <a class="companies__link" href="https://kelnik.ru/">
+              <a class="companies__link" href="https://kelnik.ru/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">Kelnik. Интерактивное агентство с фокусом на недвижимости</span>
                 <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.31506 0.287894V28.0697C4.31506 28.2137 4.17586 28.3576 4.03667 28.3576H0.278391C0.139195 28.3576 0 28.2137 0 28.0697V0.287894C0 0.143947 0.139195 0 0.278391 0H4.03667C4.17586 0 4.31506 0.143947 4.31506 0.287894ZM48.0224 0H44.5425C44.4034 0 44.2642 0.143947 44.2642 0.287894V28.0697C44.2642 28.2137 44.4034 28.3576 44.5425 28.3576H48.0224C48.1616 28.3576 48.3008 28.2137 48.3008 28.0697V0.287894C48.3008 0.143947 48.1616 0 48.0224 0ZM85.8836 0H82.4037C82.2645 0 82.1253 0.143947 82.1253 0.287894V28.0697C82.1253 28.2137 82.2645 28.3576 82.4037 28.3576H85.8836C86.0228 28.3576 86.162 28.2137 86.162 28.0697V0.287894C86.162 0.143947 86.0228 0.143947 85.8836 0ZM77.9495 7.6292H74.4696C74.3304 7.6292 74.1912 7.77315 74.1912 7.9171V28.0697C74.1912 28.2137 74.3304 28.3576 74.4696 28.3576H77.9495C78.0887 28.3576 78.2279 28.2137 78.2279 28.0697V7.9171C78.2279 7.77315 78.0887 7.6292 77.9495 7.6292ZM77.9495 0H74.4696C74.3304 0 74.1912 0.143947 74.1912 0.287894V4.03052C74.1912 4.17447 74.3304 4.31842 74.4696 4.31842H77.9495C78.0887 4.31842 78.2279 4.17447 78.2279 4.03052V0.287894C78.2279 0.143947 78.0887 0.143947 77.9495 0ZM10.1613 14.2508C11.8316 12.3795 21.7145 0.719736 21.8537 0.431842C21.8537 0.287894 21.8537 0.143947 21.7145 0.143947C21.7145 0.143947 21.7145 0.143947 21.5753 0.143947H16.9818C16.8427 0.143947 16.7035 0.287894 16.5643 0.431842L6.68138 12.3795V15.9781L16.8427 28.0697C16.9818 28.2137 17.121 28.3576 17.2602 28.3576H22.1321C22.2713 28.3576 22.4105 28.2137 22.2713 28.0697C22.2713 28.0697 22.2713 28.0697 22.2713 27.9258C21.9929 27.7818 11.6924 15.8342 10.1613 14.2508ZM91.4514 17.7055C93.5394 15.2584 99.1072 8.20499 99.2464 7.9171C99.3856 7.77315 99.2464 7.48526 99.1072 7.48526H95.2097C95.0705 7.48526 94.9313 7.6292 94.7921 7.77315L88.5283 15.9781V19.5768L95.2097 28.0697C95.3489 28.2137 95.4881 28.3576 95.6273 28.3576H99.8031C99.9423 28.3576 100.082 28.2137 99.9423 28.0697C99.9423 28.0697 99.9423 28.0697 99.9423 27.9258C99.664 27.7818 96.6017 24.1831 91.4514 17.7055ZM61.3852 7.05341C59.0189 7.05341 52.3375 7.05341 52.3375 16.41V27.9258C52.3375 28.0697 52.4767 28.2137 52.6159 28.2137H56.0958C56.235 28.2137 56.3742 28.0697 56.3742 27.9258V15.8342C56.3742 10.3642 59.9932 10.5081 61.3852 10.5081C62.7772 10.5081 66.3962 10.5081 66.3962 15.8342V27.9258C66.3962 28.0697 66.5354 28.2137 66.6746 28.2137H70.1545C70.2937 28.2137 70.4329 28.0697 70.4329 27.9258V16.41C70.1545 7.05341 63.7515 7.05341 61.3852 7.05341ZM38.2788 9.93236C39.9491 12.0916 40.9235 14.9705 40.6451 17.8495C40.6451 18.1374 40.6451 18.2813 40.6451 19.001C40.6451 19.2889 40.5059 19.4329 40.2275 19.4329H26.4471C26.4471 21.1602 26.8647 22.7437 27.9783 24.0392C28.9527 25.1908 30.4838 25.7666 31.8758 25.6226C32.9893 25.6226 34.1029 25.3347 35.0773 24.615C35.9124 23.8952 36.4692 23.0316 36.6084 22.0239H40.3667C40.5059 22.0239 40.5059 22.0239 40.5059 22.1679C40.0883 24.1831 39.1139 25.9105 37.4436 27.206C35.7732 28.5016 33.6853 29.0773 31.5974 29.0773C29.0919 29.2213 26.5863 28.2137 24.916 26.3423C23.1064 24.0392 22.2713 21.1602 22.4105 18.1374C22.2713 15.2584 23.1064 12.3795 24.916 10.0763C26.5863 8.06105 29.0919 7.05341 31.7366 7.19736C34.2421 6.90947 36.6084 7.9171 38.2788 9.93236ZM36.7476 16.1221C36.7476 14.6826 36.33 13.2431 35.3556 12.0916C34.3813 11.0839 32.9893 10.6521 31.5974 10.6521C30.2054 10.6521 28.9527 11.0839 27.9783 12.0916C27.0039 13.2431 26.4471 14.6826 26.4471 16.1221H36.7476Z"></path>
@@ -894,7 +698,7 @@
               </a>
             </li>
             <li class="swiper-slide companies__item companies__item--bg companies__item--vk">
-              <a class="companies__link" href="https://vk.com/">
+              <a class="companies__link" href="https://vk.com/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">Социальная сеть Вконтакте</span>
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="bg" fill-rule="evenodd" clip-rule="evenodd" d="M20.7904 0H39.2096C56.0198 0 60 3.98024 60 20.7904V39.2096C60 56.0198 56.0198 60 39.2096 60H20.7904C3.98024 60 0 56.0198 0 39.2096V20.7904C0 3.98024 3.98024 0 20.7904 0Z" fill="black"></path>
@@ -920,7 +724,7 @@
                 <img src="img/awards-tagline.png" width="66" height="66" alt="Медаль рейтинга Tagline">
               </div>
               <h3 class="awards__item-title">Рейтинг Tagline</h3>
-              <p>50 место, но мы лезем выше</p>
+              <p>50 место, но мы хотим выше</p>
             </a>
           </li>
           <li class="awards__item awards__item--specia">
@@ -940,7 +744,7 @@
 
               </div>
               <h3 class="awards__item-title">Specia Digital Awards</h3>
-              <p>Открытие и эксперт года</p>
+              <p>Открытие и эксперт года</p>
             </a>
           </li>
           <li class="awards__item awards__item--magnifier">
@@ -983,45 +787,44 @@
               <span class="awards__rope"></span>
             </div>
             <span class="awards__item-title"></span>
-            <p>Скоро еще что-нибудь заработаем</p>
+            <p>Скоро ещё что-нибудь заработаем</p>
           </li>
         </ul>
         <p class="awards__extra">
-          Также мы состоим в <a class="link" href="https://agima.partners/">Клубе партнеров Agima</a>, активно содружествуем в <a class="link" href="http://specia.pro/">СПЕЦИЯ</a> и участники <a class="link" href="https://paseka.te-st.ru/">программы Пасека</a>
+          Также мы состоим в <a class="link" href="https://agima.partners/">Клубе партнеров Agima</a>, активно содружествуем в <a class="link" href="http://specia.pro/">СПЕЦИЯ</a> и участники <a class="link" href="https://paseka.te-st.ru/">программы Пасека</a>
         </p>
       </div>
     </section>
-
   </main>
-  <footer class="page-footer">
+
+  <footer class="page-footer" id="footer">
     <div class="container">
       <div class="page-footer__main">
         <div class="page-footer__form">
-          <h2 class="page-footer__title title title--slash">Наверняка для нас есть работа</h2>
+          <h2 class="page-footer__title title title--slash">Наверняка для нас есть работа?</h2>
           <script>var amo_forms_params = {"id":490432,"hash":"09c92b064d14d74920d658e1f3d520c3","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
-          <p class="page-footer__policy">Отправляя форму вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
-
+          <p class="page-footer__policy">Отправляя форму вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
         </div>
         <div class="page-footer__info">
           <div class="page-footer__info-block page-footer__info-block--mail">
-            <p class="page-footer__text">Любите писать с личной почты?&ensp;</p>
-            <p class="page-footer__link">пишите на <a href="mailto:mail@liga-a.ru">mail@liga-a.ru</a></p>
+            <p class="page-footer__text">Любите писать с личной почты?</p>
+            <p class="page-footer__link">Пишите на <a href="mailto:mail@liga-a.ru">mail@liga-a.ru</a></p>
           </div>
           <div class="page-footer__info-block page-footer__info-block--tel contacts-hidden">
-            <p class="page-footer__text">Если любите звонить</p>
-            <p class="page-footer__link"><a href="tel:+79119475986">+7 911 947-59-86</a></p>
+            <p class="page-footer__text">Любите звонить?</p>
+            <p class="page-footer__link">Звоните на <a href="tel:+79119475986">+7 911 947-59-86</a></p>
           </div>
           <div class="page-footer__info-block contacts-hidden">
-            <p class="page-footer__text">У нас много <a href="contacts.html">других контактов</a></p>
+            <p class="page-footer__text">У нас есть и <a href="contacts.html">другие контакты</a></p>
           </div>
           <div class="page-footer__info-block">
             <p class="page-footer__text">Любите читать длинные юридические тексты?</p>
-            <p class="page-footer__link"><a href="requisites.html">Реквизиты</a> и <a href="public-offer.html">пользовательское соглашение</a></p>
+            <p class="page-footer__link"><a href="requisites.html">Реквизиты</a> и <a href="public-offer.html">пользовательское соглашение</a></p>
 
           </div>
           <ul class="page-footer__social">
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="https://www.facebook.com/academy.liga/">
+              <a class="page-footer__social-link" href="https://www.facebook.com/academy.liga/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">Facebook</span>
                 <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9.33333 4.11694H7.53333C6.816 4.11694 6.66667 4.42022 6.66667 5.1846V6.86157H9.33333L9.05467 9.6062H6.66667V19.2124H2.66667V9.6062H0V6.86157H2.66667V3.69427C2.66667 1.26665 3.908 0 6.70533 0H9.33333V4.11694Z"></path>
@@ -1030,7 +833,7 @@
               </a>
             </li>
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="#">
+              <a class="page-footer__social-link" href="https://t.co/irinaogereleva" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">Telegram</span>
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.9544 1.2745L13.5399 13.1549C13.3577 13.9934 12.8827 14.202 12.2076 13.8071L8.5287 10.9786L6.7536 12.7599C6.55718 12.9648 6.39283 13.1363 6.01426 13.1363L6.27853 9.22704L13.097 2.79866C13.3935 2.52292 13.0327 2.3701 12.6363 2.64588L4.20695 8.18358L0.578034 6.99855C-0.211324 6.7414 -0.225585 6.17494 0.742313 5.77995L14.9365 0.0745518C15.5936 -0.182566 16.1687 0.227298 15.9544 1.2745Z"></path>
@@ -1039,7 +842,7 @@
               </a>
             </li>
             <li class="page-footer__social-item">
-              <a class="page-footer__social-link" href="https://vk.com/academy.liga">
+              <a class="page-footer__social-link" href="https://vk.com/academy.liga" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">В контакте</span>
                 <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.792 11.2022H15.3027C13.896 11.2022 13.66 10.3774 12.5 9.18627C11.4533 8.10901 10.8733 8.93514 10.8973 10.4694C10.9053 10.877 10.7093 11.2022 10.2373 11.2022C8.764 11.2022 6.64533 11.4163 4.49867 9.03395C2.30267 6.5926 0 1.69481 0 1.21313C0 0.927685 0.229333 0.800059 0.612 0.800059H3.14267C3.81333 0.800059 3.86933 1.14177 4.05733 1.57953C4.836 3.40608 6.69867 7.07154 7.196 5.02542C7.48133 3.85071 7.59733 1.12942 6.376 0.89475C5.68267 0.763007 6.904 0 8.672 0C9.112 0 9.58933 0.0480309 10.0773 0.164678C10.9747 0.378759 10.9787 0.793197 10.9653 1.39702C10.92 3.68329 10.652 5.22028 11.2373 5.60865C11.796 5.98055 13.2653 3.54743 14.0427 1.66873C14.2547 1.15 14.2973 0.801431 14.9 0.801431H17.996C19.6173 0.801431 17.784 3.20024 16.3827 5.07207C15.2533 6.58025 15.3133 6.60907 16.6267 7.86336C17.5613 8.75674 18.6667 9.97673 18.6667 10.667C18.6667 10.9936 18.4187 11.2022 17.792 11.2022Z"></path>
@@ -1051,8 +854,8 @@
         </div>
       </div>
       <div class="page-footer__footer">
-        <p>ООО Ракета, 2017-2019, <span>из Питера с любовью.</span></p>
-        <p class="page-footer__design">Дизайн <a href="https://ru.shishki.co/" title="shishki.collective - команда профессионалов, работающих по всему свету, чтобы кардинально изменить ваш бизнес к лучшему">shishki-collective</a></p>
+        <p>ООО Ракета, 2017-2019, <span>из Питера с любовью.</span></p>
+        <p class="page-footer__design">Дизайн <a href="https://ru.shishki.co/" title="shishki.collective - команда профессионалов, работающих по всему свету, чтобы кардинально изменить ваш бизнес к лучшему" target="_blank" rel="noreferrer">shishki-collective</a></p>
       </div>
     </div>
   </footer>

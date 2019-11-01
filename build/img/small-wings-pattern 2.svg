@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="488px" height="467px" viewBox="0 0 488 467" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.4" y="0" width="487.2" height="467"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(244.000000, 233.500000) rotate(-180.000000) translate(-244.000000, -233.500000) translate(0.000000, -0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <g mask="url(#mask-2)">
+                <g transform="translate(-102.000000, -69.376940)">
+                    <polygon id="Rectangle" fill="#FE2953" points="200.275249 509.456598 291.331465 468.855168 326.275249 485.937715 234.193656 525.806387"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="272.4 459.969501 363.456216 419.368071 398.4 436.450618 306.318407 476.31929"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="345.4 411.405643 436.456216 370.804213 471.4 387.88676 379.318407 427.755432"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="418.7 362.63469 509.756216 322.033259 544.7 339.115807 452.618407 378.984479"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="271.975249 544.093294 363.031465 503.491864 397.975249 520.574411 305.893656 560.443083"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="344.1 494.606198 435.156216 454.004767 470.1 471.087314 378.018407 510.955987"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="417.1 446.042339 508.156216 405.440909 543.1 422.523456 451.018407 462.392129"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="490.4 397.271386 581.456216 356.669956 616.4 373.752503 524.318407 413.621175"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="414.2 529.346441 505.256216 488.745011 540.2 505.827558 448.118407 545.696231"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="487.2 480.782583 578.256216 440.181153 613.2 457.2637 521.118407 497.132373"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="488.345 565.484579 579.401216 524.883149 614.345 541.965696 522.263407 581.834368"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="561.345 516.920721 652.401216 476.31929 687.345 493.401838 595.263407 533.27051"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="560.5 432.01163 651.556216 391.4102 686.5 408.492747 594.418407 448.361419"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="487.2 314.070832 578.256216 273.469401 613.2 290.551948 521.118407 330.420621"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="560.5 265.299878 651.556216 224.698448 686.5 241.780995 594.418407 281.649667"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="66.4 186.810743 157.456216 146.209313 192.4 163.29186 100.318407 203.160532"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="139.7 138.03979 230.756216 97.4383592 265.7 114.520906 173.618407 154.389579"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="0 151.086796 91.0562159 110.485366 126 127.567913 33.9184067 167.436585"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="73.3 102.315843 164.356216 61.7144124 199.3 78.7969595 107.218407 118.665632"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="57.4 524.169058 148.456216 483.567627 183.4 500.650175 91.3184067 540.518847"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="127.9 558.33979 218.956216 517.738359 253.9 534.820906 161.818407 574.689579"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="127.9 475.398104 218.956216 434.796674 253.9 451.879221 161.818407 491.747894"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="200 425.902317 291.056216 385.300887 326 402.383434 233.918407 442.252106"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="273.3 377.131364 364.356216 336.529933 399.3 353.612481 307.218407 393.481153"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="345.4 327.896371 437.822059 285.718186 473.29 303.464133 379.827183 344.881103"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="419.7995 277.2314 512.221559 235.053215 547.6895 252.799162 454.226683 294.216132"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="489.2 226.419653 581.622059 184.241468 617.09 201.987415 523.627183 243.404385"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="563.5995 175.754682 656.021559 133.576497 691.4895 151.322444 598.026683 192.739414"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="61.2 439.259967 152.256216 398.658537 187.2 415.741084 95.1184067 455.609756"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="131.7 390.489014 222.756216 349.887583 257.7 366.97013 165.618407 406.838803"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="203.8 340.993226 294.856216 300.391796 329.8 317.474343 237.718407 357.343016"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="277.1 292.222273 368.156216 251.620843 403.1 268.70339 311.018407 308.572062"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="349.2 242.98728 441.622059 200.809095 477.09 218.555042 383.627183 259.972013"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="422.4 192.322309 514.822059 150.144124 550.29 167.890071 456.827183 209.307042"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="496.4 142.619427 588.822059 100.441242 624.29 118.187189 530.827183 159.604159"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="63.2 356.007639 154.256216 315.406208 189.2 332.488756 97.1184067 372.357428"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="133.7 307.236685 224.756216 266.635255 259.7 283.717802 167.618407 323.586475"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="205.8 257.740898 296.856216 217.139468 331.8 234.222015 239.718407 274.090687"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="279.1 208.969945 370.156216 168.368514 405.1 185.451062 313.018407 225.319734"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="351.2 159.734952 443.622059 117.556767 479.09 135.302714 385.627183 176.719684"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="424.4 109.069981 516.822059 66.891796 552.29 84.637743 458.827183 126.054713"></polygon>
+                    <polygon id="Rectangle" fill="#FE2953" points="498.4 59.3670985 590.822059 17.1889135 626.29 34.9348605 532.827183 76.3518309"></polygon>
+                    <g id="Group" stroke-width="1" fill="none" transform="translate(62.400000, 182.761641)">
+                        <polygon id="Rectangle" fill="#FE2953" points="0 89.3723838 91.0562159 48.7709534 126 65.8535006 33.9184067 105.722173"></polygon>
+                        <polygon id="Rectangle" fill="#FE2953" points="73.3 40.6014304 164.356216 0 199.3 17.0825471 107.218407 56.9512195"></polygon>
+                    </g>
+                    <g id="Group" stroke-width="1" fill="none" transform="translate(207.800000, 0.000000)">
+                        <polygon id="Rectangle" fill="#FE2953" points="0 89.3723838 91.0562159 48.7709534 126 65.8535006 33.9184067 105.722173"></polygon>
+                    </g>
+                    <g id="Group" stroke-width="1" fill="none" transform="translate(207.800000, 31.582040)">
+                        <polygon id="Rectangle" fill="#FE2953" points="0 142.546038 92.4220591 100.367854 127.89 118.113801 34.4271828 159.530771"></polygon>
+                        <polygon id="Rectangle" fill="#FE2953" points="73.2 91.8810674 165.622059 49.7028825 201.09 67.4488295 107.627183 108.8658"></polygon>
+                        <polygon id="Rectangle" fill="#FE2953" points="147.2 42.1781849 239.622059 -1.42108547e-14 275.09 17.745947 181.627183 59.1629174"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
