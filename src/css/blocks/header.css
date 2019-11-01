@@ -92,8 +92,8 @@
   }
 
   .header__navigation {
-    padding-right: 0;
     order: 1;
+    padding-right: 0;
   }
 }
 

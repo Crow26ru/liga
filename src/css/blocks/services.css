@@ -8,10 +8,10 @@
 }
 
 .services__title {
-  margin-bottom: 46px;
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-bottom: 46px;
+  margin-left: auto;
 
   color: #ffffff;
 }

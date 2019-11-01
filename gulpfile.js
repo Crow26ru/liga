@@ -6,7 +6,6 @@ const server = require(`browser-sync`).create();
 const rename = require(`gulp-rename`);
 const del = require(`del`);
 const uglify = require(`gulp-uglify`);
-const svgstore = require(`gulp-svgstore`);
 const htmlmin = require('gulp-htmlmin');
 const concat = require('gulp-concat');
 const objectFit = require(`postcss-object-fit-images`);
@@ -21,7 +20,7 @@ const config = {
   dist: `build`,
   src: `src`,
   fonts: `src/fonts/**/*.{woff,woff2}`,
-  img: `src/img/**/*.{png,jpg,webp,svg}`,
+  img: `src/**/*.{png,jpg,webp,svg}`,
   html: `src/*.html`,
   libs: `src/libs/**/*.{js,css}`,
   ieFallback: {
@@ -80,18 +79,6 @@ gulp.task(`copy`, function () {
       base: config.src
     })
     .pipe(gulp.dest(config.dist));
-});
-
-gulp.task(`sprite`, () => {
-  return gulp
-    .src(config.sprite.src)
-    .pipe(
-      svgstore({
-        inlineSvg: true
-      })
-    )
-    .pipe(rename(config.sprite.name))
-    .pipe(gulp.dest(config.sprite.dist));
 });
 
 gulp.task(`copyHtml`, () => {
@@ -169,7 +156,7 @@ gulp.task(`build`, gulp.series(
   (done) => done())
 );
 
-gulp.task(`serve`, () => {
+gulp.task(`serve`, async function () {
   server.init({
     server: config.dist,
     notify: false,

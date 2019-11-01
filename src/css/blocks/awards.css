@@ -32,12 +32,11 @@
 .awards__item p,
 .awards__item-title {
   display: block;
-
   margin: 0;
 
+  font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  font-weight: 300;
 }
 
 .awards__item:last-child {
@@ -124,6 +123,7 @@
 
 .awards__item-title {
   color: var(--dekor-color);
+
   transition: color 0.3s;
 }
 
