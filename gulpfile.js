@@ -91,7 +91,7 @@ gulp.task(`copyHtml`, () => {
     .pipe(posthtml([
       include()
     ]))
-    // .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(config.dist));
 });
 

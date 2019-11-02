@@ -48,7 +48,7 @@
      * Поддержка этого медизапроса работает только в хроме, сафари и firefox
      * https://developer.mozilla.org/ru/docs/Web/CSS/@media/prefers-color-scheme
      */
-    if (window.getComputedStyle(colorThemeIdentifier).position === 'absolute') {
+    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
       document.documentElement.classList.remove('dark');
       colorThemeCheckbox.checked = false;
 

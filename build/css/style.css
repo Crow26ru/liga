@@ -835,7 +835,7 @@ template {
 }
 
 .header-left-group__logo[href] {
-  cursor: pointer;
+  cursor: url("../img/mini-logo-pointer.svg"), pointer;
 }
 
 .header-left-group__logo[href]:hover,
@@ -4892,11 +4892,5 @@ template {
 @media (max-width: 400px) {
   .service__title {
     display: block;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .color-theme-identifier {
-    position: fixed;
   }
 }
