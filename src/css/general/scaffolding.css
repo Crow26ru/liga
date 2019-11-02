@@ -88,9 +88,3 @@ input[type="radio"].visually-hidden {
   width: 0;
   height: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  .color-theme-identifier {
-    position: fixed;
-  }
-}

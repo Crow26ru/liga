@@ -41,6 +41,8 @@
   <script>
     if (localStorage.getItem('--theme')) {
       document.documentElement.classList[localStorage.getItem('--theme') === 'dark' ? 'add' : 'remove']('dark');
+    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      document.documentElement.classList.remove('dark');
     }
   </script>
   <link rel="stylesheet" href="css/style.min.css">
@@ -59,7 +61,6 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
   <input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы"  type="checkbox" checked name="color-theme" id="color-theme" tabindex="1">
-  <span class="color-theme-identifier"></span>
   <header class="header">
     <div class="header__wrap">
       <div class="header__left-group header-left-group">
@@ -255,7 +256,7 @@
                       <div class="project__laptop-image-inner">
                         <picture>
                           <source srcset="img/projects/homeless.webp, img/projects/homeless@2x.webp 2x" type="image/webp">
-                          <img class="project__laptop-img" loading="lazy" src="img/projects/homeless.png" srcset="img/projects/homeless@2x.png 2x" alt="">
+                          <img class="project__laptop-img" loading="lazy" src="img/projects/homeless.jpg" srcset="img/projects/homeless@2x.jpg 2x" alt="">
                         </picture>
                       </div>
                     </div>
@@ -263,7 +264,7 @@
                       <div class="project__mobile-image-inner">
                         <picture>
                           <source srcset="img/projects/homeless-m.webp, img/projects/homeless-m@2x.webp 2x" type="image/webp">
-                          <img class="project__laptop-img" loading="lazy" src="img/projects/homeless-m.png" srcset="img/projects/homeless-m@2x.png 2x" alt="">
+                          <img class="project__laptop-img" loading="lazy" src="img/projects/homeless-m.jpg" srcset="img/projects/homeless-m@2x.jpg 2x" alt="">
                         </picture>
                       </div>
                     </div>
@@ -280,7 +281,7 @@
                       <div class="project__laptop-image-inner">
                         <picture>
                           <source srcset="img/projects/amplifr.webp, img/projects/amplifr@2x.webp 2x" type="image/webp">
-                          <img class="project__laptop-img" loading="lazy" src="img/projects/amplifr.png" srcset="img/projects/amplifr@2x.png 2x" alt="">
+                          <img class="project__laptop-img" loading="lazy" src="img/projects/amplifr.jpg" srcset="img/projects/amplifr@2x.jpg 2x" alt="">
                         </picture>
                       </div>
                     </div>
@@ -288,7 +289,7 @@
                       <div class="project__mobile-image-inner">
                         <picture>
                           <source srcset="img/projects/amplifr-m.webp, img/projects/amplifr-m@2x.webp 2x" type="image/webp">
-                          <img class="project__laptop-img" loading="lazy" src="img/projects/amplifr-m.png" srcset="img/projects/amplifr-m@2x.png 2x" alt="">
+                          <img class="project__laptop-img" loading="lazy" src="img/projects/amplifr-m.jpg" srcset="img/projects/amplifr-m@2x.jpg 2x" alt="">
                         </picture>
                       </div>
                     </div>
@@ -305,7 +306,7 @@
                       <div class="project__laptop-image-inner">
                         <picture loading="lazy">
                           <source srcset="img/projects/pik.webp, img/projects/pik@2x.webp 2x" type="image/webp">
-                          <img class="project__laptop-img" loading="lazy" src="img/projects/pik.png" srcset="img/projects/pik@2x.png 2x" alt="">
+                          <img class="project__laptop-img" loading="lazy" src="img/projects/pik.jpg" srcset="img/projects/pik@2x.jpg 2x" alt="">
                         </picture>
                       </div>
                     </div>
@@ -313,7 +314,7 @@
                       <div class="project__mobile-image-inner">
                         <picture>
                           <source srcset="img/projects/pik-m.webp, img/projects/pik-m@2x.webp 2x" type="image/webp">
-                          <img class="project__laptop-img" loading="lazy" src="img/projects/pik-m.png" srcset="img/projects/pik-m@2x.png 2x" alt="">
+                          <img class="project__laptop-img" loading="lazy" src="img/projects/pik-m.jpg" srcset="img/projects/pik-m@2x.jpg 2x" alt="">
                         </picture>
                       </div>
                     </div>
@@ -681,7 +682,7 @@
     </div>
   </footer>
   <script src="libs/swiper/swiper.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js"></script>
+  <script src="js/main.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js" async></script>
 </body>
 </html>

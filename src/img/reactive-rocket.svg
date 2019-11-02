@@ -52,7 +52,7 @@
       <use xlink:href="#image1" transform="translate(0 -0.0185859) scale(0.0020202 0.00228956)" />
     </pattern>
     <image id="image0" width="488px" height="467px"
-      xlink:href="img/big-wings-pattern.png" />
-    <image id="image1" width="495" height="453" xlink:href="img/small-wings-pattern.png" />
+      xlink:href="img/big-wings-pattern.jpg" />
+    <image id="image1" width="495" height="453" xlink:href="img/small-wings-pattern.jpg" />
   </defs>
 </svg>

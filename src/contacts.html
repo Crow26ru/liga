@@ -41,6 +41,8 @@
   <script>
     if (localStorage.getItem('--theme')) {
       document.documentElement.classList[localStorage.getItem('--theme') === 'dark' ? 'add' : 'remove']('dark');
+    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      document.documentElement.classList.remove('dark');
     }
   </script>
   <link rel="stylesheet" href="css/style.min.css">
@@ -59,7 +61,6 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <input class="visually-hidden color-theme" aria-label="input для смены цветовой схемы" checked type="checkbox" name="color-theme" id="color-theme">
-  <span class="color-theme-identifier"></span>
   <header class="header">
     <div class="header__wrap">
       <div class="header__left-group header-left-group">
@@ -216,7 +217,7 @@
   </footer>
   <script src="libs/swiper/swiper.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f93bc27f-37fd-47f4-b7b2-a05308a600a0"></script>
-  <script src="js/main.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js"></script>
+  <script src="js/main.min.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svgxuse/1.2.6/svgxuse.min.js" async></script>
 </body>
 </html>
