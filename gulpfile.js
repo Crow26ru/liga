@@ -145,7 +145,7 @@ gulp.task(`ieFallback`, function () {
 
 gulp.task('critical', function () {
   return gulp.src('build/*.html')
-    .pipe(critical({extract: true, inline: true}))
+    .pipe(critical({inline: true}))
     .pipe(gulp.dest(config.dist));
 });
 
