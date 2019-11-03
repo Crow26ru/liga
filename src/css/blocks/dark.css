@@ -42,15 +42,13 @@
 }
 
 .dark .header__job-link {
-  padding-top: 8px;
-  padding-bottom: 8px;
-
   border: 2px solid var(--pink-color);
 }
 
 .dark .header__job-link:hover,
 .dark .header__job-link:focus {
   color: var(--pink-color);
+  border-color: var(--pink-color);
 
   background-color: transparent;
 }
