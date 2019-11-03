@@ -13,6 +13,10 @@
   position: relative;
 }
 
+.page-footer__form .amoforms_iframe {
+  height: 430px !important;
+}
+
 .page-footer p {
   margin-top: 0;
   margin-bottom: 0;
