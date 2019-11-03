@@ -581,14 +581,13 @@ template {
 }
 
 .dark .header__job-link {
-  padding-top: 8px;
-  padding-bottom: 8px;
   border: 2px solid var(--pink-color);
 }
 
 .dark .header__job-link:hover,
 .dark .header__job-link:focus {
   color: var(--pink-color);
+  border-color: var(--pink-color);
   background-color: transparent;
 }
 
@@ -781,7 +780,7 @@ template {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 10px 32px;
+  padding: 8px 30px;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 2.0625rem;
@@ -789,9 +788,10 @@ template {
   color: #ffffff;
   text-transform: uppercase;
   background-color: var(--dekor-color);
-  -webkit-transition: color 0.3s, background-color 0.3s;
-  -o-transition: color 0.3s, background-color 0.3s;
-  transition: color 0.3s, background-color 0.3s;
+  border: 2px solid var(--dekor-color);
+  -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  -o-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   justify-self: end;
 }
 
@@ -799,6 +799,7 @@ template {
 .header__job-link:focus {
   color: #ffffff;
   background-color: var(--invers-dekor-color);
+  border-color: var(--invers-dekor-color);
 }
 
 .header-left-group {
