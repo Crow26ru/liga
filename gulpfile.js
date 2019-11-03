@@ -20,7 +20,7 @@ const config = {
   dist: `build`,
   src: `src`,
   fonts: `src/fonts/**/*.{woff,woff2}`,
-  img: `src/**/*.{png,jpg,webp,svg}`,
+  img: `src/**/*.{png,jpg,webp,svg,webmanifest}`,
   html: `src/*.html`,
   libs: `src/libs/**/*.{js,css}`,
   ieFallback: {
