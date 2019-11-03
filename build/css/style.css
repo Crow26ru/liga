@@ -717,6 +717,7 @@ template {
 
 .header--scroll {
   position: fixed;
+  z-index: 100000;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -2528,6 +2529,10 @@ template {
 
 .page-footer__form {
   position: relative;
+}
+
+.page-footer__form .amoforms_iframe {
+  height: 430px !important;
 }
 
 .page-footer p {
