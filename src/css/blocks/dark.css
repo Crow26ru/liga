@@ -52,3 +52,12 @@
 
   background-color: transparent;
 }
+
+.dark .page-footer__design a {
+  color: var(--pink-color);
+}
+
+.dark .page-footer__design a:hover,
+.dark .page-footer__design a:focus {
+  color: var(--white-color);
+}

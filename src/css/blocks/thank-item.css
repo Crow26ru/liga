@@ -53,15 +53,17 @@
 .thank-item__author-link {
   display: block;
   margin-bottom: 19px;
+  color: var(--white-color);
+  transition: color 0.3s;
 }
 
 .thank-item__author-link:hover,
 .thank-item__author-link:focus {
-  opacity: 0.7;
+  color: var(--pink-color);
 }
 
 .thank-item__author-link svg {
-  fill: var(--white-color);
+  fill: currentColor;
 }
 
 .thank-item__author {

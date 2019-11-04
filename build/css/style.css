@@ -591,6 +591,15 @@ template {
   background-color: transparent;
 }
 
+.dark .page-footer__design a {
+  color: var(--pink-color);
+}
+
+.dark .page-footer__design a:hover,
+.dark .page-footer__design a:focus {
+  color: var(--white-color);
+}
+
 .swiper-container {
   position: relative;
   z-index: 1;
@@ -1500,7 +1509,7 @@ template {
 
 .projects__button:hover,
 .projects__button:focus {
-  color: var(--invers-dekor-color);
+  color: var(--pink-hover-color);
 }
 
 .projects__button--next {
@@ -1534,7 +1543,8 @@ template {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 63.122%;
+  width: 63.125%;
+  max-width: 837px;
   margin: 0 auto;
 }
 
@@ -1562,7 +1572,7 @@ template {
 .project__laptop {
   position: relative;
   z-index: 1;
-  padding-top: 57.882%;
+  padding-top: 57.8255675%;
   color: var(--light-color);
 }
 
@@ -1807,15 +1817,19 @@ template {
 .thank-item__author-link {
   display: block;
   margin-bottom: 19px;
+  color: var(--white-color);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .thank-item__author-link:hover,
 .thank-item__author-link:focus {
-  opacity: 0.7;
+  color: var(--pink-color);
 }
 
 .thank-item__author-link svg {
-  fill: var(--white-color);
+  fill: currentColor;
 }
 
 .thank-item__author {
