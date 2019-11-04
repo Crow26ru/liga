@@ -41,7 +41,7 @@
 
 .projects__button:hover,
 .projects__button:focus {
-  color: var(--invers-dekor-color);
+  color: var(--pink-hover-color);
 }
 
 .projects__button--next {
